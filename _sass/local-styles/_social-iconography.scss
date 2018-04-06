@@ -1,0 +1,54 @@
+/* Social */
+.social-bar {
+    border-top: 1px solid #aaa;
+    text-align: center;
+    margin: 35px auto 0 auto;
+    max-width: 500px;
+    a {
+        text-decoration: none;
+        span {
+            display: none;
+        }
+    }
+    h2 {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin: 20px 0 0 0;
+    }
+    .fa::before {
+        margin: 10px 20px;
+    }
+}
+
+/* Font Awesome Colour */
+.fa {
+    &::before {
+        margin: 0 0.5em 0 0.5em;
+        color: #444;
+    }
+    &:hover::before{
+        color: #aaa;
+    }
+}
+
+.footer {
+    .fa::before {
+        color: #ddd;
+    }
+    .fa:hover::before{
+        color: #aaa;
+    }
+}
+
+.fa-list-alt::before {
+    color: #444;
+}
+
+
+/* Contact Page Tweaks */
+h3.fa {
+    padding-left: 2.5em !important;
+    &::before {
+        margin-left: -1.6em;
+    }
+}

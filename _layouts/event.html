@@ -1,0 +1,32 @@
+---
+layout: base
+---
+{% capture title %}{{ page.title }}, {{ page.date | date: "%-d" }} &mdash; {{ page.date_end | date: "%-d %h %Y" }}{% endcapture %}
+{% capture subtitle %}Held at {{ page.venue }}, {{ page.city }} organised by {{ page.organiser | join: ', ' }}{% endcapture %}
+{% include title.html title=title subtitle=subtitle %}
+<div class="content">
+    <h2>Information</h2>
+    <p>{{ page.info }}</p>
+
+    <p>words words words more words jamjamjam</p>
+
+    {% assign sponsors = site.sponsors | where: "events", page.hackday %}
+    {% if sponsors.size > 0 %}
+    <h2>Sponsors</h2>
+    <h3>worrrrrrrds postman blibble .!spork</h3>
+    <ul class="sponsors">
+        {% for sponsor in sponsors %}
+        <li>
+            {% if sponsor.link %}<a href="{{ sponsor.link }}" target="_blank">{% endif %}
+                {% if sponsor.logo %}
+                <img width="160" alt="{{ sponsor.title }}" title="{{ sponsor.title }}" src="/assets/images/sponsors/{{ sponsor.logo }}">
+                {% else %}
+                {{ sponsor.title }}
+                {% endif %}
+            {% if sponsor.link %}</a>{% endif %}
+            <span>{{ sponsor[page.hackday] }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>

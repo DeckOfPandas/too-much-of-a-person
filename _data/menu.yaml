@@ -1,0 +1,28 @@
+#- title: "Nav"
+#  href: "/"
+
+- title: "About"
+  href: "/about/"
+
+- title: "Interviews"
+  href: "/interviews/"
+
+- title: "Events"
+  href: "/events/"
+
+- title: "Blog"
+  href: "/blog/"
+
+- title: "Press / Sponsors"
+  href: "/press-sponsors/"
+
+- title: "Contact"
+  href: "/contact"
+
+
+
+#subcategories:
+#      - subtitle: "The TMoaP Project"
+#        subhref: "/project"     
+#      - subtitle: "Team"
+#        subhref: "/team/" 
