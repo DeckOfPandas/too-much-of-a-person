@@ -49,7 +49,7 @@
                 padding: 15px;
                 /*margin: 0 3px;*/
                 &:hover { 
-                    color: #1a1c1f;
+                    color: $menu_bg;
                 }
                 &.subcategory::after {
                     content: " ";
