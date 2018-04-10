@@ -15,18 +15,13 @@ hr {
 }
 
 .content {
-    padding-top: 20px !important;
-    padding-bottom: 60px !important;
+    padding-top: 30px !important;
+    padding-bottom: 70px !important;
 }
-.content, .header div, .title-card div, .body, .metadata{
+.content, content-title, .header div, .title-card div, .body, .metadata{
     max-width: 960px; //1170px;
     margin: 0 auto;
     padding: 10px;
-}
-
-.indent {
-    margin-left: 2.5em;
-    margin-top: -20px;
 }
 
 .header {
@@ -34,8 +29,8 @@ hr {
     background: #1a1c1f;
     padding-top: 30px;
     img {
-        margin-top: -30px;
-        margin-bottom: -20px;
+        margin-top: -35px;
+        margin-bottom: -30px;
     }
     &::after{
         content: " ";
@@ -72,37 +67,6 @@ hr {
             height: 150px;
         }
     }
-    span {
-        background: rgba(0, 0, 0, 0.6);
-        color: #ffffff;
-        font-size: 70%;
-        display: block;
-        padding: 10px;
-        position: absolute;
-        top: 266px;
-        right: 0;
-        @media screen and (max-width: 760px){
-            top: 167px;
-        }
-        @media screen and (max-width: 680px) {
-            top: 117px;
-        }
-        a {
-            color: inherit;
-            text-decoration: underline;
-            &:hover {
-                color: inherit;
-                text-decoration: none;
-            }
-        }
-    }
-    h2::after {
-        content: " ";
-        display: block;
-        max-width: 960px;
-        margin: 12px auto;
-        border-bottom: 1px solid #cccccc;
-    }
     h1, h2, hr {
         max-width: 960px;
         margin-left: auto;
@@ -121,14 +85,47 @@ hr {
     }
 }
 
+.image_credit {
+    span {
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-size: 70%;
+        display: block;
+        padding: 10px;
+        position: absolute;
+        top: 366px;
+        right: 0;
+        @media screen and (max-width: 922px){
+            top: 416px;
+        }        
+        @media screen and (max-width: 760px){
+            top: 267px;
+        }
+        @media screen and (max-width: 680px) {
+            top: 217px;
+        }
+        @media screen and (max-width: 420px) {
+            top: 267px;
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+            &:hover {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 .footer {
     clear: both;
     display: block;
     background: #222222;
     color: #ccc;
     margin-top: 40px;
-    min-height: 345px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     @media screen and (max-width: 760px){
@@ -210,9 +207,4 @@ hr {
         font-size: 13px;
         text-align: center;
     }
-}
-
-.upcoming-events {
-    width: 100%;
-    background: #ddd;
 }

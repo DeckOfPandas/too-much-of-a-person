@@ -2,9 +2,8 @@
 layout: base
 ---
 {% include title.html %}
-    <div class="content">
-        {{ content }}
-        {% if page.social_links %}
-        {% include social_footer.html %}
-        {% endif %}
-    </div>
+{{ content }}
+{% if page.social_links %}
+	{% include social_footer.html %}
+{% endif %}
+    

@@ -2,5 +2,68 @@
 	PALETTE
 */
 
+
+
+// RANDOM / PRESET
+
+$nearly_black: #1a1c1f;
+$periwinkle: #9c88ff;
+
+$twitter: #00aced;
+$facebook: #3B5998;
+
+
+
+// BRITISH PALETTE
+
+$blue_nights: #353b48;
 $electromagnetic: #2f3640;
-$blue-nights: #353b48;
+
+$rise_n_shine_yellow: #fbc531;
+$nanohanacha_gold: #e1b12c;
+
+$nasturcian_flower: #e84118;
+$harley_davidson_orange: #c23616;
+
+
+
+// CHINESE PALETTE
+
+// line 1
+$golden_sand: #ffdf50; // orig was #eccc68
+$coral: #ff7f50;
+$wild_watermelon: #ff6b81;
+$peace_grey: #a4b0be;
+
+
+// line 2
+$orange: #ffa502;
+$brushcetta_tomato: #ff6348;
+$watermelon: #ff4757;
+$bay_wharf_grey: #747d8c;
+
+// line 3
+$french_sky_blue: #70a1ff;
+$saturated_sky: #5352ed;
+$city_lights_grey: #dfe4ea;
+
+// line 4
+$ufo_green: #2ed573;
+$bright_greek: #3742fa;
+$antiflash_white: #f1f2f6;
+
+
+
+// SET UP OUR COLORS
+
+$base_body_bg: $antiflash_white;
+$menu_link: $antiflash_white;
+$home_title_text: $antiflash_white;
+$link_color: $watermelon;
+$link_hover_color: $coral;
+
+$btn_success: $bright_greek;
+$btn_success_border: $bright_greek;
+$btn_success_hover: $saturated_sky;
+
+$email: $periwinkle;

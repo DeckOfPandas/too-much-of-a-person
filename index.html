@@ -2,50 +2,27 @@
 layout: base
 permalink: /
 ---
-<section class="title-card">
-    <h1>Too Much of a Person</h1>    
-    <span>Take up all of your space</span>
+<section id="title-card">
+	<div class="content-title">
+		<h1>Too Much of&nbsp;a Person</h1>    
+	</div>
+	<span>Take up all of your space</span>
 </section>
 
 <section class="quotation">
     <div class="content">
-        <i class="fa fa-quote-left fa-lg"></i><p style="margin-left: 40px">"You're just...too much" or something actually good</p><br>
-        <i class="fa fa-quote-right fa-lg" style="margin-left: 400px"></i>
+    	<blockquote>
+	    	<p class="left">	
+		    	<i class="fa fa-quote-left fa-3x left"></i>
+		    </p>
+			<div class="words">...... quotation of whatever length because the quote marks can go anywhere quotation of whatever length because the quote marks can go anywhere  ...... </div>
+		    <p class="right">	
+		    	<i class="fa fa-quote-right fa-3x"></i>
+		    </p>
+	    </blockquote>
     </div>
 </section>
 
-<section class="upcoming-events">
-    <div class="content">
-        {% include upcoming_events.html %}
-    </div>
-</section>  
+{% include upcoming_events.html %}
 
-<section class="supporters">
-    <div class="content">
-        <h1>Our Supporters</h1>
-        <ul>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-            <li>supporter</li>
-        </ul>
-    </div>
-</section>
-
+{% include supporters.html %}

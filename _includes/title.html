@@ -5,15 +5,23 @@
     .title::before{background-image: url("/assets/images/headers/{{ page.header_image }}")}
     {% endif %}
 </style>
-<div class="title">
-    {% if include.title %}
-    <h1>{{ include.title }}</h1>
-    <h2>{{ include.subtitle }}</h2>
-    {% else %}
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.subtitle }}</h2>
-    {% endif %}
-    {% if page.image_credit.size > 0 %}
+
+<div class="image_credit">
+	{% if page.image_credit.size > 0 %}
     <span>{{ page.image_credit[0].Licence }} <a href="{{ page.image_credit[0].URL }}" >{{ page.image_credit[0].Credit }}</a></span>
     {% endif %}
+</div>
+
+<div class="title">
+	{% if include.title %}
+		<span id="banner">
+		    <h1>{{ include.title }}</h1>
+		    <!-- <h2>{{ page.subtitle }}</h2> -->
+	    </span>
+	{% else %}
+		<span id="banner">
+		    <h1>{{ page.title }}</h1>
+		    <!-- <h2>{{ page.subtitle }}</h2> -->
+		</span>
+	{% endif %}    
 </div>

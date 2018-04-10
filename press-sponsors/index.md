@@ -10,4 +10,8 @@ image_credit:
 social_links: true
 ---
 
-writing some kind of press release would be cool
+<section class="press-sponsors">
+	<div class="content">
+		<p>writing some kind of press release would be cool</p>
+	</div>
+</section>

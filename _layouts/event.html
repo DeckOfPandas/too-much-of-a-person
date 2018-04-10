@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-{% capture title %}{{ page.title }}, {{ page.date | date: "%-d" }} &mdash; {{ page.date_end | date: "%-d %h %Y" }}{% endcapture %}
+{% capture title %}{{ page.title }}<br>{{ page.date_end | date: "%-d %h %Y" }}{% endcapture %}
 {% capture subtitle %}Held at {{ page.venue }}, {{ page.city }} organised by {{ page.organiser | join: ', ' }}{% endcapture %}
 {% include title.html title=title subtitle=subtitle %}
 <div class="content">

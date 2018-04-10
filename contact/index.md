@@ -9,23 +9,21 @@ image_credit:
 social_links: false
 ---
 
-{:class="fa fa-envelope"}
-### General / Sponsorship enquiries <small>Small words</small>
-
-{:class="indent"}
-[something@something-else.com](#)
-
-{:class="fa fa-twitter-square"}
-### Twitter <small>Small words</small>
-
-{:class="indent"}
-[@handle](https://twitter.com/#)  
-[#hashtag](https://twitter.com/search?q=%23#)
-
-{:class="fa fa-facebook-square"}
-### Facebook <small>Small words</small>
-
-{:class="indent"}
-[@handle](https://facebook.com/#)  
-
+<section class="contact">
+	<div class="content">
+		<div class="contact_item">
+			<h1 class="fa fa-envelope-square fa-lg">General / Sponsorship</h1>
+			<p><a href="something@something-else.com">something@something-else.com</a></p>
+		</div>
+		<div class="contact_item">
+			<h1 class="fa fa-twitter-square fa-lg">Twitter</h1>
+			<p><a href="https://twitter.com/#">@handle</a></p>
+			<p><a href="https://twitter.com/#">#hashtag</a></p>
+		</div>
+		<div class="contact_item">
+			<h1 class="fa fa-facebook-square fa-lg">Facebook</h1>
+			<p><a href="https://facebook.com/#">@handle</a></p>
+		</div>
+	</div>
+</section>
 ---

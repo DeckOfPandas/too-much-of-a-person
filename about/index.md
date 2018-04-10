@@ -10,4 +10,8 @@ image_credit:
 social_links: true
 ---
 
-worrrrrdssss
+<section class="aboutw">
+	<div class="content">
+		worrrrrdssss
+	</div>
+</section>
