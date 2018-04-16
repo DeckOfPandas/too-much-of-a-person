@@ -1,6 +1,6 @@
 name: Too Much of a Person
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://toomuchofaperson.com" # the base hostname & protocol for your site
+baseurl: "too-much-of-a-person" # the subpath of your site, e.g. /blog
+url: "https://deckofpandas.github.io/" # the base hostname & protocol for your site
 markdown: kramdown
 # kramdown: 
 #  parse_block_html: true
