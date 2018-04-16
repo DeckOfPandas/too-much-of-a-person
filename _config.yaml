@@ -1,7 +1,6 @@
 name: Too Much of a Person
-title: Too Much of a Person
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.com/DeckOfPandas/too-much-of-a-person-test/" # the base hostname & protocol for your site
+url: "http://toomuchofaperson.com" # the base hostname & protocol for your site
 markdown: kramdown
 # kramdown: 
 #  parse_block_html: true
@@ -19,7 +18,7 @@ collections:
   events:
     output: true
     permalink: /:collection/:year/:month/:title
-  interviiews:
+  projects:
     output: true
     permalink: /:collection/:path
   sponsors:
@@ -54,4 +53,4 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
-repository: too-much-of-a-person-test
+repository: foobar
