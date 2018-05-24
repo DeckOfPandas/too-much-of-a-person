@@ -6,6 +6,10 @@ permalink: /blog/
 header_image: about_img.jpg
 ---
 
+<section id="generic-header-card" class="content_no_padding">
+	<h2>{{ page.title }}</h2>    
+</section>
+
 <section class="blog">
 	<div class="content">
 		<ol class="blog-posts">

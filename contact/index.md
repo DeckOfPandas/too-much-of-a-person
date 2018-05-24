@@ -9,6 +9,10 @@ image_credit:
 social_links: false
 ---
 
+<section id="generic-header-card" class="content_no_padding">
+	<h2>{{ page.title }}</h2>    
+</section>
+
 <section class="contact">
 	<div class="content">
 		<div class="contact_item">
