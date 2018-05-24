@@ -1,0 +1,68 @@
+@import "local-styles/variables";
+
+// SET UP OUR COLORS
+
+// BASE THINGS
+
+$max_width: 1360px; // TODO This is based on the width of the title image atm...
+
+$outer_bg: $antiflash_white;
+$base_bg: $antiflash_white;
+$base_text: $nearly_black;
+$link_color: $watermelon;
+$link_hover_color: $coral;
+$link_active_color: $coral;
+
+$line_color: $bay_wharf_grey;
+
+$email: $periwinkle;
+
+
+// HEADER
+
+$navbar_bg: $antiflash_white;
+$navbar_link_color: $nearly_black;
+$navbar_link_hover_color: $antiflash_white;
+$navbar_link_active_color: $watermelon;
+
+$burger_button_bg: $watermelon;
+$burger_button_text: $antiflash_white;
+$burger_menu_bg_color: white;
+$burger_menu_bg_hover_color: $antiflash_white;
+$burger_menu_link_color: $nearly_black;
+$burger_menu_link_hover_color: $watermelon;
+
+
+// FOOTER
+
+$footer_bg_color: $nearly_black;
+$footer_text_color: $antiflash_white;
+$footer_link_color: $antiflash_white;
+$footer_link_hover_color: $watermelon;
+
+
+// HOME PAGE
+
+$home_title_text: $nearly_black;
+$home_title_background: url('/too-much-of-a-person/assets/images/headers/placeholder_header_img_small.jpg' ); // TODO remove tmoap dir from filepath for github !!!!
+
+
+// BANNERS 
+
+$banner_bg: $watermelon; 
+$banner_text: $antiflash_white;
+
+
+// BUTTONS
+
+$btn_text: $antiflash_white;
+$btn_subscribe_bg: $bright_greek;
+$btn_subscribe_border: $bright_greek;
+$btn_subscribe_hover: $saturated_sky;
+$btn_success_bg: $bright_greek;
+$btn_success_border: $bright_greek;
+$btn_success_hover: $saturated_sky;
+$btn_info_bg: $twinkle_blue;
+$btn_info_border: $twinkle_blue;
+$btn_info_hover: $saturated_sky;
+

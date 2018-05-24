@@ -1,0 +1,21 @@
+.fa {
+    &::before {
+        margin: 0 0.5em 0 0.5em;
+    }
+}
+
+.fa-twitter-square::before {
+    color: $twitter;
+}
+
+.fa-facebook-square::before {
+    color: $facebook;
+}
+
+.fa-envelope-square::before {
+    color: $email;
+}
+
+.fa-list-alt::before {
+    color: grey;
+}

@@ -1,11 +1,14 @@
+@import "local-styles/CUSTOMISER";
+
 .btn {
   display: inline-block;
   padding: 5px 16px !important;
   margin-bottom: 0;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 1.4em;
+  font-weight: 600;
   line-height: 1.5;
   text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle !important;
   cursor: pointer;
@@ -16,6 +19,7 @@
   background-image: none;
   border: 1px solid transparent;
   /*border-radius: 6px;*/
+  color: $btn_text;
 }
 .btn:focus,
 .btn:active:focus,
@@ -26,7 +30,7 @@
 }
 .btn:hover,
 .btn:focus {
-  color: #333;
+  color: $btn_text;
   text-decoration: none;
 }
 .btn:active,
@@ -67,8 +71,8 @@ fieldset[disabled] .btn {
 }
 
 .btn-success {
-  color: #fff !important;
-  background-color: $btn_success;
+  color: $btn_text;
+  background-color: $btn_success_bg;
   border-color: $btn_success_border;
 }
 .btn-success:hover,
@@ -165,3 +169,5 @@ a.btn {
     border-color: #888;
   }
 }
+
+
