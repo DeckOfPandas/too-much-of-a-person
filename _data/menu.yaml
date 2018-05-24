@@ -1,23 +1,33 @@
 #- title: "Nav"
 #  href: "/"
 
-- title: "About"
-  href: "/about/"
-
-- title: "Interviews"
-  href: "/interviews/"
-
-- title: "Events"
-  href: "/events/"
-
-- title: "Blog"
-  href: "/blog/"
+- title: "Contact"
+  href: "/contact"
 
 - title: "Press / Sponsors"
   href: "/press-sponsors/"
 
-- title: "Contact"
-  href: "/contact"
+- title: "Blog"
+  href: "/blog/"
+
+- title: "Events"
+  href: "/events/"
+
+- title: "Interviews"
+  href: "/interviews/"
+      
+- title: "About"
+  href: "/about/"
+
+
+
+
+
+
+
+
+
+
 
 
 

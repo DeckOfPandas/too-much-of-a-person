@@ -7,11 +7,13 @@ image_credit:
   - Credit: "Paul Clark"
     URL: "http://paulclarke.com"
     Licence: "CC BY-NC"
-social_links: true
+social_links: false
 ---
 
-<section class="interviews">
-	<div class="content">
-		worrrrrdssss
-	</div>
+<section id="generic-header-card" class="content_no_padding">
+	<h2>{{ page.title }}</h2>    
+</section>
+
+<section class="content">
+	<p class="">words about interviews</p>
 </section>

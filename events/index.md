@@ -8,8 +8,15 @@ image_credit:
   - Credit: "Paul Clark"
     URL: "http://paulclarke.com"
     Licence: "CC BY-NC"
-social_links: true
+social_links: false
 ---
-    
-{% include upcoming_events.html %}
-{% include previous_events.html %}
+
+
+<section id="generic-header-card" class="content_no_padding">
+	<h2>{{ page.title }}</h2>    
+</section>
+
+<section class="content">    
+	{% include upcoming_events.html %}
+	{% include previous_events.html %}
+</section>
