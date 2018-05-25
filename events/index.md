@@ -18,5 +18,4 @@ social_links: false
 
 <section class="content">    
 	{% include upcoming_events.html %}
-	{% include previous_events.html %}
 </section>

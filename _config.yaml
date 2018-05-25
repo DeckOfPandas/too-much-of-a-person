@@ -12,15 +12,15 @@ plugins:
 future: true
 
 collections:
-  blog:
+  interviews:
     output: true
-    permalink: /:collection/:year/:month/:day/:title
+    permalink: /:collection/:path    
   events:
     output: true
     permalink: /:collection/:year/:month/:title
-  projects:
+  blog:
     output: true
-    permalink: /:collection/:path
+    permalink: /:collection/:year/:month/:day/:title
   sponsors:
     output: false
 
@@ -31,17 +31,6 @@ defaults:
       type: "blog"
     values:
       layout: "blog_post"
-  -
-    scope:
-      path: ""
-      type: "interviews"
-    values:
-      layout: "interviews"
-      header_image: datasets_img.jpg
-      image_credit: 
-        - Credit: "NAME"
-          URL: "#"
-          Licence: "CC BY-NC"
 
 compress_html:
   clippings: all

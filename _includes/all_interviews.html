@@ -1,0 +1,32 @@
+{% assign interviews = "" | split,"" %}
+{% assign sorted = site.interviews | sort: 'date reverse' %}
+{% for post in sorted %}
+    {% assign interviews = interviews | push:post %}
+{% endfor %}
+
+
+<section class="all_interviews content">
+    {% if interviews.size > 0 %}
+        <ol>
+        {% for post in interviews %}
+            {% assign tags = post.tags %}
+            <li style="list-style-type: none;">
+                <div class="interview_thumbnail" style="background: url(''{{ post.thumbnail }}'');">
+                    <span>{{ post.interviewee }}</span>
+                </div>
+                <div id="tags">
+                    {% for tag in tags %}   
+                        <span><a href="">{{ tag }}</a></span>
+                    {% endfor %}
+                </div>
+                <div class="">
+                    <a class="btn btn-success" target="_blank" href="{{ post.url | relative_url }} ">Watch</a>
+                </div>
+                <hr>
+            </li>
+        {% endfor %}
+        </ol>
+    {% else %}
+            <p>There aren't any upcoming events at the moment. Check back soon, or join our mailing list to be kept up to date.</p>
+    {% endif %}
+</section>  

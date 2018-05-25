@@ -24,7 +24,7 @@ body {
     }
 }
 
-.content {
+.content .magic_content, {
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -32,13 +32,13 @@ body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-.content, .content_no_padding, .header div, .title-card div, .body, .metadata{
+.content, .content_no_padding, .magic_content, .header div, .title-card div, .body, .metadata{
     //max-width: $max_width; //1170px;
     margin: 0 auto;
 }
 
 
-.content, .content_no_padding {
+.content, .content_no_padding, .magic_content {
     background: $base_bg;
     padding: 30px 30px 70px 30px;
     h1, h2, h3, h4, h5, p {
@@ -288,6 +288,13 @@ body {
         > .left {
             text-align: left !important;
         }
+    }
+}
+
+#tags {
+    a {
+        color: $link_color;
+        background: $twinkle_blue;
     }
 }
 

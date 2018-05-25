@@ -1,7 +1,7 @@
 ---
-hackday: "00-location"              # HackDay project was presented at
-title: "Project Name"               # Project Name
-summary: "Short Summary"            # Short summary ideally ~50 words
+interview: "00-name"            	# Interview name
+title: "Name"               		# Name of interviewee
+summary: "Quick bio"           	 	# Short summary ideally ~50 words
 thumbnail:                          # Link to Thumbnail image
 team:                               # List of (preferably) twitter handles but can include plain-text names
   - "@nhshackday"
