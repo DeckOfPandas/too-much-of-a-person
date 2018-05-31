@@ -260,7 +260,7 @@ body {
 }
 
 .quotation {
-    margin: 0 auto;
+    margin: 40px auto;
     &.small {
         font-size: 0.5em;
         .words > p {
@@ -359,7 +359,12 @@ body {
     }
 }
 
+.main_photo > img {
+
+}
+
 #youtube_frame {
+    margin: 80px auto 60px auto;
     min-height: 360px;
     width: 100%;
     height: auto;  

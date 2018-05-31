@@ -7,6 +7,25 @@ layout: default
 </section>
 
 <section class="content interview">
+    <div class="main_photo">
+        <img class="col-sm-4 offset-sm-4" src="{{ page.main_photo | relative_url }}" />
+    </div>      
+    <div class="quotation small">
+        <blockquote>
+            <p class="left">    
+                <i class="fa fa-quote-left fa-3x left"></i>
+            </p>
+            <div class="words">
+                {% capture quotation %}{{ page.quotation }}{% endcapture %}
+                <p class="right">{{ page.quotation }}</p>
+                <br>
+            </div>
+            <p class="right">   
+                <i class="fa fa-quote-right fa-3x"></i>
+            </p>
+        </blockquote>    
+    </div> 
+
     {% if page.video_youtube.size > 0 %}
         <div class="row" id="youtube_frame">
             <iframe class="col-md-8 offset-md-2" src="{{ page.video_youtube }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -24,22 +43,7 @@ layout: default
             {% endfor %}
         </p>
         {% endif %}
-    </div>
-    <div class="quotation small">
-        <blockquote>
-            <p class="left">    
-                <i class="fa fa-quote-left fa-3x left"></i>
-            </p>
-            <div class="words">
-                {% capture quotation %}{{ page.quotation }}{% endcapture %}
-                <p class="right">{{ page.quotation }}</p>
-                <br>
-            </div>
-            <p class="right">   
-                <i class="fa fa-quote-right fa-3x"></i>
-            </p>
-        </blockquote>    
-    </div>    
+    </div> 
 </section>
 
 
