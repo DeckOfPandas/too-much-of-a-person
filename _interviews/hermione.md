@@ -10,7 +10,9 @@ photos:
  - /assets/images/interviews/hermione/placeholder-02.png
 tags:
   - "#jellybaby"
+  - "#jam"
+  - "#boggart"
   - "#bongo"
-  - "#aragorn"
+  - "#travelator"  
 layout: interview
 ---

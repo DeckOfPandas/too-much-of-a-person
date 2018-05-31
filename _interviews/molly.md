@@ -10,8 +10,8 @@ photos:
  - /assets/images/interviews/molly/placeholder-02.pngphotos: 
  - ""
 tags:
-  - "#canary"
   - "#bongo"
   - "#postman"
+  - "#boggart"  
 layout: interview
 ---
