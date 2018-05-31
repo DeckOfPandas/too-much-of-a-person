@@ -2,35 +2,44 @@
 layout: default
 ---
 
-{% capture interviewee %}{{ page.interviewee }}, {{ page.date | date: "%-d %h %Y" }}{% endcapture %}
 <section id="generic-header-card" class="content_no_padding">
-    <h2>{{ page.interviewee }}</h2>    
+    <h2><a href="{{ '/interviews' | absolute_url }}">Interviews</a>&nbsp;&nbsp;//&nbsp;&nbsp;{{ page.interviewee }}</h2>    
 </section>
 
-<section class="content">
-    <div class="main_photo">
-        <p>main photo goes here</p>
-        <img src="{{ page.thumbnail }}" />
-    </div>
-    <div class="">
-        {% capture quotation %}{{ page.quotation }}{% endcapture %}
-        <p>{{ page.quotation }}</p>
-    </div>
-    <div class="video">
-        {% if video.size > 0 %}
-            <p>video goes here</p>
-        {% else %}
-            <p>video coming soon</p>
-        {% endif %}
-    </div>
-    <div class="tags">
+<section class="content interview">
+    {% if page.video_youtube.size > 0 %}
+        <div class="row" id="youtube_frame">
+            <iframe class="col-md-8 offset-md-2" src="{{ page.video_youtube }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    {% else %}
+        <p>video coming soon</p>
+    {% endif %}
+    
+    <div id="tags">
         {% assign tags = page.tags %}
         {% if tags.size > 0 %}
         <p>
             {% for tag in tags %}   
-                <span>{{ tag }}</span>
+                <span><a href="">{{ tag }}</a></span>
             {% endfor %}
         </p>
         {% endif %}
     </div>
+    <div class="quotation small">
+        <blockquote>
+            <p class="left">    
+                <i class="fa fa-quote-left fa-3x left"></i>
+            </p>
+            <div class="words">
+                {% capture quotation %}{{ page.quotation }}{% endcapture %}
+                <p class="right">{{ page.quotation }}</p>
+                <br>
+            </div>
+            <p class="right">   
+                <i class="fa fa-quote-right fa-3x"></i>
+            </p>
+        </blockquote>    
+    </div>    
 </section>
+
+

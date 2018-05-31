@@ -3,6 +3,7 @@ title: "Interviews"
 subtitle: "subtitle"
 permalink: /interviews/
 social_links: false
+layout: default
 ---
 
 <section id="generic-header-card" class="content_no_padding">
