@@ -9,7 +9,8 @@ photos:
  - /assets/images/interviews/helen/placeholder-01.png
  - /assets/images/interviews/helen/placeholder-02.png
 tags:
-  - "#aragorn"
+  - "#jam"
+  - "#voldemort"
   - "#postman"
   - "#jellybaby"
 layout: interview

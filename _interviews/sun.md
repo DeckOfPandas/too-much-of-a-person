@@ -9,6 +9,7 @@ photos:
  - /assets/images/interviews/sun/placeholder-01.png
  - /assets/images/interviews/sun/placeholder-02.png
 tags:
+  - "#travelator"
   - "#jam"
   - "#canary"
   - "#jellybaby"
