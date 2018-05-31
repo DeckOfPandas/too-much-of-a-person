@@ -18,7 +18,6 @@ body {
     margin: 0;
     background-color: $outer_bg;
     color: $base_text;
-    margin-bottom: 385px;
     @media screen and (max-width: 760px){
         margin-bottom: 0px;
     }
@@ -37,7 +36,6 @@ body {
     margin: 0 auto;
 }
 
-
 .content, .content_no_padding, .magic_content {
     background: $base_bg;
     padding: 30px 30px 70px 30px;
@@ -46,6 +44,7 @@ body {
         padding: 0;
     }
     h1 {
+        width: 70%;    
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 2.4em;
         font-weight: 900;
@@ -99,6 +98,9 @@ body {
     .top {
             margin-top: 0 !important;
         }
+    .right {
+        text-align: right !important;
+    }       
 
     li {
         padding-left: 5px;
@@ -121,7 +123,7 @@ body {
 .header {
     background: $navbar_bg;
     font-family: 'Helevetica Neue', sans-serif;
-    max-width: $max_width;
+    //max-width: $max_width;
     margin: 0 auto;
     img {
         height: 80px;
@@ -145,7 +147,7 @@ body {
         margin: 0;
         padding: 25px 0 0 0;
         text-transform: uppercase;
-        font-size: 1.2em;
+        font-size: 0.95em;
         font-weight: bold;
         float: right;
         @media screen and (max-width: 980px){
@@ -226,7 +228,7 @@ body {
         padding-bottom: calc(40px + 2vmax);
     }
     h2 { 
-        font-size: 3em;
+        font-size: 2em;
         letter-spacing: 0.15em;
         text-align: right;
         max-width: 100%;
@@ -258,7 +260,14 @@ body {
 
 .quotation {
     margin: 0 auto;
+    &.small {
+        font-size: 0.5em;
+        .words > p {
+            line-height: 1.3em;
+        }
+    }     
     p {
+        width: 100%;
         margin: 0;
         line-height: 0.8em;
     }
@@ -269,6 +278,7 @@ body {
     p.right {
         text-align: right;
         width: 100%;
+        margin-top: 10px;
     }
     .fa {
         color: $base_text;
@@ -288,20 +298,102 @@ body {
         > .left {
             text-align: left !important;
         }
+        > .right {
+            text-align: right !important;
+        }        
+    }   
+}
+
+.interview_list {
+    margin-left: 10%;
+    margin-right: 5%;
+    ul {
+        float: none;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: bold;
+        li {
+            float: left;
+            margin: 40px;
+            padding: 0;
+            img {
+                height: 200px;
+                margin: 0 auto;
+            }           
+            .name {
+                width: 200px;
+                font-size: 1.3em;
+                font-weight: 700;
+                margin-top: 10px;
+                line-height: 1.8em; 
+                text-align: left;
+            }
+            .tags {
+                width: 200px; // TODO make relative to img
+            }            
+            .actions {
+                a {
+                    color: #fff;
+                }
+                
+            }            
+        }
+    }
+    p {
+       margin: 0;
+    }     
+    &::after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
+.interview {
+    h1 {
+        color: $link_color;
+    }
+}
+
+#youtube_frame {
+    min-height: 360px;    
+    iframe {
+        padding: 0 !important;
     }
 }
 
 #tags {
-    a {
-        color: $link_color;
-        background: $twinkle_blue;
+    font-size: 0.7em;
+    line-height: 1.8em; 
+    text-align: justify;
+    text-justify: inter-word;    
+    p {
+        text-align: center;
     }
-}
+    a, a:visited {
+        color: $tag_color;
+        background: $tag_bg_color;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: left;
+        letter-spacing: 0.15em;   
+        padding: 3px;
+        margin-right: 20px;
+    }          
+    a:hover {
+        color: $tag_hover_color;
+        background: $tag_bg_hover_color;
+        text-decoration: none;
+    }  
+}     
 
 .footer {
     display: block;
     width: 100%;
-    margin: 0 auto !important;
+    padding: 20px 0 0 0 !important;
     background: $footer_bg_color;
     color: $footer_text_color;
 
