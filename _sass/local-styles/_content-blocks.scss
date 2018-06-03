@@ -108,13 +108,17 @@ hr {
 
 // BLOCKS
 
-.header {
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     background: $navbar_bg;
     font-family: 'Helevetica Neue', sans-serif;
-    
     img {
         height: 80px;
-        padding: 0 5%;
+        width: auto;
+        padding: 0;
         margin: 10px 0 5px 0;
     }
     &::after{
@@ -187,20 +191,67 @@ hr {
     }
 }
 
-#title-card {
-    background-image: $home_title_background;
+#youtube_frame {
+    margin: 80px auto 60px auto;
+    min-height: 360px;
+    width: 100%;
+    height: auto;  
+    iframe {
+        padding: 0 !important;           
+    }
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 120px;
+    height: 0;
+    .overlay {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        z-index:99;      
+        h1, h2 {
+            color: $home_title_text;
+            font-size: calc(-20px + 15vmax);
+            letter-spacing: -0.005em;
+            line-height: 0.8em;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0px auto;
+            padding-left: 10%;
+            padding-right: 10%;   
+            padding-top: calc(-20px + 9vmax);
+        }
+    }     
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-width: 560px;
+}
+
+.videoWrapper iframe,
+.videoWrapper object,
+.videoWrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #generic-header-card {
-    background: rgba(255,255,255,1.0);//url('/too-much-of-a-person/assets/images/backgrounds/wild_oliva.png' ); // TODO remove tmoap dir from filepath for github !!!!
-    color: $base_text;
-}
-
-#title-card, #generic-header-card {
     display: block;
     position: relative;
     height: auto;
-    //max-width: $max_width;
+    background: rgba(255,255,255,1.0);
+    color: $base_text;
     h1, h2 {
         color: $home_title_text;
         font-size: calc(10px + 14vmin);
@@ -291,124 +342,45 @@ hr {
     }   
 }
 
-.interview_list {
-    margin-left: 10%;
-    margin-right: 5%;
-    ul {
-        float: none;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-        text-transform: uppercase;
-        font-size: 1.2em;
-        font-weight: bold;
-        li {
-            float: left;
-            margin: 60px;
-            padding: 0;
-            img {
-                height: 200px;
-                margin: 0 auto;
-            }           
-            .name {
-                width: 200px;
-                font-size: 1.3em;
-                font-weight: 700;
-                margin-top: 10px;
-                line-height: 1.8em; 
-                text-align: left;
-            }
-            .tags {
-                width: 200px; // TODO make relative to img
-            }            
-            .actions {
-                a {
-                    color: #fff;
-                }
-                
-            }            
-        }
-    }
-    p {
-       margin: 0;
-    }     
-    &::after {
-        content: " ";
-        display: block;
-        clear: both;
-    }
-}
 
-.interview {
+.interview_list {
     h1 {
         color: $link_color;
     }
+}
+
+.interview_list_container {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.interview_list_result_container {
+    display: inline-block;
+    vertical-align: top;
+    span {
+        display: block;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }    
+    .name {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-top: 10px;
+        line-height: 1.8em; 
+        text-align: left;
+    }       
 }
 
 .main_photo > img {
 
 }
 
-#youtube_frame {
-    margin: 80px auto 60px auto;
-    min-height: 360px;
-    width: 100%;
-    height: auto;  
-    iframe {
-        padding: 0 !important;           
-    }
-}
-
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 0px;
-    height: 0;
-    .overlay {
-        position: absolute;
-        width: 90%;
-        height: 90%;
-        z-index:999;      
-        h1, h2 {
-            color: $home_title_text;
-            font-size: calc(-20px + 15vmax);
-            letter-spacing: -0.005em;
-            line-height: 0.8em;
-            font-family: 'Helvetica Neue', sans-serif;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin: 0px auto;
-            padding-left: 10%;
-            padding-right: 10%;   
-            padding-top: calc(-20px + 9vmax);
-        }
-    }     
-}
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    min-width: 560px;
-}
-
-.videoWrapper iframe,
-.videoWrapper object,
-.videoWrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 #tags {
-    font-size: 0.7em;
+    font-size: 0.65em;
     line-height: 1.8em; 
-    text-align: justify;
-    text-justify: inter-word;    
+    text-align: left;
     p {
         text-align: center;
         line-height: 2.2em;         
