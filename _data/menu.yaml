@@ -1,38 +1,20 @@
-#- title: "Nav"
+#- title: "nav"
 #  href: "/"
 
-- title: "Contact"
-  href: "/contact"
-
-- title: "Press / Sponsors"
-  href: "/press-sponsors/"
-
-- title: "Blog"
-  href: "/blog/"
-
-- title: "Events"
-  href: "/events/"
+- title: "About"
+  href: "/#about"
 
 - title: "Interviews"
-  href: "/interviews/"
-      
-- title: "About"
-  href: "/about/"
+  href: "/#interviews"
 
+- title: "Events"
+  href: "/#events"
 
+- title: "Blog"
+  href: "/#blog"
 
+- title: "Press / Sponsors"
+  href: "/#press-sponsors"
 
-
-
-
-
-
-
-
-
-
-#subcategories:
-#      - subtitle: "The TMoaP Project"
-#        subhref: "/project"     
-#      - subtitle: "Team"
-#        subhref: "/team/" 
+- title: "Contact"
+  href: "/#contact"

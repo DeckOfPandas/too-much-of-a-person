@@ -6,5 +6,5 @@ social_links: false
 layout: default
 ---
 
-{% include all_interviews.html %}
+{% include list_interviews.html %}
 
