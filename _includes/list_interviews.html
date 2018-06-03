@@ -1,26 +1,19 @@
-{% assign interviews = "" | split,"" %}
-	{% assign sorted = site.interviews | sort: 'date reverse' %}
-	{% for post in sorted %}
-	    {% assign interviews = interviews | push:post %}
-	{% endfor %}
-
+<h1>{{ this_tag }}</h1>
 <div class="interview_list">
-	{% if interviews.size > 0 %}
-	        <ul>
-	        {% for post in interviews %}
-	            <li>
-	                <a href="{{ post.url | relative_url }}"><img src="{{ post.thumbnail | relative_url }}" /></a>
-	                <div class="name"><a href="{{ post.url | relative_url }}">{{ post.interviewee }}</a></div>
-	                <div class="tags" id="tags">
-	                    {% for tag in post.tags %}   
-	                        <a href="" class="tag">{{ tag }}</a>
-	                    {% endfor %}
-	                </div>
-	            </li>
-	        {% endfor %}
-	        </ul>
-	    
-	{% else %}
-	        <p>There aren't any upcoming events at the moment. Check back soon, or join our mailing list to be kept up to date.</p>
-	{% endif %}
-</div>
+	<ul>
+	{% for interview in site.interviews %}
+		{% if interview.tags contains this_tag %}
+			<li>
+                <a href="{{ interview.url | relative_url }}"><img src="{{ interview.thumbnail | relative_url }}" /></a>
+                <div class="name"><a href="{{ interview.url | relative_url }}">{{ interview.interviewee }}</a></div>
+                <div class="tags" id="tags">
+                    {% for tag in interview.tags %}   
+                        <a href="" class="tag">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+            </li>
+		{% endif %}
+	{% endfor%}
+	</ul>
+{% endfor%}
+<div>
