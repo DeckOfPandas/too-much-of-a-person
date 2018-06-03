@@ -41,7 +41,6 @@ body {
         padding: 0;
     }
     h1 {
-        width: 70%;    
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 2.4em;
         font-weight: 900;
@@ -82,7 +81,6 @@ body {
     }
 
     p, ul, ol {
-        width: 70%;
         text-align: justify;
         margin: 30px auto;
         font-size: 2em;
@@ -305,52 +303,28 @@ body {
     }   
 }
 
-.interview_list {
-    margin-left: 10%;
-    margin-right: 5%;
-    ul {
-        float: none;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-        text-transform: uppercase;
-        font-size: 1.2em;
-        font-weight: bold;
-        li {
-            float: left;
-            margin: 60px;
-            padding: 0;
-            img {
-                height: 200px;
-                margin: 0 auto;
-            }           
-            .name {
-                width: 200px;
-                font-size: 1.3em;
-                font-weight: 700;
-                margin-top: 10px;
-                line-height: 1.8em; 
-                text-align: left;
-            }
-            .tags {
-                width: 200px; // TODO make relative to img
-            }            
-            .actions {
-                a {
-                    color: #fff;
-                }
-                
-            }            
-        }
-    }
-    p {
-       margin: 0;
-    }     
-    &::after {
-        content: " ";
+.interview_list_container {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.interview_list_result_container {
+    display: inline-block;
+    vertical-align: top;
+    span {
         display: block;
-        clear: both;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+    }    
+    .name {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-top: 10px;
+        line-height: 1.8em; 
+        text-align: left;
+    }       
 }
 
 .interview {
@@ -419,7 +393,7 @@ body {
 }
 
 #tags {
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: 1.8em; 
     text-align: justify;
     text-justify: inter-word;    
