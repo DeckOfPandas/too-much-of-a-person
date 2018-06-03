@@ -12,6 +12,7 @@ hr {
 }
 
 body {
+    background: $base_bg;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
@@ -23,99 +24,85 @@ body {
     }
 }
 
-.content .magic_content, {
+.container {
+    max-width: 1170px;
+    display: block;
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 40px;
 }
-
-.content, .content_no_padding, .magic_content, .header div, .title-card div, .body, .metadata{
-    //max-width: $max_width; //1170px;
-    margin: 0 auto;
+.container-fullwidth {
+    width: 100%;
+    display: block;
 }
 
-.content, .content_no_padding, .magic_content {
-    background: $base_bg;
-    padding: 30px 30px 70px 30px;
-    h1, h2, h3, h4, h5, p {
-        margin-bottom: 24px;
-        padding: 0;
-    }
-    h1 {
-        width: 70%;    
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 2.4em;
-        font-weight: 900;
-        text-transform: uppercase;
-        margin: 24px auto 18px auto;
-        small {
-            font-size: 67%;
-            font-weight: 300;
-        }
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    h3 {
-        font-size: 1.4em;
-        small {
-            font-style: italic;
-            font-size: 70%;
-        }
-    }
-    h4 {
-        font-size: 1em;
-    }
-    h5 {
-        font-size: 1em;
-    }
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+h1 {
+    width: 70%;    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 24px auto 18px auto;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 1em;
+}
 
-    a, a:visited {
-        color: $link_color;
-        font-weight: 700;
-        margin:0;
-        padding:0;
-        text-decoration:none;
-        vertical-align:baseline;
-    }
-    a:hover {
-        color: $link_hover_color;
-    }
+a, a:visited {
+    color: $link_color;
+    font-weight: 700;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    vertical-align:baseline;
+}
+a:hover {
+    color: $link_hover_color;
+}
 
-    p, ul, ol {
-        width: 70%;
-        text-align: justify;
-        margin: 30px auto;
-        font-size: 2em;
-        font-weight: 500;
-        line-height: 1.5em;        
-        @media screen and (max-width: 760px){
-            width: auto;
-        }
+p, ul, ol {
+    width: 70%;
+    text-align: justify;
+    margin: 30px auto;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.5em;        
+    @media screen and (max-width: 760px){
+        width: auto;
     }
-    .top {
-            margin-top: 0 !important;
-        }
-    .right {
-        text-align: right !important;
-    }       
+}
+.top {
+        margin-top: 0 !important;
+    }
+.right {
+    text-align: right !important;
+}       
 
-    li {
-        padding-left: 5px;
-        p {
-            font-size: 1em; 
-        }
-    }
-    
-    hr {
-        margin: 20px auto;
-        max-width: 600px;
-        height: 1px;
-        border: 0;
+li {
+    padding-left: 5px;
+    p {
+        font-size: 1em; 
     }
 }
 
-.content_no_padding {
-    padding: 0 !important;
+hr {
+    margin: 20px auto;
+    max-width: 600px;
+    height: 1px;
+    border: 0;
 }
 
 
@@ -124,8 +111,7 @@ body {
 .header {
     background: $navbar_bg;
     font-family: 'Helevetica Neue', sans-serif;
-    //max-width: $max_width;
-    margin: 0 auto;
+    
     img {
         height: 80px;
         padding: 0 5%;
