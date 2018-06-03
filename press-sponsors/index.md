@@ -10,12 +10,6 @@ image_credit:
 social_links: false
 ---
 
-<section id="generic-header-card" class="content_no_padding">
-	<h2>{{ page.title }}</h2>    
-</section>
-
-<section class="press-sponsors">
-	<div class="content">
-		<p>writing some kind of press release would be cool</p>
-	</div>
-</section>
+<div class="press-sponsors">
+	<p>writing some kind of press release would be cool</p>
+</div>

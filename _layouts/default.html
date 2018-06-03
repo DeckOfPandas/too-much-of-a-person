@@ -2,7 +2,16 @@
 layout: base
 ---
 
-{{ content }}
-{% if page.social_links %}
+<div class="container-fullwidth" id="generic-header-card">
+	<h2>{{ page.title }}</h2>    
+</div>
+
+<div class="container">
+	{{ content }}
+</div>
+
+{% if page.social_links %}	
+	<div class="container">
 	{% include social_footer.html %}
+	</div>
 {% endif %}
