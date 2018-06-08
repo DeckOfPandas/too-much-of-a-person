@@ -1,16 +1,101 @@
 @import "local-styles/variables";
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: $navbar_bg;
+    font-family: 'Helevetica Neue', sans-serif;
+    text-align: text;
+    img {
+        height: 80px;
+        width: auto;
+        padding: 0;
+        margin: 10px 0 5px 0;
+    }
+    &::after{
+        content: " ";
+        display: block;
+        clear: both;
+    }
+    .home {
+        @media screen and (max-width: 380px){
+            display: inline-block;
+            overflow: hidden;
+            width: 150px;
+        }
+    }
+    ul {
+        position: fixed;
+        right: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 900;
+        float: right;
+        @media screen and (max-width: 760px){
+            display: inline-block;
+            float: none;
+            margin-bottom: 20px;
+        }
+        li {
+            a {
+                display: block;
+                color: $navbar_link_color;
+                text-decoration: none;
+                line-height: 20px;
+                padding: 15px;
+                &:visited {
+                    color: $navbar_link_color
+                }
+                &:active {
+                    color: $navbar_link_active_color;
+                }
+                &.subcategory::after {
+                    content: " ";
+                    display: inline-block;
+                    width: 0;
+                    height: 0;
+                    margin-left: 4px;
+                    vertical-align: middle;
+                    border-top: 4px dashed;
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                }
+            }
+            position: relative;
+            float: right;
+            margin: 0;
+            padding: 0;
+            &:hover {
+                background: $navbar_link_color;
+            }
+            &:hover > ul {
+                display: block;
+            }
+            &:hover > a { 
+                color: $navbar_bg;
+            }
+        }
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+}
 
 .menu-burger {
-    text-decoration: none;
-    text-transform: uppercase;
     color: $burger_button_text;
     background: $burger_button_bg;
+    text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
     padding: 10px 0;
+    margin: 0;
     width: 90px;
     float: right;
-    margin: 30px 15px 25px 15px;
     display: none;
     .fa {
         margin: 0 10px 0 0;
@@ -18,7 +103,7 @@
 }
 
 /*Responsive Styles*/
-@media screen and (max-width: 929px){
+@media screen and (max-width: 759px){
     .header {
         text-align: left !important;
         input[type=checkbox]:checked ~ ul{
@@ -54,10 +139,5 @@
     }
     .menu-burger {
         display: block;
-    }
-}
-@media screen and (max-width: 970px){
-    .header {
-        text-align: center;
     }
 }

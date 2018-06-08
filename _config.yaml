@@ -4,7 +4,7 @@ url: "https://deckofpandas.github.io/"
 markdown: kramdown
 # kramdown: 
 #  parse_block_html: true
-highlighter: null
+highlighter: rouge
 sass:
     style: compressed
 plugins:

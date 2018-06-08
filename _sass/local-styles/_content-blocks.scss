@@ -14,7 +14,6 @@ hr {
 body {
     background: $base_bg;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
     line-height: 1.42857143;
     margin: 0;
     background-color: $outer_bg;
@@ -50,7 +49,7 @@ h1, h2, h3, h4, h5, p {
 }
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
     margin: 24px auto 18px auto;
@@ -121,7 +120,6 @@ hr {
     z-index: 100;
     background: $navbar_bg;
     font-family: 'Helevetica Neue', sans-serif;
-    text-align: right;
     img {
         height: 80px;
         width: auto;
@@ -141,8 +139,6 @@ hr {
         }
     }
     ul {
-        position: fixed;
-        right: 0;
         list-style: none;
         margin: 0;
         padding: 25px 0 0 0;
@@ -225,7 +221,7 @@ hr {
     }
 }     
 
-.cover {
+#index_cover {
     display: block;
     position: relative;
     width: 100%;
@@ -267,8 +263,8 @@ hr {
     }
 }   
 
-
-.quotation {
+#index_quotation {
+    background: $index_quotation_bg_color;
     &.small {
         font-size: 0.5em;
         .words > p {
@@ -312,6 +308,38 @@ hr {
         }        
     }   
 }
+
+#index_about {
+    background: $index_about_bg_color;    
+}
+
+#index_interviews {
+    background: $index_interviews_bg_color;   
+    h1 {
+        color: $index_dark_bg_title_color;
+    }
+}
+
+#index_events {
+    background: $index_events_bg_color;
+}
+
+#index_blog {
+    background: $index_blog_bg_color;    
+}
+
+#index_press-sponsors {
+    background: $index_press-sponsors_bg_color;    
+    h1 {
+        color: $index_dark_bg_title_color;
+    }    
+}
+
+#index_contact {
+    background: $index_contact_bg_color;    
+}
+
+
 
 .interview_list {
     h1 {
