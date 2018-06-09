@@ -2,16 +2,15 @@
 layout: base
 permalink: /
 ---
-<section class="cover" id="index_cover">
-	<div class="container-fullwidth">
-		<div class="headline">
-			<h1>Too much of a person</h1>
-		</div>		
-		<div class="tagline">
-			<h1>Taking up all the space</h1>
-		</div>
-	</div>
-</section>
+
+<div id="overlay" onclick="off()">
+  <div id="text">Overlay Text</div>
+</div>
+
+<div style="padding:20px">
+  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA" width="560" height="315" %}
+</div>
+
 
 <section class="quotation" id="index_quotation">
     <div class="container">

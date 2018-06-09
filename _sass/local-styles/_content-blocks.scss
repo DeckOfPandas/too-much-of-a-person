@@ -119,19 +119,55 @@ hr {
 
 // BLOCKS
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 120px;
-    height: 0;
+.video-holder {
+  position: relative; 
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
 }
 
-.overlay {
+.video-holder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+
+#overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index:99;
     margin: 0px;      
-    h1, h2 {
+    h1 {
         color: $antiflash_white;
         background: $nearly_black;
         font-size: 10em;
