@@ -1,14 +1,21 @@
 name: Too Much of a Person
+
+title: Too Much of a Person
+
 baseurl: "/too-much-of-a-person/"
-url: "https://deckofpandas.github.io/"
+
 markdown: kramdown
 # kramdown: 
 #  parse_block_html: true
+
 highlighter: rouge
+
 sass:
     style: compressed
+
 plugins:
   - jekyll-redirect-from
+
 future: true
 
 collections:
