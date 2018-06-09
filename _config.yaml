@@ -1,6 +1,6 @@
 name: Too Much of a Person
-baseurl: "/too-much-of-a-person/"
-url: "https://deckofpandas.github.io/"
+baseurl: "/"
+url: "https://smiley-crocodile.cloudvent.net"
 markdown: kramdown
 # kramdown: 
 #  parse_block_html: true
