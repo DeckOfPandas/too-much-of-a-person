@@ -13,18 +13,18 @@ npm install
 # Build the site.
 gulp
 
-# Checkout `master` and remove everything.
-git clone https://${GH_TOKEN}@github.com/DeckOfPandas/too-much-of-a-person.github.io.git ../too-much-of-a-person.github.io.master
-cd ../too-much-of-a-person.github.io.master
+# Checkout master and remove everything
+git clone https://github.com/DeckOfPandas/too-much-of-a-person.git ../too-much-of-a-person.master
+cd ../too-much-of-a-person.master
 git checkout master
 rm -rf *
 
-# Copy generated HTML site from source branch in original repository.
-# Now the `master` branch will contain only the contents of the _site directory.
-cp -R ../too-much-of-a-person.github.io/_site/* .
+# Copy generated HTML site from source branch in original repo.
+# Now the master branch will contain only the contents of the _site directory.
+cp -R ../too-much-of-a-person/_site/* .
 
 # Make sure we have the updated .travis.yml file so tests won't run on master.
-cp ../too-much-of-a-person.github.io/.travis.yml .
+cp ../too-much-of-a-person/.travis.yml .
 git config user.email ${GH_EMAIL}
 git config user.name "tmoap-bot"
 
