@@ -14,7 +14,7 @@ paths.postFolderName   = '_posts';
 paths.draftFolderName  = '_drafts';
 paths.fontFolderName   = 'fonts';
 paths.imageFolderName  = 'images';
-paths.scriptFolderName = 'js';
+paths.scriptFolderName = 'scripts';
 paths.stylesFolderName = 'styles';
 
 // Asset files locations.

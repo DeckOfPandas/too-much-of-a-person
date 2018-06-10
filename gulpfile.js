@@ -111,17 +111,8 @@ gulp.task('clean:images', function(callback) {
 });
 
 // Copies fonts.
-gulp.task('build:fonts', ['fontawesome','couture']);
+gulp.task('build:fonts', ['couture']);
 
-// Places Font Awesome fonts in proper location.
-gulp.task('fontawesome', function() {
-    return gulp.src(paths.fontFiles + '/font-awesome/**.*')
-        .pipe(rename(function(path) {path.dirname = '';}))
-        .pipe(gulp.dest(paths.jekyllFontFiles))
-        .pipe(gulp.dest(paths.siteFontFiles))
-        .pipe(browserSync.stream())
-        .on('error', gutil.log);
-});
 
 // Places Couture fonts in proper location.
 gulp.task('couture', function() {
@@ -237,7 +228,7 @@ gulp.task('serve', ['build:local'], function() {
     gulp.watch('_assets/styles/**/*.scss', ['build:styles']);
 
       // Watch .js files.
-      gulp.watch('_assets/js/**/*.js', ['build:scripts:watch']);
+      gulp.watch('_assets/scripts/**/*.js', ['build:scripts:watch']);
 
       // Watch image files; changes are piped to browserSync.
       gulp.watch('_assets/images/**/*', ['build:images']);
