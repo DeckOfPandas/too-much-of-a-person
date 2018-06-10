@@ -105,6 +105,9 @@ hr {
     border: 0;
 }
 
+.fa, .fas {
+    color: $base_text;
+}
 
 // BLOCKS
 
@@ -318,9 +321,6 @@ hr {
         width: 100%;
         margin-top: 10px;
     }
-    .fa {
-        color: $base_text;
-    }
     blockquote {
         padding: 0;
         margin: 0 15%;
@@ -421,10 +421,10 @@ hr {
         color: $footer_link_hover_color;
     }
     .left {
-        .fa::before {
+        .fa::before, .fas::before  {
             color: $footer_link_color;
         }
-        .fa:hover::before{
+        .fa:hover::before, .fas:hover::before {
             color: $footer_link_hover_color;
         }    
     }

@@ -5,15 +5,18 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $burger_button_text;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     background: $burger_button_bg;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 2px;
     width: 90px;
     float: right;
     margin: 30px 15px 25px 15px;
     display: none;
-    .fa {
-        margin: 0 10px 0 0;
+    .fa, .fas {
+        margin: 0 8px 0 0;
+        color: $burger_button_text;
     }
 }
 
