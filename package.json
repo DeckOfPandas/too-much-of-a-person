@@ -1,0 +1,46 @@
+{
+  "name": "too-much-of-a-person",
+  "version": "1.0.0",
+  "description": "Too Much of a Person",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeckOfPandas/too-much-of-a-person.git"
+  },
+  "keywords": [
+    "toomuch",
+    "feminism",
+    "everydayfeminism",
+    "women",
+    "strong",
+    "power"
+  ],
+  "author": "Helen Jackson, @DeckOfPandas",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DeckOfPandas/too-much-of-a-person/issues"
+  },
+  "homepage": "https://github.com/DeckOfPandas/too-much-of-a-person#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.6.2",
+    "browser-sync": "^2.24.4",
+    "child_process": "^1.0.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-run": "^1.7.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.2.1"
+  }
+}

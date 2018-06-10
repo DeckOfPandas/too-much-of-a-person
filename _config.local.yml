@@ -1,0 +1,35 @@
+name: Too Much of a Person
+
+baseurl: ""
+
+url: "http://localhost:3000/"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
+
+future: true
+
+collections:
+  interviews:
+    output: true
+    permalink: /:collection/:path    
+  events:
+    output: true
+    permalink: /:collection/:year/:month/:title
+  blog:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title
+  sponsors:
+    output: false
+
+# Exclude the following from the Jekyll build process.
+# Note: "vendor" is for Travis CI.
+exclude: ["vendor",
+          "_assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json"]
