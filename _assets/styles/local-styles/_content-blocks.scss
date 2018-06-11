@@ -13,7 +13,7 @@ hr {
 
 body {
     background: $base_bg;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     line-height: 1.42857143;
     margin: 0;
     background-color: $outer_bg;
@@ -31,7 +31,6 @@ a.anchor {
 
 .container, .container-midwidth, container-fullwidth {
     display: block;
-    max-width: 1170px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -47,6 +46,10 @@ a.anchor {
 
 .container-fullwidth {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5, p {
     padding: 0;
 }
 h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
@@ -122,72 +125,87 @@ hr {
 
 // BLOCKS
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 120px;
-    height: 0;
-}
 
-.overlay {
-    width: 100%;
-    height: auto;
-    z-index:99;
-    margin: 0px;      
-    h1, h2 {
-        color: $antiflash_white;
-        background: $nearly_black;
-        font-size: 10em;
-        letter-spacing: -0.005em;
-        line-height: 0.85em;
-        font-family: 'Helvetica Neue', sans-serif;
-        font-weight: 900;
-        text-transform: uppercase;
-        padding: 75px 10%;
-    }
-}     
 
 #index_cover {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 95px; 
     padding: 0;
-    .headline, .tagline {
-        margin: 0px auto;
+    #cover_left {
+        background: $headline_bg_color;
+        margin: 0;
+        padding: 0;
         h1 {
-            margin: 0;    
-            padding: 0;              
-        }        
-    }
-    .headline {
-        h1 {
-            padding: 75px 8%;
-            min-width: 760px;
-            background: $headline_bg_color;
+            padding: 10% 6%;
             color: $headline_color;
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
             text-transform: uppercase;
-            font-size: 10em;
+            font-size: 4.5em;
             font-weight: 900;
             line-height: 0.85em;
             letter-spacing: -0.02em;  
-        } 
+            @media screen and (min-width: 487px) and (max-width: 767px) {
+                font-size: 6em;
+                padding: 1% 5%;
+            }
+            @media screen and (max-width: 486px) {
+                font-size: 5em;
+                padding: 1% 5%;
+            }            
+        }
     }    
-    .tagline {
-        h1 {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            background: $tagline_bg_color;
-            color: $tagline_color;
-            font-family: 'Fredericka the Great', Helvetica, sans-serif;
-            font-size: 4.5em;
-            font-weight: 500;
-            line-height: 0.85em;
+    #cover_right {
+        padding: 0;
+        background-color: $video_bg_color;
+        .videoWrapper {
             text-align: center;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            iframe {
+                margin: 0 auto;
+                height: 100%;               
+            }            
+            @media screen and (min-width: 576px) and (max-width: 767px) {
+                height: 315px;
+                width: 560px;
+            }
+            @media screen and (min-width: 487px) and (max-width: 575px) {
+                height: 265px;
+                iframe {
+                    height: 265px;
+                    width: 471px;
+                }
+            }   
+            @media screen and (max-width: 486px) {
+                height: 265px;
+                iframe {
+                    height: 265px;
+                    width: 100%;
+                }
+            }                            
         }
     }
 }   
+
+
+
+#index_tagline {
+    margin: -54px auto 0 auto;
+    background: $tagline_bg_color;
+    h1 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: $tagline_color;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 5em;
+        font-weight: 500;
+        line-height: 0.85em;
+        text-align: center;
+    }    
+}
 
 #index_quotation {
     background: $index_quotation_bg_color;
@@ -219,7 +237,7 @@ hr {
     }
     .words {
         text-align: center;
-        font-family: "Helvetica Neue", sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
         font-size: 1.5em;
         font-weight: 500;
         margin: 0 60px 0 80px !important;
@@ -306,7 +324,7 @@ hr {
         font-size: calc(10px + 14vmin);
         letter-spacing: -0.07em;
         line-height: 0.9em;
-        font-family: 'Helvetica Neue', sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
         font-weight: 900;
         text-transform: uppercase;
         max-width: 80%;
