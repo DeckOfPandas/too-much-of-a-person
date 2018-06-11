@@ -2,19 +2,19 @@
 #  href: "/"
 
 - title: "About"
-  href: "/#about"
+  href: "/#index_about"
 
 - title: "Interviews"
-  href: "/#interviews"
+  href: "/#index_interviews"
 
 - title: "Events"
-  href: "/#events"
+  href: "/#index_events"
 
-- title: "Blog"
-  href: "/#blog"
+- title: "Team"
+  href: "/#index_team"
 
 - title: "Press / Sponsors"
-  href: "/#press-sponsors"
+  href: "/#index_press-sponsors"
 
 - title: "Contact"
-  href: "/#contact"
+  href: "/#index_contact"
