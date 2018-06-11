@@ -2,5 +2,4 @@
 _site/
 Gemfile.lock
 node_modules
-assets/
 .sass-cache
