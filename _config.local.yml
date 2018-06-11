@@ -1,2 +1,2 @@
-baseurl: ""
-url: "http://localhost:3000"
+baseurl: "/"
+url: "http://localhost:3000/"

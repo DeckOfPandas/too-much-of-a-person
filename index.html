@@ -2,6 +2,7 @@
 layout: base
 permalink: /
 ---
+
 <section class="cover" id="index_cover">
 	<div class="container-fullwidth row">
 		<div class="col-md-5" id="cover_left">
@@ -21,6 +22,13 @@ permalink: /
 	</div>
 </section>
 
+<div id="overlay" onclick="off()">
+  <div id="text">Overlay Text</div>
+</div>
+
+<div style="padding:20px">
+  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA" width="560" height="315" %}
+</div>
 
 <section class="quotation" id="index_quotation">
     <div class="container">
