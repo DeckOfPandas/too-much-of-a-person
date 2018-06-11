@@ -97,6 +97,9 @@ p, ul, ol {
     @media screen and (max-width: 760px){
         width: auto;
     }
+    .indent {
+
+    }
 }
 .top {
         margin-top: 0 !important;
@@ -251,7 +254,6 @@ hr {
     blockquote {
         padding: 0;
         margin: 0;
-        border-left: 10px solid $line_color;    
         font-style: italic;
     }
     .words {
@@ -290,10 +292,23 @@ hr {
 
 #index_press-sponsors {
     background: $index_press-sponsors_bg_color;    
+    h1 {
+        color: $index_dark_bg_title_color;
+    }    
 }
 
 #index_contact {
-    background: $index_contact_bg_color;    
+    background: $index_contact_bg_color;  
+    .big_thing {
+        display: inline-block;
+        padding: 40px 0px;
+    }
+    .fas, .fab {
+        font-size: 5em;
+        &:hover {
+            color: $nasturcian_flower;
+        }
+    }  
 }
 
 
