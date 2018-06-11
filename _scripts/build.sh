@@ -14,7 +14,7 @@ npm install
 gulp
 
 # Checkout master and remove everything
-https://${GH_TOKEN}@github.com/DeckOfPandas/too-much-of-a-person.git ../too-much-of-a-person.master
+git clone https://${GH_TOKEN}@github.com/DeckOfPandas/too-much-of-a-person.git ../too-much-of-a-person.master
 cd ../too-much-of-a-person.master
 git checkout master
 rm -rf *
