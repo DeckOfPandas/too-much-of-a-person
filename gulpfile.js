@@ -225,10 +225,10 @@ gulp.task('serve', ['build:local'], function() {
     gulp.watch(['_config.yml'], ['build:jekyll:watch']);
 
     // Watch .scss files; changes are piped to browserSync.
-    gulp.watch('_assets/styles/**/*.scss', ['build:styles']);
+    gulp.watch('_assets/styles/local-styles/*.scss', ['build:styles']);
 
       // Watch .js files.
-      gulp.watch('_assets/scripts/**/*.js', ['build:scripts:watch']);
+      gulp.watch('_assets/scripts/global/*.js', ['build:scripts:watch']);
 
       // Watch image files; changes are piped to browserSync.
       gulp.watch('_assets/images/**/*', ['build:images']);
