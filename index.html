@@ -4,31 +4,16 @@ permalink: /
 ---
 
 <section class="cover" id="index_cover">
-	<div class="container-fullwidth row">
-		<div class="col-md-5" id="cover_left">
-			<h1>Too much of a person</h1>
-		</div>
-		<div class="col-md-7" id="cover_right">
-			<div class="videoWrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/s-OJoLnkEoA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-		</div>
+	<div class="container-fullwidth">
+	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA" width="560" height="315" string="Too Much of a Person"%}
 	</div>
 </section>
 
-<section class="tagline" id="index_tagline">
-	<div class="container-fullwidth">
+<section>
+	<div class="container-fullwidth" id="index_tagline">
 		<h1>Taking up all the space</h1>
 	</div>
 </section>
-
-<div id="overlay" onclick="off()">
-  <div id="text">Overlay Text</div>
-</div>
-
-<div style="padding:20px">
-  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA" width="560" height="315" %}
-</div>
 
 <section class="quotation" id="index_quotation">
     <div class="container">
