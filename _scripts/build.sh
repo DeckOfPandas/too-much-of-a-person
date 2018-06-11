@@ -14,7 +14,7 @@ npm install
 gulp
 
 # Checkout master and remove everything
-git clone https://github.com/DeckOfPandas/too-much-of-a-person.git ../too-much-of-a-person.master
+git clone git@github.com:DeckOfPandas/too-much-of-a-person.git ../too-much-of-a-person.master
 cd ../too-much-of-a-person.master
 git checkout master
 rm -rf *
@@ -33,4 +33,4 @@ git status
 git add -A .
 git status
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push origin master > /dev/null
+git push origin master
