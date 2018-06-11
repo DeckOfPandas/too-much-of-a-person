@@ -5,7 +5,7 @@ var cleancss     = require('gulp-clean-css');
 var concat       = require('gulp-concat');
 var del          = require('del');
 var gulp         = require('gulp');
-var gutil        = require('gulp-util');
+var log          = require('fancy-log');
 var imagemin     = require('gulp-imagemin');
 var notify       = require('gulp-notify');
 var postcss      = require('gulp-postcss');
@@ -29,7 +29,7 @@ gulp.task('build:styles:main', function() {
         .pipe(gulp.dest(paths.jekyllCssFiles))
         .pipe(gulp.dest(paths.siteCssFiles))
         .pipe(browserSync.stream())
-        .on('error', gutil.log);
+        .on('error', log.error());
 });
 
 // // Processes critical CSS, to be included in head.html.
@@ -41,7 +41,7 @@ gulp.task('build:styles:main', function() {
 //     }).pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
 //         .pipe(cleancss())
 //         .pipe(gulp.dest('_includes'))
-//         .on('error', gutil.log);
+//         .on('error', log.error());
 // });
 
 // Builds all styles.
@@ -66,7 +66,7 @@ gulp.task('build:scripts:global', function() {
         .pipe(uglify())
         .pipe(gulp.dest(paths.jekyllJsFiles))
         .pipe(gulp.dest(paths.siteJsFiles))
-        .on('error', gutil.log);
+        .on('error', log.error());
 });
 
 gulp.task('clean:scripts', function(callback) {
@@ -85,7 +85,7 @@ gulp.task('build:scripts:leaflet', function() {
         .pipe(uglify())
         .pipe(gulp.dest(paths.jekyllJsFiles))
         .pipe(gulp.dest(paths.siteJsFiles))
-        .on('error', gutil.log);
+        .on('error', log.error());
 });
 
 gulp.task('clean:scripts:leaflet', function(callback) {
@@ -121,7 +121,7 @@ gulp.task('couture', function() {
         .pipe(gulp.dest(paths.jekyllFontFiles))
         .pipe(gulp.dest(paths.siteFontFiles))
         .pipe(browserSync.stream())
-        .on('error', gutil.log);
+        .on('error', log.error());
 });
 
 // Cleans fonts
@@ -136,25 +136,25 @@ gulp.task('build:jekyll', function() {
 
     return gulp.src('')
         .pipe(run(shellCommand))
-        .on('error', gutil.log);
+        .on('error', log.error());
 });
 
-// // Runs jekyll build command using test config.
-// gulp.task('build:jekyll:test', function() {
-//     var shellCommand = 'bundle exec jekyll build --config _config.yml,_config.test.yml';
-
-//     return gulp.src('')
-//         .pipe(run(shellCommand))
-//         .on('error', gutil.log);
-// });
-
-// Runs jekyll build command using local config.
-gulp.task('build:jekyll:local', function() {
-    var shellCommand = 'bundle exec jekyll build --config _config.local.yml';
+// Runs jekyll build command using test config.
+gulp.task('build:jekyll:test', function() {
+    var shellCommand = 'bundle exec jekyll build --config _config.yml,_config.test.yml';
 
     return gulp.src('')
         .pipe(run(shellCommand))
-        .on('error', gutil.log);
+        .on('error', log.error());
+});
+
+// Runs jekyll build command using local config.
+gulp.task('build:jekyll:local', function() {
+    var shellCommand = 'bundle exec jekyll build --config _config.dev.yml';
+
+    return gulp.src('')
+        .pipe(run(shellCommand))
+        .on('error', log.error());
 });
 
 // Deletes the entire _site directory.
@@ -178,13 +178,13 @@ gulp.task('build', function(callback) {
         callback);
 });
 
-// // Builds site anew using test config.
-// gulp.task('build:test', function(callback) {
-//     runSequence('clean',
-//         ['build:scripts', 'build:images', 'build:styles', 'build:fonts'],
-//         'build:jekyll:test',
-//         callback);
-// });
+// Builds site anew using test config.
+gulp.task('build:test', function(callback) {
+    runSequence('clean',
+        ['build:scripts', 'build:images', 'build:styles', 'build:fonts'],
+        'build:jekyll:test',
+        callback);
+});
 
 // Builds site anew using local config.
 gulp.task('build:local', function(callback) {
@@ -260,5 +260,5 @@ gulp.task('update:bundle', function() {
         .pipe(run('bundle install'))
         .pipe(run('bundle update'))
         .pipe(notify({ message: 'Bundle Update Complete' }))
-        .on('error', gutil.log);
+        .on('error', log.error());
 });
