@@ -31,6 +31,7 @@ git config user.name "tmoap-bot"
 # Commit and push generated content to `master` branch.
 git status
 git add -A .
+git add -f assets/
 git status
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push origin master
