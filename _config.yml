@@ -1,8 +1,7 @@
 name: Too Much of a Person
 
-baseurl: ""
-
-url: "http://localhost:3000/"
+baseurl: "/too-much-of-a-person/"
+url: "https://deckofpandas.github.io/"
 
 markdown: kramdown
 
