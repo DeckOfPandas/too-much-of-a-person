@@ -1,10 +1,8 @@
 @import "local-styles/variables";
 
-// SET UP OUR COLORS
+// *** BASE THINGS *** //
 
-// BASE THINGS
-
-//$max_width: 928px; // TODO This is based on the width of the title image atm...
+// ALL PAGES
 
 $outer_bg: $antiflash_white;
 $base_bg: $antiflash_white;
@@ -13,27 +11,15 @@ $link_color: $watermelon;
 $link_hover_color: $coral;
 $link_active_color: $coral;
 
-$line_color: $bay_wharf_grey;
 
-
-// RANDOM OBJECTS
-
-$tag_color: $prestige_blue;
-$tag_bg_color: $orig_golden_sand;
-$tag_hover_color: $orig_golden_sand;
-$tag_bg_hover_color: $bay_wharf_grey;
-
-$email: $periwinkle;
-
-
-// HEADER
+// NAVBAR AND MENU
 
 $navbar_bg: $antiflash_white;
 $navbar_link_color: $nearly_black;
 $navbar_link_hover_color: $antiflash_white;
 $navbar_link_active_color: $watermelon;
 
-$burger_button_bg: $watermelon;
+$burger_button_bg: $nasturcian_flower;
 $burger_button_text: $antiflash_white;
 $burger_menu_bg_color: white;
 $burger_menu_bg_hover_color: $antiflash_white;
@@ -41,24 +27,58 @@ $burger_menu_link_color: $nearly_black;
 $burger_menu_link_hover_color: $watermelon;
 
 
-// FOOTER
 
-$footer_bg_color: $nearly_black;
-$footer_text_color: $antiflash_white;
-$footer_link_color: $antiflash_white;
-$footer_link_hover_color: $watermelon;
+//*** HOME PAGE SECTIONS *** //
 
 
-// HOME PAGE
+// COVER
 
-$home_title_text: $nearly_black;
-$home_title_background: url('/too-much-of-a-person/assets/images/headers/placeholder_header_img_small.jpg' ); // TODO remove tmoap dir from filepath for github !!!!
+$headline_bg_color: #000;
+$headline_color: $antiflash_white;
+$tagline_bg_color: $harley_davidson_orange;
+$tagline_color: $antiflash_white;
 
 
-// BANNERS 
+// QUOTATION
 
-$banner_bg: $nearly_black; 
-$banner_text: $antiflash_white;
+$index_quotation_bg_color: $antiflash_white;
+
+
+// ABOUT
+
+$index_about_bg_color: $city_lights_grey;
+
+
+// INTERVIEWS
+
+$index_interviews_bg_color: $harley_davidson_orange;
+
+
+// EVENTS
+
+$index_events_bg_color: $antiflash_white;
+
+
+// TEAM
+
+$index_team_bg_color: $city_lights_grey;
+
+
+// PRESS / SPONSORS
+
+$index_press-sponsors_bg_color: $harley_davidson_orange;
+
+
+// CONTACT
+
+$index_contact_bg_color: $antiflash_white;
+
+
+// TEXT
+
+$index_dark_bg_title_color: $antiflash_white;
+
+
 
 
 // BUTTONS
@@ -74,3 +94,26 @@ $btn_info_bg: $twinkle_blue;
 $btn_info_border: $twinkle_blue;
 $btn_info_hover: $saturated_sky;
 
+
+// FOOTER
+
+$footer_bg_color: $nearly_black;
+$footer_text_color: $antiflash_white;
+$footer_link_color: $antiflash_white;
+$footer_link_hover_color: $watermelon;
+
+
+
+
+// *** GENERAL OBJECTS *** //
+
+$tag_color: $prestige_blue;
+$tag_bg_color: $orig_golden_sand;
+$tag_hover_color: $orig_golden_sand;
+$tag_bg_hover_color: $bay_wharf_grey;
+
+$header_card_text: $base_text;
+
+$line_color: $bay_wharf_grey;
+
+$email: $periwinkle;

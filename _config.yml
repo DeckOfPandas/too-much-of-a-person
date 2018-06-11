@@ -17,11 +17,8 @@ collections:
   events:
     output: true
     permalink: /:collection/:year/:month/:title
-  blog:
-    output: true
-    permalink: /:collection/:year/:month/:day/:title
   sponsors:
-    output: false
+    output: true
 
 # Exclude the following from the Jekyll build process.
 # Note: "vendor" is for Travis CI.
