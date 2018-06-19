@@ -148,9 +148,9 @@ gulp.task('build:jekyll:test', function() {
         .on('error', log.error());
 });
 
-// Runs jekyll build command using local config.
+// Runs jekyll build command using local dev config.
 gulp.task('build:jekyll:local', function() {
-    var shellCommand = 'bundle exec jekyll build --config _config.dev.yml';
+    var shellCommand = 'bundle exec jekyll build --config _config.yml,_config.dev.yml';
 
     return gulp.src('')
         .pipe(run(shellCommand))
