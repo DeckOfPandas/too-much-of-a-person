@@ -322,11 +322,13 @@ hr {
 .interview_list_container {
     list-style: none;
     text-transform: uppercase;
+    margin-bottom: 80px;
 }
 
 .interview_list_result_container {
     display: inline-block;
     vertical-align: top;
+    text-transform: uppercase;
     span {
         display: block;
     }
@@ -340,7 +342,23 @@ hr {
         margin-top: 10px;
         line-height: 1.8em; 
         text-align: left;
-    }       
+    }
+    .quotation {
+        text-transform: none;
+        font-style: italic;
+        font-size: 1.1em;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 10px;
+    }             
+    .fa {
+        font-size: 0.7em;
+        vertical-align: top;
+    }
+}
+
+.section_head {
+    background: $white;   
 }
 
 .main_photo > img {
@@ -350,6 +368,7 @@ hr {
 #generic-header-card {
     display: block;
     position: relative;
+    margin-top: 95px;
     height: auto;
     background: rgba(255,255,255,1.0);
     color: $base_text;
