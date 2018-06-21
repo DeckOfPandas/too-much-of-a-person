@@ -23,9 +23,6 @@ body {
     }
 }
 
-.center {
-    text-align: center !important;
-}
 a.anchor {
     display: block;
     position: relative;
@@ -55,25 +52,12 @@ a.anchor {
     padding-right: 0;
 }
 
-.container_section {
-    padding-top: 30px;
-    padding-bottom: 80px;
-    h1 {
-        font-size: 3em;
-        margin-bottom: 1em;
-    }
-}
-
-.container_thing {
-    padding: 0;
-}
-
 h1, h2, h3, h4, h5, p {
     margin-bottom: 24px;
     padding: 0;
 }
 h1 {
-    font-family: Couture, sans-serif !important;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
@@ -94,7 +78,7 @@ h5 {
 
 a, a:visited {
     color: $link_color;
-    font-weight: 900;
+    font-weight: 700;
     margin:0;
     padding:0;
     text-decoration:none;
@@ -102,7 +86,6 @@ a, a:visited {
 }
 a:hover {
     color: $link_hover_color;
-    text-decoration: none;
 }
 
 p, ul, ol {
@@ -169,21 +152,31 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $headline_bg_color;
+    background-color: rgba(0,0,0,0.2);
     z-index: 1;
     cursor: pointer;
     h1 {
         margin: 0;
         padding: 8vw;
         color: $headline_color;
-        font-family: Couture, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
         text-transform: uppercase;
         font-size: 15vw;
         font-weight: 900;
-        line-height: 0.85em;
-        letter-spacing: -0.015em;  
+        line-height: 0.8em;
+        letter-spacing: -0.02em;  
     }
 }
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+} 
 
 #index_cover {
     display: block;
@@ -191,7 +184,35 @@ hr {
     margin: 0;
     margin-top: 95px; 
     padding: 0;
+    #cover_left {
+        background: $headline_bg_color;
+        margin: 0;
+        padding: 0;
+        h1 {
+            padding: 10% 6%;
+            color: $headline_color;
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 4.5em;
+            font-weight: 900;
+            line-height: 0.85em;
+            letter-spacing: -0.02em;  
+            @media screen and (min-width: 487px) and (max-width: 767px) {
+                font-size: 6em;
+                padding: 1% 5%;
+            }
+            @media screen and (max-width: 486px) {
+                font-size: 5em;
+                padding: 1% 5%;
+            }            
+        }
+    }    
+    #cover_right {
+        padding: 0;
+        background-color: $video_bg_color;
+    }
 }   
+
 
 
 #index_tagline {
@@ -200,7 +221,7 @@ hr {
         margin: 0;
         color: $tagline_color;
         text-align: center;
-        font-family: Couture, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
         font-size: 7vw;
         font-weight: 700;
         letter-spacing: 0.01em;
@@ -237,6 +258,7 @@ hr {
     }
     .words {
         text-align: center;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
         font-size: 1.5em;
         font-weight: 500;
         margin: 0 60px 0 80px !important;
@@ -268,60 +290,6 @@ hr {
     background: $index_team_bg_color;    
 }
 
-.member {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    padding: 20px 0;
-    border: 20px solid $index_team_bg_color;
-    background: $team_cards_color;
-    img {
-        padding: 0;
-        margin: 0;
-        /*-webkit-transition: all 200ms linear;
-        -o-transition: all 200ms linear;
-        transition: all 200ms linear;
-        &:hover {
-          opacity: 0;
-          filter: alpha(opacity=0);
-        }*/
-    }
-    .member_lhs, .member_rhs {
-        position: relative;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        vertical-align: middle;
-    }
-    .member_rhs {
-        padding: 10px 0 5px 10px;
-        vertical-align: middle;
-    }
-    .name {
-       font-size: 1.8em;
-    }
-    .role {
-       font-size: 1.2em;
-       margin-bottom: 20px;
-    }
-    a {
-        display: inline-block;
-    }    
-    .fas, .fab {
-        font-size: 1.2em;
-        padding: 0;
-        margin: 0 5px;
-        &:hover {
-            color: $icon_hover_color;
-            text-decoration: none;
-        }
-    }  
-    a, a:visited {
-        color: $base_text;
-    }
-}
-
 #index_press-sponsors {
     background: $index_press-sponsors_bg_color;    
     h1 {
@@ -331,20 +299,16 @@ hr {
 
 #index_contact {
     background: $index_contact_bg_color;  
-    a .fas, a .fab {
+    .big_thing {
         display: inline-block;
-        font-size: 6em;
-        margin-top: 20px;
-        margin-bottom: 60px;
+        padding: 40px 0px;
     }
     .fas, .fab {
+        font-size: 5em;
         &:hover {
-            color: $icon_hover_color;
+            color: $nasturcian_flower;
         }
     }  
-    a, a:visited {
-        color: $icon_color;
-    }
 }
 
 
@@ -413,7 +377,7 @@ hr {
         font-size: calc(10px + 14vmin);
         letter-spacing: -0.07em;
         line-height: 0.9em;
-        font-family: Couture, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
         font-weight: 900;
         text-transform: uppercase;
         max-width: 80%;
@@ -574,12 +538,5 @@ hr {
         color: #999999;
         font-size: 13px;
         text-align: center;
-    }
-}
-
-.btn {
-    .fas, .fab {
-        color: $btn_text;
-        margin-left: 10px;
     }
 }

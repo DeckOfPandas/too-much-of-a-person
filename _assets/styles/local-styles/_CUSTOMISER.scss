@@ -7,26 +7,24 @@
 $outer_bg: $antiflash_white;
 $base_bg: $antiflash_white;
 $base_text: $nearly_black;
-
 $link_color: $watermelon;
-$link_hover_color: $orig_golden_sand;
-$link_active_color: $orig_golden_sand;
-$icon_color: $base-text;
-$icon_hover_color: $diana_red;
+$link_hover_color: $coral;
+$link_active_color: $coral;
+
 
 // NAVBAR AND MENU
 
-$navbar_bg: #fff;
+$navbar_bg: $antiflash_white;
 $navbar_link_color: $nearly_black;
-$navbar_link_hover_color: $navbar_bg;
-$navbar_link_active_color: $diana_red;
+$navbar_link_hover_color: $antiflash_white;
+$navbar_link_active_color: $watermelon;
 
-$burger_button_bg: $diana_red;
-$burger_button_text: #fff;
-$burger_menu_bg_color: #fff;
+$burger_button_bg: $nasturcian_flower;
+$burger_button_text: $antiflash_white;
+$burger_menu_bg_color: white;
 $burger_menu_bg_hover_color: $antiflash_white;
 $burger_menu_link_color: $nearly_black;
-$burger_menu_link_hover_color: $diana_red;
+$burger_menu_link_hover_color: $watermelon;
 
 
 
@@ -35,10 +33,10 @@ $burger_menu_link_hover_color: $diana_red;
 
 // COVER
 
-$headline_bg_color: rgba(0,0,0,0.2);
+$headline_bg_color: $antiflash_white; // NOT CURRENTLY USED
 $headline_color: $antiflash_white;
 $video_bg_color: $nearly_black;
-$tagline_bg_color: $pomegranate;
+$tagline_bg_color: $nearly_black;
 $tagline_color: $antiflash_white;
 
 
@@ -54,7 +52,7 @@ $index_about_bg_color: $city_lights_grey;
 
 // INTERVIEWS
 
-$index_interviews_bg_color: $pomegranate;
+$index_interviews_bg_color: $harley_davidson_orange;
 
 
 // EVENTS
@@ -65,12 +63,11 @@ $index_events_bg_color: $antiflash_white;
 // TEAM
 
 $index_team_bg_color: $city_lights_grey;
-$team_cards_color: $antiflash_white;
 
 
 // PRESS / SPONSORS
 
-$index_press-sponsors_bg_color: $pomegranate;
+$index_press-sponsors_bg_color: $harley_davidson_orange;
 
 
 // CONTACT
@@ -104,7 +101,7 @@ $btn_info_hover: $saturated_sky;
 $footer_bg_color: $nearly_black;
 $footer_text_color: $antiflash_white;
 $footer_link_color: $antiflash_white;
-$footer_link_hover_color: $nasturcian_flower;
+$footer_link_hover_color: $watermelon;
 
 
 
