@@ -94,13 +94,13 @@ $navbar-height: 75px;
         margin: 0 10px 0 0;
         color: $burger_button_text;
     }
-    @media screen and (max-width: 740px){
+    @media screen and (max-width: 846px){
         display: block;
     }
 }
 
 /*Responsive Styles*/
-@media screen and (max-width: 740px){
+@media screen and (max-width: 846px){
     .header {
         input[type=checkbox]:checked ~ ul{
             display: inline-block;

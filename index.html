@@ -1,41 +1,52 @@
 ---
 layout: base
 permalink: /
-
 team:
   - {
-      name: "jam",
-      photo: "helen.jpg",
-      role: "role",
+      name: "Diana Patient",
+      role: "Founder & Creative Director",
+      photo: "diana_patient.jpg",
       social: {
-          facebook: "https://www.facebook.com/helenmaryjackson", 
-          twitter: "https://twitter.com/deckofpandas",
-          linkedin: "https://uk.linkedin.com/in/helenmaryjackson",
-          github: "https://github.com/DeckOfPandas"
+        email: diana@toomuchofaperson.com
           }
- 	}
+    }
   - {
-      name: "llama",
-      photo: "helen.jpg",
-      role: "role",
+      name: "Sunaina Dasgupta",
+      role: "Strategy & Operations Director",
+      photo: "sunaina_dasgupta.jpg",
       social: {
-          linkedin: "https://uk.linkedin.com/in/helenmaryjackson"
+        email: sunaina@toomuchofaperson.com
           }
- 	} 	
+    }	
   - {
-      name: "balloon",
-      photo: "helen.jpg",
-      role: "role",
+      name: "Amanda Dawn",
+      role: "Story Seekers",
+      photo: "amanda_dawn.jpg",
       social: {
-          twitter: "https://twitter.com/deckofpandas",
-          linkedin: "https://uk.linkedin.com/in/helenmaryjackson"
+        email: amanda@toomuchofaperson.com
           }
- 	}
+     }	
+  - {
+      name: "Emma Lock",
+      role: "Story Seekers",
+      photo: "emma_lock.jpg",
+      social: {
+        email: emma@toomuchofaperson.com
+          }
+    }	
+  - {
+      name: "Junia Bashiru",
+      role: "Social Media Video Editor",
+      photo: "junia_bashiru.jpg",
+      social: {
+        email: junia@toomuchofaperson.com
+          }
+    }	
 ---
 
 <section class="cover" id="index_cover">
 	<div class="container-fullwidth">
-	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA" width="560" height="315" string="Too Much of a Person"%}
+	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" width="560" height="315" string="Too Much of a Person"%}
 	</div>
 </section>
 
@@ -49,7 +60,7 @@ team:
     <div class="container">
     	<blockquote>
 	    	<p class="left">	
-		    	<i class="fa fa-quote-left fa-3x left"></i>
+		    	<i class="fa fa-quote-left"></i>
 		    </p>
 			<div class="words">
 				<div class="left">They said I was:</div>
@@ -62,7 +73,7 @@ team:
 				<div class="right">I'm just too much of a person</div>
 			</div>
 		    <p class="right">	
-		    	<i class="fa fa-quote-right fa-3x"></i>
+		    	<i class="fa fa-quote-right"></i>
 		    </p>
 	    </blockquote>
     </div>
@@ -83,7 +94,7 @@ team:
 </section>
 
 <a class="anchor">
-<section class="container_section" id="index_interviews"></a>
+<section class="container_section" id="index_interviews" style="background: url('/assets/images/backgrounds/interviews_letterbox.jpg');background-repeat: no-repeat;background-size:auto 100%;"></a>
 	<div class="container">
 		<h1>Interviews</h1>
 		<p>Coming soon...</p>
@@ -107,7 +118,7 @@ team:
 </section>
 
 <a class="anchor">
-<section class="container_section" id="index_press-sponsors"></a>
+<section class="container_section" id="index_press-sponsors" style="background: url('/assets/images/backgrounds/press_letterbox.jpg');background-repeat: no-repeat;background-size:auto 100%;"></a>
 	<div class="container">
 		<h1>Press / Sponsors</h1>
 		<p>For press and media enquiries, please contact us at <a href="">email address</a>.</p>		
@@ -118,15 +129,15 @@ team:
 <section class="container container_section" id="index_contact"></a>		
 	<h1>Contact</h1>
 		<div class="container">
-			<h3>Want to participate in the project?</h3>
-			<div class="center" style="margin-top: 40px;">
+			<h3>Want to participate in the project? Sign up now using our online calendar:</h3>
+			<div class="center" style="margin-top: 40px; margin-bottom: 80px;">
 				{% include cta_participate.html %}
 			</div>
 		</div>
 	</div>
 	<div class="container center">
 		<div class="row">
-			<a class="col-md-3 col-sm-6" href="mailto:YOUR_EMAIL_ADDRESS" target="new"><i class="fas fa-envelope"></i></a>
+			<a class="col-md-3 col-sm-6" href="mailto:diana@toomuchofaperson.com" target="new"><i class="fas fa-envelope"></i></a>
 			<a class="col-md-3 col-sm-6" href="https://instagram.com/toomuchofaperson/" target="new"><i class="fab fa-instagram"></i></a>
 			<a class="col-md-3 col-sm-6" href="https://twitter.com/tmoaptweets/" target="new"><i class="fab fa-twitter"></i></a>
 			<a class="col-md-3 col-sm-6" href="https://facebook.com/tmoap/" target="new"><i class="fab fa-facebook"></i></a>
@@ -134,3 +145,21 @@ team:
 		</div>
 	</div>
 </section>
+
+
+
+
+
+<!--
+	Turns out commenting stuff out in html is much easier than in yaml....
+	->
+
+  - {
+      name: "balloon",
+      photo: "example.jpg",
+      role: "role",
+      social: {
+          twitter: "https://twitter.com/deckofpandas",
+          linkedin: "https://uk.linkedin.com/in/helenmaryjackson"
+          }
+ 	}
