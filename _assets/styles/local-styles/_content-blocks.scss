@@ -164,24 +164,24 @@ hr {
     position: absolute;
     display: block;
     width: 100%;
-    height: 95%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: $headline_bg_color;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     h1 {
         margin: 0;
-        padding: 8vw;
+        padding: 3vw 1vw;
         color: $headline_color;
         font-family: Couture, sans-serif;
         text-transform: uppercase;
-        font-size: 15vw;
+        font-size: 18vw;
         font-weight: 900;
-        line-height: 0.85em;
-        letter-spacing: -0.015em;  
+        line-height: 0.9em;
+        letter-spacing: -0.03em;  
     }
 }
 
@@ -209,17 +209,14 @@ hr {
 }
 
 #index_quotation {
-    background: $index_quotation_bg_color;
-    &.small {
-        font-size: 0.5em;
-        .words > p {
-            line-height: 1.3em;
-        }
-    }     
+    background: $index_quotation_bg_color;     
     p {
         width: 100%;
         margin: 0;
         line-height: 0.8em;
+    .fa {
+        font-size: 8vmin;
+    }
     }
     p.left {
         text-align: left;
@@ -237,7 +234,7 @@ hr {
     }
     .words {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 4vmin;
         font-weight: 500;
         margin: 0 60px 0 80px !important;
         > .left {
@@ -254,14 +251,17 @@ hr {
 }
 
 #index_interviews {
-    background: $index_interviews_bg_color;   
+    background: $index_interviews_bg_color;
     h1 {
-        color: $index_dark_bg_title_color;
+        color: $index_interviews_title_color;
     }
 }
 
 #index_events {
     background: $index_events_bg_color;
+    h1 {
+        color: $index_events_title_color;
+    }
 }
 
 #index_team {
@@ -325,7 +325,7 @@ hr {
 #index_press-sponsors {
     background: $index_press-sponsors_bg_color;    
     h1 {
-        color: $index_dark_bg_title_color;
+        color: $index_press-sponsors_title_color;
     }    
 }
 
