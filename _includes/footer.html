@@ -1,28 +1,15 @@
-<section class="footer content_no_padding">
-    <div class="body">
-        <div class="left">
-                <h3>Contact us</h3>
-            <ul>
-                <li><a class="fa fa-envelope" href="#"><span>EMAIL_ADDRESS</span></a></li>
-                <li><a class="fa fa-twitter-square" href="https://twitter.com/#"><span>TWITTER</span></a></li>
-                <li><a class="fa fa-facebook-square" href="https://facebook.com/#"><span>FACEBOOK</span></a></li>
-            </p>
-        </div>
-        <div class="center">
-            <h3>Twitter timeline</h3>
-            <a class="twitter-timeline" data-height="250" data-dnt="true" data-theme="dark" data-link-color="#428bca" href="#">$object</a>
-        </div>
-        <div class="right">
-                <h3>Mailing list</h3>
-                <form class="form" action="#" method="post" target="popupwindow" onsubmit="window.open('#', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-                    <input type="hidden" value="1" name="embed"/>
-                    <input type="email" name="email" placeholder="Your email address"/>
-                    <button type="submit" class="btn btn-success" name="subscribe">Subscribe</button>
-                </form>
-        </div>
+<section class="footer container-fullwidth dark">
+    {% include cta_mailinglist.html %}
+</section>    
+
+<section class="footer container-fullwidth" >
+    <div class="container social_blobs light_icons" style="margin-top:0;padding-bottom:80px;">
+        {% include social_blobs.html %}
     </div>
-    <div class="copyright">
-            &copy; {{ 'now' | date: "%Y" }} <a href="https://github.com/DeckOfPandas/too-much-of-a-person">Source code</a> published under <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a>.
-            Hosted by <a href="https://github.com/">GitHub.</a>
-    </div>
+</section>
+
+<section class="container-fullwidth copyright">
+    &copy; {{ 'now' | date: "%Y" }} <a href="https://github.com/DeckOfPandas/too-much-of-a-person">Source code</a> published under <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a>.
+    <br>
+    Hosted by <a href="https://github.com/">GitHub Pages.</a>
 </section>

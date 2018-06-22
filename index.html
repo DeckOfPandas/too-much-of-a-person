@@ -20,7 +20,7 @@ team:
     }	
   - {
       name: "Amanda Dawn",
-      role: "Story Seekers",
+      role: "Story Seeker",
       photo: "amanda_dawn.jpg",
       social: {
         email: amanda@toomuchofaperson.com
@@ -28,7 +28,7 @@ team:
      }	
   - {
       name: "Emma Lock",
-      role: "Story Seekers",
+      role: "Story Seeker",
       photo: "emma_lock.jpg",
       social: {
         email: emma@toomuchofaperson.com
@@ -46,7 +46,7 @@ team:
 
 <section class="cover" id="index_cover">
 	<div class="container-fullwidth">
-	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" width="560" height="315" string="Too Much of a Person"%}
+	  	{% include video.html url="https://www.youtube.com/embed/Rubv7jM3RB8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1" width="560" height="315" string="Too Much of a Person"%}
 	</div>
 </section>
 
@@ -89,24 +89,40 @@ team:
 		<p>Welcome to the online gallery of this multi-media exhibition. Listen to the powers and waves these extraordinary people are making in the world, and know that you are not alone.</p>
 	</div>
 	<div class="container">
-	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA" width="560" height="315" string=""%}
+	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA?rel=0&amp;showinfo=0" width="560" height="315" string=""%}
 	</div>
 </section>
 
+<section class="container-fullwidth container_section dark" style="padding-bottom: 0;">
+	{% include cta_participate.html %}
+</section>
+
 <a class="anchor">
-<section class="container_section" id="index_interviews" style="background: url('/assets/images/backgrounds/interviews_letterbox.jpg');background-repeat: no-repeat;background-size:auto 100%;"></a>
+<section class="container_section overlay_holder" id="index_interviews" style="background: url('/assets/images/backgrounds/interviews_letterbox.jpg');background-repeat: no-repeat;background-size:cover;"></a>
+	<div class="section_overlay light">
+		<div class="container">
+			<h1>Stories</h1>
+			<p>Coming soon...</p>
+		</div>
+	</div>
+</section>
+
+ <a class="anchor">
+ <section class="container_section" id="index_scribbles"></a>
 	<div class="container">
-		<h1>Interviews</h1>
+		<h1>Scribbles</h1>
 		<p>Coming soon...</p>
 	</div>
 </section>
 
  <a class="anchor">
- <section class="container_section" id="index_events"></a>
-	<div class="container">
-		<h1>Events</h1>
-		<p>Coming soon...</p>
-	</div>
+ <section class="container_section overlay_holder" id="index_events" style="background: url('/assets/images/backgrounds/event_letterbox.jpg');background-repeat: no-repeat;background-size:cover;"></a>
+	<div class="section_overlay heavy">
+		<div class="container">
+			<h1>Events</h1>
+			<p>Coming soon...</p>
+		</div>
+	</div>		
 </section>
 
  <a class="anchor">
@@ -118,48 +134,36 @@ team:
 </section>
 
 <a class="anchor">
-<section class="container_section" id="index_press-sponsors" style="background: url('/assets/images/backgrounds/press_letterbox.jpg');background-repeat: no-repeat;background-size:auto 100%;"></a>
-	<div class="container">
-		<h1>Press / Sponsors</h1>
-		<p>For press and media enquiries, please contact us at <a href="">email address</a>.</p>		
+<section class="container_section overlay_holder" id="index_press-sponsors" style="background: url('/assets/images/backgrounds/press_letterbox.jpg');background-repeat: no-repeat;background-size:cover;padding-bottom: 25vh"></a>
+	<div class="section_overlay light">
+		<div class="container">
+			<h1>Press / Sponsors</h1>
+			<p>For press and media enquiries, please contact us at <a href="mailto:diana@toomuchofaperson.com" target="new">diana@toomuchofaperson.com</a>.</p>
+			<p>&nbsp;</p>
+		</div>
 	</div>
+</section>
+
+<section class="container-fullwidth container_section dark" style="padding-bottom: 0;">
+	{% include cta_participate.html %}
 </section>
 
 <a class="anchor">
 <section class="container container_section" id="index_contact"></a>		
 	<h1>Contact</h1>
-		<div class="container">
-			<h3>Want to participate in the project? Sign up now using our online calendar:</h3>
-			<div class="center" style="margin-top: 40px; margin-bottom: 80px;">
-				{% include cta_participate.html %}
-			</div>
-		</div>
-	</div>
-	<div class="container center">
-		<div class="row">
-			<a class="col-md-3 col-sm-6" href="mailto:diana@toomuchofaperson.com" target="new"><i class="fas fa-envelope"></i></a>
-			<a class="col-md-3 col-sm-6" href="https://instagram.com/toomuchofaperson/" target="new"><i class="fab fa-instagram"></i></a>
-			<a class="col-md-3 col-sm-6" href="https://twitter.com/tmoaptweets/" target="new"><i class="fab fa-twitter"></i></a>
-			<a class="col-md-3 col-sm-6" href="https://facebook.com/tmoap/" target="new"><i class="fab fa-facebook"></i></a>
-			<!--<a href="http://github.com/DeckOfPandas/too-much-of-a-person/" target="new"><i class="fab fa-github"></i></a>-->
-		</div>
+	<div class="container social_blobs">
+		{% include social_blobs.html %}
 	</div>
 </section>
 
-
-
-
-
-<!--
-	Turns out commenting stuff out in html is much easier than in yaml....
-	->
-
-  - {
-      name: "balloon",
-      photo: "example.jpg",
-      role: "role",
-      social: {
-          twitter: "https://twitter.com/deckofpandas",
-          linkedin: "https://uk.linkedin.com/in/helenmaryjackson"
-          }
- 	}
+<a class="anchor">
+<section class="container-fullwidth container_section" id="index_content"></a>	
+	<div class="container our_content">
+		<h3>Our content</h3>
+		<p>Please do share and celebrate Diana's wonderful photographs wherever you like, but make sure you always credit "Too Much of a Person, toomuchofaperson.com" and/or tag us in social media posts.</p>
+		<p>Please don't use these images for commercial purposes without contacting Diana first.</p>
+		<p>Source code for this website is published under the Open licence GPLv3; details are at the bottom of this page.
+		<p>tl;dr: Be respectful!</p>
+	</div>
+</div>
+</section>
