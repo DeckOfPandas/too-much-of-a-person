@@ -80,13 +80,17 @@ h1 {
     margin: 24px auto 18px auto;
 }
 h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 h3 {
-    font-size: 1.4em;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: none;
 }
 h4 {
-    font-size: 1em;
+    font-size: 1.4em;
 }
 h5 {
     font-size: 1em;
@@ -107,15 +111,15 @@ a:hover {
 
 p, ul, ol {
     text-align: justify;
+    @media screen and (max-width: 760px){
+        text-align: left;
+    }
     margin: 30px auto;
     font-size: 1.7em;
     font-weight: 500;
     line-height: 1.5em;        
     @media screen and (max-width: 760px){
         width: auto;
-    }
-    .indent {
-
     }
 }
 .top {
@@ -160,7 +164,7 @@ hr {
     }
 }
 
-#overlay {
+#cover_overlay {
     position: absolute;
     display: block;
     width: 100%;
@@ -234,7 +238,7 @@ hr {
     }
     .words {
         text-align: center;
-        font-size: 4vmin;
+        font-size: 3vmin;
         font-weight: 500;
         margin: 0 60px 0 80px !important;
         > .left {
@@ -248,13 +252,9 @@ hr {
 
 #index_about {
     background: $index_about_bg_color;    
-    p {
-        font-size: 3vw;
-    }    
 }
 
-#index_interviews {
-    background: $index_interviews_bg_color;
+#index_interviews {    
     h1 {
         color: $index_interviews_title_color;
     }
@@ -268,10 +268,42 @@ hr {
 }
 
 #index_events {
-    background: $index_events_bg_color;
     h1 {
         color: $index_events_title_color;
     }
+}
+
+.overlay_holder {
+  position: relative; 
+  width: 100%;
+  height: 0;
+  padding-bottom: 22vh;
+  overflow: hidden;
+}
+
+.section_overlay.light, .section_overlay.mid, .section_overlay.heavy {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.section_overlay.light {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.section_overlay.mid {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.section_overlay.heavy {
+    background-color: rgba(255,255,255,0.5);
 }
 
 #index_team {
@@ -341,23 +373,35 @@ hr {
 
 #index_contact {
     background: $index_contact_bg_color;  
-    a .fas, a .fab {
-        display: inline-block;
-        font-size: 6em;
-        margin-top: 20px;
-        margin-bottom: 60px;
-    }
-    .fas, .fab {
-        &:hover {
-            color: $icon_hover_color;
+    .flex-container {
+        text-align: center;
+        a .fas, a .fab {
+            display: inline-block;
+            font-size: 7em;
         }
-    }  
-    a, a:visited {
-        color: $icon_color;
+        .fas, .fab {
+            &:hover {
+                color: $icon_hover_color;
+            }
+        }  
+        a, a:visited {
+            color: $icon_color;
+        }
     }
 }
 
 
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#index_content {
+    .our_content {
+        font-size: 0.8em;
+    }
+}
 
 .interview_list {
     h1 {
@@ -474,15 +518,9 @@ hr {
     background: $footer_bg_color;
     color: $footer_text_color;
     text-align: center;
-    h1, h2, h3 {
-        text-transform: uppercase;
-    }
-
     @media screen and (max-width: 760px){
         position: relative;
     }
-
-    
     .right {
         padding-left: 30px;
         box-sizing: border-box;
@@ -545,3 +583,5 @@ hr {
         margin-left: 10px;
     }
 }
+
+
