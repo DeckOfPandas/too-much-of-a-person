@@ -241,6 +241,9 @@ hr {
         font-size: 3vmin;
         font-weight: 500;
         margin: 0 60px 0 80px !important;
+        @media screen and (max-width: 760px){
+            margin: 0 20px 0 30px !important;
+        }
         > .left {
             text-align: left !important;
         }
