@@ -371,24 +371,15 @@ hr {
     h1 {
         color: $index_press-sponsors_title_color;
     }    
+    p {
+        text-align: left;
+    }
 }
 
 #index_contact {
     background: $index_contact_bg_color;  
     .flex-container {
         text-align: center;
-        a .fas, a .fab {
-            display: inline-block;
-            font-size: 7em;
-        }
-        .fas, .fab {
-            &:hover {
-                color: $icon_hover_color;
-            }
-        }  
-        a, a:visited {
-            color: $icon_color;
-        }
     }
 }
 
@@ -399,11 +390,6 @@ hr {
   justify-content: space-around;
 }
 
-#index_content {
-    .our_content {
-        font-size: 0.8em;
-    }
-}
 
 .interview_list {
     h1 {
@@ -540,7 +526,7 @@ hr {
         input {
             display: inline-block;
             padding: 5px 16px;
-            width: 100px;
+            length: 150px;
             font-size: 18px;
             line-height: 1.5;
             border: 1px solid transparent;
@@ -567,16 +553,31 @@ hr {
             display: block;
         }
     }
-    .copyright {
-        clear: both;
-        border-top: solid 1px #000;
-        padding: 15px 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        font-weight: 300;
-        color: #999999;
-        font-size: 13px;
-        text-align: center;
-    }
+}
+
+.cta_participate {
+
+}
+
+.cta_mailinglist {
+    padding: 50px 0 80px 0;   
+}
+
+
+#index_content {
+    background-color: $white;
+    font-size: 0.8em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.copyright {
+    clear: both;
+    padding: 15px 0;
+    color: $text_dark_bg;
+    background-color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+    font-size: 0.8em;
 }
 
 .btn {
@@ -586,7 +587,29 @@ hr {
     }
 }
 
+.light_icons {
+    .fa, .fas, .fab {
+        color: $icon_color_light;
+    }
+}
 
-cta_participate {
-    background-color: $cta_participate_bg_color;
+.dark {
+    background-color: $peace_grey;
+}
+
+.social_blobs {
+    margin-top: 80px;
+    margin-bottom: 0;
+    a .fas, a .fab {
+        display: inline-block;
+        font-size: 7em;
+    }
+    .fas, .fab {
+        &:hover {
+            color: $icon_hover_color;
+        }
+    }  
+    a, a:visited {
+        color: $icon_color;
+    }
 }
