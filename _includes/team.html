@@ -8,10 +8,11 @@
 			<div class="name">{{ member.name }}</div>
 	        <div class="role">{{ member.role }}</div>
 			<div class="social">
-	            {% if member.social.facebook %}<a class="fab fa-facebook" href="{{ member.social.facebook }}"></a>{% endif %}
-	            {% if member.social.twitter %}<a class="fab fa-twitter" href="{{ member.social.twitter }}"></a>{% endif %}
-	            {% if member.social.linkedin %}<a class="fab fa-linkedin" href="{{ member.social.linkedin }}"></a>{% endif %}
-	            {% if member.social.github %}<a class="fab fa-github-alt" href="{{ member.social.github }}"></a>{% endif %}
+	            {% if member.social.email %}<a class="fas fa-envelope" href="mailto:{{ member.social.email }}"></a>{% endif %}
+	            {% if member.social.facebook %}<a class="fab fa-facebook" href="mailto:{{ member.social.facebook }}"></a>{% endif %}
+	            {% if member.social.twitter %}<a class="fab fa-twitter" href="mailto:{{ member.social.twitter }}"></a>{% endif %}
+	            {% if member.social.linkedin %}<a class="fab fa-linkedin" href="mailto:{{ member.social.linkedin }}"></a>{% endif %}
+	            {% if member.social.github %}<a class="fab fa-github-alt" href="mailto:{{ member.social.github }}"></a>{% endif %}
 	        </div>	
         </div>		        
 	</div>
