@@ -2,7 +2,7 @@
 {% for member in page.team %}
 	<div class="member col-lg-6 col-md-12" style="text-align: center">
 		<div class="member_lhs col-lg-3 col-md-4 col-sm-5">
-			<img class="name img-fluid" src="/assets/images/team/{{ member.photo | relative_url }}" alt="{{ member.name }}" />
+			<img class="name img-fluid" src="{{ site.baseurl }}assets/images/team/{{ member.photo }}" alt="{{ member.name }}" />
 		</div>
 		<div class="member_rhs col-lg-8 col-md-5 col-sm-6">
 			<div class="name">{{ member.name }}</div>
