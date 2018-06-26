@@ -4,8 +4,11 @@
 - title: "About"
   href: "/#index_about"
 
-- title: "Interviews"
+- title: "Stories"
   href: "/#index_interviews"
+
+- title: "Scribbles"
+  href: "/#index_scribbles"
 
 - title: "Events"
   href: "/#index_events"
