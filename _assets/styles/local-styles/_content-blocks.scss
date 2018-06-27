@@ -23,16 +23,16 @@ body {
     }
 }
 
+.center {
+    text-align: center !important;
+}
+
 :target:before {
   content: '';
   display: block;
   position: relative;
   width: 0; height: 94px;
   margin-top: -94px
-}
-
-.center {
-    text-align: center !important;
 }
 
 .container, .container-midwidth, container-fullwidth {
