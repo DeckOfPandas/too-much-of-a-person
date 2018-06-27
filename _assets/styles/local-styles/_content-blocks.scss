@@ -26,10 +26,13 @@ body {
 .center {
     text-align: center !important;
 }
-a.anchor {
-    display: block;
-    position: relative;
-    top: -95px;
+
+:target:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 0; height: 94px;
+  margin-top: -94px
 }
 
 .container, .container-midwidth, container-fullwidth {
@@ -117,7 +120,7 @@ p, ul, ol {
     margin: 30px auto;
     font-size: 1.7em;
     font-weight: 500;
-    line-height: 1.5em;        
+    line-height: 1.5em;
     @media screen and (max-width: 760px){
         width: auto;
     }
@@ -127,12 +130,12 @@ p, ul, ol {
     }
 .right {
     text-align: right !important;
-}       
+}
 
 li {
     padding-left: 5px;
     p {
-        font-size: 1em; 
+        font-size: 1em;
     }
 }
 
@@ -150,7 +153,7 @@ hr {
 // BLOCKS
 
 .video-holder {
-  position: relative; 
+  position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
@@ -185,7 +188,7 @@ hr {
         font-size: 18vw;
         font-weight: 900;
         line-height: 0.9em;
-        letter-spacing: -0.03em;  
+        letter-spacing: -0.03em;
     }
 }
 
@@ -193,9 +196,9 @@ hr {
     display: block;
     width: 100%;
     margin: 0;
-    margin-top: 95px; 
+    margin-top: 95px;
     padding: 0;
-}   
+}
 
 
 #index_tagline {
@@ -209,11 +212,11 @@ hr {
         font-weight: 700;
         letter-spacing: 0.01em;
         line-height: 1.33em;
-    }    
+    }
 }
 
-#index_quotation {
-    background: $index_quotation_bg_color;     
+.quotation {
+    background: $index_quotation_bg_color;
     p {
         width: 100%;
         margin: 0;
@@ -249,15 +252,15 @@ hr {
         }
         > .right {
             text-align: right !important;
-        }        
-    }   
+        }
+    }
 }
 
 #index_about {
-    background: $index_about_bg_color;    
+    background: $index_about_bg_color;
 }
 
-#index_interviews {    
+#index_interviews {
     h1 {
         color: $index_interviews_title_color;
     }
@@ -278,7 +281,7 @@ hr {
 }
 
 .overlay_holder {
-  position: relative; 
+  position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 22vh;
@@ -298,20 +301,20 @@ hr {
     cursor: pointer;
 }
 
-.section_overlay.light {
+.light {
     background-color: rgba(255,255,255,0.3);
 }
 
-.section_overlay.mid {
+.mid {
     background-color: rgba(255,255,255,0.4);
 }
 
-.section_overlay.heavy {
+.heavy {
     background-color: rgba(255,255,255,0.5);
 }
 
 #index_team {
-    background: $index_team_bg_color;    
+    background: $index_team_bg_color;
 }
 
 .member {
@@ -353,7 +356,7 @@ hr {
     }
     a {
         display: inline-block;
-    }    
+    }
     .fas, .fab {
         font-size: 1.2em;
         padding: 0;
@@ -362,7 +365,7 @@ hr {
             color: $icon_hover_color;
             text-decoration: none;
         }
-    }  
+    }
     a, a:visited {
         color: $base_text;
     }
@@ -371,14 +374,14 @@ hr {
 #index_press-sponsors {
     h1 {
         color: $index_press-sponsors_title_color;
-    }    
+    }
     p {
         text-align: left;
     }
 }
 
 #index_contact {
-    background: $index_contact_bg_color;  
+    background: $index_contact_bg_color;
     .flex-container {
         text-align: center;
     }
@@ -414,12 +417,12 @@ hr {
     img {
         max-width: 100%;
         height: auto;
-    }    
+    }
     .name {
         font-size: 1.3em;
         font-weight: 700;
         margin-top: 10px;
-        line-height: 1.8em; 
+        line-height: 1.8em;
         text-align: left;
     }
     .quotation {
@@ -429,7 +432,7 @@ hr {
         font-weight: 500;
         text-align: left;
         margin-bottom: 10px;
-    }             
+    }
     .fa {
         font-size: 0.7em;
         vertical-align: top;
@@ -437,7 +440,7 @@ hr {
 }
 
 .section_head {
-    background: $white;   
+    background: $white;
 }
 
 .main_photo > img {
@@ -460,11 +463,11 @@ hr {
         font-weight: 900;
         text-transform: uppercase;
         max-width: 80%;
-        margin: 0px auto;   
+        margin: 0px auto;
         padding-top: calc(40px + 2vmax);
         padding-bottom: calc(40px + 2vmax);
     }
-    h2 { 
+    h2 {
         font-size: 2em;
         letter-spacing: 0.15em;
         text-align: right;
@@ -477,11 +480,11 @@ hr {
 
 #tags {
     font-size: 0.65em;
-    line-height: 1.8em; 
+    line-height: 1.8em;
     text-align: left;
     p {
         text-align: center;
-        line-height: 2.2em;         
+        line-height: 2.2em;
     }
     a, a:visited {
         color: $tag_color;
@@ -489,16 +492,16 @@ hr {
         text-transform: uppercase;
         font-weight: 900;
         text-align: left;
-        letter-spacing: 0.15em;   
+        letter-spacing: 0.15em;
         padding: 3px;
         margin-right: 20px;
-    }          
+    }
     a:hover {
         color: $tag_hover_color;
         background: $tag_bg_hover_color;
         text-decoration: none;
-    }  
-}     
+    }
+}
 
 .footer {
     display: block;
@@ -561,7 +564,7 @@ hr {
 }
 
 .cta_mailinglist {
-    padding: 50px 0 80px 0;   
+    padding: 50px 0 80px 0;
 }
 
 
@@ -609,7 +612,7 @@ hr {
         &:hover {
             color: $icon_hover_color;
         }
-    }  
+    }
     a, a:visited {
         color: $icon_color;
     }
