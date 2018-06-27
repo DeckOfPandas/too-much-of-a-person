@@ -13,7 +13,7 @@
                 <a href="{{ nav.href | relative_url }}" class="subcategory">{{ nav.title }}</a>
                 {% else %}
                 <a class="subcategory">{{ nav.title }}</a>
-                {% endif %} 
+                {% endif %}
                 <ul>
                 {% for subcategory in nav.subcategories %}
                     <li><a href="{{ subcategory.subhref | relative_url }}">{{ subcategory.subtitle }}</a></li>
@@ -22,10 +22,14 @@
                 </li>
             {% elsif nav.href == page.url %}
                 <li class="active"><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
-            {% else %} 
+            {% else %}
                 <li><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
             {% endif %}
             {% endfor %}
         </ul>
+        <script>
+        document.getElementById("nav").addEventListener("click", menuclick);
+        function menuclick() { document.getElementById("menu-burger").checked = false; }
+        </script>
     </div>
 </section>
