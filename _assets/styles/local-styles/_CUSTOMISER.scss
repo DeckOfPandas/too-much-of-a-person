@@ -10,8 +10,8 @@ $base_text: $nearly_black;
 $header_card_text: $base_text;
 $text_dark_bg: $antiflash_white;
 
-$link_color: $watermelon;
-$link_hover_color: $diana_red;
+$link_color: $diana_red;
+$link_hover_color: $wild_watermelon;
 
 $link_active_color: $orig_golden_sand;
 $icon_color: $base-text;
@@ -76,9 +76,12 @@ $tagline_color: $antiflash_white;
 
 // CTAs
 $cta_participate_bg_color: $peace_grey;
+$cta_participate_text_color: $nearly_black;
+$cta_mailinglist_bg_color: $peace_grey;
+$cta_participate_text_color: $nearly_black;
 
 // QUOTATION
-$index_quotation_bg_color: $antiflash_white;
+$index_quotation_bg_color: $white;
 
 // ABOUT
 $index_about_bg_color: $city_lights_grey;
@@ -87,7 +90,7 @@ $index_about_bg_color: $city_lights_grey;
 $index_interviews_title_color: $nearly_black;
 
 // SCRIBBLES
-$index_scribbles_bg_color: $antiflash_white;
+$index_scribbles_bg_color: $half_white;
 $index_scribbles_title_color: $nearly_black;
 
 // EVENTS
@@ -102,6 +105,10 @@ $index_press-sponsors_title_color: $nearly_black;
 
 // CONTACT
 $index_contact_bg_color: $antiflash_white;
+
+// COPYRIGHT
+$index_copyright_bg_color: $white;
+$index_copyright_text_color: $nearly_black;
 
 
 
