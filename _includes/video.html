@@ -9,7 +9,9 @@
           allow="autoplay; encrypted-media"
           allowfullscreen>
 	</iframe>
-	<div id="cover_overlay">
-		<h1>{{ include.string }}</h1>
-	</div>
+	{% if include.overlay %}
+		<div id="cover_overlay">
+			<h1>{{ include.string }}</h1>
+		</div>
+	{% endif %}
 </div>
