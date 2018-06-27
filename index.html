@@ -47,7 +47,7 @@ team:
 <a id="index_cover"></a>
 <section class="cover">
 	<div class="container-fullwidth">
-	  	{% include video.html url="https://www.youtube.com/embed/Rubv7jM3RB8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1" width="560" height="315" overlay="true" string="Too Much of a Person" %}
+	  	{% include video.html url="https://www.youtube.com/embed/Rubv7jM3RB8?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=1&amp;mute=1" width="560" height="315" overlay="true" string="Too Much of a Person" %}
 	</div>
 </section>
 
@@ -104,7 +104,7 @@ team:
 </section>
 
 <a id="index_scribbles"></a>
-<section class="container_section">
+<section class="container_section scribbles">
 	   <div class="container">
         <h1>Scribbles</h1>
   		  <p>Coming soon...</p>
@@ -112,7 +112,7 @@ team:
  </section>
 
 <a id="index_events"></a>
- <section class="container_section"  style="background-color: rgba(255,255,255,0.6); background-blend-mode: color; background-image: url('{{site.baseurl}}assets/images/backgrounds/event_letterbox.jpg');background-repeat: no-repeat;background-size:cover;">
+ <section class="container_section events"  style="background-color: rgba(255,255,255,0.6); background-blend-mode: color; background-image: url('{{site.baseurl}}assets/images/backgrounds/event_letterbox.jpg');background-repeat: no-repeat;background-size:cover;">
 		<div class="container">
 			<h1>Events</h1>
 			<p>Coming soon...</p>
@@ -120,7 +120,7 @@ team:
 </section>
 
 <a id="index_team"></a>
- <section class="container_section">
+ <section class="container_section team">
 	<div class="container">
 		<h1>Team</h1>
 		{% include team.html %}
@@ -141,15 +141,17 @@ team:
 </section>
 
 <a id="index_contact"></a>
-<section class="container container_section">
-	<h1>Contact</h1>
-	<div class="container social_blobs">
-		{% include social_blobs.html %}
+<section class="container_section contact">
+	<div class="container">
+		<h1>Contact</h1>
+		<div class="container social_blobs">
+			{% include social_blobs.html %}
+		</div>
 	</div>
 </section>
 
 <a id="index_content"></a>
-<section class="container-fullwidth container_section">
+<section class="container-fullwidth container_section copyright_extended">
 	<div class="container our_content">
 		<h3>Our content</h3>
 		<p>Please do share our content and celebrate Diana's wonderful photographs and film wherever you like, but make sure you always credit "Too Much of a Person, toomuchofaperson.com" and/or tag us in social media posts.</p>
