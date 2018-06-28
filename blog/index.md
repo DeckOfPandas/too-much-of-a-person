@@ -53,7 +53,7 @@ permalink: /blog/
 
 <p>Anne Robinson branded me and the Women’s march as “feeble” and displays complete obliviousness to her privilege that gives one the freedom to take those risks. </p>
 
-<p>In reality Anne, ‘The Trouble with Women’ is that you are the weakest link in the fight for equality. Goodbye.</p>
+<p>In reality Anne, ‘The Trouble with Women’ is that mindsets like these are the weakest link in the fight for equality. Goodbye.</p>
 
 </div>
 </div>
