@@ -214,7 +214,7 @@ hr {
         font-family: Couture, sans-serif;
         font-size: 7vw;
         font-weight: 700;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.015em;
         line-height: 1.33em;
     }
 }
@@ -593,7 +593,8 @@ hr {
 .btn {
     font-family: Couture, sans-serif;
     font-weight: 800;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    padding: 5px 20px !important;
     .fas, .fab {
         color: $btn_text;
         margin-left: 10px;

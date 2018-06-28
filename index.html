@@ -109,7 +109,17 @@ team:
 <section class="container_section scribbles">
 	   <div class="container">
         <h1>Scribbles</h1>
-  		  <p>Coming soon...</p>
+  		  <ol class="blog-posts"> 
+		    <li>
+		      <span><a href="blog">That one time Anne Robinson said I was "too feeble"</a></span>
+		      <br><time datetime="{{ 2018-06-15 | date_to_xmlschema }}">{{ "2018-06-15" | date_to_long_string }}</time><span class="author">Sunaina Dasgupta</span>
+		      <p>{{ 
+		      	"On a brisk March morning in London, the ‘Too Much of a Person’ contingent set out to join #March4Women. 
+
+				As the march went on, we noticed women being interviewed for a BBC documentary on ‘equality’. D mentioned to me that the interviewer was Anne Robinson. We saw it as an opportunity to raise awareness for our project, so I charged ahead and introduced myself."
+				 | truncatewords:30 | strip_html }}</p>
+		    </li>
+		</ol>
     </div>
  </section>
 
@@ -153,11 +163,11 @@ team:
 
 <a id="index_content"></a>
 <section class="container-fullwidth container_section copyright_extended">
-	<div class="container our_content" style="font-size:0.9em">
+	<div class="container our_content">
 		<h3>Our content</h3>
-		<p>Please do share our content and celebrate Diana's wonderful photographs and film wherever you like, but make sure you always credit "Too Much of a Person, toomuchofaperson.com" and/or tag us in social media posts.</p>
-		<p>Please don't use these images for commercial purposes without contacting Diana first.</p>
-		<p>Source code for this website is published under the Open licence GPLv3; details are at the bottom of this page.
-		<p>tl;dr: Be respectful!</p>
+		<p style="font-size:0.9em">Please do share our content and celebrate Diana's wonderful photographs and film wherever you like, but make sure you always credit "Too Much of a Person, toomuchofaperson.com" and/or tag us in social media posts.</p>
+		<p style="font-size:0.9em">Please don't use these images for commercial purposes without contacting Diana first.</p>
+		<p style="font-size:0.9em">Source code for this website is published under the Open licence GPLv3; details are at the bottom of this page.
+		<p style="font-size:0.9em">tl;dr: Be respectful!</p>
 	</div>
 </section>
