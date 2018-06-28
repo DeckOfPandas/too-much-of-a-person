@@ -16,7 +16,7 @@
         }
     }
     time {
-        color: #999999;
+        color: $nearly_black;
     }
 }
 
@@ -24,13 +24,84 @@
     list-style: none;
     padding: 0 !important;
     time {
-      float: right;
-      line-height: 2;
+        font-size: 0.6em;
+        font-weight: 500;
+        color: $nearly_black;
+    }    
+    .author {
+        font-size: 0.7em;
+        font-weight: 700;
+        float: right;
+        color: $nearly_black;
     }
-    h3 {
-        margin-bottom: 0;
+    p {
+        font-size: 0.7em;
+        color: $nearly_black;
     }
-    h4 {
-        margin-top: 0;
+}
+
+.blog_page {
+    background-color: $half-white;
+    margin-top: 65px;
+    padding: 30px 40px; 
+}
+
+.flex-container_blog_title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+ .blog_body_img {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.blog_post_title {
+    font-size: calc(10px + 0.75vw);
+    text-align: center;
+    h1 {
+        font-size: calc(28px + 1vw);
+        font-weight: 700;
+        letter-spacing: 0.25em;
+        margin-top: 100px;
+        text-align: left;
+    }    
+    time {
+        vertical-align: middle;
+        font-weight: 500;
+        color: $nearly_black;
+        text-transform: uppercase;
+        letter-spacing: 0.75em;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+    .author {
+        vertical-align: middle;
+        font-weight: 700;
+        color: $nearly_black;
+        text-transform: uppercase;
+        letter-spacing: 0.75em;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    .fa {
+        font-size: calc(8px + 0.75vw);
+        vertical-align: middle;
+        color: #666;
+        margin-left: 30px;
+        margin-right: 38px;   
+        padding: 4px;
+    }
+}
+
+.blog_post_body {
+    p {
+        font-size: calc(14px + 0.75vw);
+        line-height: 1.75em;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }    
+
 }

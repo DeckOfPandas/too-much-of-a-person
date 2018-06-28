@@ -107,7 +107,17 @@ team:
 <section class="container_section scribbles">
 	   <div class="container">
         <h1>Scribbles</h1>
-  		  <p>Coming soon...</p>
+  		  <ol class="blog-posts"> 
+		    <li>
+		      <span><a href="blog">That one time Anne Robinson said I was "too feeble"</a></span>
+		      <br><time datetime="{{ 2018-06-15 | date_to_xmlschema }}">{{ "2018-06-15" | date_to_long_string }}</time><span class="author">Sunaina Dasgupta</span>
+		      <p>{{ 
+		      	"On a brisk March morning in London, the ‘Too Much of a Person’ contingent set out to join #March4Women. 
+
+				As the march went on, we noticed women being interviewed for a BBC documentary on ‘equality’. D mentioned to me that the interviewer was Anne Robinson. We saw it as an opportunity to raise awareness for our project, so I charged ahead and introduced myself."
+				 | truncatewords:30 | strip_html }}</p>
+		    </li>
+		</ol>
     </div>
  </section>
 
