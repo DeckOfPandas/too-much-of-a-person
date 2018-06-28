@@ -7,9 +7,11 @@ This is the source code for the Too Much of a Person project website. The site u
 Source code is licensed under GPLv4. Website content is licensed under CC BY. All IP remains with Too Much of a Person.
 
 ## Overview
-* RAW repo https://github.com/DeckOfPandas/too-much-of-a-person branch `source` --> Travis CI, which pushes built site back to branch `master`
-* `master` is served as a GitHub Pages site -- staging -- with URL: https://deckofpandas.github.io/too-much-of-a-person/
-* Use the staging URL for staging/feedback
+* RAW repo https://github.com/DeckOfPandas/too-much-of-a-person 
+* LIVE repo: https://github.com/too-much-of-a-person/com.toomuchofaperson
+* branch `source` of RAW --> Travis CI, built site pushed back to branch `master` of RAW
+* branch `master` of RAW is served as a GitHub Pages site for staging
+* branch `master` of LIVE is served as a GitHub Pages site for final site
 
 ## Raw source code
 RAW repo: https://github.com/DeckOfPandas/too-much-of-a-person branch `source`
@@ -19,11 +21,11 @@ RAW repo: https://github.com/DeckOfPandas/too-much-of-a-person branch `source`
 ## Deployment to staging site (and automated optimisation and testing)
 * Travis CI picks up Pull Requests to https://github.com/DeckOfPandas/too-much-of-a-person
  branch `source`, runs tests, builds the site using gulp, then pushes the build to branch `master`
-* URL: https://deckofpandas.github.io/too-much-of-a-person/
+* Staging URL: https://deckofpandas.github.io/too-much-of-a-person/
 
 ## Deployment to live site
 * Clone https://github.com/DeckOfPandas/too-much-of-a-person branch `master` locally, then push to LIVE repo
-
+* Live URL: 
 
 # Building locally 
 ### Initial setup for first local build
