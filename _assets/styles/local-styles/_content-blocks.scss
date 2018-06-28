@@ -566,8 +566,9 @@ hr {
 
 .cta_mailinglist {
     padding: 50px 0 80px 0 !important;
+    background-color: $cta_mailinglist_bg_color;
+    color: $cta_mailinglist_text_color;
 }
-
 
 #index_content {
     background-color: $white;
