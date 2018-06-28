@@ -17,7 +17,7 @@ permalink: /blog/
 
 <div class="container-fullwidth">
 	<div class="blog_post_body">
-<p>On a brisk March morning in London, the ‘Too Much of a Person’ contingent set out to join #March4Women. </p>
+<p>On a brisk March morning in London, the ‘Too Much of a Person’ contingent set out to join #March4Women 2018 which was calling for an end to gender-based discrimination and violence in workplaces all around the world​.</p>
 
 <p>As the march went on, we noticed women being interviewed for a BBC documentary on ‘equality’. D mentioned to me that the interviewer was Anne Robinson. We saw it as an opportunity to raise awareness for our project, so I charged ahead and introduced myself.</p>
 
