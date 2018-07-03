@@ -55,6 +55,13 @@ permalink: /blog/
 
 <p>In reality Anne, ‘The Trouble with Women’ is that mindsets like these are the weakest link in the fight for equality. Goodbye.</p>
 
+<div class="container-fullwidth">
+	<div class="container">
+	  	{% include video.html url="https://giphy.com/embed/xJLNafkD7RGsE" width="480" height="363" %}
+	  	<a href="https://giphy.com/gifs/link-xJLNafkD7RGsE" target="new" style="float:right">via GIPHY</a>
+	</div>
+</div>
+
 </div>
 </div>
 
