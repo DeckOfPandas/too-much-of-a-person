@@ -7,7 +7,8 @@ permalink: /blog/
 <section class="blog_page">
 
 <div class="container">
-	{% for post in site.blog %}
+    {% assign sorted = site.blog | sort: 'date' | reverse %}
+	{% for post in sorted %}
 		<ul class="blog-posts"> 
 		    <li>
 		      <span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
