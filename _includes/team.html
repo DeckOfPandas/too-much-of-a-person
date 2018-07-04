@@ -1,5 +1,6 @@
 <div class="container-fullwidth row">
-{% for member in page.team %}
+{% for member in site.data.team %}
+{{name}}
 	<div class="member col-lg-6 col-md-12" style="text-align: center">
 		<div class="member_lhs col-lg-3 col-md-4 col-sm-5">
 			<img class="name img-fluid" src="{{ site.baseurl }}assets/images/team/{{ member.photo }}" alt="{{ member.name }}" />
@@ -8,11 +9,7 @@
 			<div class="name">{{ member.name }}</div>
 	        <div class="role">{{ member.role }}</div>
 			<div class="social">
-	            {% if member.social.email %}<a class="fas fa-envelope" href="mailto:{{ member.social.email }}" target="new"></a>{% endif %}
-	            {% if member.social.facebook %}<a class="fab fa-facebook" href="mailto:{{ member.social.facebook }}" target="new"></a>{% endif %}
-	            {% if member.social.twitter %}<a class="fab fa-twitter" href="mailto:{{ member.social.twitter }}" target="new"></a>{% endif %}
-	            {% if member.social.linkedin %}<a class="fab fa-linkedin" href="mailto:{{ member.social.linkedin }}" target="new"></a>{% endif %}
-	            {% if member.social.github %}<a class="fab fa-github-alt" href="mailto:{{ member.social.github }}" target="new"></a>{% endif %}
+	            {% if member.email %}<a class="fas fa-envelope" href="mailto:{{ member.social.email }}" target="new"></a>{% endif %}	            
 	        </div>	
         </div>		        
 	</div>
