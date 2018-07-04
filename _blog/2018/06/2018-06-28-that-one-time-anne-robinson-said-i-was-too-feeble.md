@@ -2,7 +2,7 @@
 layout: blog_post
 title:  "That one time Anne Robinson said I was \"too feeble\""
 author: "Sunaina Dasgupta"
-date:   2018/06/15
+date:   2018/06/28
 post_number: 1
 ---
 
@@ -18,7 +18,7 @@ This internal conflict resulted in a hesitant response of - “I think so…”
 
 My teammate E, confidently responded that she was a warrior. Anne then demanded that we provide her with evidence of how we were warriors. What risks had we taken recently? Do we ask our male colleagues what they earn and demand our employers pay us equally? Would we be marching into our bosses offices the next day demanding a pay rise?
 
-<div class="container-fullwidth">
+<div class="container-fullwidth center">
 	<img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/1-2.jpg" />
 </div>
 
