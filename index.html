@@ -68,8 +68,9 @@ permalink: /
 <a id="index_scribbles"></a>
 <section class="container_section scribbles">
    <div class="container">
-    <h1>Scribbles</h1>
-    {% for post in site.blog %}
+	<h1>Scribbles</h1>
+    {% assign sorted = site.blog | sort: 'date' | reverse %}
+	{% for post in sorted %}
 		<ul class="blog-posts"> 
 		    <li>
 		      <span><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
