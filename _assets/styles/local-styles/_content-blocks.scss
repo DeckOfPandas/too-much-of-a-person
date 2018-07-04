@@ -276,7 +276,7 @@ hr {
     h1 {
         color: $index_scribbles_title_color;
     }
-    padding-bottom: 48px;
+    padding-bottom: 0px; // this is taken care of by the margin on li objects 
 }
 
 .events {
@@ -627,5 +627,17 @@ hr {
     }
     a, a:visited {
         color: $icon_color;
+    }
+}
+
+.section_subtitle {
+    text-align: left;
+    margin-top: -2em; // HAXXXX margin-bottom of h1 above is 1.5em, then there are divs
+    margin-bottom: 2.5em; // HAXXXX making up for losing space above
+    span {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.2em;
     }
 }

@@ -13,10 +13,13 @@ future: true
 collections:
   interviews:
     output: true
-    permalink: /:collection/:path    
+    permalink: /:collection/:path/
   events:
     output: true
-    permalink: /:collection/:year/:month/:title
+    permalink: /:collection/:year/:month/:title/
+  blog:
+    output: true
+    permalink: /:collection/:year/:month/:title/
   sponsors:
     output: true
 

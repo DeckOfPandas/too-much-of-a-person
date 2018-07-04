@@ -39,6 +39,9 @@
         color: $nearly_black;
         text-align: left;
     }
+    li {
+        margin: 2.5em auto;
+    }
 }
 
 .blog_page {
@@ -52,9 +55,9 @@
   flex-flow: row wrap;
   justify-content: space-between;
 }
+
  .blog_body_img {
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin: 60px auto 80px auto;
 }
 
 .blog_post_title {
@@ -64,8 +67,8 @@
         font-size: calc(28px + 1vw);
         font-weight: 700;
         letter-spacing: 0.25em;
-        margin-top: 100px;
-        text-align: left;
+        margin: 100px auto 0.67em auto;
+        text-align: center;
     }    
     time {
         vertical-align: middle;
@@ -105,4 +108,12 @@
         margin-bottom: 40px;
     }    
 
+}
+
+.blog_image_credit {
+    text-align: center;
+    margin-top: -70px; // image has bottom margin of 80px
+    span {
+        font-size: 0.75em;
+    }
 }
