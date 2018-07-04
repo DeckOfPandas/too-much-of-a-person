@@ -276,7 +276,7 @@ hr {
     h1 {
         color: $index_scribbles_title_color;
     }
-    padding-bottom: 48px;
+    padding-bottom: 0px; // this is taken care of by the margin on li objects 
 }
 
 .events {
