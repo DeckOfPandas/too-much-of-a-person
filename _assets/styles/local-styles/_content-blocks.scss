@@ -156,7 +156,7 @@ hr {
 
 // BLOCKS
 
-.video-holder {
+.video-holder, .audio-holder {
   position: relative;
   width: 100%;
   height: 0;
@@ -265,9 +265,9 @@ hr {
     background: $index_about_bg_color;
 }
 
-#index_interviews {
+#index_stories {
     h1 {
-        color: $index_interviews_title_color;
+        color: $index_stories_title_color;
     }
 }
 
@@ -392,30 +392,71 @@ hr {
     }
 }
 
-
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-
-.interview_list {
+.story_list {
     h1 {
         color: $link_color;
     }
 }
 
-.interview_list_container {
+.story {
+    .row {
+        background-color: $white;
+        margin: 20px auto;
+    }
+    blockquote {
+        width: 100%;
+        padding: 0 1vw;
+        font-size: 2vw;
+        p.left {
+            margin-top: 1em;
+            margin-bottom: 0;
+        }
+        p.words {
+            margin-bottom: 0;
+        }
+        p.right {
+            margin-top: 0.25em;
+            margin-bottom: 0;
+        }
+    }
+    .tag_list {
+        font-size: 1.5vw;
+        padding: 0 1vw;
+    }    
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
+.box {
+    margin: auto;
+    padding: 0;
+}
+
+.story_main_photo {
+    width: 100%; 
+    padding: 0;
+    vertical-align: middle;
+}
+
+.flex-container_blog_title { // HAXXXX does this really need its own class...it can't possibly do...right? Right???
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.story_list_container {
     list-style: none;
     text-transform: uppercase;
     margin-bottom: 80px;
 }
 
-.interview_list_result_container {
+.story_list_result_container {
     display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
+    padding-top: 2em;
     span {
         display: block;
     }
@@ -444,12 +485,33 @@ hr {
     }
 }
 
-.section_head {
-    background: $white;
+.tag_list {
+    font-size: 0.65em;
+    line-height: 1.8em;
+    text-align: left;
+    p {
+        text-align: center;
+        line-height: 2.2em;
+    }
+    a, a:visited {
+        color: $tag_color;
+        background: $tag_bg_color;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: left;
+        letter-spacing: 0.15em;
+        padding: 3px;
+        margin-right: 20px;
+    }
+    a:hover {
+        color: $tag_hover_color;
+        background: $tag_bg_hover_color;
+        text-decoration: none;
+    }
 }
 
-.main_photo > img {
-
+.section_head {
+    background: $white;
 }
 
 #generic-header-card {
@@ -480,31 +542,6 @@ hr {
         margin: 0 auto;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-}
-
-#tags {
-    font-size: 0.65em;
-    line-height: 1.8em;
-    text-align: left;
-    p {
-        text-align: center;
-        line-height: 2.2em;
-    }
-    a, a:visited {
-        color: $tag_color;
-        background: $tag_bg_color;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: left;
-        letter-spacing: 0.15em;
-        padding: 3px;
-        margin-right: 20px;
-    }
-    a:hover {
-        color: $tag_hover_color;
-        background: $tag_bg_hover_color;
-        text-decoration: none;
     }
 }
 

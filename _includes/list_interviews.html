@@ -1,13 +1,13 @@
 <h1>{{ this_tag }}</h1>
-<div class="interview_list">
+<div class="story_list">
 	<ul>
-	{% for interview in site.interviews %}
-		{% if interview.tags contains this_tag %}
+	{% for story in site.stories %}
+		{% if story.tags contains this_tag %}
 			<li>
-                <a href="{{ interview.url | relative_url }}"><img src="{{ interview.thumbnail | relative_url }}" /></a>
-                <div class="name"><a href="{{ interview.url | relative_url }}">{{ interview.interviewee }}</a></div>
+                <a href="{{ story.url | relative_url }}"><img src="{{ story.thumbnail | relative_url }}" /></a>
+                <div class="name"><a href="{{ story.url | relative_url }}">{{ story.storyee }}</a></div>
                 <div class="tags" id="tags">
-                    {% for tag in interview.tags %}   
+                    {% for tag in story.tags %}   
                         <a href="" class="tag">{{ tag }}</a>
                     {% endfor %}
                 </div>

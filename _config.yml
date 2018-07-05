@@ -11,7 +11,7 @@ plugins:
 future: true
 
 collections:
-  interviews:
+  stories:
     output: true
     permalink: /:collection/:path/
   events:

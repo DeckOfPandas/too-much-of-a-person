@@ -8,7 +8,7 @@ post_number: 1
 
 On a brisk March morning in London, the ‘Too Much of a Person’ contingent set out to join #March4Women 2018 which was calling for an end to gender-based discrimination and violence in workplaces all around the world​.
 
-As the march went on, we noticed women being interviewed for a BBC documentary on ‘equality’. D mentioned to me that the interviewer was Anne Robinson. We saw it as an opportunity to raise awareness for our project, so I charged ahead and introduced myself.
+As the march went on, we noticed women being storyed for a BBC documentary on ‘equality’. D mentioned to me that the storyer was Anne Robinson. We saw it as an opportunity to raise awareness for our project, so I charged ahead and introduced myself.
 
 Anne asked me if I was a “WARRIOR”. I hesitated, the Product Manager in me wondered what the criteria (success/failure metrics) were to qualify as a warrior? The dreamer within me had already played a montage of me as Wonder Woman saving the world in my head- it was glorious.
 
