@@ -456,7 +456,10 @@ hr {
     display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
-    padding-top: 2em;
+    background-color: $white;
+    .bottom_section {
+        padding: 1em 1.5em 0 1.5em;
+    }
     span {
         display: block;
     }
@@ -465,9 +468,8 @@ hr {
         height: auto;
     }
     .name {
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: 700;
-        margin-top: 10px;
         line-height: 1.8em;
         text-align: left;
     }

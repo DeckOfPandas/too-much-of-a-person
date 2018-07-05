@@ -13,19 +13,21 @@ layout: default
 				<span>
 					<a href="{{ story.url | relative_url }}"><img src="{{ story.matrix_photo | relative_url }}" class="img-fluid" /></a>
 				</span>
-				<span class="name">
-					<a href="{{ story.url | relative_url }}">{{ story.storyee }}</a>
-				</span>
-		    	<span class="quotation">
-			    	<i class="fa fa-quote-left"></i>
-				    {{ story.quotation }}
-					<i class="fa fa-quote-right"></i>
-			    </span>
-			    <p class="tag_list">
-			    	{% for tag in story.tags %}
-			    		<a href="#">{{ tag }}</a>
-		    		{% endfor %}
-		    	</p>
+				<div class="bottom_section">
+					<span class="name">
+						<a href="{{ story.url | relative_url }}">{{ story.storyee }}</a>
+					</span>
+			    	<span class="quotation">
+				    	<i class="fa fa-quote-left"></i>
+					    {{ story.quotation }}
+						<i class="fa fa-quote-right"></i>
+				    </span>
+				    <p class="tag_list">
+				    	{% for tag in story.tags %}
+				    		<a href="#">{{ tag }}</a>
+			    		{% endfor %}
+			    	</p>
+			    </div>
 			</div>
 		{% endfor%}
 	</div>
