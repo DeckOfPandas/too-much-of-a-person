@@ -9,11 +9,14 @@ layout: default
 <section class="content" id="story_list">
 	<div class="story_list_container">
 		{% for story in site.stories %}
-			<div class="story_list_result_container col-xs-12">
-				<span>
-					<a href="{{ story.url | relative_url }}"><img src="{{ story.matrix_photo | relative_url }}" class="img-fluid" /></a>
-				</span>
-				<div class="bottom_section">
+		<div class="row story_list_result_container">
+			<div class="container box col-sm-12">
+				<div class="box">
+					<img src="{{ story.matrix_photo | relative_url }}" class="story_matrix_photo img-fluid" />
+				</div>
+			</div>
+			<div>
+				<div class="container box col-sm-12 bottom_section">
 					<span class="name">
 						<a href="{{ story.url | relative_url }}">{{ story.storyee }}</a>
 					</span>
@@ -29,6 +32,7 @@ layout: default
 			    	</p>
 			    </div>
 			</div>
+		</div>
 		{% endfor%}
 	</div>
 </section>

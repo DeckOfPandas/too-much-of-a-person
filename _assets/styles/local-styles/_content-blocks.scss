@@ -271,6 +271,10 @@ hr {
     }
 }
 
+#smaller_tags {
+    font-size: 1vw;
+}
+
 .scribbles {
     background: $index_scribbles_bg_color;
     h1 {
@@ -434,7 +438,7 @@ hr {
     padding: 0;
 }
 
-.story_main_photo {
+.story_main_photo, story_matrix_photo {
     width: 100%; 
     padding: 0;
     vertical-align: middle;
@@ -456,9 +460,9 @@ hr {
     display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
-    background-color: $white;
     .bottom_section {
-        padding: 1em 1.5em 0 1.5em;
+        padding: 1em 1.5em 0.25em 1.5em;
+        background-color: $white;
     }
     span {
         display: block;
@@ -485,10 +489,13 @@ hr {
         font-size: 0.7em;
         vertical-align: top;
     }
+    .tag_list {
+        font-size: 1.5vw;
+        padding: 0;
+    }  
 }
 
 .tag_list {
-    font-size: 0.65em;
     line-height: 1.8em;
     text-align: left;
     p {
@@ -669,7 +676,7 @@ hr {
     }
 }
 
-.section_subtitle {
+.section_subtitle, .section_endtext {
     text-align: left;
     margin-top: -2em; // HAXXXX margin-bottom of h1 above is 1.5em, then there are divs
     margin-bottom: 2.5em; // HAXXXX making up for losing space above
