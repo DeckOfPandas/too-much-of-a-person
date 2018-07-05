@@ -70,5 +70,8 @@ url: "https://deckofpandas.github.io"
 baseurl: "/"
 url: "http://localhost:3000/"
 ```
-* Live site TODO
-* I have included `_config.dev.yml` as well as `_config.yml` to cover
+* Live site 
+```
+baseurl: "/"
+url: "http://toomuchofaperson.com"
+```
