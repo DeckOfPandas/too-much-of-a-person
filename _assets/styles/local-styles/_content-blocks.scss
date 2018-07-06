@@ -392,14 +392,6 @@ hr {
     }
 }
 
-
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-
 .interview_list {
     h1 {
         color: $link_color;
@@ -630,14 +622,35 @@ hr {
     }
 }
 
-.section_subtitle {
+.section_subtitle, .section_subtitle_under_image {
     text-align: left;
-    margin-top: -2em; // HAXXXX margin-bottom of h1 above is 1.5em, then there are divs
-    margin-bottom: 2.5em; // HAXXXX making up for losing space above
     span {
         font-size: 1em;
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 0.2em;
     }
+}
+
+.section_subtitle {
+    margin-top: -2em; // HAXXXX margin-bottom of h1 above is 1.5em, then there are divs
+    margin-bottom: 2.5em; // HAXXXX making up for losing space above
+}
+    
+.section_subtitle_under_image {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-container_centered {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-bewteen;
 }

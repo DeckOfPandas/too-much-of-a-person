@@ -72,7 +72,7 @@ permalink: /
 	<div class="section_subtitle"><span>Updated every Thursday</span></div>
     {% assign sorted = site.blog | sort: 'date' | reverse %}
 	{% for post in sorted %}
-		<ul class="blog-posts"> 
+		<ul class="blog_archive_list"> 
 		    <li>
 		      <span><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
 		      <br><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time><span class="author">{{ post.author }}</span>
