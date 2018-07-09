@@ -41,8 +41,11 @@
 .blog_archive_list {
     list-style: none;
     padding: 0 !important;
+    .blog_list_title {
+        font-size: 0.9em;
+    }
     time {
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: 200;
         color: $nearly_black;
         text-transform: uppercase;
@@ -50,7 +53,7 @@
         letter-spacing: 0.05em;
     }    
     .author {
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: 700;
         float: right;
         color: $nearly_black;
@@ -62,7 +65,7 @@
         vertical-align: bottom;
     }
     p {
-        font-size: 0.6em;
+        font-size: 0.5em;
         color: $nearly_black;
         text-align: left;
     }
@@ -151,10 +154,10 @@
 }
 
 .blog_footer {
-    background-color: $blog_footer_bg_color;
     .row {
         width: 100%;
         margin: 0;
+        background-color: $blog_footer_bg_color;
     }
 }
 
@@ -162,7 +165,6 @@
     display: inline-block; 
     margin: 0 auto;   
     line-height: 3em;
-    background: green;
     .fa, .fas {
         color: $link_color;
         vertical-align: middle;

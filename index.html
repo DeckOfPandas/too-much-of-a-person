@@ -67,21 +67,22 @@ permalink: /
 
 <a id="index_scribbles"></a>
 <section class="container_section scribbles">
-   <div class="container">
-	<h1>Scribbles</h1>
-	<div class="section_subtitle"><span>Updated every Thursday</span></div>
-    {% assign sorted = site.blog | sort: 'date' | reverse %}
-	{% for post in sorted %}
-		<ul class="blog_archive_list"> 
-		    <li>
-		      <span><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></span>
-		      <br><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time><span class="author">{{ post.author }}</span>
-		      <p>{{ post.content | truncatewords:40 | strip_html }}</p>
-		    </li>
-		</ul>
-	{% endfor %}
+	<div class="container">
+		<h1>Scribbles</h1>
+		<div class="section_subtitle">
+			<span>Updated every Thursday</span>
+		</div>
+		<div class="small">
+			{% include blog_list.html %}
+			{% include dotdotdot.html %}
+		</div>
+		<div class="blog_footer right small">
+			<a class="blog_nav_link archive" href="{{ site.url | relative_url }}/blog">
+				archive:<i class="fas fa-angle-double-right"></i>
+			</a>
+		</div>
 	</div>
- </section>
+</section>
 
 <a id="index_events"></a>
 <section class="container_section events"  style="background-image: url('{{site.baseurl}}assets/images/backgrounds/event_letterbox.jpg');background-repeat: no-repeat;background-size:cover;padding-top:80px;padding-bottom:80px;">
