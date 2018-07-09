@@ -74,12 +74,10 @@ permalink: /
 		</div>
 		<div class="small">
 			{% include blog_list.html %}
-			{% include dotdotdot.html %}
 		</div>
+		{% include dotdotdot.html %}
 		<div class="blog_footer right small">
-			<a class="blog_nav_link archive" href="{{ site.url | absolute_url }}/blog">
-				archive:<i class="fas fa-angle-double-right"></i>
-			</a>
+			{% include blog_footer.html %}
 		</div>
 	</div>
 </section>

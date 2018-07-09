@@ -15,33 +15,16 @@ layout: page_no_header
 	<div class="container-fullwidth blog_header_img">
 		<img class="img-fluid" width="100%" src="{{site.baseurl}}assets/images/blog/{{ page.post_number }}-1.jpg" />
 	</div>
-
 	<div class="flex-container_blog_title blog_title">
 		<h1>{{ page.title }}</h1>
 		<span class="author">:Sunaina Dasgupta:</span><time datetime="{{ 2018-06-15 | date_to_xmlschema }}">:{{ "2018-06-15" | date_to_long_string }}:</time>
 	</div>
-
 	<div class="container-fullwidth blog_body">
 		<div class="container">
 			{{ content }}
 		</div>
 	</div>
-
 	<div class="container-fullwidth blog_footer center">
-		<div class="row">
-			<a class="blog_nav_link prev" href="{{ page.previous.url | relative_url }}">
-				{% if page.previous.url %}
-					<i class="fas fa-angle-double-left"></i>:
-				{% endif %}
-			</a>
-			<a class="blog_nav_link archive" href="{{ site.url | relative_url }}/blog">
-				:archive:
-			</a>
-			<a class="blog_nav_link next" href="{{ page.next.url | relative_url }}">	
-				{% if page.next.url %}
-					:<i class="fas fa-angle-double-right"></i>
-				{% endif %}
-			</a>
-		</div>	
+		{% include blog_footer.html %}
 	</div>
 </section>
