@@ -3,7 +3,7 @@ layout: page_no_header
 ---
 <dl class="metadata">
     <dt>Published:</dt>
-    <dd><time pubdate datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time></dd>
+    <dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></dd>
     <dt>Author:</dt>
     {% for person in page.authors %}
     <dd class="author"><a rel="author" href="{{ person.url }}" target="_blank">{{ person.name }}</a></dd>
@@ -17,12 +17,17 @@ layout: page_no_header
 	</div>
 	<div class="flex-container_blog_title blog_title">
 		<h1>{{ page.title }}</h1>
-		<span class="author">:Sunaina Dasgupta:</span><time datetime="{{ 2018-06-15 | date_to_xmlschema }}">:{{ "2018-06-15" | date_to_long_string }}:</time>
+		<span class="author">:{{ page.author }}:</span><time datetime="{{ page.date | date_to_xmlschema }}">:{{ page.date | date_to_long_string }}:</time>
 	</div>
 	<div class="container-fullwidth blog_body">
 		<div class="container">
 			{{ content }}
 		</div>
+		{% if page.author_credit %}
+			<div class="container author_credit">
+				{{ page.author_credit }}
+			</div>
+		{% endif %}
 	</div>
 	<div class="container-fullwidth blog_footer center">
 		{% include blog_footer.html %}
