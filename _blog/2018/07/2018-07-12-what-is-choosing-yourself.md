@@ -1,0 +1,20 @@
+---
+layout: blog_post
+title:  "What is 'Choosing Yourself'?"
+author: "Ellen Nguyen"
+date:   2018/07/12
+author_credit: "Ellen Nguyen is a Vietnamese writer based in London. She's the founder of TinglyMind.com - an online publication dedicated to the unfiltered experiences of being human, especially of young adults, in modern society."
+post_number: 3
+---
+
+To choose yourself means living life at your own pace. When someone tells you, you’re too young, too old, or you two are at different stages of life, don’t disagree with them. Don’t defend yourself. Let them have their judgment. Maybe, really, you’re too young or too old or will never seem right for them. It’s okay because everyone has their own perspective. Accept their perspective and understand that it doesn’t change anything about you inherently as a person. You’re still a whole entity, not too little, not too much, just what it is, right where you’re supposed to be right now. Choose yourself means respecting the stage you’re at in life and making decisions based on your own perspective of what’s good or bad, who’s young or old FOR YOU, not forcing yourself to fit with others.
+
+To choose yourself means focusing on your own happiness and navigating towards what adds positivity to your life without hesitance. Ask yourself what your needs and wants are, and commit to fulfilling them. Make it a priority to keep yourself happy and clear your headspace of anything that doesn’t. When you know what will serve your benefits in the long-term even though doing it will be hard at first, just do it. Push yourself through it anyway. Train yourself to do the harder yet better things and let go of anyone or anything that constantly brings you more sorrow than happiness. It doesn’t matter if that anyone or anything is your bestfriend, your 10-year relationship, your dream, or even your family. Your life starts with you and it can’t continue without you — you must take care of yourself.
+
+<div class="container-fullwidth center">
+	<img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/3-2.jpg" />
+</div>
+
+To choose yourself means drawing your own boundaries and sticking to them at all times. It means standing up for yourself and refusing to negotiate what’s important to you and for your happiness. It means overcoming the fear of confrontation to call out disrespectful behaviours while honouring your unique way of being. Don’t let others dictate what’s okay and normal for you but speak up and step back decidedly when your values are compromised. Acknowledge your thoughts and feelings. Give them the care and respect they deserve and express them to others with confidence and self-compassion. Sometimes this might lead to conflict or disapproval or rejection, but don’t you be afraid. Once you choose yourself and do what’s right for you, the universe will learn how to what’s right for you too and those who don’t will easily be filtered.
+
+To choose yourself means building a life that works best for you. It means believing in your ability when no one else does and embracing every fiber of who you are — even the bits that are ever called too much or not enough. Feel whole no matter how undone you might be in anyone’s eyes. Claim your space. Know you’re enough, more than enough. Even when the whole world says no to you, you keep saying yes to yourself and marching forward. To choose yourself is to break through the limits others put on you and decide for yourself when is enough. Your life is lived by your rules. And your rules are meant to work for you, not against you. Create a world in which you feel true to your core, you feel loved, you feel important, you feel worthy, you feel comfortable, and you feel safe. Choose yourself and keep choosing yourself, the rest will sort itself out.
