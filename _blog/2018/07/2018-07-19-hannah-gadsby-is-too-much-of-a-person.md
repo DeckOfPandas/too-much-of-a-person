@@ -37,7 +37,7 @@ This need -- to shut down and squash those who don’t mould to the cookie cutte
 	- Hannah Gadsby, Nanette
 </div>
 
-A key goal of the ‘Too Much of a Person’ project is to share stories from diverse perspectives and help as many people as possible feel connected and less lonely in their experiences of being called “too <insert adjective here>”
+A key goal of the ‘Too Much of a Person’ project is to share stories from diverse perspectives and help as many people as possible feel connected and less lonely in their experiences of being called “too [insert adjective here]”
 
 Stories like Hannah’s and all of those who have participated in our project need to be heard, felt and understood. These stories have value - they are stories of resilience. We share these stories with you because our stories are your stories. Please help us take care of these stories.
 
