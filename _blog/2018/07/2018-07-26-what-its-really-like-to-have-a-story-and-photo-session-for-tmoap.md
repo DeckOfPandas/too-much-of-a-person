@@ -9,7 +9,7 @@ post_number: 5
 
 After reading a social media post of D’s about this project in November 2017 - I knew that I had to take part, at least as a participant. I told family, friends and strangers about the project and encouraged them to book their sessions.
 
-It took me a while to book my own session - I knew I had to but I’m not quick to share when it puts me in a position of vulnerability and the process of taking photos of myself and then looking at them fills me with dread. 
+It took me a while to book my own session; I knew I had to but I’m not quick to share when it puts me in a position of vulnerability, and the process of taking photos of myself and then looking at them fills me with dread. 
 
 However, this project was important to me and I wasn’t going to let my fears/insecurities get in the way of sharing my story. I can’t remember how and when I finally found the courage to book the session, but I am so glad that I did. The quickest way for me to describe the session would be part photoshoot and part therapy session.
 
@@ -33,16 +33,16 @@ As mentioned above, I absolutely detest looking at pictures of myself and I had 
 
 Diana reassured me that there is no such thing a bad photos, only bad photographers. She then asked me a slightly morbid but incredibly profound question, if this picture was going to be the last ever picture of me, what would I want it to look like?
 
-I wanted it to be a picture where I felt good about myself. I wanted to feel glamorous, strong and confident like all the women on fashion magazine covers. But I struggled to channel that energy. I just didn’t know how to. We pulled out a stack of Vogue and flicked through till we found a photoshoot spread of Zoey Kravitz that I loved and was excited and inspired by. At the end of the shoot - I felt great. For the first time in a really long time, I didn’t care how I looked in the photos, I didn’t ask to see them and honestly, how I looked didn’t matter - which felt amazing. 
+I wanted it to be a picture where I felt good about myself. I wanted to feel glamorous, strong and confident like all the women on fashion magazine covers. But I struggled to channel that energy. I just didn’t know how to. We pulled out a stack of Vogue and flicked through till we found a photoshoot spread of Zoey Kravitz that I loved and was excited and inspired by. At the end of the shoot, I felt great. For the first time in a really long time, I didn’t care how I looked in the photos, I didn’t ask to see them and honestly, how I looked didn’t matter - which felt amazing. 
 
 Post shoot binge: 
-After a long but wonderful photoshoot, we did what all professionals do and binged on some sugar glazed donuts that I had brought to celebrate with. I felt fabulous and for the first time in a very long time I actually look forward to seeing how these photos turn out.
+After a long but wonderful photoshoot, we did what all professionals do and binged on some sugar glazed donuts that I had brought to celebrate with. I felt fabulous and -- so new for me -- I actually look forward to seeing how these photos turn out.
 
 <div class="container-fullwidth center">
 	<a><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/5-4.png" /></a>
 </div>
 
-I would strongly recommend that anyone who has a story to share about being called “too much” to dismiss or conform them, book a session with Diana. This was exactly what I needed to cleanse myself of the past I was holding on to. 
+I would strongly recommend to anyone who has a story to share about being called “too much” to dismiss or conform them that they should book a session with Diana. This was exactly what I needed to cleanse myself of the past I was holding on to. 
 
 Here’s what some of the other participants had to say about their experience: 
 
