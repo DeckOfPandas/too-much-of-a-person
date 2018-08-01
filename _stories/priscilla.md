@@ -4,7 +4,7 @@ storyee: "Priscilla"
 date: 2018-05-01
 quotation: "How sweet the sound of your depth of being met the depth of my being"
 video_youtube: "https://www.youtube.com/embed/s-OJoLnkEoA"
-audio_soundcloud: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/405356919&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+audio: /assets/audio/priscilla.mp3
 matrix_photo: /assets/images/stories/priscilla/matrix.png
 main_photo: /assets/images/stories/priscilla/main.jpg
 photos: 

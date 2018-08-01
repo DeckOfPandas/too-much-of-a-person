@@ -67,34 +67,10 @@ og-image_height: 635
 		<div class="container" style="padding:20px 40px;background-color:rgba(255,255,255,0.6);">
 			<h1>Stories</h1>
 			<div class="section_subtitle"><span>See all <a href="{{ site.url }}/stories">>></a></span></div>
-			<div class="container-fullwidth story_list_container col-sm-12">
-				{% for story in site.stories %}
-				<div class="row story_list_result_container">
-					<div class="container box col-sm-12">
-						<div class="box">
-							<img src="{{ story.matrix_photo | relative_url }}" class="story_matrix_photo img-fluid" />
-						</div>
-					</div>
-					<div>
-						<div class="container box col-sm-12 bottom_section">
-							<span class="name">
-								<a href="{{ story.url | relative_url }}">{{ story.storyee }}</a>
-							</span>
-					    	<span class="quotation">
-						    	<i class="fa fa-quote-left"></i>
-							    {{ story.quotation }}
-								<i class="fa fa-quote-right"></i>
-						    </span>
-						    <p class="tag_list" id="smaller_tags">
-						    	{% for tag in story.tags %}
-						    		<a href="#">{{ tag }}</a>
-					    		{% endfor %}
-					    	</p>
-					    </div>
-					</div>
-				</div>
-				{% endfor%}
+			<div class="small">
+				{% include story_list.html %}
 			</div>
+			{% include dotdotdot.html %}
 			<div class="section_endtext" style="padding-left: 0; padding-top: 1em;">
 				<span>More coming soon</span>
 			</div>

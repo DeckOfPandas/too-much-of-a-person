@@ -403,6 +403,13 @@ hr {
         padding: 1vh 3vw;
         background-color: $white;
     }
+    .story_object_writing {
+        padding: 3vh 3vw;
+        background-color: $white;   
+        .quotation {
+            margin-bottom: calc(24px + 2vw); 
+        }
+    }
     span {
         display: block;
     }
@@ -425,7 +432,11 @@ hr {
         font-size: 0.7em;
         vertical-align: top;
     }
+    .story_player {
+        width: 100%;
+    }
     .tag_list {
+        background-color: $white;
         font-size: calc(8px + 0.5vw); 
         line-height: 2em;
         margin-top: calc(20px + 0.5vw); 
@@ -433,23 +444,7 @@ hr {
         .tag {
             padding: 2px;
         }
-    }  
-    blockquote {
-        width: 100%;
-        padding: 0 1vw;
-        font-size: 2vw;
-        p.left {
-            margin-top: 1em;
-            margin-bottom: 0;
-        }
-        p.words {
-            margin-bottom: 0;
-        }
-        p.right {
-            margin-top: 0.25em;
-            margin-bottom: 0;
-        }
-    } 
+    }
 }
 
 .margin-top-40 {
