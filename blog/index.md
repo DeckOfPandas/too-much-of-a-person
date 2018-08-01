@@ -1,7 +1,7 @@
 ---
 layout: page_no_header
 title: "Scribbles"
-subtitle: ""
+subtitle: "Updated every Thursday"
 permalink: /blog/
 ---
 
@@ -11,7 +11,7 @@ permalink: /blog/
 	</div>		
 	<div class="blog_archive_title">
 		<h1>{{ page.title }}</h1>
-		<span class="author">Updated every Thursday</span>
+		<span class="author">{{ page.subtitle }}</span>
 	</div>
 	<div>
 		{% include blog_list.html %}

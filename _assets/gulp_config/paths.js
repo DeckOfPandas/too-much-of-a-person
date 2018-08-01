@@ -13,6 +13,7 @@ paths.siteAssetsDir   = '_site/assets/'; // The resulting static site's assets.
 paths.postFolderName   = '_posts';
 paths.draftFolderName  = '_drafts';
 paths.fontFolderName   = 'fonts';
+paths.audioFolderName   = 'audio';
 paths.imageFolderName  = 'images';
 paths.scriptFolderName = 'scripts';
 paths.stylesFolderName = 'styles';
@@ -22,6 +23,7 @@ paths.sassFiles   = paths.assetsDir + paths.stylesFolderName;
 paths.jsFiles     = paths.assetsDir + paths.scriptFolderName;
 paths.imageFiles  = paths.assetsDir + paths.imageFolderName;
 paths.fontFiles   = paths.assetsDir + paths.fontFolderName;
+paths.audioFiles   = paths.assetsDir + paths.audioFolderName;
 
 // Jekyll files locations.
 paths.jekyllPostFiles  = paths.jekyllDir       + paths.postFolderName;
@@ -30,12 +32,14 @@ paths.jekyllCssFiles   = paths.jekyllAssetsDir + paths.stylesFolderName;
 paths.jekyllJsFiles    = paths.jekyllAssetsDir + paths.scriptFolderName;
 paths.jekyllImageFiles = paths.jekyllAssetsDir + paths.imageFolderName;
 paths.jekyllFontFiles  = paths.jekyllAssetsDir + paths.fontFolderName;
+paths.jekyllAudioFiles  = paths.jekyllAssetsDir + paths.audioFolderName;
 
 // Site files locations.
 paths.siteCssFiles   = paths.siteAssetsDir + paths.stylesFolderName;
 paths.siteJsFiles    = paths.siteAssetsDir + paths.scriptFolderName;
 paths.siteImageFiles = paths.siteAssetsDir + paths.imageFolderName;
 paths.siteFontFiles  = paths.siteAssetsDir + paths.fontFolderName;
+paths.siteAudioFiles  = paths.siteAssetsDir + paths.audioFolderName;
 
 // Glob patterns by file type.
 paths.sassPattern     = '/**/*.scss';

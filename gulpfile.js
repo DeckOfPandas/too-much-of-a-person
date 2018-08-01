@@ -130,6 +130,16 @@ gulp.task('clean:fonts', function(callback) {
     callback();
 });
 
+// Copies audio.
+gulp.task('build:audio', function() {
+    return gulp.src(paths.audioFiles)
+        .pipe(rename(function(path) {path.dirname = '';}))
+        .pipe(gulp.dest(paths.jekyllAudioFiles))
+        .pipe(gulp.dest(paths.siteAudioFiles))
+        .pipe(browserSync.stream())
+        .on('error', log.error());
+});
+
 // Runs jekyll build command.
 gulp.task('build:jekyll', function() {
     var shellCommand = 'bundle exec jekyll build --config _config.yml';
@@ -173,7 +183,7 @@ gulp.task('clean', ['clean:jekyll',
 // Builds site anew.
 gulp.task('build', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts'],
+        ['build:scripts', 'build:images', 'build:styles', 'build:fonts', 'build:audio'],
         'build:jekyll',
         callback);
 });
@@ -181,7 +191,7 @@ gulp.task('build', function(callback) {
 // Builds site anew using test config.
 gulp.task('build:test', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts'],
+        ['build:scripts', 'build:images', 'build:styles', 'build:fonts', 'build:audio'],
         'build:jekyll:test',
         callback);
 });
@@ -189,7 +199,7 @@ gulp.task('build:test', function(callback) {
 // Builds site anew using local config.
 gulp.task('build:local', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts'],
+        ['build:scripts', 'build:images', 'build:styles', 'build:fonts', 'build:audio'],
         'build:jekyll:local',
         callback);
 });
@@ -232,6 +242,9 @@ gulp.task('serve', ['build:local'], function() {
 
       // Watch image files; changes are piped to browserSync.
       gulp.watch('_assets/images/**/*', ['build:images']);
+      
+      // Watch audio files; changes are piped to browserSync.
+      gulp.watch('_assets/audio/**', ['build:audio']);      
 
       // // Watch posts.
       // gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);

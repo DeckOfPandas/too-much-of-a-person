@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<section class="container-fullwidth story">
+    
+    <div class="">
+        <img class="story_main_photo img-fluid" src="{{ page.main_photo | relative_url }}" />
+    </div>
+
+    <div class="container-fullwidth story_object_writing">
+        <div class="container-midwidth">
+            <span class="quotation">
+                <i class="fa fa-quote-left"></i>
+                {{ page.quotation }}
+                <i class="fa fa-quote-right"></i>
+            </span>
+        </div>
+        <div class="container-midwidth">
+            <audio controls class="story_player">
+                <source src="{{ page.audio | relative_url }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="container-midwidth">
+            <div class="tag_list">
+                {% for tag in page.tags %}   
+                    <a href="" class="tag">{{ tag }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="container-fullwidth">
+        {% if page.video_youtube.size > 0 %}
+            {% include video.html url=page.video_youtube width="560" height="315" %}
+        {% else %}
+            <p>video coming soon</p>
+        {% endif %}
+    </div> 
+</section>
+
+
+
+

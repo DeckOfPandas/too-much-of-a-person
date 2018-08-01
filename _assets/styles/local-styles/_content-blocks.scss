@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
 }
 
 .container-midwidth {
@@ -156,7 +156,7 @@ hr {
 
 // BLOCKS
 
-.video-holder {
+.video-holder, .audio-holder {
   position: relative;
   width: 100%;
   height: 0;
@@ -265,10 +265,14 @@ hr {
     background: $index_about_bg_color;
 }
 
-#index_interviews {
+#index_stories {
     h1 {
-        color: $index_interviews_title_color;
+        color: $index_stories_title_color;
     }
+}
+
+#smaller_tags {
+    font-size: 1vw;
 }
 
 .scribbles {
@@ -392,56 +396,110 @@ hr {
     }
 }
 
+.story {
+    text-transform: uppercase;
+    padding: 0 !important;
+    .bottom_section {
+        padding: 1vh 3vw;
+        background-color: $white;
+    }
+    .story_object_writing {
+        padding: 3vh 3vw;
+        background-color: $white;   
+        .quotation {
+            margin-bottom: calc(24px + 2vw); 
+        }
+    }
+    span {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .name {
+        font-weight: 700;
+        
+    }
+    .quotation {
+        text-transform: none;
+        font-style: italic;
+        font-weight: 500;
+        font-size: calc(14px + 0.8vw); 
+        line-height: calc(24px + 0.8vw); 
+    }
+    .fa {
+        font-size: 0.7em;
+        vertical-align: top;
+    }
+    .story_player {
+        width: 100%;
+    }
+    .tag_list {
+        background-color: $white;
+        font-size: calc(8px + 0.5vw); 
+        line-height: 2em;
+        margin-top: calc(20px + 0.5vw); 
+        margin-bottom: calc(10px + 0.5vw); 
+        .tag {
+            padding: 2px;
+        }
+    }
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
 .interview_list {
     h1 {
         color: $link_color;
     }
 }
 
-.interview_list_container {
+.story_main_photo, story_matrix_photo {
+    width: 100%; 
+    padding: 0;
+    vertical-align: middle;
+}
+
+.flex-container_blog_title { // HAXXXX does this really need its own class...it can't possibly do...right? Right???
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.story_list_container {
     list-style: none;
     text-transform: uppercase;
     margin-bottom: 80px;
 }
 
-.interview_list_result_container {
-    display: inline-block;
-    vertical-align: top;
-    text-transform: uppercase;
-    span {
-        display: block;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    .name {
-        font-size: 1.3em;
-        font-weight: 700;
-        margin-top: 10px;
-        line-height: 1.8em;
+.story_list_result_container {
+
+}
+
+.tag_list {
+    text-align: left;
+    a, a:visited {
+        color: $tag_color;
+        background: $tag_bg_color;
+        text-transform: uppercase;
+        font-weight: 900;
         text-align: left;
+        letter-spacing: 0.15em;
+        padding: 3px;
+        margin-right: 20px;
     }
-    .quotation {
-        text-transform: none;
-        font-style: italic;
-        font-size: 1.1em;
-        font-weight: 500;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .fa {
-        font-size: 0.7em;
-        vertical-align: top;
+    a:hover {
+        color: $tag_hover_color;
+        background: $tag_bg_hover_color;
+        text-decoration: none;
     }
 }
 
 .section_head {
     background: $white;
-}
-
-.main_photo > img {
-
 }
 
 #generic-header-card {
@@ -472,31 +530,6 @@ hr {
         margin: 0 auto;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-}
-
-#tags {
-    font-size: 0.65em;
-    line-height: 1.8em;
-    text-align: left;
-    p {
-        text-align: center;
-        line-height: 2.2em;
-    }
-    a, a:visited {
-        color: $tag_color;
-        background: $tag_bg_color;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: left;
-        letter-spacing: 0.15em;
-        padding: 3px;
-        margin-right: 20px;
-    }
-    a:hover {
-        color: $tag_hover_color;
-        background: $tag_bg_hover_color;
-        text-decoration: none;
     }
 }
 
@@ -622,7 +655,7 @@ hr {
     }
 }
 
-.section_subtitle, .section_subtitle_under_image {
+.section_subtitle, .section_endtext {
     text-align: left;
     span {
         font-size: 1em;
