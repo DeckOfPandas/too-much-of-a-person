@@ -1,38 +1,20 @@
 ---
+layout: page_no_header
 title: "Stories"
-subtitle: "subtitle"
+subtitle: "subtitle if wanted"
 permalink: /stories/
-social_links: false
-layout: default
 ---
 
-<section class="content" id="story_list">
-	<div class="story_list_container">
-		{% for story in site.stories %}
-		<div class="row story_list_result_container">
-			<div class="container box col-sm-12">
-				<div class="box">
-					<img src="{{ story.matrix_photo | relative_url }}" class="story_matrix_photo img-fluid" />
-				</div>
-			</div>
-			<div>
-				<div class="container box col-sm-12 bottom_section">
-					<span class="name">
-						<a href="{{ story.url | relative_url }}">{{ story.storyee }}</a>
-					</span>
-			    	<span class="quotation">
-				    	<i class="fa fa-quote-left"></i>
-					    {{ story.quotation }}
-						<i class="fa fa-quote-right"></i>
-				    </span>
-				    <p class="tag_list">
-				    	{% for tag in story.tags %}
-				    		<a href="#">{{ tag }}</a>
-			    		{% endfor %}
-			    	</p>
-			    </div>
-			</div>
-		</div>
-		{% endfor%}
+<section class="container-fullwidth blog_archive_page">
+	<div class="container-fullwidth blog_header_img">
+		<img class="img-fluid" src="{{site.baseurl}}assets/images/backgrounds/blog_archive_letterbox.jpg" />
+	</div>		
+	<div class="blog_archive_title">
+		<h1>{{ page.title }}</h1>
+		<span class="author">{{ page.subtitle }}</span>
+	</div>
+	<div>
+		{% include story_list.html %}
+		{% include dotdotdot.html %}
 	</div>
 </section>

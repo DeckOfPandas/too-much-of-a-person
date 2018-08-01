@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
 }
 
 .container-midwidth {
@@ -396,17 +396,44 @@ hr {
     }
 }
 
-.story_list {
-    h1 {
-        color: $link_color;
-    }
-}
-
 .story {
-    .row {
+    text-transform: uppercase;
+    padding: 0 !important;
+    .bottom_section {
+        padding: 1vh 3vw;
         background-color: $white;
-        margin: 20px auto;
     }
+    span {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .name {
+        font-weight: 700;
+        
+    }
+    .quotation {
+        text-transform: none;
+        font-style: italic;
+        font-weight: 500;
+        font-size: calc(14px + 0.8vw); 
+        line-height: calc(24px + 0.8vw); 
+    }
+    .fa {
+        font-size: 0.7em;
+        vertical-align: top;
+    }
+    .tag_list {
+        font-size: calc(8px + 0.5vw); 
+        line-height: 2em;
+        margin-top: calc(20px + 0.5vw); 
+        margin-bottom: calc(10px + 0.5vw); 
+        .tag {
+            padding: 2px;
+        }
+    }  
     blockquote {
         width: 100%;
         padding: 0 1vw;
@@ -422,11 +449,7 @@ hr {
             margin-top: 0.25em;
             margin-bottom: 0;
         }
-    }
-    .tag_list {
-        font-size: 1.5vw;
-        padding: 0 1vw;
-    }    
+    } 
 }
 
 .margin-top-40 {
@@ -458,51 +481,11 @@ hr {
 }
 
 .story_list_result_container {
-    display: inline-block;
-    vertical-align: top;
-    text-transform: uppercase;
-    .bottom_section {
-        padding: 1em 1.5em 0.25em 1.5em;
-        background-color: $white;
-    }
-    span {
-        display: block;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    .name {
-        font-size: 1.5em;
-        font-weight: 700;
-        line-height: 1.8em;
-        text-align: left;
-    }
-    .quotation {
-        text-transform: none;
-        font-style: italic;
-        font-size: 1.1em;
-        font-weight: 500;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .fa {
-        font-size: 0.7em;
-        vertical-align: top;
-    }
-    .tag_list {
-        font-size: 1.5vw;
-        padding: 0;
-    }  
+
 }
 
 .tag_list {
-    line-height: 1.8em;
     text-align: left;
-    p {
-        text-align: center;
-        line-height: 2.2em;
-    }
     a, a:visited {
         color: $tag_color;
         background: $tag_bg_color;
