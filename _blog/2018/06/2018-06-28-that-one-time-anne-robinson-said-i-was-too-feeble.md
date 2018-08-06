@@ -4,6 +4,7 @@ title:  "That one time Anne Robinson said I was \"too feeble\""
 author: "Sunaina Dasgupta"
 date:   2018/06/28
 post_number: 1
+header_image: "1-1.jpg"
 ---
 
 On a brisk March morning in London, the ‘Too Much of a Person’ contingent set out to join #March4Women 2018 which was calling for an end to gender-based discrimination and violence in workplaces all around the world​.
@@ -18,9 +19,7 @@ This internal conflict resulted in a hesitant response of - “I think so…”
 
 My teammate E, confidently responded that she was a warrior. Anne then demanded that we provide her with evidence of how we were warriors. What risks had we taken recently? Do we ask our male colleagues what they earn and demand our employers pay us equally? Would we be marching into our bosses offices the next day demanding a pay rise?
 
-<div class="container-fullwidth center">
-	<img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/1-2.jpg" />
-</div>
+{% include blog_image_inline.html filename="1-2.jpg" %}
 
 I had done all of those things. When I realised my male colleague was earning 12.5% more for doing the same role, I asked for a raise. When my employer refused to address or resolve the issue - I handed in my resignation. I did not have another job lined up but I refused to continue being undervalued by them. However, I was in a fortunate position where I could make that decision. There are several others who are unable to do so and they do not deserved to be judged harshly for circumstances beyond their control. 
  

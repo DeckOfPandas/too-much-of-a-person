@@ -5,6 +5,7 @@ author: "Sunaina Dasgupta"
 date:   2018/07/26
 author_credit: ""
 post_number: 5
+header_image: "5-1.jpg"
 ---
 
 After reading a social media post of D’s about this project in November 2017 - I knew that I had to take part, at least as a participant. I told family, friends and strangers about the project and encouraged them to book their sessions.
@@ -17,16 +18,12 @@ So here’s a full breakdown of what happens:
 
 When I arrived for the photo and story session, I was greeted by a cheery Diana.... 
 
-<div class="container-fullwidth center">
-	<a><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/5-2.png" /></a>
-</div>
+{% include blog_image_inline.html filename="5-2.png" %}
 
 Story session: 
 I got mic’d up by the lovely BAFTA award nominated sound recordist, Kyle and then sit down to have a conversation with Diana. That’s pretty much it. We talked. It’s like talking to your best friend. Diana makes you feel warm and provides a safe space to share thoughts, feelings and experiences without any judgement. I talked about the times I was called “too…” (Coming soon to the stories section of this website!) and then about if or how I thought each of those characteristics were my actually my power. It’s mostly me talking and Diana listening, I rambled on for a long time and it was cathartic. At the end, Diana uses her camera to record a short video snippet of you listing what you were called too much of and summary of how they could be your power. It’s very simple, clean and takes as long as you want it to take. 
 
-<div class="container-fullwidth center">
-	<a><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/5-3.png" /></a>
-</div>
+{% include blog_image_inline.html filename="5-3.png"%}
 
 Photoshoot:
 As mentioned above, I absolutely detest looking at pictures of myself and I had spent months practicing poses/trying find an angle that worked for me. I’m incredibly insecure about the way I look and any social media photos are selected from a plethora of photos and a vigorous screening process. The thought of relinquishing this power over to someone else and trust their judgement on which photo would be best to display to the world is terrifying to me. 
@@ -38,9 +35,7 @@ I wanted it to be a picture where I felt good about myself. I wanted to feel gla
 Post shoot binge: 
 After a long but wonderful photoshoot, we did what all professionals do and binged on some sugar glazed donuts that I had brought to celebrate with. I felt fabulous and -- so new for me -- I actually look forward to seeing how these photos turn out.
 
-<div class="container-fullwidth center">
-	<a><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/5-4.png" /></a>
-</div>
+{% include blog_image_inline.html filename="5-4.png" %}
 
 I would strongly recommend to anyone who has a story to share about being called “too much” to dismiss or conform them that they should book a session with Diana. This was exactly what I needed to cleanse myself of the past I was holding on to. 
 
