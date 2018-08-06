@@ -12,7 +12,9 @@
 	<i>
 		{{ quotation_text }}
 	</i>
-	<div class="right" style="">
-		-  {{ quotation_attribution }}
-	</div>
+	{% if quotation_attribution %}
+		<div class="right" style="">
+			-  {{ quotation_attribution }}
+		</div>
+	{% endif %}
 </div>
