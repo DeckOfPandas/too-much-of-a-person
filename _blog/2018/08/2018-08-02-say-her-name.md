@@ -54,7 +54,6 @@ Anne Hathaway’s facebook post below calls out white privilege and urges white 
 	</i>
 	</div>
 	<div class="right" style="">
-		-  <a href="https://www.instagram.com/p/BlqdpDOgNE7/?utm_source=ig_embed&utm_campaign=embed_loading_state_control" target="new">Anne Hathaway via Instagram</a>, July 2018
 	</div>
 </div>
 
