@@ -1,10 +1,28 @@
-{% assign sorted = site.blog | sort: 'date' | reverse %}
+{% assign sorted = site.blog | sort: 'date' | reverse | limit: max_posts_to_show %}
+
 <ul class="blog_archive_list"> 
-	{% for post in sorted %}
-	    <li>
-	      <span class="blog_list_title"><a href="{{ post.url | absolute_url }}" class="blog_list_title">{{ post.title }}</a></span>
-	      <br><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time><span class="author">{{ post.author }}</span>
-	      <p>{{ post.content | truncatewords:40 | strip_html }}</p>
-	    </li>
+	<p class="right" style="margin-top:0;margin-bottom: 0;">
+		{% if include.num_posts_to_show %} 
+			{% assign max_posts_to_show = include.num_posts_to_show %} 
+			showing the {{ max_posts_to_show }} most recent blog posts
+			</br>	
+			<a class="blog_nav_link archive" href="{{ site.baseurl }}blog/">:archive:</a>
+		{% else %}
+			{% assign max_posts_to_show = site.blog.size %} 
+			<br> 
+		{% endif %}	
+	</p>
+	{% assign i = 0 %}
+	{% for post in sorted | limit: max_posts_to_show %}
+			{% if i < 1.0 %}
+				<li class="blog_list_top">
+			{% else %}
+		    	<li>
+			{% endif %}
+		      <span class="blog_list_title"><a href="{{ post.url | absolute_url }}" class="blog_list_title">{{ post.title }}</a></span>
+		      <br><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time><span class="author">{{ post.author }}</span>
+		      <p>{{ post.content | truncatewords:40 | strip_html }}</p>
+		    </li>
+	        {% assign i = i | plus:1 %}
 	{% endfor %}
 </ul>	
