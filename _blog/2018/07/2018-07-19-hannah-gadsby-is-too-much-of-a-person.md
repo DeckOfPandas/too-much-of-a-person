@@ -5,6 +5,7 @@ author: "Sunaina Dasgupta"
 date:   2018/07/19
 author_credit: ""
 post_number: 4
+header_image: "4-1.jpg"
 ---
 
 Exactly a month ago today, Netflix released <a href="https://www.netflix.com/gb/title/80233611">Nanette by Hannah Gadsby</a> - one of best stand up specials I've ever seen. I've been captivated by how blisteringly insightful it is.
@@ -43,7 +44,4 @@ Stories like Hannah’s and all of those who have participated in our project ne
 
 <a href="https://www.netflix.com/gb/title/80233611">Here’s the link</a> to watch Nanette - seriously, why haven’t you watched it yet? 
 
-
-<div class="container-fullwidth center">
-	<a href="https://www.netflix.com/gb/title/80233611"><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/4-2.jpg" /></a>
-</div>
+{% include blog_image_inline.html filename="4-2.jpg" %}
