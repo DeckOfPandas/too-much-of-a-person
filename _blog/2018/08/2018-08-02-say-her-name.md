@@ -32,11 +32,9 @@ This notion of being seen as and told that you are “unworthy” because of you
 
 Anne Hathaway’s facebook post below calls out white privilege and urges white people to focus on Nia’s death. Race is not the sole privilege that one can have, but it is an extremely powerful one. The text of her post is reproduced below the image, but here is important sentence:
 
-<div class="blog_body" style="line-height:1.75em;">
-	<i>
-		“We must ask our (white)selves - how ‘decent’ are we really? Not in our intent, but in our actions? In our lack of action?”
-	</i>
-</div>
+{% include blog_quotation_inline.html quotation_text="
+	We must ask our (white)selves - how ‘decent’ are we really? Not in our intent, but in our actions? In our lack of action? 
+	" %}
 
 {% include blog_image_inline.html filename="6-2.png" link_url="https://www.instagram.com/p/BlqdpDOgNE7/?utm_source=ig_embed&utm_campaign=embed_loading_state_control" %}
 
@@ -51,7 +49,7 @@ Anne Hathaway’s facebook post below calls out white privilege and urges white 
 
 	#blacklivesmatter #antiracist #noexcuse 
 	#sayhername #earntherighttosayhername 
-	" quotation_attribution="Anne Hathaway, via Instagram (image links to original post)"%}
+	" quotation_attribution="Anne Hathaway, via Instagram (image links to original post)" %}
 
 So, how can you use your privilege it to enable change? An article titled <a href="https://www.thecut.com/2018/08/nia-wilson-spend-your-privilege.html" target="new">"How to spend your privilege"</a> on The Cut suggests:
 
