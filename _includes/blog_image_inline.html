@@ -1,9 +1,13 @@
+
 {% if include.filename %}
 	{% assign filename = include.filename %} 
 {% else %}
 	{% assign filename = "1-2.jpg" %} 
 {% endif %}
 
+{% if include.link_url %}
+	{% assign link_url = include.link_url %}  
+{% endif %}
 
 {% if include.image_credit_text %}
 	{% assign image_credit_text = include.image_credit_text %} 
@@ -20,7 +24,15 @@
 
 
 <div class="container-fullwidth center">
-	<a><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/{{ filename }}" /></a>
+	{% if include.link_url %}
+		<a href="{{ link_url }}" target="new">
+	{% endif %}
+
+	<img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/{{ filename }}" />
+	
+	{% if include.link_url %}
+	</a>
+	{% endif %}
 	{% if image_credit_text %}
 		<br>
 		<div class="blog_image_credit">

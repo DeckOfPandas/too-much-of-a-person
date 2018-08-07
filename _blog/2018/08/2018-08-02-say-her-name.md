@@ -32,43 +32,28 @@ This notion of being seen as and told that you are “unworthy” because of you
 
 Anne Hathaway’s facebook post below calls out white privilege and urges white people to focus on Nia’s death. Race is not the sole privilege that one can have, but it is an extremely powerful one. The text of her post is reproduced below the image, but here is important sentence:
 
-<div class="blog_body" style="line-height:1.75em;">
-	<i>
-		“We must ask our (white)selves - how ‘decent’ are we really? Not in our intent, but in our actions? In our lack of action?”
-	</i>
-</div>
+{% include blog_quotation_inline.html quotation_text="
+	We must ask our (white)selves - how ‘decent’ are we really? Not in our intent, but in our actions? In our lack of action? 
+	" %}
 
-<div class="container-fullwidth">
-	<a href="https://www.instagram.com/p/BlqdpDOgNE7/?utm_source=ig_embed&utm_campaign=embed_loading_state_control" target="new"><img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/6-2.png" /></a>
-	<div class="blog_body" style="line-height:1.75em;">
-	<i>
-		The murder of Nia Wilson- may she rest in the power and peace she was denied here- is unspeakable AND MUST NOT be met with silence.  She is not a hash tag; she was a black woman and she was murdered in cold blood by a white man.
+{% include blog_image_inline.html filename="6-2.png" link_url="https://www.instagram.com/p/BlqdpDOgNE7/?utm_source=ig_embed&utm_campaign=embed_loading_state_control" %}
 
-		White people- including me, including you- must take into the marrow of our privileged bones the truth that ALL black people fear for their lives DAILY in America and have done so for GENERATIONS.  White people DO NOT have equivalence for this fear of violence. 
-		Given those givens, we must ask our (white)selves- how “decent” are we really?  Not in our intent, but in our actions?  In our lack of action? 
-		Peace and prayers and JUSTICE for Nia and the Wilson family xx
+{% include blog_quotation_inline.html quotation_text="
+	The murder of Nia Wilson- may she rest in the power and peace she was denied here- is unspeakable AND MUST NOT be met with silence.  She is not a hash tag; she was a black woman and she was murdered in cold blood by a white man.
 
-		Note: the comments for this post are closed.
+	White people- including me, including you- must take into the marrow of our privileged bones the truth that ALL black people fear for their lives DAILY in America and have done so for GENERATIONS.  White people DO NOT have equivalence for this fear of violence. 
+	Given those givens, we must ask our (white)selves- how “decent” are we really?  Not in our intent, but in our actions?  In our lack of action? 
+	Peace and prayers and JUSTICE for Nia and the Wilson family xx
 
-		#blacklivesmatter #antiracist #noexcuse 
-		#sayhername #earntherighttosayhername
-	</i>
-	</div>
-	<div class="right" style="">
-	</div>
-</div>
+	Note: the comments for this post are closed.
 
-
+	#blacklivesmatter #antiracist #noexcuse 
+	#sayhername #earntherighttosayhername 
+	" quotation_attribution="Anne Hathaway, via Instagram (image links to original post)" %}
 
 So, how can you use your privilege it to enable change? An article titled <a href="https://www.thecut.com/2018/08/nia-wilson-spend-your-privilege.html" target="new">"How to spend your privilege"</a> on The Cut suggests:
 
-<div class="blog_body" style="line-height:1.75em;">
-	<i>
-		“ ... Continue to speak Nia Wilson’s name long after the news cycle has died down. Challenge the media when they put black victims on trial and excuse white murderers as “lone wolves.” Ask yourself — and your police chief — why black communities are simultaneously over- and under-policed?....The most important step is this: Train yourself toward solidarity and not charity. You are no one’s savior. You are a mutual partner in the pursuit of freedom. Lilla Watson, an Aboriginal activist and artist, once said: “If you have come here to help me, you are wasting your time. But if you have come because your liberation is bound up with mine, then let us work together.” I want to be free. I want you to be free. And you aren’t free until I am. Spend your privilege, and just when you think you’ve spent enough, spend some more ... ”
-	</i>
-</div>
-<div class="right" style="">
-	-  via The Cut, 2018
-</div>
+
+{% include blog_quotation_inline.html quotation_text="... Continue to speak Nia Wilson’s name long after the news cycle has died down. Challenge the media when they put black victims on trial and excuse white murderers as “lone wolves.” Ask yourself — and your police chief — why black communities are simultaneously over- and under-policed?....The most important step is this: Train yourself toward solidarity and not charity. You are no one’s savior. You are a mutual partner in the pursuit of freedom. Lilla Watson, an Aboriginal activist and artist, once said: “If you have come here to help me, you are wasting your time. But if you have come because your liberation is bound up with mine, then let us work together.” I want to be free. I want you to be free. And you aren’t free until I am. Spend your privilege, and just when you think you’ve spent enough, spend some more ..." quotation_attribution="via The Cut, 2018"%}
 
 Apathy towards these issues is validation of the oppressors' continued belief that your skin colour determines your “worthiness” to exist in this world. Speak up: use your privilege to enable the change we need. Let’s put an end to the Nias of this world being forgotten.

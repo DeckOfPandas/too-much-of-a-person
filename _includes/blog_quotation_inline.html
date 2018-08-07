@@ -1,0 +1,20 @@
+{% if include.quotation_text %}
+	{% assign quotation_text = include.quotation_text %} 
+{% else %}
+	{% assign quotation_text = "YOU NEED TO PASS IN THE TEXT OF YOUR QUOTATION AS A VARIABLE" %} 
+{% endif %}
+
+{% if include.quotation_attribution %}
+	{% assign quotation_attribution = include.quotation_attribution %}  
+{% endif %}
+
+<div class="blog_body" style="line-height:1.75em;">
+	<i>
+		{{ quotation_text }}
+	</i>
+	{% if quotation_attribution %}
+		<div class="right" style="">
+			-  {{ quotation_attribution }}
+		</div>
+	{% endif %}
+</div>
