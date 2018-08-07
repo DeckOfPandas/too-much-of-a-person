@@ -1,0 +1,48 @@
+
+{% if include.filename %}
+	{% assign filename = include.filename %} 
+{% else %}
+	{% assign filename = "1-2.jpg" %} 
+{% endif %}
+
+{% if include.link_url %}
+	{% assign link_url = include.link_url %}  
+{% endif %}
+
+{% if include.image_credit_text %}
+	{% assign image_credit_text = include.image_credit_text %} 
+{% endif %}
+
+{% if include.image_credit_link_text %}
+	{% assign image_credit_link_text = include.image_credit_link_text %} 
+{% endif %}
+
+
+{% if include.image_credit_link_url %}
+	{% assign image_credit_link_url = include.image_credit_link_url %} 
+{% endif %}
+
+
+<div class="container-fullwidth center">
+	{% if include.link_url %}
+		<a href="{{ link_url }}" target="new">
+	{% endif %}
+
+	<img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/{{ filename }}" />
+	
+	{% if include.link_url %}
+	</a>
+	{% endif %}
+	{% if image_credit_text %}
+		<br>
+		<div class="blog_image_credit">
+			<span>
+				{{ image_credit_text }}
+				{% if image_credit_link_url %}
+					<a href="{{ image_credit_link_url }}" 
+					target="new">{{ image_credit_link_text }}</a>
+				{% endif %}
+			</span>
+		</div>
+	{% endif %}
+</div>

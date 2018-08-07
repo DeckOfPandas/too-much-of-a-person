@@ -41,6 +41,7 @@
 .blog_archive_list {
     list-style: none;
     padding: 0 !important;
+    margin-top: 0;
     .blog_list_title {
         font-size: 0.9em;
     }
@@ -73,6 +74,9 @@
         margin: 2.5em auto;
         background: $white;
         padding: 10px 20px 5px 20px;
+    }
+    .blog_list_top {
+        margin-top: 1em;
     }
 }
 

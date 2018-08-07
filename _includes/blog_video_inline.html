@@ -1,0 +1,23 @@
+{% if include.video_url %}
+	{% assign video_url = include.video_url %} 
+{% else %}
+	{% assign video_url = "http://example.com" %} 
+{% endif %}
+
+{% if include.video_credit_text %}
+	{% assign video_credit_text = include.video_credit_text %} 
+{% endif %}
+
+<div class="container-fullwidth center">
+	<div class="container">
+	  	{% include video.html url=video_url width="480" height="363" %}
+	</div>
+	{% if video_credit_text %}
+		<br>
+		<div class="blog_image_credit">
+			<span>
+				{{ video_credit_text }}
+			</span>
+		</div>
+	{% endif %}
+</div>

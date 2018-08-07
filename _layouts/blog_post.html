@@ -13,11 +13,14 @@ layout: page_no_header
 <section class="blog_page">
 
 	<div class="container-fullwidth blog_header_img">
-		<img class="img-fluid" width="100%" src="{{site.baseurl}}assets/images/blog/{{ page.post_number }}-1.jpg" />
+		<img class="img-fluid" width="100%" src="{{site.baseurl}}assets/images/blog/{{ page.header_image }}" />
 	</div>
 	<div class="flex-container_blog_title blog_title">
 		<h1>{{ page.title }}</h1>
-		<span class="author">:{{ page.author }}:</span><time datetime="{{ page.date | date_to_xmlschema }}">:{{ page.date | date_to_long_string }}:</time>
+		<div class="container-fullwidth" style="padding-bottom:2em;">
+			<div class="author">:{{ page.author }}:</div>
+			<div><time datetime="{{ page.date | date_to_xmlschema }}">:{{ page.date | date_to_long_string }}:</time></div>
+		</div>
 	</div>
 	<div class="container-fullwidth blog_body">
 		<div class="container">

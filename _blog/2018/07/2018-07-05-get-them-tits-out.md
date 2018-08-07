@@ -4,6 +4,7 @@ title:  "Get. Them. Tits. Out."
 author: "Sunaina Dasgupta"
 date:   2018/07/05
 post_number: 2
+header_image: "2-1.jpg"
 ---
 
 During one of our recent Too Much of a person (TMOAP) planning meetings, we veered a little off course and started discussing experiences of being ‘catcalled’. 
@@ -16,10 +17,7 @@ Unfortunately, the stats indicate that their experiences are far more common tha
 
 I’d be curious to see the “success” rate from a catcallers perspective. Has anyone ever taken up on the offer to suck a stranger’s cock in the middle of the day? Or flashed their tits when requested in such a gallant manner?
 
-<div class="container-fullwidth center">
-	<img class="img-fluid blog_body_img" src="{{site.baseurl}}assets/images/blog/2-2.jpg" /><br>
-	<div class="blog_image_credit"><span>Great Tits, Image credit: <a href="https://www.10000birds.com/" target="new">10,000 Birds</a></span></div>
-</div>
+{% include blog_image_inline.html filename="2-2.jpg" image_credit_text="Great Tits, " image_credit_link_text="10,000 Birds" image_credit_link_url="https://www.10000birds.com/" %}
 
 The motivation behind this kind of behaviour towards women is absolutely alien to me. Is it pack-mentality power play? Or do these people think they are genuinely complimenting the recipient?
 
@@ -34,4 +32,3 @@ So to catcallers everywhere, when you feel the urge to spew something vile towar
 I enjoy being told I look nice, have lovely eyes, a warm smile etc. Asking me suck your cock may result in receiving a tongue lashing, but not the kind you had in mind. 
 
 If you still can’t tell the difference between a compliment and harassment, then just SHUT UP.
-
