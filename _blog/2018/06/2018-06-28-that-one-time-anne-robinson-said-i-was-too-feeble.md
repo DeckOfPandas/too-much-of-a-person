@@ -43,9 +43,4 @@ Anne Robinson branded me and the Women’s march as “feeble” and displays co
 
 In reality Anne, ‘The Trouble with Women’ is that you are the weakest link in the fight for equality. Goodbye.
 
-<div class="container-fullwidth">
-	<div class="container">
-	  	{% include video.html url="https://giphy.com/embed/xJLNafkD7RGsE" width="480" height="363" %}
-	  	<a href="https://giphy.com/gifs/link-xJLNafkD7RGsE" target="new" style="float:right">via GIPHY</a>
-	</div>
-</div>
+{% include blog_video_inline.html video_url="https://giphy.com/embed/xJLNafkD7RGsE" video_credit_text="via GIPHY" %}

@@ -1,0 +1,18 @@
+{% if include.video_url %}
+	{% assign video_url = include.video_url %} 
+{% else %}
+	{% assign video_url = "http://example.com" %} 
+{% endif %}
+
+{% if include.video_credit_text %}
+	{% assign video_credit_text = include.video_credit_text %} 
+{% else %}
+	{% assign video_credit_text = "http://example.com" %} 
+{% endif %}
+
+<div class="container-fullwidth">
+	<div class="container">
+	  	{% include video.html url=video_url width="480" height="363" %}
+	  	<a href="https://giphy.com/gifs/link-xJLNafkD7RGsE" target="new" style="float:right">{{ video_credit_text }}</a>
+	</div>
+</div>
