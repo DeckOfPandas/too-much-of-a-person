@@ -8,12 +8,12 @@
 	{% assign quotation_attribution = include.quotation_attribution %}  
 {% endif %}
 
-<div class="blog_body" style="line-height:1.75em;">
+<div class="blog_quotation">
 	<i>
 		{{ quotation_text }}
 	</i>
 	{% if quotation_attribution %}
-		<div class="right" style="">
+		<div class="right attribution">
 			-  {{ quotation_attribution }}
 		</div>
 	{% endif %}
