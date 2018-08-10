@@ -8,7 +8,7 @@ post_number: 7
 header_image: "banana.png"
 ---
 
-*Originally written for The Kings Review Magazine, and reproduced here with permission.*
+*Originally published by* <a href="http://kingsreview.co.uk/articles/sex-education-a-wish-list/" target="new">The Kings Review Magazine</a>*, and reproduced here with permission.*
 
 <br>
 
