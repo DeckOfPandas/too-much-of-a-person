@@ -5,7 +5,7 @@ author: "Ina Linge"
 date:   2018/08/09
 author_credit: "Ina Linge completed her Ph.D. with the Department of German at King’s College, University of Cambridge. Her research focuses on the performance of “deviance” in sexological and psychoanalytic life writings."
 post_number: 7
-header_image: "banana.png"
+header_image: "7-1.png"
 ---
 
 *Originally published by* <a href="http://kingsreview.co.uk/articles/sex-education-a-wish-list/" target="new">The Kings Review Magazine</a>*, and reproduced here with permission.*
