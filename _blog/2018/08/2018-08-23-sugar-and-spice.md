@@ -9,16 +9,21 @@ header_image: "9-1.jpg"
 ---
 Once upon a time, when biology was still a magical mystery, here’s how boys and girls were made: 
 
-{% include blog_quotation_inline.html quotation_text="What are little boys made of?  
-What are little boys made of?  
-  Snips and snails  
-  And puppy-dogs' tails  
-That's what little boys are made of  
-What are little girls made of?  
-What are little girls made of?  
- Sugar and spice  
- And all things nice  
-That's what little girls are made of " quotation_attribution=""%}    
+
+<p style="text-align:center">
+<i>
+	What are little boys made of?  <br>
+	What are little boys made of?  <br>  
+	Snips and snails  <br>  
+	And puppy-dogs' tails  <br>  
+	That's what little boys are made of  <br>  
+	What are little girls made of?  <br>  
+	What are little girls made of?  <br>  
+	Sugar and spice  <br>  
+	And all things nice  <br>  
+	That's what little girls are made of  <br>
+</i>
+</p>
 
 I can’t speak for all women but the idea of being made of sugar and spice is definitely  preferred to snips and snails. However, it comes with the implication that being “nice” is a requirement for women. 
 
@@ -32,7 +37,7 @@ The guilt and fear experienced by that eight year old version of me lives on. I 
 
 The saw cuts both ways and being perceived as ‘too nice’ comes with its own set of problems, particularly in a professional environment. I’m constantly bombarded with <a href="https://www.forbes.com/sites/amyanderson/2013/01/14/good-leaders-are-invaluable-to-a-company-bad-leaders-will-destroy-it/#622533601138" target="new">articles</a> shared on LinkedIn about the key differences between a boss and a leader. But when women display those characteristics - they get labelled as “too nice” 
 
-{% include blog_image_inline.html filename="9-2.png" %}
+{% include blog_image_inline.html filename="9-2.jpg" %}
 
 A high ranking Director at a multinational corporation told me that her superior said she was “too nice” and that it would hinder her progress. But when she took that criticism on board and changed her behaviour, the same superior told her she looked angry and was suddenly very “concerned” about her wellbeing.
 Naiya Khushlani (probably one of the loveliest humans alive) says, “Yep. I’ve been told, more than once by friends (mostly male), that if I want to grow into a management role at work, I need to stop being ‘too nice’. I need to be tougher, more crude, or else I wouldn't be able to rise to the position of CEO one day” 
