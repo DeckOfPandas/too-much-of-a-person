@@ -1,7 +1,7 @@
 name: Too Much of a Person
 
-baseurl: "/too-much-of-a-person/"
-url: "https://deckofpandas.github.io/"
+baseurl: "/"
+url: "https://tmoap-live.deckofpandas.com"
 
 markdown: kramdown
 
