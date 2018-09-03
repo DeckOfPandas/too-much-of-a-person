@@ -1,7 +1,7 @@
 name: Too Much of a Person
 
 baseurl: "/"
-url: "https://tmoap-sandbox.deckofpandas.com/"
+url: "https://tmoap-staging.deckofpandas.com"
 
 markdown: kramdown
 
