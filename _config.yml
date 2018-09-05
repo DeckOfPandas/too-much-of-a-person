@@ -1,0 +1,36 @@
+name: Too Much of a Person
+
+baseurl: "/"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
+
+future: true
+
+collections:
+  interviews:
+    output: true
+    permalink: /:collection/:path/
+  events:
+    output: true
+    permalink: /:collection/:year/:month/:title/
+  blog:
+    output: true
+    permalink: /:collection/:year/:month/:title/
+  sponsors:
+    output: true
+
+# Exclude the following from the Jekyll build process.
+# Note: "vendor" is for Travis CI.
+exclude: ["vendor",
+          "_assets",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json"]
+
+# Site customisation
+num_blog_posts_to_show_on_front_page: 3
