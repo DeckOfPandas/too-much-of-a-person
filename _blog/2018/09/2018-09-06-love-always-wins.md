@@ -2,7 +2,7 @@
 layout: blog_post
 title:  "LOVE ALWAYS WINS"
 author: "Sunaina Dasgupta"
-date:   2019/09/06
+date:   2018/09/06
 author_credit: ""
 post_number: 10
 header_image: "10-1.jpg"
