@@ -82,6 +82,9 @@ body {
     padding: 0;
 }
 
+.no_padding {
+    padding: 0 !important;
+}
 h1, h2, h3, h4, h5, p {
     margin-bottom: 24px;
     padding: 0;
@@ -408,54 +411,74 @@ hr {
 }
 
 .story {
+    background-color: $white;
+}
+
+.story-object {
+    margin: 0;   
+    padding-top: calc(24px + 2vw); 
+    padding-bottom: calc(24px + 2vw);
+}
+
+.story-object.story-mainphoto, .story-object.story_matrix_photo {
+    width: 100%; 
+    height: auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    vertical-align: middle;
+}
+
+.story-object.story-quotation { 
+    text-transform: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: calc(14px + 0.8vw); 
+    line-height: calc(24px + 0.8vw);
+    .fa {
+        font-size: 0.7em;
+        vertical-align: top;
+    }
+}
+
+.story-object.story-audio {
+    width: 100%;
+    padding: 0;
+    background-color: $city_lights_grey;
+}
+
+.story-object.story-taglist {  
+    padding-left: 3em; 
+    padding-right: 3em; 
+    font-size: calc(8px + 0.5vw); 
+    line-height: 2em;
+    .tag {
+        padding: 2px;
+    }
+}
+
+.story-object.story-video {
+    width: 100%;
+    padding: 0;
+}
+
+.story {
     text-transform: uppercase;
     padding: 0 !important;
     .bottom_section {
         padding: 1vh 3vw;
         background-color: $white;
     }
-    .story_object_writing {
-        padding: 3vh 3vw;
-        background-color: $white;   
-        .quotation {
-            margin-bottom: calc(24px + 2vw); 
-        }
-    }
+    
     span {
         display: block;
     }
-    img {
-        width: 100%;
-        height: auto;
-    }
-    .name {
-        font-weight: 700;
-        
-    }
+
     .quotation {
-        text-transform: none;
-        font-style: italic;
-        font-weight: 500;
-        font-size: calc(14px + 0.8vw); 
-        line-height: calc(24px + 0.8vw); 
+         
     }
-    .fa {
-        font-size: 0.7em;
-        vertical-align: top;
-    }
-    .story_player {
-        width: 100%;
-    }
-    .tag_list {
-        background-color: $white;
-        font-size: calc(8px + 0.5vw); 
-        line-height: 2em;
-        margin-top: calc(20px + 0.5vw); 
-        margin-bottom: calc(10px + 0.5vw); 
-        .tag {
-            padding: 2px;
-        }
-    }
+
+
+ 
 }
 
 .margin-top-40 {
@@ -466,12 +489,6 @@ hr {
     h1 {
         color: $link_color;
     }
-}
-
-.story_main_photo, story_matrix_photo {
-    width: 100%; 
-    padding: 0;
-    vertical-align: middle;
 }
 
 .flex-container_blog_title { // HAXXXX does this really need its own class...it can't possibly do...right? Right???
