@@ -746,13 +746,21 @@ hr {
 }
 
 .alertbar-button {
-    margin: 1em auto;
+    margin: 0.75em auto;
     font-size: 1em;
-    color: #ffffff;
-    background-color: #ee44ee;
+    color: #fff;
+    background-color: #ef1cdf;
+    line-height: 1.25em;
     &:hover {
-        background-color: #ff66ff;
+        background-color: #fa53e8;
     }
+}
+
+.button_explanation {
+    font-size: 0.55em;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    vertical-align: middle;
 }
 
 .sticky {
