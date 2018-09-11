@@ -707,9 +707,9 @@ hr {
 
 .alert-bar {
     z-index: 100;
-  background-color: #56B334;
-  color: #fff;
-  font-size: 22px;
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxQE2Y-0vxVD9wCc954cZSqG5czx6-7-qoHqkXaq8BpMyDhTZ_3g);
+    color: #fff;
+    font-size: 22px;
   text-align: center;
   line-height: 34px;
   padding: 10px 15px 10px 15px;
@@ -747,7 +747,12 @@ hr {
 
 .alertbar-button {
     margin: 1em auto;
-    font-size: 0.5em;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ee44ee;
+    &:hover {
+        background-color: #ff66ff;
+    }
 }
 
 .sticky {
@@ -757,9 +762,13 @@ hr {
 }
 
 .below-top {
+
 }
 
 .sticky + .below-top {
-  padding-top: 70px;
+  padding-top: 110px;
 }
 
+.glitter {
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxQE2Y-0vxVD9wCc954cZSqG5czx6-7-qoHqkXaq8BpMyDhTZ_3g);
+}
