@@ -110,6 +110,12 @@ h5 {
     font-size: 1em;
 }
 
+strong {
+    color: $bright_greek;
+    font-family: Couture, sans-serif !important;
+    font-weight: 900 !important;
+}
+
 a, a:visited {
     color: $link_color;
     font-family: Couture, sans-serif;
@@ -209,7 +215,7 @@ hr {
     display: block;
     width: 100%;
     margin: 0;
-    margin-top: 95px;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -565,6 +571,28 @@ hr {
     }
 }
 
+.cta {
+    h3 {
+        margin: 0.7em auto 0.6em auto;
+    }    
+    p {
+        font-size: 0.9em;
+    }    
+}
+
+.cta-button {
+    margin: 1em auto;
+}
+
+.cta-donate {
+    background-color: $cta_mailinglist_bg_color;
+    color: $cta_mailinglist_text_color;
+}
+
+.cta-participate {
+    
+}
+
 .cta_mailinglist {
     padding: 50px 0 80px 0 !important;
     background-color: $cta_mailinglist_bg_color;
@@ -672,4 +700,83 @@ hr {
     font-style: italic;
     text-align: justify;
     font-weight: 300;
+}
+
+
+// LAYOUT THINGS
+
+.alert-bar {
+    z-index: 100;
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxQE2Y-0vxVD9wCc954cZSqG5czx6-7-qoHqkXaq8BpMyDhTZ_3g);
+    color: #fff;
+    font-size: 22px;
+  text-align: center;
+  line-height: 34px;
+  padding: 10px 15px 10px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  a {
+    color: #fff; 
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  .left {
+    display: inline-block;
+    float: left;
+  }
+  .message {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 8px;
+  }
+  .center {
+    float: right;
+    margin-bottom: 43px;
+  }
+  .right {
+    display: none;
+  }
+}
+
+.alertbar-button {
+    margin: 0.75em auto;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ef1cdf;
+    line-height: 1.25em;
+    &:hover {
+        background-color: #fa53e8;
+    }
+}
+
+.button_explanation {
+    font-size: 0.55em;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    vertical-align: middle;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.below-top {
+
+}
+
+.sticky + .below-top {
+  padding-top: 110px;
+}
+
+.glitter {
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxQE2Y-0vxVD9wCc954cZSqG5czx6-7-qoHqkXaq8BpMyDhTZ_3g);
 }
