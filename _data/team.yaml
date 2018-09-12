@@ -24,3 +24,18 @@
   role: "Social Media Video Editor"
   photo: "junia_bashiru.jpg"
   email: junia@toomuchofaperson.com
+
+- name: "Emma Donaldson"
+  role: "Social Media Manager"
+  photo: "emma_donaldson.jpg"
+  email: diana@toomuchofaperson.com
+
+- name: "Kyle Pickford"
+  role: "Sound"
+  photo: "kyle_pickford.jpg"
+  email: diana@toomuchofaperson.com
+
+- name: "Helen Jackson"
+  role: "Web Developer"
+  photo: "helen_jackson.jpg"
+  email: helen@deckofpandas.com  
