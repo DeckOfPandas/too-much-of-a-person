@@ -337,50 +337,31 @@ hr {
     background: $index_team_bg_color;
 }
 
-.member {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    padding: 20px 0;
-    border: 20px solid $index_team_bg_color;
+.member-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 3rem;
+}
+
+.member-card {
+    box-shadow: 0px 1px 5px $nearly_black;
+    padding-bottom: 0.5em;
     background: $team_cards_color;
-    img {
-        padding: 0;
-        margin: 0;
-        /*-webkit-transition: all 200ms linear;
-        -o-transition: all 200ms linear;
-        transition: all 200ms linear;
-        &:hover {
-          opacity: 0;
-          filter: alpha(opacity=0);
-        }*/
-    }
-    .member_lhs, .member_rhs {
-        position: relative;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        vertical-align: middle;
-    }
-    .member_rhs {
-        padding: 10px 0 5px 10px;
-        vertical-align: middle;
-    }
+    font-family: Couture, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
     .name {
-       font-size: 1.8em;
+        font-size: 1.2em;
+        font-weight: 900;
+        padding: 0.75em 0 0.25em 0;
     }
     .role {
-       font-size: 1.2em;
-       margin-bottom: 20px;
-    }
-    a {
-        display: inline-block;
+       font-size: 0.8em;
+       padding: 0.25em 0 0.75em 0;
     }
     .fas, .fab {
         font-size: 1.2em;
-        padding: 0;
-        margin: 0 5px;
+        font-weight: 900;
         &:hover {
             color: $icon_hover_color;
             text-decoration: none;
