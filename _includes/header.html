@@ -1,35 +1,40 @@
 <section class="header">
     <div class="container-fullwidth topbar">
-        <a class="home" href="{{ site.baseurl }}" class="logo">
-            <img id="logo" alt="Too Much of a Person" title="Too Much of a Person" src="{{ site.baseurl }}assets/images/logos/TMOAP-twitter-header.jpg" class="img-fluid">
-        </a>
+        <div class="alert-bar" id="alert-bar">
+            {% include alert-bar.html %}
+        </div>
+        <div class="navbar below-top">  
+            <a class="home" href="{{ site.baseurl }}" class="logo">
+              <img id="logo" alt="Too Much of a Person" title="Too Much of a Person" src="{{ site.baseurl }}assets/images/logos/TMOAP-twitter-header.jpg" class="img-fluid">
+            </a>
         <label for="menu-burger" class="menu-burger"><span class="fas fa-bars fa"></span></label>
         <input type="checkbox" id="menu-burger" role="button">
         <ul id="nav">
             {% for nav in site.data.menu %}
             {% if nav.subcategories != null %}
                 <li>
-                {% if nav.href %}
-                <a href="{{ nav.href | relative_url }}" class="subcategory">{{ nav.title }}</a>
-                {% else %}
-                <a class="subcategory">{{ nav.title }}</a>
-                {% endif %}
-                <ul>
-                {% for subcategory in nav.subcategories %}
-                    <li><a href="{{ subcategory.subhref | relative_url }}">{{ subcategory.subtitle }}</a></li>
-                {% endfor %}
-                </ul>
+                    {% if nav.href %}
+                        <a href="{{ nav.href | relative_url }}" class="subcategory">{{ nav.title }}</a>
+                    {% else %}
+                        <a class="subcategory">{{ nav.title }}</a>
+                    {% endif %}
+                    <ul>
+                        {% for subcategory in nav.subcategories %}
+                            <li><a href="{{ subcategory.subhref | relative_url }}">{{ subcategory.subtitle }}</a></li>
+                        {% endfor %}
+                    </ul>
                 </li>
-            {% elsif nav.href == page.url %}
-                <li class="active"><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
-            {% else %}
-                <li><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-        <script>
-        document.getElementById("nav").addEventListener("click", menuclick);
-        function menuclick() { document.getElementById("menu-burger").checked = false; }
-        </script>
+              {% elsif nav.href == page.url %}
+                  <li class="active"><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
+                {% else %}
+                    <li><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <script>
+            document.getElementById("nav").addEventListener("click", menuclick);
+            function menuclick() { document.getElementById("menu-burger").checked = false; }
+            </script>
+        </div>
     </div>
 </section>
