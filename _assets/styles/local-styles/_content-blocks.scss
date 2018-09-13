@@ -339,32 +339,50 @@ hr {
 
 .member-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 4rem;
 }
 
 .member-card {
     box-shadow: 0px 1px 5px $nearly_black;
-    padding-bottom: 0.5em;
     background: $team_cards_color;
     font-family: Couture, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    p {
+        text-align: center;
+        margin: 0 0.1em;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .name, .role, .social {
+        position: relative; 
+        padding: 0 0.25em;
+    }
     .name {
-        font-size: 1.2em;
-        font-weight: 900;
-        padding: 0.75em 0 0.25em 0;
+        height: 5vmax;
+        p {
+            font-size: 0.75em;
+            font-weight: 900;
+        }
     }
     .role {
-       font-size: 0.8em;
-       padding: 0.25em 0 0.75em 0;
+        height: 3vmax;
+        font-size: 0.65em;
+        font-weight: 600;
     }
-    .fas, .fab {
-        font-size: 1.2em;
-        font-weight: 900;
-        &:hover {
-            color: $icon_hover_color;
-            text-decoration: none;
+    .social {
+        height: 3vmax;
+        font-size: 0.9em;
+        .fas, .fab {
+            &:hover {
+                color: $icon_hover_color;
+                text-decoration: none;
+            }
         }
     }
     a, a:visited {
