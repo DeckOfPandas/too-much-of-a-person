@@ -50,14 +50,14 @@ og-image_height: 635
 </section>
 
 <a id="index_about"></a>
-<section class="container_section">
-	<div class="container">
+<section class="container_section about">
+	<div class="container" style="padding:20px 40px;background-color:rgba(255,255,255,0.6);">
 		<h1>About</h1>
 		<p class="">‘Too Much of a Person’ is a project chronicling the experiences of self-identifying women and non-binary people being told they were "too much" of something (nice, loud, sensitive, aggressive etc.) to dismiss or conform them to the current perception of how a woman should be.</p>
 		<p>Your too much could be your power. Let’s reclaim that, take up space together and be whatever we want.</p>
 		<p>Welcome to the online gallery of this multi-media exhibition. Listen to the powers and waves these extraordinary people are making in the world, and know that you are not alone.</p>
 	</div>
-	<div class="container">
+	<div class="container" style="padding:20px 40px;background-color:rgba(255,255,255,0.6);">
 	  	{% include video.html url="https://www.youtube.com/embed/s-OJoLnkEoA?rel=0&amp;showinfo=0" width="560" height="315" string="helooo" %}
 	</div>
 </section>
@@ -77,11 +77,9 @@ og-image_height: 635
 		<div class="section_subtitle">
 			<span>Updated every Thursday</span>
 		</div>
-		<div class="small">
-			{% include blog_list.html num_posts_to_show=site.num_blog_posts_to_show_on_front_page %}
-		</div>
+		{% include blog_list.html num_posts_to_show=site.num_blog_posts_to_show_on_front_page %}
 		{% include dotdotdot.html %}
-		<div class="blog_footer right small">
+		<div class="blog_footer small">
 			{% include blog_footer.html %}
 		</div>
 	</div>
