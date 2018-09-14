@@ -89,15 +89,22 @@ og-image_height: 635
 <section class="container_section events"  style="background-image: url('{{site.baseurl}}assets/images/backgrounds/event_letterbox.jpg');background-repeat: no-repeat;background-size:cover;padding-top:80px;padding-bottom:80px;">
 		<div class="container" style="padding:20px 40px;background-color:rgba(255,255,255,0.6);">
 			<h1>Events</h1>
-			<p>Coming soon...</p>
+			<div class="section_subtitle">
+				<span>Upcoming Too Much of a Person goodness</span>
+			</div>
+			<div class="container center">
+				{% include event_list.html %}
+			</div>
 		</div>
 </section>
 
-<a id="index_team"></a>
+<a id="index_height="315" "></a>
 <section class="container_section team">
 	<div class="container">
 		<h1>Team</h1>
-		{% include team.html %}
+		<div class="container">
+			{% include team.html %}
+		</div>
 	</div>
 </section>
 
