@@ -763,17 +763,13 @@ hr {
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.below-top {
-
-}
-
-.sticky + .below-top {
-  padding-top: 110px;
+.sticky + .stick-here {
+    padding-top: 110px;
 }
 
 .glitter {

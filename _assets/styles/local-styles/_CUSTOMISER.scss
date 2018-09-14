@@ -25,10 +25,12 @@ $line_color: $bay_wharf_grey;
 
 // NAVBAR AND MENU
 
-$navbar_bg: #fff;
+$home_icon_color: $nearly_black;
+$home_icon_hover_color: $diana_red;
+$navbar_bg: $white;
 $navbar_link_color: $nearly_black;
-$navbar_link_hover_color: $navbar_bg;
-$navbar_link_active_color: $diana_red;
+$navbar_link_hover_color: $white;
+$navbar_link_active_color: $white;
 
 $burger_button_bg: $diana_red;
 $burger_button_text: #fff;

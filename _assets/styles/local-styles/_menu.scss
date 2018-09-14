@@ -1,6 +1,5 @@
 /* Menu */
 
-$navbar-height: 75px;
 .header {
     width: 100%;
     font-face: 'Helevetica Neue', sans-serif;
@@ -8,30 +7,31 @@ $navbar-height: 75px;
         z-index: 10;
         background: $navbar_bg;
         position: relative;
-        top: 10px;
+        top: 0;
         right: 0;    
     }
-    .home > img {
-        height: $navbar-height;
-        width: auto;
-        margin: 10px;
-        padding: 0;
-        @media screen and (max-width: 373px){
-            max-width: 50%;
-            height: auto;
+    .home {
+        font-size: 1.25em;
+        vertical-align: middle;
+        .fa {
+            color: $home_icon_color;
+            &:hover {
+                color: $home_icon_hover_color;
+                &:visited {
+                    color: $home_icon_color;
+                }                
+            }
         }
-    }   
-
-
+    }
     ul {
         z-index: 10;   
         list-style: none;
-        margin: 20px 0px;
-        padding: 0;
+        margin: 0;
+        padding: 0.5rem 0;
         text-transform: uppercase;
-        font-size: 0.82em;
+        font-size: 0.8em;
         font-weight: 900;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.075em;
         float: right;
         @media screen and (max-width: 980px){
             display: inline-block;
@@ -46,20 +46,20 @@ $navbar-height: 75px;
             }            
             &:hover {
                 background: $navbar_link_color;
-                color: $navbar_bg;
+                color: $navbar_link_hover_color;
                 &:visited {
                     color: $navbar_bg
                 }                
             }
             &:hover > a { 
-                color: $navbar_bg;
+                color: $navbar_link_hover_color;
             }            
             a {
                 display: block;
                 color: $navbar_link_color;
                 text-decoration: none;
-                line-height: 20px;
-                padding: 15px;
+                line-height: 2em;
+                padding: 0.5rem 0.75rem;
                 &.subcategory::after {
                     content: " ";
                     display: inline-block;
@@ -82,7 +82,7 @@ $navbar-height: 75px;
     float: right;
     display: none;
     width: 50px;
-    margin: 30px 15px 25px 15px;
+    margin: 0.5rem 0.75rem;
     padding: 5px 0;
     color: $burger_button_text;
     background: $burger_button_bg;
@@ -90,13 +90,13 @@ $navbar-height: 75px;
     .fa, .fas {
         color: $burger_button_text;
     }
-    @media screen and (max-width: 846px){
+    @media screen and (max-width: 944px){
         display: block;
     }
 }
 
 /*Responsive Styles*/
-@media screen and (max-width: 859px){
+@media screen and (max-width: 944px){
     .header {
         input[type=checkbox]:checked ~ ul{
             display: inline-block;
@@ -119,10 +119,7 @@ $navbar-height: 75px;
                 }
                 a {
                     color: $burger_menu_link_color;
-                    padding-left: 0px;
-                    padding-right: 0px;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                    
                 }
             }
         }
