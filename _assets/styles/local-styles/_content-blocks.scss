@@ -187,31 +187,6 @@ hr {
     }
 }
 
-#cover_overlay {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $headline_bg_color;
-    z-index: 5;
-    cursor: pointer;
-    h1 {
-        margin: 0;
-        padding: 3vw 1vw;
-        color: $headline_color;
-        font-family: Couture, sans-serif;
-        text-transform: uppercase;
-        font-size: 18vw;
-        font-weight: 900;
-        line-height: 0.9em;
-        letter-spacing: -0.03em;
-    }
-}
-
 #index_cover {
     display: block;
     width: 100%;
@@ -221,17 +196,18 @@ hr {
 }
 
 
-#index_tagline {
+.tagline {
+    padding: 4em 0.25em;
     background: $tagline_bg_color;
     h1 {
         margin: 0;
         color: $tagline_color;
         text-align: center;
-        font-family: Couture, sans-serif;
-        font-size: 7vw;
-        font-weight: 700;
-        letter-spacing: 0.015em;
-        line-height: 1.33em;
+        font-family: 'Rock Salt', cursive !important;
+        font-size: 4.3vw;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+        line-height: 1.5em;
     }
 }
 
@@ -242,9 +218,9 @@ hr {
         width: 100%;
         margin: 0;
         line-height: 0.8em;
-    .fa {
-        font-size: 8vmin;
-    }
+        .fa {
+            font-size: 4vmin;
+        }
     }
     p.left {
         text-align: left;
@@ -256,7 +232,7 @@ hr {
         margin-top: 10px;
     }
     blockquote {
-        padding: 0;
+        padding: 0 10%;
         margin: 0;
         font-style: italic;
     }
@@ -277,8 +253,24 @@ hr {
     }
 }
 
-#index_about {
+.about {
     background: $index_about_bg_color;
+}
+
+
+.video-holder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #index_interviews {
