@@ -90,6 +90,7 @@ h1 {
     font-weight: 900;
     text-transform: uppercase;
     margin: 24px auto 18px auto;
+    color: $nearly_black;
 }
 h2 {
     font-family: Couture, sans-serif !important;
@@ -658,26 +659,29 @@ hr {
     }
 }
 
-.section_subtitle, .section_subtitle_under_image {
-    text-align: left;
+.section_subtitle, .section_subtitle_centered {
     span {
         font-size: 1em;
         text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 0.2em;
+        font-weight: 400;
+        letter-spacing: 0.3em;
     }
 }
 
 .section_subtitle {
+    text-align: left;
     margin-top: -2em; // HAXXXX margin-bottom of h1 above is 1.5em, then there are divs
     margin-bottom: 0em !important; // HAXXXX making up for losing space above
 }
     
-.section_subtitle_under_image {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+.section_subtitle_centered {
+    text-align: center;
 }
 
+.subtitle_info {
+    font-size: 0.75em;
+    text-align: right;
+}
 
 .flex-container {
   display: flex;
@@ -774,4 +778,142 @@ hr {
 
 .glitter {
   background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxQE2Y-0vxVD9wCc954cZSqG5czx6-7-qoHqkXaq8BpMyDhTZ_3g);
+}
+
+
+
+
+
+
+
+
+
+
+#mad_blog {
+    box-sizing: border-box;
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 3px 7px -1px rgba(#000, .1);
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: 0;
+        margin: 1rem auto;
+        margin-bottom: 10%;
+        background: $white;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        line-height: 1.4rem;
+        .meta {
+            position: relative;
+            z-index: 0;
+            height: 200px;
+        }
+        .photo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                .photo {
+                  transform: scale(1.3) rotate(3deg);
+                }
+              }
+        }
+        .description {
+            padding: 1rem;
+            background: $white;
+            position: relative;
+            z-index: 1;
+            h1 {
+                line-height: 1.1;
+                letter-spacing: 0.1rem;
+                margin: 0.5rem;
+                font-size: 1.6rem;
+                color: #3c3c3c;
+            }
+            h2 {
+                text-align: right;
+                font-size: 0.9rem;
+                font-weight: 300;
+                letter-spacing: 0.15rem;
+                line-height: 1.2rem;
+                text-transform: uppercase;
+                color: $peace_grey;
+                span {
+                    color: $bay_wharf_grey;
+                    font-weight: 500;
+                }
+                &:last-of-type {
+                    &:after {
+                        width: 61.8%;
+                        content:' ';
+                        display:block;
+                        height: 3px;
+                        background: $bay_wharf_grey;
+                        border-radius: 3px;                        
+                    }
+                }
+            }
+            .read-more {
+                padding-top: 0;
+                font-size: 0.75rem;
+                text-align: right;
+                text-transform: uppercase;
+            }
+        }
+        p {
+            position: relative;
+            margin: 1rem 0 0;
+            font-size: 1rem;
+            color: #555;
+            &:first-of-type {
+                margin-top: 1rem;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    height: 5px;
+                    background: $turquoise;
+                    width: 35px;
+                    top: -0.75rem;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+      @media (min-width: 640px) {
+        flex-direction: row;
+        
+        .meta {
+          flex-basis: 40%;
+          height: auto;
+        }
+        .description {
+          flex-basis: 60%;
+          &:before {
+            transform: skewX(-3deg);
+            content: "";
+            background: #fff;
+            width: 30px;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+          }
+        }
+        &.alt {
+          flex-direction: row-reverse;
+          .description {
+            &:before {
+              left: inherit;
+              right: -10px;
+              transform: skew(3deg)
+            }
+          }
+        }
+      }
+    }
 }

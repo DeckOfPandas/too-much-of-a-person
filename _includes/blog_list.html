@@ -1,28 +1,40 @@
 {% assign sorted = site.blog | sort: 'date' | reverse | limit: max_posts_to_show %}
 
-<ul class="blog_archive_list"> 
-	<p class="right" style="margin-top:0;margin-bottom: 0;">
-		{% if include.num_posts_to_show %} 
-			{% assign max_posts_to_show = include.num_posts_to_show %} 
-			showing the {{ max_posts_to_show }} most recent blog posts
-			</br>	
-			<a class="blog_nav_link archive" href="{{ site.baseurl }}blog/">:archive:</a>
-		{% else %}
-			{% assign max_posts_to_show = site.blog.size %} 
-			<br> 
-		{% endif %}	
-	</p>
-	{% assign i = 0 %}
-	{% for post in sorted | limit: max_posts_to_show %}
-			{% if i < 1.0 %}
-				<li class="blog_list_top">
-			{% else %}
-		    	<li>
-			{% endif %}
-		      <span class="blog_list_title"><a href="{{ post.url | absolute_url }}" class="blog_list_title">{{ post.title }}</a></span>
-		      <br><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time><span class="author">{{ post.author }}</span>
-		      <p>{{ post.content | truncatewords:40 | strip_html }}</p>
-		    </li>
-	        {% assign i = i | plus:1 %}
-	{% endfor %}
-</ul>	
+<section id="mad_blog">
+  {% if include.num_posts_to_show %} 
+    {% assign max_posts_to_show = include.num_posts_to_show %} 
+    <p class="subtitle_info">
+        showing the {{ max_posts_to_show }} most recent blog posts
+          </br> 
+      <a class="blog_nav_link archive" href="{{ site.baseurl }}blog/">:archive:</a>
+    </p>
+  {% else %}
+      {% assign max_posts_to_show = site.blog.size %} 
+      <br> 
+    {% endif %} 
+  {% assign i = 0 %}
+  {% for post in sorted | limit: max_posts_to_show %}
+    {% assign rem = i | modulo:2 %}
+    {% if rem == 0 %}
+      <div class="blog-card">
+    {% else %}    
+      <div class="blog-card alt">
+    {% endif %}
+        <div class="meta">
+        <div class="photo" style="background-image: url('/assets/images/blog/{{post.header_image}}')"></div>
+      </div>
+      <div class="description">
+        <h1>{{ post.title | truncatewords:9 | strip_html }}</h1>
+        <h2><span>{{ post.author }}</span><br>
+          {{ post.date | date_to_long_string }}
+        </h2>
+        <p> {{ post.content | truncatewords:25 | strip_html }}</p>
+        <p class="read-more">
+          <a href="{{ post.url | absolute_url }}">Read More ...</a>
+        </p>
+      </div>
+    </div>
+         
+          {% assign i = i | plus:1 %}
+  {% endfor %}
+</section>
