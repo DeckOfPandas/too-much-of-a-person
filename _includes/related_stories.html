@@ -1,0 +1,35 @@
+{% assign sorted = site.stories | sort: 'date' | reverse | limit: max_posts_to_show %}
+
+<section class="card-container" id="mad_story">
+  {% if include.num_posts_to_show %} 
+    {% assign max_posts_to_show = include.num_posts_to_show %} 
+    <p class="subtitle_info">
+        showing the {{ max_posts_to_show }} most recent blog posts
+          </br> 
+      <a class="blog_nav_link archive" href="{{ site.baseurl }}blog/">:archive:</a>
+    </p>
+  {% else %}
+      {% assign max_posts_to_show = site.stories.size %} 
+  {% endif %} 
+
+  {% for post in sorted | limit: max_posts_to_show %}
+    <article class="card">
+        <figure class="card__thumbnail">
+            <a href="{{ post.url | absolute_url }}">
+              <img src="{{ post.matrix_photo }}">
+            </a>
+        </figure>
+        <header class="card__title">
+            <h1>{{ post.title | truncatewords:9 | strip_html }}</h1>
+        </header>
+        <main class="card__description">
+            "{{ post.quotation | truncatewords:25 | strip_html }}"
+        </main>
+        <main class="tag_list">
+          {% for tag in page.tags %}   
+                <a href="" class="tag">{{ tag }}</a>
+          {% endfor %}
+        </main>
+    </article>
+  {% endfor %}
+</section>

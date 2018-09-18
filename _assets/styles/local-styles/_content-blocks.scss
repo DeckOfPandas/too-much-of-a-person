@@ -18,6 +18,7 @@ body {
     margin: 0;
     background-color: $outer_bg;
     color: $base_text;
+    font-size:16px;
     @media screen and (max-width: 760px){
         margin-bottom: 0px;
     }
@@ -259,6 +260,9 @@ hr {
 .quotation {
     background-color: $index_quotation_bg_color;
     font-family: Couture, sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.075rem;
     p {
         width: 100%;
         margin: 0;
@@ -552,17 +556,17 @@ hr {
     text-align: left;
     a, a:visited {
         color: $tag_color;
-        background: $tag_bg_color;
         text-transform: uppercase;
-        font-weight: 900;
         text-align: left;
-        letter-spacing: 0.15em;
-        padding: 3px;
-        margin-right: 20px;
+        font-family: Couture, sans-serif !important;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.075rem;
+        padding: 1px;
+        margin: 1px 20px 1px 0px;
     }
     a:hover {
         color: $tag_hover_color;
-        background: $tag_bg_hover_color;
         text-decoration: none;
     }
 }
@@ -1002,5 +1006,73 @@ hr {
           }
         }
       }
+    }
+}
+
+
+
+
+
+
+
+.card-container {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+.card {
+    display: grid;
+}
+.card .button {
+    align-self: end;
+}
+
+
+
+
+
+
+
+/* Simple Card styles for prettying */
+
+#mad_story {
+    .card {
+        background-color: $white;
+        font-family: Couture, sans-serif !important;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.075rem;
+        border-radius: 0px;
+    }
+    figure {
+        margin: 0;
+    }
+    figure {
+        background: #555;
+    }
+    figure img {
+        opacity: 1;
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+    figure:hover img {
+        opacity: .5;
+    }
+    img {
+        max-width: 100%;
+    } 
+    .card__title {
+        font-size: 0.5rem;
+        margin-bottom: -0.25rem;
+        padding: 0 0.5rem;
+    }
+    .card__description {
+        line-height: 1.6em;
+        font-style: italic;
+        padding: 0.5rem;
+    }
+    .tag_list {
+        padding: 0.5rem;
     }
 }
