@@ -6,7 +6,7 @@ layout: page_no_header
     <dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></dd>
     <dt>Author:</dt>
     {% for person in page.authors %}
-    <dd class="author"><a rel="author" href="{{ person.url }}" target="_blank">{{ person.name }}</a></dd>
+    <dd class="post_author"><a rel="post_author" href="{{ person.url }}" target="_blank">{{ person.name }}</a></dd>
     {% endfor %}
 </dl>
 
@@ -18,7 +18,7 @@ layout: page_no_header
 	<div class="flex-container_blog_title blog_title">
 		<h1>{{ page.title }}</h1>
 		<div class="container-fullwidth" style="padding-bottom:2em;">
-			<div class="author">:{{ page.author }}:</div>
+			<div class="post_author">:{{ page.author }}:</div>
 			<div><time datetime="{{ page.date | date_to_xmlschema }}">:{{ page.date | date_to_long_string }}:</time></div>
 		</div>
 	</div>

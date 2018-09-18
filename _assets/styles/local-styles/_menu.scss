@@ -1,33 +1,37 @@
 /* Menu */
 
-$navbar-height: 75px;
 .header {
     width: 100%;
     font-face: 'Helevetica Neue', sans-serif;
     .topbar {
-        z-index: 1000;
+        z-index: 10;
         background: $navbar_bg;
-        position: fixed;
+        position: relative;
         top: 0;
         right: 0;    
     }
-    .home > img {
-        height: $navbar-height;
-        width: auto;
-        margin: 10px;
-        padding: 0;
-    }   
-
-
+    .home {
+        font-size: 1.25em;
+        vertical-align: middle;
+        .fa {
+            color: $home_icon_color;
+            &:hover {
+                color: $home_icon_hover_color;
+                &:visited {
+                    color: $home_icon_color;
+                }                
+            }
+        }
+    }
     ul {
-        z-index: 1000;   
+        z-index: 10;   
         list-style: none;
-        margin: 20px 0px;
-        padding: 0;
+        margin: 0;
+        padding: 0.5rem 0;
         text-transform: uppercase;
-        font-size: 0.82em;
+        font-size: 0.8em;
         font-weight: 900;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.075em;
         float: right;
         @media screen and (max-width: 980px){
             display: inline-block;
@@ -42,20 +46,20 @@ $navbar-height: 75px;
             }            
             &:hover {
                 background: $navbar_link_color;
-                color: $navbar_bg;
+                color: $navbar_link_hover_color;
                 &:visited {
                     color: $navbar_bg
                 }                
             }
             &:hover > a { 
-                color: $navbar_bg;
+                color: $navbar_link_hover_color;
             }            
             a {
                 display: block;
                 color: $navbar_link_color;
                 text-decoration: none;
-                line-height: 20px;
-                padding: 15px;
+                line-height: 2em;
+                padding: 0.5rem 0.75rem;
                 &.subcategory::after {
                     content: " ";
                     display: inline-block;
@@ -77,32 +81,22 @@ $navbar-height: 75px;
 .menu-burger {
     float: right;
     display: none;
-    margin: 25px 10px;
-    padding: 10px 5px;
-    width: 115px;
+    width: 50px;
+    margin: 0.5rem 0.75rem;
+    padding: 5px 0;
     color: $burger_button_text;
-    font-weight: 700;
-    letter-spacing: 0.05em;
     background: $burger_button_bg;
-    text-decoration: none;
-    text-transform: uppercase;
     text-align: center;
-    padding: 10px 2px;
-    width: 115px;
-    float: right;
-    margin: 30px 15px 25px 15px;
-    display: none;
     .fa, .fas {
-        margin: 0 10px 0 0;
         color: $burger_button_text;
     }
-    @media screen and (max-width: 846px){
+    @media screen and (max-width: 944px){
         display: block;
     }
 }
 
 /*Responsive Styles*/
-@media screen and (max-width: 859px){
+@media screen and (max-width: 944px){
     .header {
         input[type=checkbox]:checked ~ ul{
             display: inline-block;
@@ -125,10 +119,7 @@ $navbar-height: 75px;
                 }
                 a {
                     color: $burger_menu_link_color;
-                    padding-left: 0px;
-                    padding-right: 0px;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                    
                 }
             }
         }
