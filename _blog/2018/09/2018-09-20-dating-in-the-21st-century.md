@@ -1,3 +1,4 @@
+---
 layout: blog_post
 title:  "Dating in the 21st Century"
 author: "Nina Kerkez"
@@ -5,6 +6,7 @@ date:   2018/09/20
 author_credit: ""
 post_number: 11
 header_image: "12-1.png"
+---
 
 It’s a Friday night, I’m in Greece enjoying the last rays of summer while my phone incessantly pings beside me. I’m getting notifications from Hinge – an online dating app that I recently subscribed to, whose USP I am yet to understand.   
 
