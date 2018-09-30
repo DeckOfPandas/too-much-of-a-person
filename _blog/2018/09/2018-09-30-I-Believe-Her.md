@@ -1,11 +1,11 @@
 ---
 layout: blog_post
-title:  "Dating in the 21st Century"
-author: "Nina Kerkez"
-date:   2018/09/20
+title:  "I Believe Her"
+author: "Sunaina Dasgupta"
+date:   2018/09/30
 author_credit: ""
-post_number: 11
-header_image: "12-1.png"
+post_number: 13
+header_image: "13-1.png"
 ---
 Around 7 years ago, a group of women in their early 20s gathered together to share tales of past, present and hopes for the future.  
 
