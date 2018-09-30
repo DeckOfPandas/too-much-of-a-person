@@ -5,7 +5,7 @@ author: "Sunaina Dasgupta"
 date:   2018/09/30
 author_credit: ""
 post_number: 13
-header_image: "13-1.png"
+header_image: "13-1.jpg"
 ---
 Around 7 years ago, a group of women in their early 20s gathered together to share tales of past, present and hopes for the future.  
 
