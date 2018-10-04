@@ -33,7 +33,7 @@ She is the most powerful character that has been introduced by the franchise thu
 
 Two female led superhero movies within 3 years of each other - What a time to be alive! The media should be filled with declarations about what a historic moment this is and what a positive impact it will have on the industry, on fans and albeit a little dramatically on the world.   
 
-But instead, after the release of the highly anticipated first trailer for the Captain Marvel, social media was poisoned with men feeling compelled to  tell Brie Larson (Captain America) to smile more.  
+But instead, after the release of the highly anticipated first trailer for the Captain Marvel, social media was poisoned with men feeling compelled to  tell Brie Larson (Captain Marvel) to smile more.  
 
 Some Twitter users even took it upon themselves to ‘fix’ images from the trailer and photoshop a smile onto Captain Marvel.   
 
