@@ -53,6 +53,6 @@ Is the patriarchy scared? You bet because they used the oldest trick in the book
 
 It would appear Brie Larson would agree, conjuring up the perfect response to these sexist comments. Smile boys.  
 
-{% include blog_image_inline.html filename="14-3.png"image_credit_text="Source: Instagram" %}
+{% include blog_image_inline.html filename="14-3.png" image_credit_text="Source: Instagram" %}
 
 Stop robbing women of their right to express their own emotions and next time you tell a woman to smile remember she may just be a superhero who will end up saving your life one day.  
