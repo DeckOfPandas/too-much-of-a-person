@@ -37,7 +37,7 @@ But instead, after the release of the highly anticipated first trailer for the C
 
 Some Twitter users even took it upon themselves to ‘fix’ images from the trailer and photoshop a smile onto Captain Marvel.   
 
-{% include blog_image_inline.html filename="14-2.png"image_credit_text="Source: Twitter" %}
+{% include blog_image_inline.html filename="14-2.png" image_credit_text="Source: Twitter" %}
 
 It seems ironic to have ‘no words’ in a blog post but the more I think about it and the more I read all the comments on social media the more I am dumbfounded. REALLY?   
 
