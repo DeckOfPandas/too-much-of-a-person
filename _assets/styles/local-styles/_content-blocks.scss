@@ -840,18 +840,27 @@ hr {
         span {
             font-weight: 500;
         }
+        .fa, .fas, .fab {
+            margin: 0.5em;
+            font-size: 2.75em;
+            vertical-align: middle;
+            color: $base_text;
+        }
+    }
+    .event_desc {
+        font-size: 0.8em !important;
+        text-align: center;
     }
     .event_buttons {
         margin: 2em 0;
         a {
             font-size: 1em;
         }
-    }
-    .fa, .fas, .fab {
-        margin: 0.5em;
-        font-size: 2.75em;
-        color: $base_text;
-        vertical-align: middle;
+        .fa {
+            vertical-align: middle;            
+            color: $antiflash_white;
+            font-size: 1.2em;
+        }
     }
     .blog-card {
         display: flex;
@@ -984,8 +993,4 @@ hr {
         }
       }
     }
-}
-
-.event_desc {
-    font-size: 0.8em !important;
 }
