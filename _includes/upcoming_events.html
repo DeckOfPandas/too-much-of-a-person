@@ -34,7 +34,7 @@
                 <p class="event_desc">{{ post.content | truncatewords:25 | strip_html }}</p>
                 <div class="flex-container event_buttons">
                     {% if post.tickets_url %}
-                        <a class="btn btn-success" target="_blank" href="{{ post.tickets }}">Tickets and details <i class="fab fa-facebook"></i></a>
+                        <a class="btn btn-success" target="_blank" href="{{ post.tickets }}"> Details <i class="fab fa-facebook"></i></a>
                     {% else %}
                         Tickets available soon
                     {% endif %}
