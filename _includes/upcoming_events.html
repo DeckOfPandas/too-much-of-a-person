@@ -31,6 +31,7 @@
                     <div class="event_detail col-md-5 col-sm-7"><i class="fas fa-calendar-alt"></i><br><span>{{ post.date | date_to_string }}</span><br>{{ post.start_time | date: "%H:%M" }}-{{ post.end_time | date: "%H:%M" }}</div>
                     <div class="event_detail col-md-5 col-sm-7"><i class="fa fa-map-marker-alt"></i><br><span>{{ post.venue }}</span><br>{{ post.address }}<br><a href="{{ post.gmaps_url }}" target="new">map</a></div>
                 </div></p>
+                <p class="event_desc">{{ post.content | truncatewords:25 | strip_html }}</p>
                 <div class="flex-container event_buttons">
                     {% if post.tickets_url %}
                         <a class="btn btn-success" target="_blank" href="{{ post.tickets }}">Tickets and details <i class="fab fa-facebook"></i></a>
@@ -38,7 +39,6 @@
                         Tickets available soon
                     {% endif %}
                 </div>
-                <p class="event_desc">{{ post.content | truncatewords:25 | strip_html }}
             </div>
          
           {% assign i = i | plus:1 %}
