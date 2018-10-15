@@ -8,31 +8,39 @@
     {% endif %}
 {% endfor %}
 
-
-<section class="upcoming_events">
-    <div class="content">
-        <h1>Upcoming events</h1>
-        {% if events.size > 0 %}
-            <ol>
-            {% for post in events %}
-                {% assign start = post.date | date: "%s" | plus: 86400 | to_integer %}
-                {% if start >= current_time %}
-                    <li>
-                        <hr>
-                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                        <span class="fa fa-calendar" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }} <i class="fa fa-map-marker tab_space"></i>{{ post.venue }}, {{ post.city }}></span>
-                        {% if post.tickets %}
-                            <a class="btn btn-success" target="_blank" href="{{ post.tickets }}">Tickets</a>
-                        {% else %}
-                            <a class="btn btn-success disabled" target="_blank" href="#">Sign up</a>
-                        {% endif %}
-                        <a class="btn btn-grey" href="{{ post.url }}">Details</a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-            </ol>
-        {% else %}
-                <p>There aren't any upcoming events at the moment. Check back soon, or join our mailing list to be kept up to date.</p>
-        {% endif %}
-    </div>
-</section>  
+<section id="mad_blog">
+    
+    <br> 
+  {% assign i = 0 %}
+  {% for post in events | limit: max_posts_to_show %}
+        {% assign start = post.date | date: "%s" | plus: 86400 | to_integer %}
+            {% assign rem = i | modulo:2 %}
+            {% if rem == 0 %}
+                <div class="blog-card">
+            {% else %}    
+                <div class="blog-card alt">
+            {% endif %}
+            <div class="meta">
+                <div class="photo" style="background-image: url('/assets/images/{{post.thumbnail}}')">
+                </div>
+            </div>
+            <div class="description">
+                <h1>{{ post.title | strip_html }}</h1>
+                <h2><span>{{ post.byeline }}</span><br></h2>
+                <p class="event_details"><div class="flex-container">
+                    <div class="event_detail col-md-5 col-sm-7"><i class="fas fa-calendar-alt"></i><br><span>{{ post.date | date_to_string }}</span><br>{{ post.start_time | date: "%H:%M" }}-{{ post.end_time | date: "%H:%M" }}</div>
+                    <div class="event_detail col-md-5 col-sm-7"><i class="fa fa-map-marker-alt"></i><br><span>{{ post.venue }}</span><br>{{ post.address }}<br><a href="{{ post.gmaps_url }}" target="new">map</a></div>
+                </div></p>
+                <p class="event_desc">{{ post.content | truncatewords:25 | strip_html }}</p>
+                <div class="flex-container event_buttons">
+                    {% if post.tickets_url %}
+                        <a class="btn btn-success" target="_blank" href="{{ post.tickets_url }}"> Details <i class="fab fa-facebook"></i></a>
+                    {% else %}
+                        <a class="btn btn-success disabled" target="_blank" href="{{ post.tickets_url }}"> coming soon <i class="fab fa-facebook"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+         
+          {% assign i = i | plus:1 %}
+  {% endfor %}
+</section>

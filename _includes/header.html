@@ -1,40 +1,39 @@
 <section class="header">
     <div class="container-fullwidth topbar">
-        <div class="alert-bar" id="alert-bar">
-            {% include alert-bar.html %}
-        </div>
-        <div class="navbar stick-here">  
-            <a class="home" href="{{ site.baseurl }}" class="logo">
-              <i class="fa fa-lg fa-home"></i>
-            </a>
-            <label for="menu-burger" class="menu-burger"><span class="fas fa-bars fa"></span></label>
-            <input type="checkbox" id="menu-burger" role="button">
-            <ul id="nav">
-                {% for nav in site.data.menu %}
-                    {% if nav.subcategories != null %}
-                        <li>
-                            {% if nav.href %}
-                                <a href="{{ nav.href | relative_url }}" class="subcategory">{{ nav.title }}</a>
-                            {% else %}
-                                <a class="subcategory">{{ nav.title }}</a>
-                            {% endif %}
-                            <ul>
-                                {% for subcategory in nav.subcategories %}
-                                    <li><a href="{{ subcategory.subhref | relative_url }}">{{ subcategory.subtitle }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    {% elsif nav.href == page.url %}
-                        <li class="active"><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
-                    {% else %}
-                        <li><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <script>
-            document.getElementById("nav").addEventListener("click", menuclick);
-            function menuclick() { document.getElementById("menu-burger").checked = false; }
-            </script>
+        <div class="alert-bar" id="alert-bar" style="background-color: #fff; background-image: none;">		
+            <div class="navbar stick-here">  
+                <a class="home" href="{{ site.baseurl }}" class="logo">
+                  <i class="fa fa-lg fa-home"></i>
+                </a>
+                <label for="menu-burger" class="menu-burger"><span class="fas fa-bars fa"></span></label>
+                <input type="checkbox" id="menu-burger" role="button">
+                <ul id="nav">
+                    {% for nav in site.data.menu %}
+                        {% if nav.subcategories != null %}
+                            <li>
+                                {% if nav.href %}
+                                    <a href="{{ nav.href | relative_url }}" class="subcategory">{{ nav.title }}</a>
+                                {% else %}
+                                    <a class="subcategory">{{ nav.title }}</a>
+                                {% endif %}
+                                <ul>
+                                    {% for subcategory in nav.subcategories %}
+                                        <li><a href="{{ subcategory.subhref | relative_url }}">{{ subcategory.subtitle }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% elsif nav.href == page.url %}
+                            <li class="active"><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
+                        {% else %}
+                            <li><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <script>
+                document.getElementById("nav").addEventListener("click", menuclick);
+                function menuclick() { document.getElementById("menu-burger").checked = false; }
+                </script>
+            </div>
         </div>
     </div>
 </section>

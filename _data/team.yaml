@@ -34,6 +34,11 @@
   role: "Sound"
   photo: "kyle_pickford.jpg"
   email: diana@toomuchofaperson.com
+  
+- name: "Prerna Winter"
+  role: "Video Content editor"
+  photo: prerna_winter.png"
+  email: diana@toomuchofaperson.com  
 
 - name: "Helen Jackson"
   role: "Web Developer"

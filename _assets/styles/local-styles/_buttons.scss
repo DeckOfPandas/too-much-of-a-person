@@ -71,7 +71,7 @@ fieldset[disabled] .btn {
 }
 
 .btn-success {
-  color: $btn_text;
+  color: $btn_text !important;
   background-color: $btn_success_bg;
   border-color: $btn_success_border;
 }
