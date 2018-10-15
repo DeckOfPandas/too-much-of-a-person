@@ -826,6 +826,36 @@ hr {
 
 #mad_blog {
     box-sizing: border-box;
+    .event_detail {
+        background: $antiflash_white;
+        border: 1px solid $bay_wharf_grey;
+        border-radius: 2em;
+        margin: 1em auto;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+            text-transform: lowercase;
+            margin: 1em auto;
+        }
+        color: $bay_wharf_grey;
+        font-size: 0.75em;
+        font-weight: 300;
+        span {
+            font-weight: 500;
+        }
+    }
+    .event_buttons {
+        margin: 2em 0;
+        a {
+            font-size: 1em;
+        }
+    }
+    .fa, .fas, .fab {
+        margin: 0.5em;
+        font-size: 2.75em;
+        color: $base_text;
+        vertical-align: middle;
+    }
     .blog-card {
         display: flex;
         flex-direction: column;
@@ -903,7 +933,6 @@ hr {
             position: relative;
             margin: 1rem 0 0;
             font-size: 1rem;
-            color: #555;
             &:first-of-type {
                 margin-top: 1rem;
                 &:before {
@@ -917,6 +946,13 @@ hr {
                 }
             }
         }
+       p.event_details {
+            &:first-of-type {
+                &:before {
+    background-color: #ef1cdf;
+                }
+            }
+        }        
 
       @media (min-width: 640px) {
         flex-direction: row;
@@ -951,4 +987,8 @@ hr {
         }
       }
     }
+}
+
+.event_desc {
+    font-size: 0.8em !important;
 }
