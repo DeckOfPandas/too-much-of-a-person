@@ -21,7 +21,7 @@
                 <div class="blog-card alt">
             {% endif %}
             <div class="meta">
-                <div class="photo" style="background-image: url('/assets/images/blog/{{post.thumbnail}}')">
+                <div class="photo" style="background-image: url('/assets/images/{{post.thumbnail}}')">
                 </div>
             </div>
             <div class="description">
@@ -34,7 +34,7 @@
                 <p class="event_desc">{{ post.content | truncatewords:25 | strip_html }}
                 <div class="flex-container event_buttons">
                     {% if post.tickets_url %}
-                        <a class="btn btn-success" target="_blank" href="{{ post.tickets }}">Tickets</a>
+                        <a class="btn btn-success" target="_blank" href="{{ post.tickets }}">Tickets and details</a>
                     {% else %}
                         Tickets available soon
                     {% endif %}
