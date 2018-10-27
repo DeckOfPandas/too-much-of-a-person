@@ -27,6 +27,6 @@ Aman Doll was unable to participate on the day, but she sent us her story and he
 
 The Story Slam also included fantastic spoken word performances by <a href="https://soundcloud.com/user-719797293/tmoap-story-slam-annie-rockson-poem-audio" target="new">Annie Rockson</a> and brilliant music performances by <a href="https://soundcloud.com/user-719797293/tmoap-story-slam-priscilla-eyles-music-3-audio" target="new">Priscilla Eyles</a> and <a href="https://soundcloud.com/user-719797293/tmoap-story-slam-rosie-shann-music-1-audio" target="new">Rosie Shann!</a>   
 
-Hear all of these live performances on our soundcloud:<a href="https://soundcloud.com/user-719797293" target="new">Click Here.</a>  
+Hear all of these live performances on our soundcloud:<a href="https://soundcloud.com/user-719797293" target="new"> Click Here.</a>  
 
 The TMOAP Story Slam Fundraiser would not have been possible without these wonderful performers. We are also forever indebted to the wonderful humans who volunteered behind the scenes to help us. Thank you Kyle Pickford, Amanda Dawn, Silvia Mourglia, Martina Trilik, Kylie Hawryliw and Kamran Mortazavi. Also a huge thanks to Mintel Group who sponsored the event space.
