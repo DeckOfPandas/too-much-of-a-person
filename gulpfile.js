@@ -112,11 +112,22 @@ gulp.task('clean:images', function(callback) {
 
 // Copies fonts.
 gulp.task('build:fonts', ['couture']);
+gulp.task('build:fonts', ['sister-spray']);
 
 
 // Places Couture fonts in proper location.
 gulp.task('couture', function() {
     return gulp.src(paths.fontFiles + '/couture/**.*')
+        .pipe(rename(function(path) {path.dirname = '';}))
+        .pipe(gulp.dest(paths.jekyllFontFiles))
+        .pipe(gulp.dest(paths.siteFontFiles))
+        .pipe(browserSync.stream())
+        .on('error', log.error());
+});
+
+// Places Sister Spray fonts in proper location.
+gulp.task('sister-spray', function() {
+    return gulp.src(paths.fontFiles + '/sister-spray/**.*')
         .pipe(rename(function(path) {path.dirname = '';}))
         .pipe(gulp.dest(paths.jekyllFontFiles))
         .pipe(gulp.dest(paths.siteFontFiles))
