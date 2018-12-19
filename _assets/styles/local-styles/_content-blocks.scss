@@ -254,20 +254,39 @@ hr {
     padding: 2.5em 0 4em 0;  
 }
 
-#index_tagline {
-    padding: 4em 0;
-    background: $tagline_bg_color;
-    h1 {
-        margin: 0;
-        color: $tagline_color;
-        text-align: center;
-        font-family: 'Sister Spray', sans-serif !important;
-        font-size: 3.1vw;
-        font-weight: 500;
-        letter-spacing: 0.25em;
-        line-height: 1.5em;
+.video-holder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
+
+.about {
+    background-image: url('/assets/images/backgrounds/about_letterbox_1700.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1250px){
+        background-image: url('/assets/images/backgrounds/about_letterbox_1250.jpg');
+    }
+    @media screen and (max-width: 800px){
+        background-image: url('/assets/images/backgrounds/about_letterbox_800.jpg');
+    }
+    @media screen and (max-width: 600px){
+        background: $index_about_bg_color;
+    }
+    p {
+        font-size: 0.9em;
+    } 
+}
+
 
 .quotation {
     background-color: $index_quotation_bg_color;
@@ -312,32 +331,19 @@ hr {
     }
 }
 
-.about {
-    background: $index_about_bg_color;
-    p {
-        font-size: 0.9em;
-    } 
-}
-
-
-.video-holder {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-#index_interviews {
+.stories {
     h1 {
-        color: $index_interviews_title_color;
+        color: $index_stories_title_color;
+    }
+    background-image: url('/assets/images/backgrounds/stories_letterbox_1700.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 1250px){
+        background-image: url('/assets/images/backgrounds/stories_letterbox_1250.jpg');
+    }
+    @media screen and (max-width: 600px){
+        background: $index_stories_bg_color;
     }
 }
 
