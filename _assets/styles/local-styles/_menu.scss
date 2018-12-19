@@ -11,7 +11,7 @@
         right: 0;    
     }
     .home {
-        font-size: 1.25em;
+        font-size: 1.15em;
         vertical-align: middle;
         .fa {
             color: $home_icon_color;
@@ -27,13 +27,13 @@
         z-index: 10;   
         list-style: none;
         margin: 0;
-        padding: 0.5rem 0;
+        padding: 0.65em 0;
         text-transform: uppercase;
         font-size: 0.8em;
         font-weight: 900;
         letter-spacing: 0.075em;
         float: right;
-        @media screen and (max-width: 980px){
+        @media screen and (max-width: 985px){
             display: inline-block;
         }
         li {        
@@ -59,7 +59,7 @@
                 color: $navbar_link_color;
                 text-decoration: none;
                 line-height: 2em;
-                padding: 0.5rem 0.75rem;
+                padding: 0.5rem 0.65rem;
                 &.subcategory::after {
                     content: " ";
                     display: inline-block;
@@ -82,21 +82,21 @@
     float: right;
     display: none;
     width: 50px;
-    margin: 0.5rem 0.75rem;
-    padding: 5px 0;
+    margin: 0.85em 1em;
+    padding: 0.4em 0.2em;
     color: $burger_button_text;
     background: $burger_button_bg;
     text-align: center;
     .fa, .fas {
         color: $burger_button_text;
     }
-    @media screen and (max-width: 944px){
+    @media screen and (max-width: 954px){
         display: block;
     }
 }
 
 /*Responsive Styles*/
-@media screen and (max-width: 944px){
+@media screen and (max-width: 954px){
     .header {
         input[type=checkbox]:checked ~ ul{
             display: inline-block;
