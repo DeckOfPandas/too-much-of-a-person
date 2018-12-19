@@ -245,10 +245,13 @@ hr {
 
 #index_cover {
     display: block;
+    margin: 90px 0 0 0; // TODO HAXXXX top bar sticky
+}
+
+.cover {
     width: 100%;
-    margin: 0;
-    margin-top: 90px; // TODO HAXXXX top bar sticky
-    padding: 0;
+    background-color: $white;
+    padding: 2.5em 0 4em 0;  
 }
 
 #index_tagline {
