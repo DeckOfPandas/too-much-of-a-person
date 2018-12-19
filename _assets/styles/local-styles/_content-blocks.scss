@@ -270,6 +270,9 @@ hr {
 }
 
 .about {
+    p {
+        font-size: 0.9em;
+    } 
     background-image: url('/assets/images/backgrounds/about_letterbox_1700.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,9 +285,6 @@ hr {
     @media screen and (max-width: 600px){
         background: $index_about_bg_color;
     }
-    p {
-        font-size: 0.9em;
-    } 
 }
 
 
@@ -335,6 +335,9 @@ hr {
     h1 {
         color: $index_stories_title_color;
     }
+    p {
+        font-size: 0.9em;
+    } 
     background-image: url('/assets/images/backgrounds/stories_letterbox_1700.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -359,6 +362,9 @@ hr {
     h1 {
         color: $index_events_title_color;
     }
+    p {
+        font-size: 0.9em;
+    } 
 }
 
 .overlay_holder {
