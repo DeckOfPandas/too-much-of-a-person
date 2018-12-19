@@ -457,13 +457,13 @@ hr {
     }
 }
 
-#index_press-sponsors {
+.press_sponsors {
     h1 {
         color: $index_press-sponsors_title_color;
     }
     p {
-        text-align: left;
-    }
+        font-size: 0.9em;
+    } 
 }
 
 .contact {
