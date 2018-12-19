@@ -285,6 +285,11 @@ hr {
     @media screen and (max-width: 600px){
         background: $index_about_bg_color;
     }
+    .social {
+        a .fas, a .fab {
+            font-size: 1.5em;
+        }
+    }
 }
 
 
@@ -466,13 +471,42 @@ hr {
     } 
 }
 
-.contact {
-    background: $index_contact_bg_color;
-    .flex-container {
-        text-align: center;
+.social {
+    padding: 2em 0;    
+    text-align: center;
+    background-color: $index_contact_bg_color;
+    .fas, .fab {
+        color: $icon_color_light;
+        &:hover {
+            color: $icon_hover_color;
+        }
+    }
+    a, a:visited {
+        color: $icon_color_light;
+    }
+    a .fas, a .fab {
+        display: inline-block;
+        font-size: 2em;
+        vertical-align: center;
     }
 }
 
+.social_inline {
+    background-color: rgba(255,255,255,0.0);
+     .fas, .fab {
+        color: $icon_color;
+        &:hover {
+            color: $icon_hover_color;
+        }
+    }
+    a, a:visited {
+        color: $icon_color;
+    }
+    a .fas, a .fab {
+        display: inline-block;
+        vertical-align: center;
+    }
+}
 .interview_list {
     h1 {
         color: $link_color;
@@ -708,23 +742,6 @@ hr {
     color: $nearly_black;
 }
 
-.social_blobs {
-    margin-top: 80px;
-    margin-bottom: 0;
-    a .fas, a .fab {
-        display: inline-block;
-        font-size: 6em;
-    }
-    .fas, .fab {
-        &:hover {
-            color: $icon_hover_color;
-        }
-    }
-    a, a:visited {
-        color: $icon_color;
-    }
-}
-
 .section_subtitle, .section_subtitle_centered {
     span {
         font-size: 1em;
@@ -790,7 +807,6 @@ hr {
 .glitter {
   background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxQE2Y-0vxVD9wCc954cZSqG5czx6-7-qoHqkXaq8BpMyDhTZ_3g);
 }
-
 
 
 
