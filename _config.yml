@@ -34,3 +34,4 @@ exclude: ["vendor",
 
 # Site customisation
 num_blog_posts_to_show_on_front_page: 3
+show_stories: true
