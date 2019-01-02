@@ -1,11 +1,11 @@
 ---
 display: true
 layout: story
-storyee: "Priscilla"
+storyee: "Priscilla 2"
 date: 2018-05-01
 quotation: "How sweet the sound of your depth of being met the depth of my being"
-video_youtube: "https://www.youtube.com/embed/s-OJoLnkEoA"
-audio: /assets/audio/priscilla.mp3
+video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
+audio_url: /assets/audio/priscilla.mp3
 matrix_photo: /assets/images/stories/priscilla/matrix.png
 main_photo: /assets/images/stories/priscilla/main.jpg
 photos: 
