@@ -1,4 +1,4 @@
-#HOWTO: Add a story to the website
+# HOWTO: Add a story to the website
 
 ## File structure
 
