@@ -1,18 +1,16 @@
-#HOWTO: Add a story to the website
+# HOWTO: Add a story to the website
 
 ## File structure
 
-The website will automatically create and build a Story page for every config file it finds in `~/_interviews/`, which looks like this:
-
-[screenshot]
+The website will automatically create and build a Story page for every config file it finds in `~/_interviews/`.
 
 Each of these files describes the settings for a Story. More below.
 
-The website will look for the contents for each Story in `~/_assets/images/stories/`, which looks like this:
+The website will look for the images for each Story in `~/_assets/images/stories/`.
 
-[screenshot]
+The other content for the Stories will be URLs, or plain text.
 
-Each directory here represents one Story.
+Each Story must have a config file and an images dir in order to be displayed on the website.
 
 
 ## Config files
@@ -24,7 +22,7 @@ The structure is
 parameter_name: parameter_value
 ```
 
-One per line, with a semicolon, exactly like this^^.
+One per line, with a semicolon, exactly like this^^. Some parameter values must have quotation marks, others must not.
 
 
 ### Config file example
@@ -88,10 +86,9 @@ Each file must be uploaded to GitHub, with its path given in the config file for
 ```
 matrix_photo: /assets/images/interviews/priscilla/matrix.png
 ```
-And the corresponding file is uploaded to that directory, like this:
+The corresponding file should be uploaded to that directory.
 
-[screenshot]
 
 ## How to actually create or upload files on GitHub
 
-To follow (sorry)
+To follow (sorry). Similar details to the "How to add a blog post" document in the gDrive...
