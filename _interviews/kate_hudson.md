@@ -3,7 +3,7 @@ layout: interview
 interviewee: "Kate"
 date: 2018-05-01
 quotation: "Here is a quotation from Kate"
-video_youtube: "https://www.youtube.com/embed/s-OJoLnkEoA"
+video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
 matrix_photo: /assets/images/interviews/kate_hudson/matrix.jpg
 main_photo: /assets/images/interviews/kate_hudson/main.jpg
 photos: 
