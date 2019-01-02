@@ -113,7 +113,6 @@ gulp.task('clean:images', function(callback) {
 // Copies fonts.
 gulp.task('build:fonts', ['couture']);
 
-
 // Places Couture fonts in proper location.
 gulp.task('couture', function() {
     return gulp.src(paths.fontFiles + '/couture/**.*')
