@@ -3,7 +3,8 @@ layout: interview
 interviewee: "Priscilla"
 date: 2018-05-01
 quotation: "How sweet the sound of your depth of being met the depth of my being"
-video_youtube: "https://www.youtube.com/embed/s-OJoLnkEoA"
+video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
+audio_url: "FULL_URL"
 matrix_photo: /assets/images/interviews/priscilla/matrix.png
 main_photo: /assets/images/interviews/priscilla/main.jpg
 photos: 
