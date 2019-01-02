@@ -1,4 +1,5 @@
 ---
+display: true
 layout: story
 storyee: "Priscilla"
 date: 2018-05-01

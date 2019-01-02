@@ -1,20 +1,22 @@
 <ul class="blog_archive_list"> 
     {% for story in site.stories %}
-        <li class="story">
-            <a href="{{ story.url | relative_url }}"><img src="{{ story.thumbnail | relative_url }}" /></a><img src="{{ story.matrix_photo | relative_url }}" class="story_matrix_photo img-fluid" />
-            <div class="bottom_section">
-                <span class="name"><a href="{{ story.url | absolute_url }}" class="blog_list_title">{{ story.storyee }}</a></span>
-                <span class="quotation">
-                    <i class="fa fa-quote-left"></i>
-                    {{ story.quotation }}
-                    <i class="fa fa-quote-right"></i>
-                </span>
-                <p class="tag_list">
-                    {% for tag in story.tags %}   
-                        <a href="" class="tag">{{ tag }}</a>
-                    {% endfor %}
-                </p>
-            </div>
-        </li>
+        {% if story.display %}
+            <li class="story">
+                <a href="{{ story.url | relative_url }}"><img src="{{ story.thumbnail | relative_url }}" /></a><img src="{{ story.matrix_photo | relative_url }}" class="story_matrix_photo img-fluid" />
+                <div class="bottom_section">
+                    <span class="name"><a href="{{ story.url | absolute_url }}" class="blog_list_title">{{ story.storyee }}</a></span>
+                    <span class="quotation">
+                        <i class="fa fa-quote-left"></i>
+                        {{ story.quotation }}
+                        <i class="fa fa-quote-right"></i>
+                    </span>
+                    <p class="tag_list">
+                        {% for tag in story.tags %}   
+                            <a href="" class="tag">{{ tag }}</a>
+                        {% endfor %}
+                    </p>
+                </div>
+            </li>
+        {% endif %}
     {% endfor %}
 </ul>   
