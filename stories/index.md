@@ -17,7 +17,7 @@ permalink: /stories/
 		<div class="small">
 			{% include related_stories.html %}
 		</div>
-		<div class="section_endtext" style="text-align: center; margin-top: 1.5em;">
+		<div class="section_endtext" style="text-align: center; margin-top: 2.5em;">
 			<span>More coming soon</span>
 		</div>
 	{% else %}
@@ -27,7 +27,6 @@ permalink: /stories/
 	{% endif %}
 	</div>		
 </section>
-
 
 <section class="container_section cta_mailinglist">
     {% include cta_mailinglist.html %}
