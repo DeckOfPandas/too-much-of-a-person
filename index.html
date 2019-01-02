@@ -61,17 +61,16 @@ og-image_height: 635
 </section>
 
 <a id="index_stories"></a>
-<section class="container_section" style="background-image: url('{{site.baseurl}}assets/images/backgrounds/stories_letterbox.jpg');background-repeat: no-repeat;background-size:cover;padding-top:80px;padding-bottom:80px;">
-		<div class="container" style="padding:20px 40px;background-color:rgba(255,255,255,0.6);">
+<section class="container_section stories">
+	<div class="container" style="padding:20px 40px;background-color:rgba(255,255,255,0.6);">
 			<h1>Stories</h1>
 			<div class="section_subtitle">
 				<span>Never too many people, opinions, stories...</span>
 			</div>
-			
 			{% if site.show_stories %}
 				<div class="section_subtitle" style="margin-top: 2em; text-align: right"><span>See all <a href="{{ site.url }}/stories">>></a></span></div>
 					<div class="small">
-						{% include story_list.html %}
+						{% include related_stories.html %}
 					</div>
 					{% include dotdotdot.html %}
 					<div class="section_endtext" style="padding-left: 0; padding-top: 1em;">
