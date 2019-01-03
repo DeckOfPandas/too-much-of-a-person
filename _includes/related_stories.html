@@ -3,11 +3,11 @@
 
 <section class="card-container" id="mad_story">
   {% for story in sorted | limit: max_posts_to_show %}
-    {% if story.display %}
+    {% if site.show_stories %}
       <article class="card">
           <figure class="card__thumbnail">
               <a href="{{ story.url | absolute_url }}">
-                <img src="{{ story.matrix_photo }}">
+                <img src="{{ site.path_stories_images | absolute_url }}/{{ story.slug }}/{{ story.matrix_photo }}">
               </a>
           </figure>
           <header class="card__title">

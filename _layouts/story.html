@@ -13,7 +13,7 @@ layout: page_no_header-fullwidth
     <div class="container-fullwidth">
         <section class="story">
             <div class="container-fullwidth story-object story-mainphoto">
-                <img class="story_main_photo img-fluid" src="{{ page.main_photo | relative_url }}" />
+                <img class="story_main_photo img-fluid" src="{{ site.path_stories_images | absolute_url }}/{{ page.slug }}/{{ page.main_photo }}" />
             </div>
             <div class="container-fullwidth story-object story-quotation">
                 <div class="container">
@@ -54,13 +54,13 @@ layout: page_no_header-fullwidth
             </div>  
         </section>
 
+
+
         <section class="">
             <div class="container story-object" style="margin-top:2em; margin-bottom:-2em;">
                 <h1>related stories</h1>
             </div>  
             <div class="container-fullwidth story-related">
-            <div class="photo" style="background-image: url('/assets/images/stories/priscilla/matrix.png')"></div>
-
                 {% include related_stories.html %}
             </div>
         </section>
