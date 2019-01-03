@@ -1086,6 +1086,8 @@ hr {
     padding: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 .card {
     display: grid;
