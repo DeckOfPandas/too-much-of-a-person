@@ -1,0 +1,29 @@
+{% assign sorted = site.stories | sort: 'date' | reverse | limit: max_posts_to_show 
+%}
+
+<section class="card-container" id="mad_story">
+  {% for story in sorted | limit: max_posts_to_show %}
+    {% if story.display %}
+      <article class="card">
+          <figure class="card__thumbnail">
+              <a href="{{ story.url | absolute_url }}">
+                <img src="{{ story.matrix_photo }}">
+              </a>
+          </figure>
+          <header class="card__title">
+              
+              <h1><span class="name"><a href="{{ story.url | absolute_url }}" class="blog_list_title">{{ story.storyee }}</a></span></h1>
+
+          </header>
+          <main class="card__description">
+              "{{ story.quotation | truncatewords:25 | strip_html }}"
+          </main>
+          <main class="tag_list">
+            {% for tag in story.tags %}   
+                  <a href="" class="tag">{{ tag }}</a>
+            {% endfor %}
+          </main>
+      </article>
+    {% endif%}
+  {% endfor %}
+</section>

@@ -2,7 +2,7 @@
 
 ## File structure
 
-The website will automatically create and build a Story page for every config file it finds in `~/_interviews/`.
+The website will automatically create and build a Story page for every config file it finds in `~/_stories/`, where the paramater `display` is set to `true`.
 
 Each of these files describes the settings for a Story. More below.
 
@@ -15,14 +15,17 @@ Each Story must have a config file and an images dir in order to be displayed on
 
 ## Config files
 
-The config file for each Story, located in `~/_interviews` as described above, contains settings that tell the website what information to include in the page for that Story.
+The config file for each Story, located in `~/_stories` as described above, contains settings that tell the website what information to include in the page for that Story.
 
-The structure is
+The file must start and end with `---` on its own line, in order to be read as a config file.
+
+The structure for setting parameters in the config file for a Story is
+
 ```
 parameter_name: parameter_value
 ```
 
-One per line, with a semicolon, exactly like this^^. Some parameter values must have quotation marks, others must not.
+One per line, with a semicolon, exactly like this^^. Some parameter values must have quotation marks, others must not. See example below.
 
 
 ### Config file example
@@ -31,19 +34,20 @@ Config files look like this:
 
 ```
 ---
-layout: interview
-interviewee: "NAME"
+display: true
+layout: story
+storyee: "NAME"
 date: 2018-05-01
 quotation: "Whatever words you want for the quotation, with capital letters and punctuation exactly as you want them"
 video_youtube: "https://www.youtube.com/embed/s-OJoLnkEoA"
-matrix_photo: /assets/images/interviews/FOLDER_NAME/matrix.png
-main_photo: /assets/images/interviews/FOLDER_NAME/main.jpg
+matrix_photo: /assets/images/stories/FOLDER_NAME/matrix.png
+main_photo: /assets/images/stories/FOLDER_NAME/main.jpg
 photos: 
- - /assets/images/interviews/FOLDER_NAME/FILE_NAME.png
- - /assets/images/interviews/FOLDER_NAME/DSC_8597.png
- - /assets/images/interviews/FOLDER_NAME/DSC_8609.png
- - /assets/images/interviews/FOLDER_NAME/DSC_8646.png
- - /assets/images/interviews/FOLDER_NAME/DSC_8659.png
+ - /assets/images/stories/FOLDER_NAME/FILE_NAME.png
+ - /assets/images/stories/FOLDER_NAME/DSC_8597.png
+ - /assets/images/stories/FOLDER_NAME/DSC_8609.png
+ - /assets/images/stories/FOLDER_NAME/DSC_8646.png
+ - /assets/images/stories/FOLDER_NAME/DSC_8659.png
 tags:
   - "#toomuchofaperson"
   - "#ADHD"
@@ -65,9 +69,11 @@ tags:
 
 ### Config file parameters
 
- `layout` needs to be `interview, exactly as above, in order to tell the website what kind of page to create.
+'display' must be either `true` or `false`, depending on if you want this Story to appear on the site yet or not
 
-`interviewee` and `quotation` Will display  exactly as you enter, so is case sensitive
+ `layout` must be `story`, exactly as above, in order to tell the website what kind of page to create
+
+`storyee` and `quotation` will display exactly the text you enter, and are case sensitive, and will include any punctuation you use
 
 `date` format must be exactly like the above, so yyyy-mm-dd
 
@@ -84,9 +90,9 @@ tags:
 
 Each file must be uploaded to GitHub, with its path given in the config file for that Story. For example, for Priscilla, the config file specifies the matrix photo to be:
 ```
-matrix_photo: /assets/images/interviews/priscilla/matrix.png
+matrix_photo: /assets/images/story/priscilla/matrix.png
 ```
-The corresponding file should be uploaded to that directory.
+The corresponding file should be uploaded to ~`/assets/images/story/priscilla/matrix.png`.
 
 
 ## How to actually create or upload files on GitHub

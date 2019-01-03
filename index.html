@@ -67,8 +67,20 @@ og-image_height: 635
 			<div class="section_subtitle">
 				<span>Never too many people, opinions, stories...</span>
 			</div>
-			<p>Coming soon in 2019...</p>
-			<p>We are currently editing the interviews and portraits of 100 womxn and non-binary people. They’re raw and articulate and beautiful and well worth the wait. Watch this space.</p>
+			{% if site.show_stories %}
+				<div class="section_subtitle" style="margin-top: 2em; text-align: right"><span>See all <a href="{{ site.url }}/stories">>></a></span></div>
+					<div class="small">
+						{% include related_stories.html %}
+					</div>
+					{% include dotdotdot.html %}
+					<div class="section_endtext" style="text-align: center; margin-top: 1.5em;">
+					<span>More coming soon</span>
+					</div>
+				</div>
+			{% else %}
+				<p>Coming soon in 2019...</p>
+				<p>We are currently editing the interviews and portraits of 100 womxn and non-binary people. They’re raw and articulate and beautiful and well worth the wait. Watch this space.</p>
+			{% endif %}
 		</div>
 </section>
 

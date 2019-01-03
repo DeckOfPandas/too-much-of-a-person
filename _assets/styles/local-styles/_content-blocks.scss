@@ -18,6 +18,7 @@ body {
     margin: 0;
     background-color: $outer_bg;
     color: $base_text;
+    font-size:16px;
     @media screen and (max-width: 760px){
         margin-bottom: 0px;
     }
@@ -43,15 +44,17 @@ body {
 }
 
 
-@media only screen and (max-width: 980px) {
-    .container {
-        width: 92%;
+.container {
+    width: 85%;
+    @media only screen and (max-width: 980px) {
+        .container {
+            width: 92%;
+        }
     }
-}
-
-@media only screen and (min-width: 981px) {
-    .container {
-        width: 80%;
+    @media only screen and (min-width: 981px) {
+        .container {
+            width: 80%;
+        }
     }
 }
 
@@ -80,6 +83,9 @@ body {
     padding: 0;
 }
 
+.no_padding {
+    padding: 0 !important;
+}
 h1, h2, h3, h4, h5, p {
     margin-bottom: 24px;
     padding: 0;
@@ -172,7 +178,7 @@ hr {
 
 // BLOCKS
 
-.video-holder {
+.video-holder, .audio-holder {
   position: relative;
   width: 100%;
   height: 0;
@@ -296,6 +302,9 @@ hr {
 .quotation {
     background-color: $index_quotation_bg_color;
     font-family: Couture, sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.075rem;
     padding: 2em 0;
     p {
         width: 100%;
@@ -350,9 +359,19 @@ hr {
     @media screen and (max-width: 1250px){
         background-image: url('/assets/images/backgrounds/stories_letterbox_1250.jpg');
     }
-    @media screen and (max-width: 600px){
-        background: $index_stories_bg_color;
+}
+
+#index_stories {
+    h1 {
+        color: $index_stories_title_color;
+        @media screen and (max-width: 600px){
+            background: $index_stories_bg_color;
+        }
     }
+}
+
+#smaller_tags {
+    font-size: 1vw;
 }
 
 .scribbles {
@@ -491,6 +510,38 @@ hr {
     }
 }
 
+
+.story {
+    background-color: $white;
+}
+
+.story-object {
+    margin: 0;   
+    padding-top: calc(24px + 2vw); 
+    padding-bottom: calc(24px + 2vw);
+}
+
+.story-object.story-mainphoto, .story-object.story_matrix_photo {
+    width: 100%; 
+    height: auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    vertical-align: middle;
+}
+
+.story-object.story-quotation { 
+    text-transform: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: calc(14px + 0.8vw); 
+    line-height: calc(24px + 0.8vw);
+    .fa {
+        font-size: 0.7em;
+        vertical-align: top;
+    }
+}
+
+
 .social_inline {
     background-color: rgba(255,255,255,0.0);
      .fas, .fab {
@@ -507,56 +558,101 @@ hr {
         vertical-align: center;
     }
 }
+
 .interview_list {
     h1 {
         color: $link_color;
     }
 }
 
-.interview_list_container {
+.story-object.story-audio {
+    width: 100%;
+    padding: 0;
+    background-color: $city_lights_grey;
+}
+
+.story-object.story-taglist {  
+    padding-left: 3em; 
+    padding-right: 3em; 
+    font-size: calc(8px + 0.5vw); 
+    line-height: 2em;
+    .tag {
+        padding: 2px;
+    }
+}
+
+.story-object.story-video {
+    width: 100%;
+    padding: 0;
+}
+
+.story {
+    text-transform: uppercase;
+    padding: 0 !important;
+    .bottom_section {
+        padding: 1vh 3vw;
+        background-color: $white;
+    }
+    
+    span {
+        display: block;
+    }
+
+    .quotation {
+         
+    }
+
+
+ 
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
+.interview_list {
+    h1 {
+        color: $link_color;
+    }
+}
+
+.flex-container_blog_title { // HAXXXX does this really need its own class...it can't possibly do...right? Right???
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.story_list_container {
     list-style: none;
     text-transform: uppercase;
     margin-bottom: 80px;
 }
 
-.interview_list_result_container {
-    display: inline-block;
-    vertical-align: top;
-    text-transform: uppercase;
-    span {
-        display: block;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    .name {
-        font-size: 1.3em;
-        font-weight: 700;
-        margin-top: 10px;
-        line-height: 1.8em;
+.story_list_result_container {
+
+}
+
+.tag_list {
+    text-align: left;
+    a, a:visited {
+        color: $tag_color;
+        text-transform: uppercase;
         text-align: left;
+        font-family: Couture, sans-serif !important;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.075rem;
+        padding: 1px;
+        margin: 1px 20px 1px 0px;
     }
-    .quotation {
-        text-transform: none;
-        font-style: italic;
-        font-size: 1.1em;
-        font-weight: 500;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .fa {
-        font-size: 0.7em;
-        vertical-align: top;
+    a:hover {
+        color: $tag_hover_color;
+        text-decoration: none;
     }
 }
 
 .section_head {
     background: $white;
-}
-
-.main_photo > img {
-
 }
 
 #generic-header-card {
@@ -587,31 +683,6 @@ hr {
         margin: 0 auto;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-}
-
-#tags {
-    font-size: 0.65em;
-    line-height: 1.8em;
-    text-align: left;
-    p {
-        text-align: center;
-        line-height: 2.2em;
-    }
-    a, a:visited {
-        color: $tag_color;
-        background: $tag_bg_color;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: left;
-        letter-spacing: 0.15em;
-        padding: 3px;
-        margin-right: 20px;
-    }
-    a:hover {
-        color: $tag_hover_color;
-        background: $tag_bg_hover_color;
-        text-decoration: none;
     }
 }
 
@@ -742,7 +813,24 @@ hr {
     color: $nearly_black;
 }
 
-.section_subtitle, .section_subtitle_centered {
+.social_blobs {
+    margin-top: 80px;
+    margin-bottom: 0;
+    a .fas, a .fab {
+        display: inline-block;
+        font-size: 6em;
+    }
+    .fas, .fab {
+        &:hover {
+            color: $icon_hover_color;
+        }
+    }
+    a, a:visited {
+        color: $icon_color;
+    }
+}
+
+.section_subtitle, .section_subtitle_centered, .section_endtext {
     span {
         font-size: 1em;
         text-transform: uppercase;
@@ -984,5 +1072,73 @@ hr {
           }
         }
       }
+    }
+}
+
+
+
+
+
+
+
+.card-container {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+.card {
+    display: grid;
+}
+.card .button {
+    align-self: end;
+}
+
+
+
+
+
+
+
+/* Simple Card styles for prettying */
+
+#mad_story {
+    .card {
+        background-color: $white;
+        font-family: Couture, sans-serif !important;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.075rem;
+        border-radius: 0px;
+    }
+    figure {
+        margin: 0;
+    }
+    figure {
+        background: #555;
+    }
+    figure img {
+        opacity: 1;
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+    }
+    figure:hover img {
+        opacity: .5;
+    }
+    img {
+        max-width: 100%;
+    } 
+    .card__title {
+        font-size: 0.5rem;
+        margin-bottom: -0.25rem;
+        padding: 0 0.5rem;
+    }
+    .card__description {
+        line-height: 1.6em;
+        font-style: italic;
+        padding: 0.5rem;
+    }
+    .tag_list {
+        padding: 0.5rem;
     }
 }
