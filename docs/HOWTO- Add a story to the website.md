@@ -1,53 +1,71 @@
 # HOWTO: Add a story to the website
 
-## File structure
+## Overview
 
-The website will automatically create and build a Story page for every config file it finds in `~/_stories/`, where the paramater `display` is set to `true`.
+To add a Story to the website, you need to do three things:
+ 1. Decide on a unique slug for that Story -- more below
+ 1. Create a new markdown file on our GitHub repo -- template and details below
+ 1. Upload at least the main photo and thumbnail images for that Story to our GitHub repo, with optional extra photos to display in the gallery
 
-Each of these files describes the settings for a Story. More below.
+In the writing below, I use the symbol `~` to denote the root folder of our repository, meaning the directory you see when you go to our repo's URL in your browser: https://github.com/DeckOfPandas/too-much-of-a-person . So if I write `~/_stories`, I mean the folder named "_stories" contained in the main folder, and `~/_assets/images` means the folder "images" which is inside the folder "_assets" contained in the main folder.
 
-The website will look for the images for each Story in `~/_assets/images/stories/`.
+## Adding a Story step by step
+### Step 1: Identifying stories -- decide on the slug
 
-The other content for the Stories will be URLs, or plain text.
+Each Story is identified by a "slug", which is a unique string that will appear in the permanent URL for that Story when it appears online. The slug will also form the name of the directory where you upload the images for that Story.
 
-Each Story must have a config file and an images dir in order to be displayed on the website.
+For example, the slug for a Story from Helen Jackson might be `helen-j`, so the permanent URL for the published story will be `https://toomuchofaperson.com/stories/helen-j`, and you will upload Helen's images into a directory named `helen-j`.
+
+The idea of using a consistent slug helps keep things organised and clear from both ends, but is also super great for SEO and search engine crawling, as URL stability is ranked very highly. Lastly, and most importantly imo, it is polite to our Story participants to ensure that the URL shared publicly has something sensible in it!
+
+### Step 2: Add the information for the Story to a new Markdown file
+
+Markdown is a particular kind of plain text file that is used widely on the interwebs. Markdown files have file extension .md.
+
+The markdown file containing the config for each Story should be created in or uploaded to `~/_stories`, for example `~/_stories/helen-j.md`. You can make the file on your own computer then upload it to GitHub by clicking "Upload file", or you can create it directly on GitHub by clicking "Create new file". It is worth noting that you can upload multiple files at the same time. Note: you must be inside the directory in which you want to create or upload the new file(s).
+
+The website will automatically create and build a Story page for every .md file it finds in `~/_stories/`, if the parameter `published` is set to `true` (the very first setting in the file).
+
+A template markdown file with details of what goes inside it is below.
+
+### Step 3: Add the image files
+
+All images used in the website are in the directory `~/_assets/images/`, with those for Stories then in the subfolder `stories`, and those for a particular Story in a subfolder from there named with the slug you decided on for that Story.
+
+For the example above, the images for the Story should be uploaded to `~/_assets/images/stories/helen-j/`. 
+
+You need to upload at least two images: one for the main photo used on the Story page, and one to use as the thumbnail in the Story cards we display on the site. Please name these "main" and "thumbnail" -- file extension doesn't matter, but the interwebs prefer .png in general in case it's equivocal to you.
+
+Any other images with file extensions .png or .jpg you upload to this same directory will be displayed in the photo gallery/slideshow on the Story page. You don't need to write down anywhere what these images are called -- all images other than main and thumbnail will appear in the gallery automatically.
 
 
-## Config files
+## More about the markdown file
 
-The config file for each Story, located in `~/_stories` as described above, contains settings that tell the website what information to include in the page for that Story.
+### Overview
 
-The file must start and end with `---` on its own line, in order to be read as a config file.
+The markdown file for each Story, which you create in or upload to `~/_stories/`, contains all the information you want to display on the web page.
 
-The structure for setting parameters in the config file for a Story is
+The file must start and end with `---` each on its own line, in order to be recognised by the website as an instruction to create a new page.
 
+The structure for giving the details is:
 ```
 parameter_name: parameter_value
 ```
+One per line, with a semicolon, exactly like this^^. 
 
-One per line, with a semicolon, exactly like this^^. Some parameter values must have quotation marks, others must not. See example below.
-
-
-### Config file example
-
-Config files look like this:
+### Full template markdown file 
 
 ```
 ---
-display: true
+published: true
 layout: story
-storyee: "NAME"
-date: 2018-05-01
-quotation: "Whatever words you want for the quotation, with capital letters and punctuation exactly as you want them"
-video_youtube: "https://www.youtube.com/embed/s-OJoLnkEoA"
-matrix_photo: /assets/images/stories/FOLDER_NAME/matrix.png
-main_photo: /assets/images/stories/FOLDER_NAME/main.jpg
-photos: 
- - /assets/images/stories/FOLDER_NAME/FILE_NAME.png
- - /assets/images/stories/FOLDER_NAME/DSC_8597.png
- - /assets/images/stories/FOLDER_NAME/DSC_8609.png
- - /assets/images/stories/FOLDER_NAME/DSC_8646.png
- - /assets/images/stories/FOLDER_NAME/DSC_8659.png
+firstname: "Helenj"
+surname: "Jackson"
+slug: priscilla-s
+year: "2018"
+quotation: "If this is justice, then I am a banana"
+video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
+audio_url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/484902516%3Fsecret_token%3Ds-dVKjW&color=%23fe0000&inverse=false&auto_play=false&show_user=false"
 tags:
   - "#toomuchofaperson"
   - "#ADHD"
@@ -59,7 +77,7 @@ tags:
   - "#relationships"
   - "#emotionallyintelligent"
   - "#sensitive"
-  - "#london"
+  - "#london" 
   - "#tooexcitable"
   - "#poet"
   - "#creativity" 
@@ -67,34 +85,22 @@ tags:
 ---
 ```
 
-### Config file parameters
+You can copy and paste this template into each new file you make, then change the parameter values appropriately.
 
-'display' must be either `true` or `false`, depending on if you want this Story to appear on the site yet or not
+### Explanation of markdown file contents
 
- `layout` must be `story`, exactly as above, in order to tell the website what kind of page to create
+* `published`  must be either `true` or `false`, depending on if you want this Story to appear on the site yet or not
 
-`storyee` and `quotation` will display exactly the text you enter, and are case sensitive, and will include any punctuation you use
+* `layout` must be `story`, in order to tell the website what kind of page to create.
 
-`date` format must be exactly like the above, so yyyy-mm-dd
+* `firstname` `surname` and `quotation` must be inside quote marks, and will display exactly the text you enter, so are case sensitive and will include any punctuation you use. We don't actually display surname anywhere yet, but you have it in your spredsheet for now so we may as well make use of it here.
 
-`video_url` and `audio_url` need to be the full URL to where the file is on YouTube or SoundCloud
+* `slug` is the unique identifier you decide on for each Story, and must be inside quotation marks. This is also the name of the directory you must upload image files to for this Story.
 
-`matrix_photo` is the filepath to the main photo for that Story, the one you want to display in the thumbnails on the cards for each Story when these are given in a list, such as "Related Stories" or whatever
+*`year` must be a number inside quotation marks.
 
-`photos` specifies a list of filepaths to the other photos you want to display for that Story. We can display these in a gallery, or however you like, but they should all be given here. Spaces and hyphens and quotation marks must be exactly as above.
+* `video_url` and `audio_url` must be the full URL of the media file (on YouTube or SoundCloud) inside quotation marks
 
-`tags` specifies a list of the tags you want to appear for that Story. Spaces and hyphens and quotation marks must be exactly as above.
-
-
-## Image files
-
-Each file must be uploaded to GitHub, with its path given in the config file for that Story. For example, for Priscilla, the config file specifies the matrix photo to be:
-```
-matrix_photo: /assets/images/story/priscilla/matrix.png
-```
-The corresponding file should be uploaded to ~`/assets/images/story/priscilla/matrix.png`.
+* `tags` specifies a list of the tags you want to appear for that Story. Each tag must appear on its own line, with the spacing and hyphen exactly as above, and the word itself inside quotation marks.
 
 
-## How to actually create or upload files on GitHub
-
-To follow (sorry). Similar details to the "How to add a blog post" document in the gDrive...
