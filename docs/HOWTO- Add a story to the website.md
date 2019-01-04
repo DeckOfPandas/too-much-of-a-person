@@ -71,10 +71,10 @@ One per line, with a semicolon, exactly like this^^.
 ---
 published: true
 layout: story
-firstname: "Helenj"
+firstname: "Helen"
 surname: "Jackson"
-slug: priscilla-s
-year: "2018"
+slug: helen-j
+year: 2018
 quotation: "If this is justice, then I am a banana"
 video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
 audio_url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/484902516%3Fsecret_token%3Ds-dVKjW&color=%23fe0000&inverse=false&auto_play=false&show_user=false"
@@ -107,9 +107,9 @@ You can copy and paste this template into each new file you make, then change th
 
 * `firstname` `surname` and `quotation` must be inside quote marks, and will display exactly the text you enter, so are case sensitive and will include any punctuation you use. We don't actually display surname anywhere yet, but you have it in your spredsheet for now so we may as well make use of it here.
 
-* `slug` is the unique identifier you decide on for each Story, and must be inside quotation marks. This is also the name of the directory you must upload image files to for this Story.
+* `slug` is the unique identifier you decide on for each Story. This is also the name of the directory you must upload image files to for this Story.
 
-*`year` must be a number inside quotation marks.
+*`year` must be a number.
 
 * `video_url` and `audio_url` must be the full URL of the media file (on YouTube or SoundCloud) inside quotation marks
 
