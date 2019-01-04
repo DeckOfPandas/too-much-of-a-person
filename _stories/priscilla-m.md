@@ -1,20 +1,13 @@
 ---
 published: true
 layout: story
-storyee: "Priscilla 1"
-slug: priscilla-1
-date: 2018-05-01
-quotation: "How sweet the sound of your depth of being met the depth of my being"
+firstname: "Priscilla"
+surname: "M"
+slug: priscilla-m
+year: 2018
+quotation: "I am Priscilla M"
 video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
-audio_url: /assets/audio/priscilla.mp3
-matrix_photo: matrix.png
-main_photo: main.jpg
-photos: 
- - DSC_8485.jpg
- - DSC_8597.jpg
- - DSC_8609.jpg
- - DSC_8646.jpg
- - DSC_8659.jpg
+audio_url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/484902516%3Fsecret_token%3Ds-dVKjW&color=%23fe0000&inverse=false&auto_play=false&show_user=false"
 tags:
   - "#toomuchofaperson"
   - "#ADHD"
@@ -26,10 +19,9 @@ tags:
   - "#relationships"
   - "#emotionallyintelligent"
   - "#sensitive"
-  - "#london"
+  - "#london" 
   - "#tooexcitable"
   - "#poet"
   - "#creativity" 
   - "#musician"
 ---
-
