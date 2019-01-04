@@ -10,6 +10,15 @@ To add a Story to the website, you need to do three things:
 In the writing below, I use the symbol `~` to denote the root folder of our repository, meaning the directory you see when you go to our repo's URL in your browser: https://github.com/DeckOfPandas/too-much-of-a-person . So if I write `~/_stories`, I mean the folder named "_stories" contained in the main folder, and `~/_assets/images` means the folder "images" which is inside the folder "_assets" contained in the main folder.
 
 ## Adding a Story step by step
+
+### Step 0: Upload to the repository in a way that won't affect the live site until we're ready
+
+GitHub has a feature called "branches", allowing there to be different versions of the repository that might have differernt bits of work in progress, so you don't have to have all work in the main website at the same time.
+
+It will be far easier for us to organise your content if you always upload to the same branch, then when we're sure everything's okay we can merge it into the main branch (which is called "source"). 
+
+Let's upload all new content to the branch "content/uploads". To do this, you need to be on the correct branch when you create or upload a file. You can select what branch you're on using the dropdown box on the top left-hand side of the file window.
+
 ### Step 1: Identifying stories -- decide on the slug
 
 Each Story is identified by a "slug", which is a unique string that will appear in the permanent URL for that Story when it appears online. The slug will also form the name of the directory where you upload the images for that Story.
