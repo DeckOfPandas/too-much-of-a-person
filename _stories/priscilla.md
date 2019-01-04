@@ -13,7 +13,6 @@ photos:
  - /assets/images/stories/priscilla/DSC_8597.png
  - /assets/images/stories/priscilla/DSC_8609.png
  - /assets/images/stories/priscilla/DSC_8646.png
- - /assets/images/stories/priscilla/DSC_8659.png
 tags:
   - "#toomuchofaperson"
   - "#ADHD"
