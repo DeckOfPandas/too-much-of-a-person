@@ -15,9 +15,9 @@ In the writing below, I use the symbol `~` to denote the root folder of our repo
 
 GitHub has a feature called "branches", allowing there to be different versions of the repository that might have differernt bits of work in progress, so you don't have to have all work in the main website at the same time.
 
-It will be far easier for us to organise your content if you always upload to the same branch, then when we're sure everything's okay we can merge it into the main branch (which is called "source"). 
+It will be far easier for us to organise your content if you always upload to a new branch, then when we're sure everything's okay we can merge it into the main branch (which is called "source"). 
 
-Let's upload all new content to the branch "content/uploads". To do this, you need to be on the correct branch when you create or upload a file. You can select what branch you're on using the dropdown box on the top left-hand side of the file window.
+To do this, when you create or upload a file, you will enter some comment at the bottom of the page describing what you did, and below that are two radio buttons, one for "commit directly to this brancH" and the other for "open a new branch and commit to that". Choose the second one. It doesn't reallllly matter what you call the new branch, but it would be easier for me if it were called something like "uploads/helen-j-photos" or "uploads/batch-upload-of-markdown" so we can keep track together.
 
 ### Step 1: Identifying stories -- decide on the slug
 
@@ -33,6 +33,8 @@ Markdown is a particular kind of plain text file that is used widely on the inte
 
 The markdown file containing the config for each Story should be created in or uploaded to `~/_stories`, for example `~/_stories/helen-j.md`. You can make the file on your own computer then upload it to GitHub by clicking "Upload file", or you can create it directly on GitHub by clicking "Create new file". It is worth noting that you can upload multiple files at the same time. Note: you must be inside the directory in which you want to create or upload the new file(s).
 
+As in Step 0 above, make sure you commit your changes (such as creating a new file, or editing an existing one) to a new branch of the repository each time.
+
 The website will automatically create and build a Story page for every .md file it finds in `~/_stories/`, if the parameter `published` is set to `true` (the very first setting in the file).
 
 A template markdown file with details of what goes inside it is below.
@@ -47,6 +49,7 @@ You need to upload at least two images: one for the main photo used on the Story
 
 Any other images with file extensions .png or .jpg you upload to this same directory will be displayed in the photo gallery/slideshow on the Story page. You don't need to write down anywhere what these images are called -- all images other than main and thumbnail will appear in the gallery automatically.
 
+As in Step 0 above, make sure you commit your changes (such as creating a new file, or editing an existing one) to a new branch of the repository each time.
 
 ## More about the markdown file
 
