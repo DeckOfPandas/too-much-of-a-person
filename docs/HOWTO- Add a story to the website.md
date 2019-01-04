@@ -5,7 +5,7 @@
 To add a Story to the website, you need to do three things:
  1. Decide on a unique slug for that Story -- more below
  1. Create a new markdown file on our GitHub repo -- template and details below
- 1. Upload at least the main photo and thumbnail images for that Story to our GitHub repo, with optional extra photos to display in the gallery
+ 1. Upload at least the main photo and thumbnail images for that Story to our GitHub repo, with optional extra photos to display in the gallery, all with identical size in px that you tell me once, and now!
 
 In the writing below, I use the symbol `~` to denote the root folder of our repository, meaning the directory you see when you go to our repo's URL in your browser: https://github.com/DeckOfPandas/too-much-of-a-person . So if I write `~/_stories`, I mean the folder named "_stories" contained in the main folder, and `~/_assets/images` means the folder "images" which is inside the folder "_assets" contained in the main folder.
 
