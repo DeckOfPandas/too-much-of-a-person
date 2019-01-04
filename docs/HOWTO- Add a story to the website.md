@@ -18,7 +18,7 @@ For example, the slug for a Story from Helen Jackson might be `helen-j`, so the 
 
 The idea of using a consistent slug helps keep things organised and clear from both ends, but is also super great for SEO and search engine crawling, as URL stability is ranked very highly. Lastly, and most importantly imo, it is polite to our Story participants to ensure that the URL shared publicly has something sensible in it!
 
-### Step 2: Add the information for the Story to a new Markdown file
+### Step 2: Create or upload a new markdown file
 
 Markdown is a particular kind of plain text file that is used widely on the interwebs. Markdown files have file extension .md.
 
@@ -28,7 +28,7 @@ The website will automatically create and build a Story page for every .md file 
 
 A template markdown file with details of what goes inside it is below.
 
-### Step 3: Add the image files
+### Step 3: Upload the main, thumbnail and other image files
 
 All images used in the website are in the directory `~/_assets/images/`, with those for Stories then in the subfolder `stories`, and those for a particular Story in a subfolder from there named with the slug you decided on for that Story.
 
