@@ -45,9 +45,9 @@ All images used in the website are in the directory `~/_assets/images/`, with th
 
 For the example above, the images for the Story should be uploaded to `~/_assets/images/stories/helen-j/`. 
 
-You need to upload at least two images: one for the main photo used on the Story page, and one to use as the thumbnail in the Story cards we display on the site. Please name these "main" and "thumbnail" -- file extension doesn't matter, but the interwebs prefer .png in general in case it's equivocal to you.
+You need to upload at least two images: one for the main photo used on the Story page, and one to use as the thumbnail in the Story cards we display on the site. Please name these "main.jpg" and "thumbnail.jpg" -- we can use png if you prefer, but these need to all be the same in order to save my sanity...
 
-Any other images with file extensions .png or .jpg you upload to this same directory will be displayed in the photo gallery/slideshow on the Story page. You don't need to write down anywhere what these images are called -- all images other than main and thumbnail will appear in the gallery automatically.
+Any other images you upload to this same directory -- in/with any file format/extension -- will be displayed in the photo gallery/slideshow on the Story page. You don't need to write down anywhere what these images are called -- all images other than main and thumbnail will appear in the gallery automatically.
 
 As in Step 0 above, make sure you commit your changes (such as creating a new file, or editing an existing one) to a new branch of the repository each time.
 
