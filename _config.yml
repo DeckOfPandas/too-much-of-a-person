@@ -22,6 +22,13 @@ collections:
   sponsors:
     output: true
 
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+
 # Exclude the following from the Jekyll build process.
 # Note: "vendor" is for Travis CI.
 exclude: ["vendor",
@@ -31,6 +38,9 @@ exclude: ["vendor",
           "gulpfile.js",
           "node_modules",
           "package.json"]
+
+# Asset filepaths that are potentially useful
+path_stories_images: /assets/images/stories
 
 # Site customisation
 num_blog_posts_to_show_on_front_page: 3
