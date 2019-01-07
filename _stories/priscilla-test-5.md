@@ -1,8 +1,8 @@
 ---
 published: true
 layout: story
-firstname: "Priscilla"
-surname: "Test 5"
+firstname: "Priscilla 5"
+surname: "Test"
 slug: priscilla-test-5
 year: 2018
 quotation: "I am Priscilla Test 5"

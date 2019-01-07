@@ -1,9 +1,9 @@
 ---
 published: true
 layout: story
-firstname: "Priscilla"
+firstname: "Priscilla 1"
 surname: "Test"
-slug: priscilla-test
+slug: priscilla-test-1
 year: 2018
 quotation: "I am Priscilla Test"
 video_url: "https://www.youtube.com/embed/s-OJoLnkEoA"
