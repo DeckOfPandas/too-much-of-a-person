@@ -911,7 +911,8 @@ hr {
 #mad_blog {
     box-sizing: border-box;
     .event_detail {
-        margin: 1em auto;
+        margin: 1rem 0;
+        padding: 0;
         text-align: center;
         text-transform: uppercase;
         a {
@@ -942,7 +943,6 @@ hr {
         }
         .fa {
             vertical-align: middle;            
-            color: $antiflash_white;
             font-size: 1.2em;
         }
     }
@@ -986,7 +986,7 @@ hr {
                 line-height: 1.1;
                 letter-spacing: 0.1rem;
                 margin: 0.5rem;
-                font-size: 1.6rem;
+                font-size: calc(10px + 2vw);
                 color: #3c3c3c;
             }
             h2 {
