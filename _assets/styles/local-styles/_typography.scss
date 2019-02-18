@@ -1,0 +1,167 @@
+body  {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:16px;
+    line-height: 1.42857143;
+}
+
+h1 {
+    font-family: 'COUTUREBold', sans-serif !important;
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 24px auto 18px auto;
+    color: $nearly_black;
+}
+h2 {
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 2.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 2.0em;
+    font-weight: 700;
+    text-transform: none;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1em;
+}
+
+p, ul, ol {
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    @media screen and (max-width: 760px){
+        text-align: left;
+    }
+}
+
+li {
+    p {
+        font-size: 1em;
+    }
+}
+
+a, .btn {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:none; 
+}
+
+.btn {
+    text-transform: uppercase;    
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+a {
+    text-transform: none;   
+    font-weight: 800;
+    letter-spacing: 0.075rem;
+}
+
+a, a:visited {
+    color: $link_color; 
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+a:hover {
+    color: $link_hover_color;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.container_section {
+    h1 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+}
+
+.section_subtitle, .section_subtitle_centered, .section_endtext {
+    span {
+        text-align: left;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.25em;
+    }
+}
+
+.subtitle_info {
+    font-size: 0.75em;
+    text-align: right;
+}
+
+#navbar {
+    font-size: 1.15em;
+    line-height: 1em;
+    a {
+        font-family: 'COUTUREBold', sans-serif !important;    
+        text-transform: uppercase;
+    }
+}
+
+.quotation {
+    font-family: 'COUTUREBold', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vmin;
+    font-weight: 500;
+    letter-spacing: 0.075rem;
+    p {
+        line-height: 0.8em;
+    }
+    .words {
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.member-card {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    .name {
+        font-family: 'COUTUREBold', sans-serif;
+        font-size: 0.9em;
+        font-weight: 800;
+    }
+    .role {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 0.65em;
+        font-weight: 600;
+    }
+    .social {
+        font-size: 1.5rem;
+    }
+}
+
+#social {
+    text-align: center;
+    .fas, .fab {
+        font-size: 2.5rem;
+    }
+}
+
+.social_inline {
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+.author_credit {
+    font-family: Helvetica;
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: justify;
+    font-weight: 300;
+}

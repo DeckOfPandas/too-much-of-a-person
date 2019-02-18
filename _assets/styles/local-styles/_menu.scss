@@ -27,7 +27,7 @@
         z-index: 10;   
         list-style: none;
         margin: 0;
-        padding: 0.65em 0;
+        padding: 1.0rem 0;
         text-transform: uppercase;
         font-size: 0.8em;
         font-weight: 900;
@@ -82,9 +82,8 @@
     float: right;
     display: none;
     width: 50px;
-    margin: 0.85em 1em;
-    padding: 0.4em 0.2em;
-    color: $burger_button_text;
+    margin: 1rem;
+    padding: 0.8rem 0.2rem;
     background: $burger_button_bg;
     text-align: center;
     .fa, .fas {
