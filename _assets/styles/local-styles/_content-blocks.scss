@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, p {
     padding: 0;
 }
 h1 {
-    font-family: Couture, sans-serif !important;
+    font-family: 'COUTUREBold', sans-serif !important;
     font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
@@ -104,13 +104,13 @@ h1 {
     color: $nearly_black;
 }
 h2 {
-    font-family: Couture, sans-serif !important;
+    font-family: 'COUTUREBold', sans-serif !important;
     font-size: 2.2em;
     font-weight: 900;
     text-transform: uppercase;
 }
 h3 {
-    font-family: Couture, sans-serif !important;
+    font-family: 'COUTUREBold', sans-serif !important;
     font-size: 2.0em;
     font-weight: 700;
     text-transform: none;
@@ -124,13 +124,13 @@ h5 {
 
 strong {
     color: $bright_greek;
-    font-family: Couture, sans-serif !important;
+    font-family: 'COUTUREBold', sans-serif !important;
     font-weight: 900 !important;
 }
 
 a, a:visited {
     color: $link_color;
-    font-family: Couture, sans-serif;
+    font-family: 'COUTUREBold', sans-serif !important;
     font-weight: 800;
     letter-spacing: 0.05em;
     margin:0;
@@ -306,7 +306,7 @@ hr {
 
 .quotation {
     background-color: $index_quotation_bg_color;
-    font-family: Couture, sans-serif !important;
+    font-family: 'COUTUREBold', sans-serif !important;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.075rem;
@@ -442,7 +442,7 @@ hr {
 .member-card {
     box-shadow: 0px 1px 5px $nearly_black;
     background: $team_cards_color;
-    font-family: Couture, sans-serif;
+    font-family: 'COUTUREBold', sans-serif;
     text-transform: uppercase;
     text-align: center;
     p {
@@ -643,7 +643,7 @@ hr {
         color: $tag_color;
         text-transform: uppercase;
         text-align: left;
-        font-family: Couture, sans-serif !important;
+        font-family: 'COUTUREBold', sans-serif !important;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 0.075rem;
@@ -672,7 +672,7 @@ hr {
         font-size: calc(10px + 14vmin);
         letter-spacing: -0.07em;
         line-height: 0.9em;
-        font-family: Couture, sans-serif;
+        font-family: 'COUTUREBold', sans-serif;
         font-weight: 900;
         text-transform: uppercase;
         max-width: 80%;
@@ -797,7 +797,7 @@ hr {
 }
 
 .btn {
-    font-family: Couture, sans-serif;
+    font-family: 'COUTUREBold', sans-serif !important;
     font-weight: 800;
     letter-spacing: 0.1em;
     padding: 5px 20px !important;
@@ -1112,7 +1112,7 @@ hr {
 #mad_story {
     .card {
         background-color: $white;
-        font-family: Couture, sans-serif !important;
+        font-family: 'COUTUREBold', sans-serif;
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 0.075rem;
