@@ -13,39 +13,46 @@ hr {
 
 body {
     background: $base_bg;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    line-height: 1.42857143;
     margin: 0;
     background-color: $outer_bg;
     color: $base_text;
-    font-size:16px;
     @media screen and (max-width: 760px){
         margin-bottom: 0px;
     }
 }
 
-.center {
-    text-align: center !important;
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+p, ul, ol {
+    margin: 30px auto;
+    @media screen and (max-width: 760px){
+        width: auto;
+    }
 }
 
 :target:before {
   content: '';
   display: block;
   position: relative;
-  width: 0; height: 94px;
-  margin-top: -94px
+  width: 0;
+  height: 5rem;
+  margin-top: -5rem;
 }
 
 .container, .container-midwidth, container-fullwidth {
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 40px;
 }
 
+.container, .container-midwidth, container-fullwidth, .container_section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
 .container {
-    width: 85%;
     @media only screen and (max-width: 980px) {
         .container {
             width: 92%;
@@ -56,6 +63,11 @@ body {
             width: 80%;
         }
     }
+}
+
+.container_lightbox {
+    padding:20px 40px;
+    background-color:rgba(255,255,255,0.6);
 }
 
 .container-midwidth {
@@ -70,15 +82,6 @@ body {
     padding-right: 0;
 }
 
-.container_section {
-    padding-top: 30px;
-    padding-bottom: 80px;
-    h1 {
-        font-size: 3em;
-        margin-bottom: 1em;
-    }
-}
-
 .container_thing {
     padding: 0;
 }
@@ -86,83 +89,17 @@ body {
 .no_padding {
     padding: 0 !important;
 }
-h1, h2, h3, h4, h5, p {
-    margin-bottom: 24px;
-    padding: 0;
-}
-h1 {
-    font-family: Couture, sans-serif !important;
-    font-size: 3em;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 24px auto 18px auto;
-    color: $nearly_black;
-}
-h2 {
-    font-family: Couture, sans-serif !important;
-    font-size: 2.2em;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-h3 {
-    font-family: Couture, sans-serif !important;
-    font-size: 2.0em;
-    font-weight: 700;
-    text-transform: none;
-}
-h4 {
-    font-size: 1.4em;
-}
-h5 {
-    font-size: 1em;
-}
 
-strong {
-    color: $bright_greek;
-    font-family: Couture, sans-serif !important;
-    font-weight: 900 !important;
-}
-
-a, a:visited {
-    color: $link_color;
-    font-family: Couture, sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    margin:0;
-    padding:0;
-    text-decoration:none;
-    vertical-align:baseline;
-}
-a:hover {
-    color: $link_hover_color;
-    text-decoration: none;
-}
-
-p, ul, ol {
-    text-align: justify;
-    @media screen and (max-width: 760px){
-        text-align: left;
-    }
-    margin: 30px auto;
-    font-size: 1.7em;
-    font-weight: 500;
-    line-height: 1.5em;
-    @media screen and (max-width: 760px){
-        width: auto;
-    }
-}
 .top {
-        margin-top: 0 !important;
-    }
+    margin-top: 0 !important;
+}
+
 .right {
     text-align: right !important;
 }
 
 li {
     padding-left: 5px;
-    p {
-        font-size: 1em;
-    }
 }
 
 hr {
@@ -195,7 +132,7 @@ hr {
 
 #logo_home {
     img {
-        margin: 0.3em 0.1em 0.5em 0.5em;
+        margin: 0.5rem;
     }
 }
 
@@ -204,37 +141,13 @@ hr {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 0.3em 0 0.1em 0;
-    font-size: 1.15em;
-    line-height: 1em;
+    padding: 0;
     background-color: $navbar_bg;
     a {
         color: $navbar_link_color;
         &:hover {
             color: $navbar_link_hover_color;
         }
-    }
-    p {
-        positionadding: 0;
-        margin: 0;
-    }
-    .left {
-        display: inline-block;
-        float: left;
-    }
-    .message {
-        display: block;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 8px;
-    }
-    .center {
-        float: right;
-        margin-bottom: 43px;
-    }
-    .right {
-        display: none;
     }
 }
 
@@ -251,13 +164,13 @@ hr {
 
 #index_cover {
     display: block;
-    margin: 90px 0 0 0; // TODO HAXXXX top bar sticky
+    margin: 5rem 0 0 0; // TODO HAXXXX top bar sticky
 }
 
 .cover {
     width: 100%;
     background-color: $white;
-    padding: 2.5em 0 4em 0;  
+    padding: 0 0 4rem 0;  
 }
 
 .video-holder {
@@ -276,9 +189,6 @@ hr {
 }
 
 .about {
-    p {
-        font-size: 0.9em;
-    } 
     background-image: url('/assets/images/backgrounds/about_letterbox_1700.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -301,15 +211,10 @@ hr {
 
 .quotation {
     background-color: $index_quotation_bg_color;
-    font-family: Couture, sans-serif !important;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 0.075rem;
     padding: 2em 0;
     p {
         width: 100%;
         margin: 0;
-        line-height: 0.8em;
         .fa {
             font-size: 3vmin;
         }
@@ -330,9 +235,6 @@ hr {
     }
     .words {
         padding: 0 10%;
-        text-align: center;
-        font-size: 2vmin;
-        font-weight: 500;
         @media screen and (max-width: 760px){
             margin: 0 20px 0 30px !important;
         }
@@ -349,13 +251,9 @@ hr {
     h1 {
         color: $index_stories_title_color;
     }
-    p {
-        font-size: 0.9em;
-    } 
     background-image: url('/assets/images/backgrounds/stories_letterbox_1700.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
     @media screen and (max-width: 1250px){
         background-image: url('/assets/images/backgrounds/stories_letterbox_1250.jpg');
     }
@@ -370,25 +268,18 @@ hr {
     }
 }
 
-#smaller_tags {
-    font-size: 1vw;
-}
-
 .scribbles {
+    padding-top: 0px;
     background: $index_scribbles_outer_bg_color;
     h1 {
         color: $index_scribbles_title_color;
-    }
-    padding-bottom: 0px; // this is taken care of by the margin on li objects 
+    } 
 }
 
 .events {
     h1 {
         color: $index_events_title_color;
     }
-    p {
-        font-size: 0.9em;
-    } 
 }
 
 .overlay_holder {
@@ -425,6 +316,7 @@ hr {
 }
 
 .team {
+    padding-top: 0px;
     background: $index_team_bg_color;
 }
 
@@ -437,39 +329,19 @@ hr {
 .member-card {
     box-shadow: 0px 1px 5px $nearly_black;
     background: $team_cards_color;
-    font-family: Couture, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    p {
-        text-align: center;
-        margin: 0 0.1em;
-        padding: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    .name {
+        margin-top: 0.6rem;
+    }
+    .role {
+        margin-bottom: 0.6rem;
     }
     .name, .role, .social {
         position: relative; 
         padding: 0 0.25em;
     }
-    .name {
-        height: 5vmax;
-        p {
-            font-size: 0.75em;
-            font-weight: 900;
-        }
-    }
-    .role {
-        height: 3vmax;
-        font-size: 0.65em;
-        font-weight: 600;
-    }
     .social {
-        height: 3vmax;
-        font-size: 0.9em;
         .fas, .fab {
+            margin: 0.6rem 0;
             &:hover {
                 color: $icon_hover_color;
                 text-decoration: none;
@@ -485,14 +357,10 @@ hr {
     h1 {
         color: $index_press-sponsors_title_color;
     }
-    p {
-        font-size: 0.9em;
-    } 
 }
 
-.social {
+#social {
     padding: 2em 0;    
-    text-align: center;
     background-color: $index_contact_bg_color;
     .fas, .fab {
         color: $icon_color_light;
@@ -505,7 +373,6 @@ hr {
     }
     a .fas, a .fab {
         display: inline-block;
-        font-size: 2em;
         vertical-align: center;
     }
 }
@@ -636,9 +503,8 @@ hr {
     text-align: left;
     a, a:visited {
         color: $tag_color;
-        text-transform: uppercase;
         text-align: left;
-        font-family: Couture, sans-serif !important;
+        font-family: 'COUTUREBold', sans-serif !important;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 0.075rem;
@@ -667,7 +533,7 @@ hr {
         font-size: calc(10px + 14vmin);
         letter-spacing: -0.07em;
         line-height: 0.9em;
-        font-family: Couture, sans-serif;
+        font-family: 'COUTUREBold', sans-serif;
         font-weight: 900;
         text-transform: uppercase;
         max-width: 80%;
@@ -796,9 +662,6 @@ hr {
 }
 
 .btn {
-    font-family: Couture, sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.1em;
     padding: 5px 20px !important;
     .fas, .fab {
         color: $btn_text;
@@ -817,14 +680,14 @@ hr {
     color: $nearly_black;
 }
 
-.social_blobs {
-    margin-top: 80px;
-    margin-bottom: 0;
-    a .fas, a .fab {
+.social_inline {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    a {
         display: inline-block;
-        font-size: 6em;
     }
     .fas, .fab {
+        color: $icon_color;
         &:hover {
             color: $icon_hover_color;
         }
@@ -834,17 +697,7 @@ hr {
     }
 }
 
-.section_subtitle, .section_subtitle_centered, .section_endtext {
-    span {
-        font-size: 1em;
-        text-transform: uppercase;
-        font-weight: 400;
-        letter-spacing: 0.3em;
-    }
-}
-
 .section_subtitle {
-    text-align: left;
     margin-top: -2em; // HAXXXX margin-bottom of h1 above is 1.5em, then there are divs
     margin-bottom: 0em !important; // HAXXXX making up for losing space above
 }
@@ -853,10 +706,6 @@ hr {
     text-align: center;
 }
 
-.subtitle_info {
-    font-size: 0.75em;
-    text-align: right;
-}
 
 .flex-container {
   display: flex;
@@ -873,21 +722,6 @@ hr {
 .author_credit {
     margin-top: -2em;
     padding: 0 4em 5em 4em;
-    font-family: Helvetica;
-    font-size: 0.7em;
-    font-style: italic;
-    text-align: justify;
-    font-weight: 300;
-}
-
-
-// LAYOUT THINGS
-
-.button_explanation {
-    font-size: 0.55em;
-    font-weight: 600;
-    letter-spacing: 0.075em;
-    vertical-align: middle;
 }
 
 .sticky {
@@ -1111,7 +945,7 @@ hr {
 #mad_story {
     .card {
         background-color: $white;
-        font-family: Couture, sans-serif !important;
+        font-family: 'COUTUREBold', sans-serif;
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 0.075rem;
