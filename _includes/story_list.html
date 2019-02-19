@@ -1,4 +1,4 @@
-{% assign sorted = site.stories | sort: 'date' | reverse %}
+{% assign sorted = site.stories %}
 
 <section id="story_grid">
     <ul class="cards">
@@ -6,7 +6,7 @@
             {% if site.show_stories %}
                 <li class="cards__item">
                     <div class="card">
-                        <a href="{{ story.url | absolute_url }}"><div class="card__image" style="background-image:url('{{ site.path_stories_images | absolute_url }}/{{ story.slug }}/thumbnail.jpg')"></div></a>
+                        <a href="{{ story.url | absolute_url }}"><div class="card__image" style="background-image:url('{{ site.path_stories_images | absolute_url }}/{{ story.slug }}/matrix.jpg')"></div></a>
                         <div class="card__content">
                             <div class="card__title">
                                 <a href="{{ story.url | absolute_url }}" class="blog_list_title">
