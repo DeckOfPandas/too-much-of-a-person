@@ -20,12 +20,31 @@
                                 </a>
                             </div>
                             <div class="card__quotation">
-                                "{{ story.quotation | strip_html }}"
+                                {% if page.quotation %}
+                                    "{{ story.quotation | strip_html }}"
+                                {% else %}
+                                    TODO QUOTATION
+                                {% endif %}
                             </div>
                             <p class="card__tag-list tag_list">
-                                {% for tag in story.tags %}   
-                                    <a href="" class="tag">{{ tag }}</a>
-                                {% endfor %}
+                                {% if page.tags.size > 0 %}
+                                    {% for tag in page.tags %}   
+                                        <a href="" class="tag">{{ tag }}</a>
+                                    {% endfor %}
+                                {% else %}
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">tag </a>
+                                {% endif %}
                             </p>
                         </div>
                     </div>
