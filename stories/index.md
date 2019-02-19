@@ -15,7 +15,7 @@ permalink: /stories/
 	{% if site.show_stories %}
 	<div class="container-fullwidth" style="margin-top: 2em;">	
 		<div class="small">
-			{% include related_stories.html %}
+			{% include story_list.html %}
 		</div>
 		<div class="section_endtext" style="text-align: center; margin-top: 2.5em;">
 			<span>More coming soon</span>
