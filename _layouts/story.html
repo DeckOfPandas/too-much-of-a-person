@@ -63,7 +63,7 @@ layout: page_no_header-fullwidth
                 {% for image in site.static_files %}
                   {% if image.path contains story_images_folder %}
                     {% unless image.path contains 'main' %}
-                        {% unless image.path contains 'thumbnail' %}
+                        {% unless image.path contains 'matrix' %}
                             <div class="container-fullwidth story-object story-mainphoto">
                                 <img class="story_main_photo img-fluid" src="{{ image.path }}" alt="" />
                             </div>
