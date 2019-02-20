@@ -102,12 +102,46 @@ a:hover {
     text-align: right;
 }
 
+.header {
+	font-face: 'Helevetica Neue', sans-serif;
+}
+
 #navbar {
-    font-size: 1.15em;
-    line-height: 1em;
+    font-size: 1.2em;
+    background-color: $navbar_bg;
     a {
         font-family: 'COUTUREBold', sans-serif !important;    
-        text-transform: uppercase;
+        color: $navbar_link_color;
+        text-decoration: none;
+        line-height: 2em;
+        &:hover {
+            color: $navbar_link_hover_color;
+        }
+    }
+    ul {
+    	text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 900;
+        letter-spacing: 0.075em;
+    }
+    li {
+    	&:hover {
+                background: $navbar_link_color;
+                color: $navbar_link_hover_color;
+                &:visited {
+                    color: $navbar_bg
+                }                
+            }
+        &:hover > a { 
+            color: $navbar_link_hover_color;
+        }            
+    }
+    .menu-burger {
+    	text-align: center;
+	    .fa, .fas {
+	        color: $burger_button_text;
+	        font-size: 1.2rem;
+	    }
     }
 }
 
