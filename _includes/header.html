@@ -37,30 +37,10 @@
             <input type="checkbox" id="menu-burger" role="button">
             <ul id="nav">
                 {% for nav in site.data.menu %}
-                    {% if nav.subcategories != null %}
-                        <li>
-                            {% if nav.href %}
-                                <a href="{{ nav.href | relative_url }}" class="subcategory js-scroll-trigger">{{ nav.title }}</a>
-                            {% else %}
-                                <a class="subcategory js-scroll-trigger">{{ nav.title }}</a>
-                            {% endif %}
-                            <ul>
-                                {% for subcategory in nav.subcategories %}
-                                    <li><a href="{{ subcategory.subhref | relative_url }}" class="js-scroll-trigger">{{ subcategory.subtitle }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    {% elsif nav.href == page.url %}
-                        <li class="active js-scroll-trigger"><a href="{{ nav.href | relative_url }}">{{ nav.title }}</a></li>
-                    {% else %}
-                        <li><a href="{{ nav.href | relative_url }}" class="js-scroll-trigger">{{ nav.title }}</a></li>
-                    {% endif %}
+                    <li><a href="{{ nav.href | relative_url }}" class="js-scroll-trigger">{{ nav.title }}</a></li>
                 {% endfor %}
             </ul>
-            <script>
-            document.getElementById("nav").addEventListener("click", menuclick);
-            function menuclick() { document.getElementById("menu-burger").checked = false; }
-            </script>
         </div>
     </div>
 </section>
+                           
