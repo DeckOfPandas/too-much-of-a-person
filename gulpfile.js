@@ -110,24 +110,6 @@ gulp.task('clean:images', function(callback) {
     callback();
 });
 
-// Copies fonts.
-gulp.task('build:fonts', ['couture']);
-
-// Places Couture fonts in proper location.
-gulp.task('couture', function() {
-    return gulp.src(paths.fontFiles + '/couture/**.*')
-        .pipe(rename(function(path) {path.dirname = '';}))
-        .pipe(gulp.dest(paths.jekyllFontFiles))
-        .pipe(gulp.dest(paths.siteFontFiles))
-        .pipe(browserSync.stream())
-        .on('error', log.error());
-});
-
-// Cleans fonts
-gulp.task('clean:fonts', function(callback) {
-    del([paths.jekyllFontFiles, paths.siteFontFiles]);
-    callback();
-});
 
 // Copies audio.
 gulp.task('build:audio', function() {
@@ -174,7 +156,6 @@ gulp.task('clean:jekyll', function(callback) {
 
 // Clean everything
 gulp.task('clean', ['clean:jekyll',
-    'clean:fonts',
     'clean:images',
     'clean:scripts',
     'clean:styles']);
@@ -182,7 +163,7 @@ gulp.task('clean', ['clean:jekyll',
 // Builds site anew.
 gulp.task('build', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts', 'build:audio'],
+        ['build:scripts', 'build:images', 'build:styles', 'build:audio'],
         'build:jekyll',
         callback);
 });
@@ -190,7 +171,7 @@ gulp.task('build', function(callback) {
 // Builds site anew using test config.
 gulp.task('build:test', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts', 'build:audio'],
+        ['build:scripts', 'build:images', 'build:styles', 'build:audio'],
         'build:jekyll:test',
         callback);
 });
@@ -198,7 +179,7 @@ gulp.task('build:test', function(callback) {
 // Builds site anew using local config.
 gulp.task('build:local', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts', 'build:audio'],
+        ['build:scripts', 'build:images', 'build:styles', 'build:audio'],
         'build:jekyll:local',
         callback);
 });
