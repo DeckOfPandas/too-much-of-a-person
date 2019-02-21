@@ -17,59 +17,25 @@ layout: page_no_header-fullwidth
 
     <div class="container-fullwidth">
         <section class="story">
-            <div class="container-fullwidth story-object story-mainphoto">
-                
-
-<script>
-    var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-    })
-</script>
-
-
-
-                <!-- Slider main container -->
-                <div class="swiper-container" style="border: 1px black solid">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        ...
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+            
+            <!-- Swiper -->
+            <div class="swiper-container gallery-top" style="width:50%">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="story_main_photo img-fluid" src="{{ story_images_folder}}/main.jpg" /></div>
+                    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)">two</div>
                 </div>
-
-
-                <!-- <img class="story_main_photo img-fluid" src="{{ story_images_folder}}/main.jpg" /> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
+
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="story_main_photo img-fluid" src="{{ story_images_folder}}/main.jpg" /></div>
+                    <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)">two</div>
+                </div>
+            </div>
+
             <div class="container-fullwidth story-object story-quotation">
                 <div class="container">
                     <span class="quotation">
