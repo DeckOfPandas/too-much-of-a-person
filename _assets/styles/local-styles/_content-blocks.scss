@@ -1060,13 +1060,15 @@ hr {
     }
 
     .card__text, .card__quotation {
-        color: $nearly_black;
-        flex: 1 1 auto;
-        font-size: 0.75rem;
+    	flex: 1 1 auto;
+    	margin: 0.5rem 0 1.25rem 0;
+    	color: $nearly_black;
+    	text-transform: uppercase;
+    	font-style: italic;
+        font-size: calc(11px + 0.2vw); 
+        font-weight: 500;
         letter-spacing: 0.075rem;
         line-height: 1.5;
-        font-style: italic;
-        margin: 0.5rem 0 1.25rem 0;
     }
 
     .card__tag-list {
@@ -1114,6 +1116,7 @@ hr {
 
 /* BOOTSTRAP GALLERY */
 #story_gallery {
+	padding-bottom: 0;
 
 	.thumb{
     margin-bottom: 30px;
@@ -1150,4 +1153,15 @@ hr {
 	.fancybox-skin {
 		padding: 0 !important;
 	}
+}
+
+
+
+
+
+/* HAXXXX */
+
+.container_no_tb {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
