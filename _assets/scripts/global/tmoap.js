@@ -26,8 +26,10 @@
 
 $(document).ready(function(){
   $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
+        openEffect: "fade",
+        closeEffect: "fade",
+        padding: 0,
+        scrolling: "yes"
     });
     
     $(".zoom").hover(function(){
