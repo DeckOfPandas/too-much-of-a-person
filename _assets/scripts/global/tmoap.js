@@ -23,9 +23,9 @@
 })(jQuery); // End of use strict
 
 
-
+// FANCY BOX
 $(document).ready(function(){
-  $(".fancybox").fancybox({
+  $(".fancybox").fancybox({ // All parameters available at http://fancybox.net/api
         openEffect: "fade",
         closeEffect: "fade",
         padding: 0,
