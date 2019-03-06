@@ -10,9 +10,9 @@ layout: page_no_header-fullwidth
 <section class="container blog_archive_page">
     <div class="archive_page_title">
         <h1>{{ page.firstname }}</h1>
-        <div class="section_subtitle_centered">
+        <!-- <div class="section_subtitle_centered">
             <span>Subtitle if wanted</span>
-        </div>
+        </div> -->
     </div>
 
     <div class="container-fullwidth">
@@ -113,8 +113,17 @@ layout: page_no_header-fullwidth
                 
                 </div>
             </div>  
-        </section><!-- End section story -->
+        </section><!-- End .story -->
 
+        <!-- RELATED STORIES -->
+        <section class="">
+            <div class="container-fullwidth story-object" style="margin-top:2em; margin-bottom:-2em;">
+                <h1>related stories</h1>
+            </div>  
+            <div class="container-fullwidth story-related">
+                {% include related_stories.html %}
+            </div>
+        </section>
     </div>
 </section>
 
