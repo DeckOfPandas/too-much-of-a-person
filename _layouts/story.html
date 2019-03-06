@@ -17,86 +17,38 @@ layout: page_no_header-fullwidth
 
     <div class="container-fullwidth">
         <section class="story">
-            
-            
+       
+		   <div class="container">
 
+		   		<div class="row">
+					<div class="col-lg-6 col-md-6 col-xs-6 offset-md-3 thumb">
+		                <a href="{{ story_images_folder}}/main.jpg" class="fancybox" rel="ligthbox">
+		                    <img  src="{{ story_images_folder}}/main.jpg" class="zoom_main img-fluid "  alt="">
+		                </a>
+		            </div>
+				</div>
 
+		        <div class="row">
+		        	{% for image in site.static_files %}
+		              {% if image.path contains story_images_folder %}
+		                {% unless image.path contains 'Main' %}
+		                    {% unless image.path contains 'Matrix' %}
+			                    {% unless image.path contains 'main' %}
+			                	    {% unless image.path contains 'matrix' %}
+				                        <div class="col-lg-3 col-md-4 col-xs-4 thumb">
+							                <a href="{{ image.path }}" class="fancybox" rel="ligthbox">
+							                    <img  src="{{ image.path }}" class="zoom img-fluid "  alt="">
+							                </a>
+							            </div>
+					            	{% endunless %}
+					            {% endunless %}
+		                    {% endunless %}
+		                {% endunless %}
+		              {% endif %}
+		            {% endfor %}
+		       </div>
 
-
-   <!-- Page Content -->
-   <div class="container page-top">
-
-
-
-        <div class="row">
-
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                   
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
-                </a>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-            
-           
-           
-       </div>
-
-     
-      
-
-    </div>
-
-
-
-
-
-
-
-            
-
+		    </div>
 
             <div class="container-fullwidth story-object story-quotation">
                 <div class="container">
@@ -155,17 +107,7 @@ layout: page_no_header-fullwidth
             </div>
             <div class="container-fullwidth story-object story-gallery">
                 <div class="container">
-                {% for image in site.static_files %}
-                  {% if image.path contains story_images_folder %}
-                    {% unless image.path contains 'main' %}
-                        {% unless image.path contains 'matrix' %}
-                            <div class="container-fullwidth story-object story-mainphoto">
-                                <img class="story_main_photo img-fluid" src="{{ image.path }}" alt="" />
-                            </div>
-                        {% endunless %}
-                    {% endunless %}
-                  {% endif %}
-                {% endfor %}
+                
                 </div>
             </div>  
         </section>
