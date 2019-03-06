@@ -20,30 +20,26 @@
                                 </a>
                             </div>
                             <div class="card__quotation">
-                                {% if page.quotation %}
+                                {% if story.quotation %}
                                     "{{ story.quotation | strip_html }}"
                                 {% else %}
-                                    TODO QUOTATION
+                                    <!-- TODO What if no quotation? -->
                                 {% endif %}
                             </div>
                             <p class="card__tag-list tag_list">
-                                {% if page.tags.size > 0 %}
-                                    {% for tag in page.tags %}   
-                                        <a href="" class="tag">{{ tag }}</a>
+                                {% if story.tags.size > 0 %}
+                                    {% for tag in story.tags %}   
+                                        <a href="" class="tag">#{{ tag }}</a>
                                     {% endfor %}
                                 {% else %}
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
                                 {% endif %}
                             </p>
                         </div>
