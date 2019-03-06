@@ -30,17 +30,13 @@ layout: page_no_header-fullwidth
 		        <div class="row">
 		        	{% for image in site.static_files %}
 		              {% if image.path contains story_images_folder %}
-		                {% unless image.path contains 'Main' %}
-		                    {% unless image.path contains 'Matrix' %}
-			                    {% unless image.path contains 'main' %}
-			                	    {% unless image.path contains 'matrix' %}
-				                        <div class="col-lg-3 col-md-4 col-sm-4 thumb">
-							                <a href="{{ image.path }}" class="fancybox" rel="ligthbox">
-							                    <img  src="{{ image.path }}" class="zoom img-fluid "  alt="">
-							                </a>
-							            </div>
-					            	{% endunless %}
-					            {% endunless %}
+		                {% unless image.path contains 'ain' %} <!-- HAXXXX -->
+		                    {% unless image.path contains 'atrix' %}
+		                        <div class="col-lg-3 col-md-4 col-sm-4 thumb">
+					                <a href="{{ image.path }}" class="fancybox" rel="ligthbox">
+					                    <img  src="{{ image.path }}" class="zoom img-fluid "  alt="">
+					                </a>
+					            </div>
 		                    {% endunless %}
 		                {% endunless %}
 		              {% endif %}
