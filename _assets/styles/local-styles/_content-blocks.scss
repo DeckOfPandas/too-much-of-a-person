@@ -382,11 +382,13 @@ hr {
 }
 
 .story-object.story-quotation { 
-    text-transform: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform: uppercase;
     font-style: italic;
-    font-weight: 500;
-    font-size: calc(14px + 0.8vw); 
-    line-height: calc(24px + 0.8vw);
+    font-weight: 600;
+    font-size: 2vmin;
+    letter-spacing: 0.16rem;
+    line-height: calc(24px + 1.5vw);
     .fa {
         font-size: 0.7em;
         vertical-align: top;
@@ -449,13 +451,6 @@ hr {
     span {
         display: block;
     }
-
-    .quotation {
-         
-    }
-
-
- 
 }
 
 .margin-top-40 {
@@ -1062,11 +1057,12 @@ hr {
     .card__text, .card__quotation {
     	flex: 1 1 auto;
     	margin: 0.5rem 0 1.25rem 0;
+    	font-family: 'Helvetica Neue', Helvetica, sans-serif;
     	color: $nearly_black;
     	text-transform: uppercase;
     	font-style: italic;
         font-size: calc(11px + 0.2vw); 
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: 0.075rem;
         line-height: 1.5;
     }
