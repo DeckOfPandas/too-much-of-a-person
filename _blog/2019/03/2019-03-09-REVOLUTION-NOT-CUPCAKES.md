@@ -4,7 +4,7 @@ title:  "REVOLUTION NOT CUPCAKES"
 author: "Diana Patient"
 date:   2019/03/08
 post_number: 17
-header_image: "1-1.jpg"
+header_image: "17-6.jpeg"
 ---
 
 {% include blog_quotation_inline.html quotation_text="\"The point is not for women simply to take power out of men’s hands, since that wouldn’t change anything about the world. It’s a question precisely of destroying that notion of power.\"" quotation_attribution="Simone De Beavoir"%}
