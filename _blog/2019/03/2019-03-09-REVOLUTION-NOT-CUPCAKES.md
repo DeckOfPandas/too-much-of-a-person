@@ -7,6 +7,10 @@ post_number: 17
 header_image: "1-1.jpg"
 ---
 
+{% include blog_quotation_inline.html quotation_text="\"The point is not for women simply to take power out of men’s hands, since that wouldn’t change anything about the world. It’s a question precisely of destroying that notion of power.\"" quotation_attribution="Simon De Beavoir"%}
+
+
+
 Happy International Women's Day!
 
 We want revolution and not to be placated with cupcakes and capitalist sponsors selling us "feel-good feminism, that encourages women to invest in their aspirations, be empowered and 'lean in’” (Catherine Rottenberg, author of The Rise of Neoliberal Feminism).
