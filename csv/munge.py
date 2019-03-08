@@ -14,20 +14,12 @@ with open('participants-newsheet-2019-03-07-0127-only_seven.csv', mode='r') as c
 		# Create file for output
 		f = open(output_filename, "w") # NB: overwrites entire file every time
 
-		'''
-		# Print out column headers (only of interest on console)
-		if line_count == 0:
-			print(f'Column names are {", ".join(row)}')
-			line_count += 1
-		'''
-
-		# Print file content
-
-		# Print standard header material
+		# Print standard header for config file
 		f.write('---\n')
+
+		# Print parameters we don't vary
 		f.write('published: true\n')
 		f.write('layout: story\n')
-
 
 		# First name
 		try:
@@ -86,7 +78,7 @@ with open('participants-newsheet-2019-03-07-0127-only_seven.csv', mode='r') as c
 			f.write(f'tags:\n')
 		f.write(f'\n')
 
-		# Print end of config file
+		# Print standard footer for config file
 		f.write('---')
 
 		line_count += 1
