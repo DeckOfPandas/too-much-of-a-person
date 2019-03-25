@@ -1,46 +1,74 @@
 {% assign events = "" | split,"" %}
 {% assign current_time = site.time | date: "%s" | to_integer %}
-{% assign sorted = site.events | sort: 'date' %}
+{% assign sorted = (site.events | sort: 'start_date') | reverse %}
 {% for post in sorted %}
-    {% assign start = post.date | date: "%s" | plus: 86400 | to_integer %}
+    {% assign start = post.start_date | date: "%s" | plus: 86400 | to_integer %}
     {% if start >= current_time %}
         {% assign events = events | push:post %}
     {% endif %}
 {% endfor %}
 
-<section id="mad_blog">
-    
-    <br> 
-  {% assign i = 0 %}
-  {% for post in events | limit: max_posts_to_show %}
-        {% assign start = post.date | date: "%s" | plus: 86400 | to_integer %}
-            {% assign rem = i | modulo:2 %}
-            {% if rem == 0 %}
-                <div class="blog-card">
-            {% else %}    
-                <div class="blog-card alt">
-            {% endif %}
-            <div class="meta">
-                <div class="photo" style="background-image: url('/assets/images/{{post.thumbnail}}')">
-                </div>
-            </div>
-            <div class="description">
-                <h1>{{ post.title | strip_html }}</h1>
-                <h2><span>{{ post.byeline }}</span><br></h2>
-                <p class="event_details"><div class="flex-container">
-                    <div class="event_detail col-md-5 col-sm-7"><i class="fas fa-calendar-alt"></i><br><span>{{ post.date | date_to_string }}</span><br>{{ post.start_time | date: "%H:%M" }}-{{ post.end_time | date: "%H:%M" }}</div>
-                    <div class="event_detail col-md-5 col-sm-7"><i class="fa fa-map-marker-alt"></i><br><span>{{ post.venue }}</span><br>{{ post.address }}<br><a href="{{ post.gmaps_url }}" target="new">map</a></div>
-                </div></p>
-                <p class="event_desc">{{ post.content | truncatewords:25 | strip_html }}</p>
-                <div class="flex-container event_buttons">
-                    {% if post.tickets_url %}
-                        <a class="btn btn-success" target="_blank" href="{{ post.tickets_url }}"> Details <i class="fab fa-facebook"></i></a>
-                    {% else %}
-                        <a class="btn btn-success disabled" target="_blank" href="{{ post.tickets_url }}"> coming soon <i class="fab fa-facebook"></i></a>
+{% if events.size == 0 %}
+    <p>Watch this space...</p>
+{% else %}
+        <section id="mad_blog">
+            <br> 
+          {% assign i = 0 %}
+
+          {% for post in events | limit: max_posts_to_show %}
+            <div>
+                    {% assign rem = i | modulo:2 %}
+                    {% if rem == 0 %}
+                        <div class="blog-card">
+                    {% else %}    
+                        <div class="blog-card alt">
                     {% endif %}
-                </div>
-            </div>
-         
-          {% assign i = i | plus:1 %}
-  {% endfor %}
-</section>
+                    <div class="meta">
+                        <div class="photo" style="background-image: url('/assets/images/events/{{post.thumbnail}}')">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h1>{{ post.title | strip_html }}</h1>
+                        <h2><span>{{ post.byeline }}</span><br></h2>
+                        <p class="event_details">
+                            <div class="flex-container">
+                                <div class="event_detail col-sm-6"><i class="fas fa-calendar-alt"></i><br>
+                                    {% if post.end_date %}
+                                        <span>{{ post.start_date | date: "%d" }} - 
+                                        {{ post.end_date | date: "%d %B %Y" }}</span>
+                                    {% else %}
+                                        <span>{{ post.start_date | date: "%d %B %Y" }}</span>
+                                    {% endif %}
+                                    <br>
+                                    {% if post.time_string %}
+                                        {{ post.time_string }}
+                                    {% else %}
+                                        {{ post.start_time | date: "%H:%M" }}-{{ post.end_time | date: "%H:%M" }}
+                                    {% endif %}
+                                </div>
+                                <div class="event_detail col-sm-6">
+                                    <i class="fa fa-map-marker-alt"></i><br>
+                                    <span>{{ post.venue }}</span><br>
+                                    {{ post.address }}<br>
+                                    <a href="{{ post.gmaps_url }}" target="new">:gmap:</a>
+                                </div>
+                            </div>
+                        </p>
+                        <p class="event_desc">
+                            {{ post.content | truncatewords:25 | strip_html }}
+                        </p>
+                        <div class="flex-container event_buttons">
+                            {% if post.event_url %}
+                                <a class="btn btn-success" target="_blank" href="{{ post.event_url }}"> Info and booking <i class="fas fas fa-angle-right"></i></a>
+                            {% else %}
+                                <a class="btn btn-success disabled"> coming soon <i class="fas fas fa-angle-right"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                  {% assign i = i | plus:1 %}
+              </div>
+          {% endfor %}
+
+        </section>
+    
+{% endif %}
