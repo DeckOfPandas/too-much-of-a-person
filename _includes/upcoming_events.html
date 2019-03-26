@@ -1,6 +1,6 @@
 {% assign events = "" | split,"" %}
 {% assign current_time = site.time | date: "%s" | to_integer %}
-{% assign sorted = (site.events | sort: 'start_date') | reverse %}
+{% assign sorted = (site.events | sort: 'start_date') %}
 {% for post in sorted %}
     {% assign start = post.start_date | date: "%s" | plus: 86400 | to_integer %}
     {% if start >= current_time %}
@@ -13,9 +13,17 @@
 {% else %}
         <section id="mad_blog">
             <br> 
+
+{% if include.max_events_to_show %} 
+    {% assign num_events_to_show = include.max_events_to_show %} 
+{% else %}
+    {% assign num_events_to_show = 10 %} 
+{% endif %}
+
+
           {% assign i = 0 %}
 
-          {% for post in events | limit: max_posts_to_show %}
+          {% for post in events | limit: num_events_to_show %}
             <div>
                     {% assign rem = i | modulo:2 %}
                     {% if rem == 0 %}
