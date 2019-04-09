@@ -2,7 +2,7 @@
 
 - name: "Diana Patient"
   role: "Founder & Creative Director"
-  photo: "diana_patient.JPG"
+  photo: "diana_patient.jpg"
   email: toomuchofaperson@gmail.com
 
 - name: "Molly Jo Hirons"
@@ -26,7 +26,7 @@
 
 - name: "Amanda Robinson"
   role: "Story Seeker"
-  photo: "amanda_dawn.JPG"
+  photo: "amanda_robinson.jpg"
 
 - name: "Junia Bashiru"
   role: "Social Media Video Editor"
@@ -38,12 +38,12 @@
   
 - name: "Prerna Winter"
   role: "Video Content editor"
-  photo: prerna_winter.png"
+  photo: prerna_winter.jpg"
 
 - name: "Emma Lock"
   role: "Story Seeker"
   photo: "emma_lock.jpg"
-  
+
 - name: "Helen Jackson"
   role: "Web Developer"
   photo: "helen_jackson.jpg"
