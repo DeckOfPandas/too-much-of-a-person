@@ -1,17 +1,65 @@
 import csv
 
-with open('participants-newsheet-2019-03-07-0127-only_seven.csv', mode='r') as csv_file:
+with open('input-all.csv', mode='r') as csv_file:
 	csv_reader = csv.DictReader(csv_file)
 	line_count = 1
 	for row in csv_reader:
+
+		# Set names of columns
+		# First name
+		firstname_raw = row["interviewee"].lower().strip()
+		firstname = firstname_raw.split(' ')[0]
+		print "firstname '%s'" % firstname.strip()
+
+		# Surname
+		if row["Surname"] != "":
+			if row["Surname"] != "?":
+				surname = row["Surname"][0].lower().strip()
+			else:
+				surname = ""
+		else:
+			surname = ""
 		
-		# Generate slug
-		slug = "%s-%s" % (row["firstname"].lower().strip(), row["surname"][0].lower()) # NB: Re-used below in output to file contents
-		print(f'Line {line_count}, slug {slug}')
-		output_filename = "%s.md" % slug
-		# print(f'output_filename: {output_filename}')
+		# Slug
+		slug = "%s-%s" % (firstname, surname) # NB: Re-used below in output to file contents
 		
-		# Create file for output
+
+		# Year
+		year = row["date"].strip()	
+		
+		# Quotation
+		quotation_clean_ends = row["quotation"].strip('\"')
+		quotation_clean_whole = quotation_clean_ends.replace('\"','\'')
+		quotation = quotation_clean_whole
+		
+		# Short quotation
+		short_quotation_clean_ends = row["Short quote for thumb"].strip('\"')
+		short_quotation_clean_whole = short_quotation_clean_ends.replace('\"','\'')
+		short_quotation = short_quotation_clean_whole
+
+		# Audio URL
+		audio_raw = row["Souncloud link"]
+		audio_url_prepend = "https://w.soundcloud.com/player/?url="
+		audio_url_append = "&color=%23fe0000&inverse=false&auto_play=true&show_user=true"
+		audio_url = "%s%s%s" % (audio_url_prepend, audio_raw, audio_url_append)
+
+		# Video URL
+		video_url = row["video_youtube"]
+
+		# Tags
+		tags_string = row["tags"].replace('#','\n  - ')
+		tags = tags_string
+		
+
+		# PRINT TO CONSOLE
+		print('Line %d, slug %s' % (line_count, slug))
+		output_filename = "output_files//%s.md" % slug
+		print('output_filename: %s' % output_filename )
+
+
+		# PRINT TO FILE
+
+		# Create output file
 		f = open(output_filename, "w") # NB: overwrites entire file every time
 
 		# Print standard header for config file
@@ -23,63 +71,59 @@ with open('participants-newsheet-2019-03-07-0127-only_seven.csv', mode='r') as c
 
 		# First name
 		try:
-			f.write(f'firstname: {row["firstname"]}\n')
+			f.write('firstname: %s\n' % firstname)
 		except:
-			f.write(f'firstname: FIRSTNAME\n')
-
-		# Slug -- as per above
-		f.write(f'slug: %s\n' % slug)
+			f.write('firstname: FIRSTNAME\n')
 
 		# Surname
 		try:
-			f.write(f'surname: {row["surname"].strip()}\n')
+			f.write('surname: %s\n' % surname)
 		except:
-			f.write(f'surname: SURNAME\n')
+			f.write('surname: SURNAME\n')
+
+		# Slug -- as per above
+		try:
+			f.write('slug: %s\n' % slug)
+		except:
+			f.write('slug: SLUG\n')
 
 		# Year
 		try:
-			f.write(f'year: {row["year"].strip()}\n')
+			f.write('year: %s\n' % row["date"].strip())
 		except:
-			f.write(f'year:\n')
+			f.write('year: YEAR\n')
 
 		# Quotation
-		quotation_clean_ends = row["quotation"].strip('\"')
-		quotation_clean_whole = quotation_clean_ends.replace('\"','\'')
 		try:
-			f.write(f'quotation: "%s"\n' % quotation_clean_whole)
+			f.write('quotation: "%s"\n' % quotation)
 		except:
-			f.write(f'quotation:\n')
+			f.write('quotation: QUOTATION\n')
 
 		# Short quotation
-		short_quotation_clean_ends = row["short_quotation"].strip('\"')
-		short_quotation_clean_whole = short_quotation_clean_ends.replace('\"','\'')
 		try:
-			f.write(f'short_quotation: "%s"\n' % short_quotation_clean_whole)
+			f.write('short_quotation: "%s"\n' % short_quotation)
 		except:
-			f.write(f'short_quotation:\n')
+			f.write('short_quotation: SHORT QUOTATION\n')
 
 		# Audio URL
 		try:
-			f.write(f'audio_url: {row["audio_url"]}\n')
+			f.write('audio_url: %s\n' % audio_url)
 		except:
-			f.write(f'audio_url:\n')
+			f.write('audio_url: AUDIO URL\n')
 
 		# Video URL
 		try:
-			f.write(f'video_url: {row["video_url"]}\n')
+			f.write('video_url: %s\n' % video_url)
 		except:
-			f.write(f'video_url:\n')	
+			f.write('video_url: VIDEO URL\n')	
 
 		# Tags		
 		try:
-			tags_string = "tags: %s" % (row["tags"].replace('#','\n  - '))
-			f.write(f'%s' % tags_string)
+			f.write('tags: %s' % tags)
 		except:
-			f.write(f'tags:\n')
-		f.write(f'\n')
+			f.write('tags: TAGS\n')
 
 		# Print standard footer for config file
-		f.write('---')
+		f.write('\n---')
 
-		line_count += 1
-	print(f'Processed {line_count} lines, including header row.')
+		line_count = line_count + 1
