@@ -8,7 +8,20 @@ with open('input-all.csv', mode='r') as csv_file:
 		# Set names of columns
 		# First name
 		firstname_raw = row["interviewee"].lower().strip()
-		firstname = firstname_raw.split(' ')[0]
+		firstname_nospaces = firstname_raw.split(' ')
+		firstname_nohyphens = firstname_raw.split('-')
+
+		if len(firstname_nospaces) > 1:
+			print "MULTIPLE FIRST NAMES"
+  			firstname = "%s%s" % (firstname_nospaces[0], firstname_nospaces[1])
+  		else:
+			firstname = "%s" % (firstname_nospaces[0])
+
+		if len(firstname_nohyphens) > 1:
+			print "HYPHEN IN FIRST NAME"
+  			firstname = "%s%s" % (firstname_nohyphens[0], firstname_nohyphens[1])
+  		else:
+			firstname = "%s" % (firstname_nohyphens[0])
 		print "firstname '%s'" % firstname.strip()
 
 		# Surname
@@ -127,3 +140,4 @@ with open('input-all.csv', mode='r') as csv_file:
 		f.write('\n---')
 
 		line_count = line_count + 1
+		print ""
