@@ -484,23 +484,7 @@ hr {
 
 }
 
-.tag_list {
-    text-align: left;
-    a, a:visited {
-        color: $tag_color;
-        text-align: left;
-        font-family: 'COUTUREBold', sans-serif !important;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 0.075rem;
-        padding: 1px;
-        margin: 1px 20px 1px 0px;
-    }
-    a:hover {
-        color: $tag_hover_color;
-        text-decoration: none;
-    }
-}
+
 
 .section_head {
     background: $white;
@@ -929,12 +913,7 @@ hr {
 
 #mad_story {
     .card {
-        background-color: $white;
-        font-family: 'COUTUREBold', sans-serif;
-        text-transform: uppercase;
-        font-weight: 500;
-        letter-spacing: 0.075rem;
-        border-radius: 0px;
+        
     }
     figure {
         margin: 0;
@@ -953,17 +932,153 @@ hr {
     img {
         max-width: 100%;
     } 
-    .card__title {
-        font-size: 0.5rem;
-        margin-bottom: -0.25rem;
-        padding: 0 0.5rem;
+}
+
+
+
+
+.tag_list {
+    text-align: left;
+    word-spacing: 0.5rem;
+    a, a:visited {
+        color: $tag_color;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.075rem;
+        padding: 1px;
     }
-    .card__description {
-        line-height: 1.6em;
-        font-style: italic;
-        padding: 0.5rem;
-    }
-    .tag_list {
-        padding: 0.5rem;
+    a:hover {
+        color: $tag_hover_color;
+        text-decoration: none;
     }
 }
+
+
+
+/* PANIC */
+
+#story_grid {
+    *,
+    *::before,
+    *::after { 
+        box-sizing: border-box;
+    }
+
+
+    img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .btn {
+        background-color: white;
+        border: 1px solid #cccccc;
+        //border-radius: 1rem;
+        color: #696969;
+        padding: 0.5rem;
+        text-transform: lowercase;
+    }
+
+    .btn--block {
+        display: block;
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 -0.5rem;
+        padding: 0;
+        align-content: space-between;
+    }
+
+    .cards__item {
+        display: flex;
+        padding: 0.5rem;
+        @media(min-width: 24rem) {
+            width: 50%;
+        }
+        @media(min-width: 40rem) {
+            width: 33.3333%;
+        }
+        @media(min-width: 56rem) {
+            width: 25%;
+        }
+    }
+
+    .card {
+        font-family: 'COUTUREBold', sans-serif;
+        background-color: $white;
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        &:hover {
+            .card__image {
+                filter: contrast(60%);
+            }
+        }
+    }
+
+    .card__content {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .card__image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        //filter: contrast(70%);
+        //filter: saturate(180%);
+        overflow: hidden;
+        position: relative;
+        transition: 0.2s cubic-bezier(.43,.41,.22,.71);
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 56.25%; // 16:9 aspect ratio
+        }
+        @media(min-width: 40rem) {
+            &::before {
+                padding-top: 66.6%; // 3:2 aspect ratio
+            }
+        }
+    }
+
+    .card__title {
+        font-size: 1rem;
+        letter-spacing: 1rem;
+        a {
+            text-transform: uppercase;  
+        }
+
+    }
+
+    .card__text, .card__quotation {
+        color: $nearly_black;
+        flex: 1 1 auto;
+        font-size: 0.75rem;
+        letter-spacing: 0.075rem;
+        line-height: 1.5;
+        font-style: italic;
+        margin: 0.5rem 0 1.25rem 0;
+    }
+
+    .card__tag-list {
+        font-size: 0.5rem;
+        padding: 0;    
+        margin:  0;
+    }
+
+}
+
+
