@@ -1,1 +1,49 @@
-<div class="fb-page" data-href="https://www.facebook.com/toomuchofaperson/" data-tabs="events" data-width="320" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/toomuchofaperson/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/toomuchofaperson/">Too Much of a Person</a></blockquote></div>
+{% assign sorted = site.events | sort: 'date' | reverse | limit: max_posts_to_show %}
+
+<section id="mad_blog">
+  {% if include.num_posts_to_show %} 
+    {% assign max_posts_to_show = include.num_posts_to_show %} 
+    <p class="subtitle_info">
+        showing the {{ max_posts_to_show }} most recent blog posts
+          </br> 
+      <a class="blog_nav_link archive" href="{{ site.baseurl }}blog/">:archive:</a>
+    </p>
+  {% else %}
+      {% assign max_posts_to_show = site.events.size %} 
+      <br> 
+    {% endif %} 
+  {% assign i = 0 %}
+  {% for event in sorted | limit: max_posts_to_show %}
+    {% assign rem = i | modulo:2 %}
+    {% if rem == 0 %}
+      <div class="blog-card">
+    {% else %}    
+      <div class="blog-card alt">
+    {% endif %}
+        <div class="meta">
+        <div class="photo" style="background-image: url('/assets/images/blog/{{event.thumbnail}}')"></div>
+      </div>
+      <div class="description">
+        <h1>{{ event.title | truncatewords:9 | strip_html }}</h1>
+        <h2><span>{{ event.venue }}, {{ event.address }}</span><br>
+          {{ event.date | date_to_long_string }}, {{ event.start_time }} -- {{ event.end_time }}
+        </h2>
+        <p> {{ event.content | truncatewords:25 | strip_html }}</p>
+        <p class="read-more">
+          <a href="{{ events.tickets_url | absolute_url }}">More info...</a>
+        	}
+        }
+        </p>
+      </div>
+    </div>
+    {% assign i = i | plus:1 %}
+  {% endfor %}
+</section>
+
+
+
+<!-- FACEBOOK API PLUGIN
+
+<div style="margin-top: 1rem;"class="fb-page" data-href="https://www.facebook.com/toomuchofaperson/" data-tabs="events" data-width="320" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/toomuchofaperson/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/toomuchofaperson/">Too Much of a Person</a></blockquote></div>
+
+-->
