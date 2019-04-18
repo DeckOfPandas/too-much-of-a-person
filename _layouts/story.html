@@ -17,12 +17,37 @@ layout: page_no_header-fullwidth
 
     <div class="container-fullwidth">
         <section class="story">
-            <div class="container-fullwidth story-object story-mainphoto">
-                <img class="story_main_photo img-fluid" src="{{ story_images_folder}}/main.jpg" />
-            </div>
+       		
+       		<!-- GALLERY -->
+		   <div class="container" id="story_gallery">
+		   		<div class="row">
+					<div class="col-sm-6 offset-sm-3 thumb">
+		                <a href="{{ story_images_folder}}/main.jpg" class="fancybox" rel="ligthbox">
+		                    <img  src="{{ story_images_folder}}/main.jpg" class="zoom img-fluid "  alt="">
+		                </a>
+		            </div>
+				</div>
+		        <div class="row">
+		        	{% for image in site.static_files %}
+		              {% if image.path contains story_images_folder %}
+		                {% unless image.path contains 'ain' %} <!-- HAXXXX -->
+		                    {% unless image.path contains 'atrix' %}
+		                        <div class="col-lg-3 col-md-4 col-sm-4 thumb">
+					                <a href="{{ image.path }}" class="fancybox" rel="ligthbox">
+					                    <img  src="{{ image.path }}" class="zoom img-fluid "  alt="">
+					                </a>
+					            </div>
+		                    {% endunless %}
+		                {% endunless %}
+		              {% endif %}
+		            {% endfor %}
+		       </div>
+		    </div>
+
+		    <!-- QUOTATION -->
             <div class="container-fullwidth story-object story-quotation">
                 <div class="container">
-                    <span class="quotation">
+                    <span class="">
                         {% if page.quotation %}
                             <i class="fa fa-quote-left"></i>
                                 {{ page.quotation }}
@@ -33,37 +58,42 @@ layout: page_no_header-fullwidth
                     </span>
                 </div>
             </div>
+
+            <!-- AUDIO -->
             <div class="container-fullwidth story-object story-audio">
-                {% if page.audio_url.size > 0 %}
-                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.audio_url }}"></iframe>
-                {% else %}
-                <div class="container">
-                    <p>audio coming soon</p>
-                </div>
-                {% endif %}
+            	<div class="container">
+	                {% if page.audio_url.size > 0 %}
+	                    <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.audio_url }}"></iframe>
+	                {% else %}
+	                	<p>interview coming soon</p>
+	                {% endif %}
+            	</div>
             </div>
 
+            <!-- TAGS -->
             {% if page.tags.size > 0 %}
                 <div class="container-fullwidth story-object story-taglist">
-                    <div class="tag_list">
-                        <div class="container-fullwidth">
-                            tags here now
-                            {% for tag in page.tags %}   
-                                <a href="" class="tag">{{ tag }}</a>
-                            {% endfor %}
-                        </div>
-                    </div>
+                	<div class="container-fullwidth">
+	                    <div class="tag_list">
+	                        <div class="container">
+	                            {% for tag in page.tags %}   
+	                                <a href="" class="tag">#{{ tag }}</a>
+	                            {% endfor %}
+	                        </div>
+	                    </div>
+	                </div>
                 </div>
             {% else %}
                 <div class="container-fullwidth story-object story-video">
                     <div class="container-fullwidth">
                         <div class="container">
-                            <p>tags coming soon</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
             {% endif %}
-                
+             
+            <!-- VIDEO -->
             <div class="container-fullwidth story-object story-video">
                 <div class="container-fullwidth">
                     {% if page.video_url.size > 0 %}
@@ -75,25 +105,10 @@ layout: page_no_header-fullwidth
                     {% endif %}
                 </div>
             </div>
-            <div class="container-fullwidth story-object story-gallery">
-                <div class="container">
-                {% for image in site.static_files %}
-                  {% if image.path contains story_images_folder %}
-                    {% unless image.path contains 'main' %}
-                        {% unless image.path contains 'matrix' %}
-                            <div class="container-fullwidth story-object story-mainphoto">
-                                <img class="story_main_photo img-fluid" src="{{ image.path }}" alt="" />
-                            </div>
-                        {% endunless %}
-                    {% endunless %}
-                  {% endif %}
-                {% endfor %}
-                </div>
-            </div>  
-        </section>
 
+        </section><!-- End .story -->
 
-
+        <!-- RELATED STORIES -->
         <section class="">
             <div class="container-fullwidth story-object" style="margin-top:2em; margin-bottom:-2em;">
                 <h1>related stories</h1>
@@ -102,6 +117,7 @@ layout: page_no_header-fullwidth
                 {% include related_stories.html %}
             </div>
         </section>
+        
     </div>
 </section>
 
@@ -112,7 +128,6 @@ layout: page_no_header-fullwidth
 <section class="container_section social">
     {% include social_blobs.html %}
 </section>
-
 
 
 

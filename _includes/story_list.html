@@ -10,6 +10,8 @@
                         {% if site.path_stories_images | absolute_url | append: "/" |  append: story.slug | append: "/" | append: "matrix.jpg" %}
                             <a href="{{ story.url | absolute_url }}"><div class="card__image" style="background-image:url('{{ site.path_stories_images | absolute_url }}/{{ story.slug }}/matrix.jpg')"></div></a>
                         {% else if site.path_stories_images | absolute_url | append: "/" |  append: story.slug | append: "/" | append: "thumbnail.jpg" %}
+                            <a href="{{ story.url | absolute_url }}"><div class="card__image" style="background-image:url('{{ site.path_stories_images | absolute_url }}/{{ story.slug }}/<atrix.jpg')"></div></a>
+                        {% else if site.path_stories_images | absolute_url | append: "/" |  append: story.slug | append: "/" | append: "thumbnail.jpg" %}
                             <a href="{{ story.url | absolute_url }}"><div class="card__image" style="background-image:url('{{ site.path_stories_images | absolute_url }}/{{ story.slug }}/thumbnail.jpg')"></div></a>
                         {% endif %}
                         
@@ -20,30 +22,27 @@
                                 </a>
                             </div>
                             <div class="card__quotation">
-                                {% if page.quotation %}
-                                    "{{ story.quotation | strip_html }}"
+                                {% if story.short_quotation %}
+                                    {{ story.short_quotation }}
+                                    <!-- TODO What if no short quotation? -->
                                 {% else %}
-                                    TODO QUOTATION
+                                	"CABBAGES"
                                 {% endif %}
                             </div>
                             <p class="card__tag-list tag_list">
-                                {% if page.tags.size > 0 %}
-                                    {% for tag in page.tags %}   
-                                        <a href="" class="tag">{{ tag }}</a>
+                                {% if story.tags.size > 0 %}
+                                    {% for tag in story.tags %}   
+                                        <a href="" class="tag">#{{ tag }}</a>
                                     {% endfor %}
                                 {% else %}
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
-                                    <a href="" class="tag">tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
+                                    <a href="" class="tag">#tag </a>
                                 {% endif %}
                             </p>
                         </div>

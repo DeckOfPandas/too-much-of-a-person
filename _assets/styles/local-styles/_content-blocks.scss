@@ -382,11 +382,13 @@ hr {
 }
 
 .story-object.story-quotation { 
-    text-transform: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform: uppercase;
     font-style: italic;
-    font-weight: 500;
-    font-size: calc(14px + 0.8vw); 
-    line-height: calc(24px + 0.8vw);
+    font-weight: 600;
+    font-size: 2vmin;
+    letter-spacing: 0.16rem;
+    line-height: calc(24px + 1.5vw);
     .fa {
         font-size: 0.7em;
         vertical-align: top;
@@ -449,13 +451,6 @@ hr {
     span {
         display: block;
     }
-
-    .quotation {
-         
-    }
-
-
- 
 }
 
 .margin-top-40 {
@@ -1012,7 +1007,7 @@ hr {
     .card {
         font-family: 'COUTUREBold', sans-serif;
         background-color: $white;
-        border-radius: 0.25rem;
+        border-radius: 0.1rem;
         box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
         display: flex;
         flex-direction: column;
@@ -1035,8 +1030,8 @@ hr {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
+        border-top-left-radius: 0.1rem;
+        border-top-right-radius: 0.1rem;
         //filter: contrast(70%);
         //filter: saturate(180%);
         overflow: hidden;
@@ -1064,13 +1059,16 @@ hr {
     }
 
     .card__text, .card__quotation {
-        color: $nearly_black;
-        flex: 1 1 auto;
-        font-size: 0.75rem;
+    	flex: 1 1 auto;
+    	margin: 0.5rem 0 1.25rem 0;
+    	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    	color: $nearly_black;
+    	text-transform: uppercase;
+    	font-style: italic;
+        font-size: calc(11px + 0.2vw); 
+        font-weight: 600;
         letter-spacing: 0.075rem;
         line-height: 1.5;
-        font-style: italic;
-        margin: 0.5rem 0 1.25rem 0;
     }
 
     .card__tag-list {
@@ -1082,3 +1080,88 @@ hr {
 }
 
 
+/* SWIPER */
+
+#swiper {
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .gallery-top {
+      height: 80%;
+      width: 100%;
+    }
+    .gallery-thumbs {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+}
+
+
+
+/* BOOTSTRAP GALLERY */
+#story_gallery {
+	padding-bottom: 0;
+
+	.thumb{
+    margin-bottom: 30px;
+	}
+
+	img.zoom {
+		margin: 0;
+	    width: 100%;
+	    height: auto;
+	    border-radius:1px;
+	    object-fit:cover;
+	    -webkit-transition: all .3s ease-in-out;
+	    -moz-transition: all .3s ease-in-out;
+	    -o-transition: all .3s ease-in-out;
+	    -ms-transition: all .3s ease-in-out;
+	}
+
+	.transition {
+	    -webkit-transform: scale(1.2); 
+	    -moz-transform: scale(1.2);
+	    -o-transform: scale(1.2);
+	    transform: scale(1.2);
+	}
+	.modal-header {
+	 border-bottom: none;
+	}
+	.modal-title {
+	    color:#000;
+	}
+	.modal-footer{
+	  display:none;  
+	}
+
+	.fancybox-skin {
+		padding: 0 !important;
+	}
+}
+
+
+
+
+
+/* HAXXXX */
+
+.container_no_tb {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
