@@ -9,7 +9,6 @@ var log          = require('fancy-log');
 var imagemin     = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminJpegtran = require('imagemin-jpegtran');
-
 var notify       = require('gulp-notify');
 var postcss      = require('gulp-postcss');
 var rename       = require('gulp-rename');
@@ -102,7 +101,7 @@ gulp.task('build:scripts', ['build:scripts:global', 'build:scripts:leaflet']);
 // Optimizes and copies image files.
 gulp.task('build:images', function() {
     return gulp.src(paths.imageFilesGlob)
-        .pipe(imagemin([imageminJpegRecompress(strip:true)]))
+        .pipe(imagemin([imageminJpegRecompress()]))
         .pipe(gulp.dest(paths.jekyllImageFiles))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(browserSync.stream());
