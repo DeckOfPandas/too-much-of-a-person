@@ -13,4 +13,9 @@ audio_url: https://w.soundcloud.com/player/?url=&color=%23fe0000&inverse=false&a
 video_url: 
 tags: 
   - toomuchofawoman 
+  - toosensitive 
+  - toointense 
+  - tooarrogant 
+  - tooemotional 
+  - tooprovocative
 ---

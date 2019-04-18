@@ -7,8 +7,9 @@ slug: kylie-h
 year: 2018
 quotation: "One day I came home from school and my grandma and mum gave me this cuddly toy rabbit and on the bum it said 'The Sensitive Rabbit'. I liked the toy but I didn't like the words."
 short_quotation: "Try not to be mean and if you are say sorry."
-audio_url: https://w.soundcloud.com/player/?url=<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560138886%3Fsecret_token%3Ds-vfYqZ&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>&color=%23fe0000&inverse=false&auto_play=true&show_user=true
+audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560138886%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - LGBTTQQIAAP 
+  - toosensitive 
+  - toostraighttobegay
 ---
