@@ -7,8 +7,13 @@ slug: becka-h
 year: 2018
 quotation: "For the first 20, 21 years of my life was “Why do I have to make the thing that I want to talk about so at the forefront that the other person has to feel uncomfortable?” And I saw that as a real strength and “that’s what good people do”. They are selfless they are caring and do everything they can to please others. And now I just think that is so fucked up. Because you just erode yourself for others people’s comfort all the time. It was suffocating, it prevents you from exploring yourself and more than anything you're not being real with other people. You’re conning yourself and everyone around you that you are just a vessel for all their drama and insecurities and you'll just absorb whatever they want to give you. And that doesn’t enable you to have real relationships with people."
 short_quotation: "Because you just erode yourself for others people’s comfort all the time."
-audio_url: https://w.soundcloud.com/player/?url=<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560129811%3Fsecret_token%3Ds-SE2Hr&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>&color=%23fe0000&inverse=false&auto_play=true&show_user=true
+audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560129811%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - activist   
+  - activist 
+  - toopolitical 
+  - toomuchmakeup 
+  - tooloud 
+  - toosensitive 
+  - tooloud
 ---
