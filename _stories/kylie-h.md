@@ -10,6 +10,6 @@ short_quotation: "Try not to be mean and if you are say sorry."
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560138886%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - LGBTTQQIAAP 
+  - toosensitive 
   - toostraighttobegay
 ---

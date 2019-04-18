@@ -11,5 +11,6 @@ audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra
 video_url: 
 tags: 
   - toostraighttobegay 
-  - toointimidating
+  - toointimidating 
+  - LGBTTQQIAAP
 ---

@@ -10,5 +10,6 @@ short_quotation: "I have been called, the most common one, too loud."
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560127087%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - tooloud
+  - tooloud 
+  - toosmart
 ---

@@ -10,7 +10,6 @@ short_quotation: "He called me a stage hog and I was like WOW. I was so amazed t
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560130360%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: https://youtu.be/s_hAu2RNNXI
 tags: 
-  - LGBTTQQIAAP 
   - tooangsty 
   - tooloud 
   - nonbinary

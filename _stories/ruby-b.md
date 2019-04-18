@@ -10,5 +10,9 @@ short_quotation: "Rather than letting that anger out, that anger gets turned bac
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560139237%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - tooemotional
+  - tooemotional 
+  - toomuch 
+  - tootall 
+  - takinguptoomuchspace 
+  - tooangry 
 ---

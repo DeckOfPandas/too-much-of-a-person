@@ -1,7 +1,7 @@
 ---
 published: true
 layout: story
-firstname: maria grazia
+firstname: mariagrazia
 surname: s
 slug: mariagrazia-s
 year: 2018
@@ -13,5 +13,6 @@ tags:
   - tooindependant 
   - toofemale 
   - artist 
-  - architect
+  - architect 
+  - italy
 ---

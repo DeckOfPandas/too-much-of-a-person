@@ -1,7 +1,7 @@
 ---
 published: true
 layout: story
-firstname: maria vittoria
+firstname: mariavittoria
 surname: p
 slug: mariavittoria-p
 year: 2018
@@ -13,5 +13,6 @@ tags:
   - tooindependent 
   - tooplayful 
   - toopolitical 
-  - toocommunist
+  - toocommunist 
+  - italy
 ---

@@ -11,5 +11,8 @@ audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra
 video_url: https://youtu.be/lqCJInoqxZA
 tags: 
   - bodypositivity 
-  - tooloud
+  - tooloud 
+  - tootall 
+  - toobig 
+  - toofat
 ---

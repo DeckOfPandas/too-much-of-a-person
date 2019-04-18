@@ -11,5 +11,8 @@ short_quotation: "What do they expect? It's the same with 'too emotional' it mak
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560138451%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - toosmall
+  - toosmall 
+  - tooangry 
+  - tooemotional 
+  - toosensitive
 ---
