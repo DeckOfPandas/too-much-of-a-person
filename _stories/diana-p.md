@@ -17,5 +17,5 @@ tags:
   - toointense 
   - tooarrogant 
   - tooemotional 
-  - toobeautiful
+  - tooprovocative
 ---

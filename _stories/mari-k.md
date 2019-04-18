@@ -12,5 +12,7 @@ video_url: https://youtu.be/b9kz3ELMgUA
 tags: 
   - toomasculine 
   - tooeuropean 
-  - toosmall
+  - toomuscley 
+  - berlin 
+  - dancer
 ---

@@ -12,7 +12,8 @@ video_url: https://youtu.be/ySZD9LNgvCg
 tags: 
   - tooshy 
   - tooargumentative 
-  - toohighmaintenance	
+  - toohighmaintenance 
   - toochildish 
-  - toofat
+  - toofat 
+  - bucharest
 ---

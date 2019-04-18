@@ -12,5 +12,7 @@ video_url:
 tags:  
   - nimes 
   - artist 
-  - toointense
+  - toointense 
+  - nimes 
+  - france
 ---

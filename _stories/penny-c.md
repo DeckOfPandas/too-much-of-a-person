@@ -10,5 +10,8 @@ short_quotation: "Where you have a gender construct of 'man' or 'woman' and you'
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560138892%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
+  - toodifficult 
+  - toodifferent 
+  - notbeingheard 
   - nonbinary
 ---

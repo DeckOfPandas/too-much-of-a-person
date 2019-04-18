@@ -13,5 +13,7 @@ tags:
   - tooloud 
   - toobold 
   - tooopinionated 
-  - abilitytotalk
+  - abilitytotalk 
+  - tooyoung 
+  - bristol
 ---

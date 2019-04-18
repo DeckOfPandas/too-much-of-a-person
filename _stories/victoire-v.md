@@ -10,5 +10,11 @@ short_quotation: "I think that as a woman who has been having mental health issu
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560144979%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
 video_url: 
 tags: 
-  - nonbinary
+  - toosensitive 
+  - toofeminist 
+  - wantingtoomuchconsent 
+  - nomeansno 
+  - mentalhealth 
+  - nonbinary 
+  - paris
 ---
