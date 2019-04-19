@@ -43,5 +43,8 @@
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-jpegtran": "^6.0.0"
+  }
 }
