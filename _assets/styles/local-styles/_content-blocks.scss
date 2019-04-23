@@ -382,19 +382,20 @@ hr {
 }
 
 .story-object.story-quotation { 
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 2vmin;
-    letter-spacing: 0.16rem;
-    line-height: calc(24px + 1.5vw);
+    span {
+        font-family: 'Roboto', sans-serif !important;
+        text-transform: uppercase;
+        font-style: italic !important;
+        font-weight: 700 !important;
+        font-size: calc(10px + 0.5vmin);
+        letter-spacing: 0.12rem;
+        line-height: calc(24px + 1.5vmin);   
+    }
     .fa {
         font-size: 0.7em;
         vertical-align: top;
     }
 }
-
 
 .social_inline {
     background-color: rgba(255,255,255,0.0);
@@ -1061,12 +1062,12 @@ hr {
     .card__text, .card__quotation {
     	flex: 1 1 auto;
     	margin: 0.5rem 0 1.25rem 0;
-    	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    	font-family: 'Roboto', sans-serif;
     	color: $nearly_black;
     	text-transform: uppercase;
     	font-style: italic;
         font-size: calc(11px + 0.2vw); 
-        font-weight: 600;
+        font-weight: 700 !important;
         letter-spacing: 0.075rem;
         line-height: 1.5;
     }
