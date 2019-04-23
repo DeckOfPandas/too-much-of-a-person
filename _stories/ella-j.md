@@ -9,9 +9,10 @@ quotation: "Feminism in the 60s was very, very, very different from feminism tod
 "
 short_quotation: "You're right, you’re not a pain in the ass… These things that are a problem today will be your biggest strengths."
 audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/560129508%3F&color=%23fe0000&inverse=false&auto_play=true&show_user=true
-video_url: https://youtu.be/pvzugivNK9c
+video_url: https://www.youtube.com/embed/pvzugivNK9c
 tags: 
-  - southoffrance 
   - toofeminist 
-  - tooopinionated
+  - tooopinionated 
+  - machoculture 
+  - southoffrance
 ---
