@@ -55,7 +55,7 @@ with open('input-all.csv', mode='r') as csv_file:
 		audio_url = "%s%s%s" % (audio_url_prepend, audio_raw, audio_url_append)
 
 		# Video URL
-		video_url = row["video_youtube"]
+		video_url = row["Embed Link"]
 
 		# Tags
 		tags_string = row["tags"].replace('#','\n  - ')
