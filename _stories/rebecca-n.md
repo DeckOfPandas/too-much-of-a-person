@@ -1,7 +1,7 @@
 ---
 published: true
 layout: story
-firstname: rébecca 
+firstname: rébecca
 surname: n
 slug: rebecca-n
 year: 2018

@@ -14,6 +14,5 @@ tags:
   - toopolitical 
   - toomuchmakeup 
   - tooloud 
-  - toosensitive 
-  - tooloud
+  - toosensitive
 ---

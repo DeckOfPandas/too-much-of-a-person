@@ -17,15 +17,16 @@ tags:
   - tooheadinclouds 
   - toofriendly 
   - toojudgemental 
-  - toodefensive	
+  - toodefensive        
   - toomuscular 
-  - tooskinny	
+  - tooskinny        
   - toofat 
   - tooopinionated 
   - toosentimental 
   - toosilly 
   - tooyoung 
-  - toowideeye 
+  - toowideeyed 
   - tooliberal 
-  - toofriendlyamerican
+  - toofriendly 
+  - tooamerican
 ---

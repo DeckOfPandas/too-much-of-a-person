@@ -12,6 +12,6 @@ video_url: https://www.youtube.com/embed/7a4j9n9LJIM
 tags: 
   - toodifficult 
   - tooannoying 
-  - toosensitive	
-  - tooauthoratative
+  - toosensitive 
+  - tooauthoritative
 ---

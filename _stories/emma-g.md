@@ -11,7 +11,7 @@ audio_url: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra
 video_url: https://www.youtube.com/embed/33oUYsgFNOQ
 tags:  
   - tooloud 
-  - tookuptoomuchspace 
+  - takinguptoomuchspace 
   - artist 
   - toointense 
   - nimes 

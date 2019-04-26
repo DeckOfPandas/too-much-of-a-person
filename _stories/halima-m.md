@@ -15,5 +15,5 @@ tags:
   - toohappy 
   - tooindecisive 
   - toopositive 
-  - tooinconsistant
+  - tooinconsistent
 ---
