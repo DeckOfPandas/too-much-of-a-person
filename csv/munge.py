@@ -32,7 +32,11 @@ with open('input-all.csv', mode='r') as csv_file:
 			surname = ""
 		
 		# Slug
-		slug = "%s-%s" % (firstname, surname) # NB: Re-used below in output to file contents
+		if "ecca" in firstname:
+			slug = "rebecca-n"
+			print "\n\n\n\nEXCEPTION\nRebecca N slug '%s' \n\n\n\n" % slug
+		else:
+			slug = "%s-%s" % (firstname, surname) # NB: Re-used below in output to file contents
 		
 
 		# Year
@@ -83,7 +87,7 @@ with open('input-all.csv', mode='r') as csv_file:
 		# First name
 		if firstname == "john": # Special handling for this person's name, see Issue 462
 			firstname = "John Dior"
-			print "\n\n\n\nMADDDD\nJohn Dior firstname '%s'" % firstname
+			print "\n\n\n\nEXCEPTION\nJohn Dior firstname '%s'" % firstname
 
 		try:
 			f.write('firstname: %s\n' % firstname)
