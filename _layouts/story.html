@@ -17,32 +17,39 @@ layout: page_no_header-fullwidth
 
     <div class="container-fullwidth">
         <section class="story">
-       		
-       		<!-- GALLERY -->
-		   <div class="container" id="story_gallery">
-		   		<div class="row">
-					<div class="col-sm-6 offset-sm-3 thumb">
-		                <a href="{{ story_images_folder}}/main.jpg" class="fancybox" rel="ligthbox">
-		                    <img  src="{{ story_images_folder}}/main.jpg" class="zoom img-fluid "  alt="">
-		                </a>
-		            </div>
+        	
+        	<!-- Swiper gallery -->
+        	<div class="container-fullwidth story-object">
+				<div class="swiper-container gallery-top" style="width:50%; margin-bottom: 1rem">
+				    <div class="swiper-wrapper">
+				        {% for image in site.static_files %}
+				          {% if image.path contains story_images_folder %}
+				                {% unless image.path contains 'atrix' %}
+				                    <div class="swiper-slide">
+						                <a href="{{ image.path }}" class="fancybox" rel="ligthbox">
+						                    <img  src="{{ image.path }}" class="zoom img-fluid "  alt="">
+						                </a>
+						            </div>
+				                {% endunless %}
+				          {% endif %}
+				        {% endfor %}
+				    </div>
+				    <!-- Add Arrows -->
+				    <div class="swiper-button-next swiper-button-white"></div>
+				    <div class="swiper-button-prev swiper-button-white"></div>
 				</div>
-		        <div class="row">
-		        	{% for image in site.static_files %}
-		              {% if image.path contains story_images_folder %}
-		                {% unless image.path contains 'ain' %} <!-- HAXXXX -->
-		                    {% unless image.path contains 'atrix' %}
-		                        <div class="col-lg-3 col-md-4 col-sm-4 thumb">
-					                <a href="{{ image.path }}" class="fancybox" rel="ligthbox">
-					                    <img  src="{{ image.path }}" class="zoom img-fluid "  alt="">
-					                </a>
-					            </div>
-		                    {% endunless %}
-		                {% endunless %}
-		              {% endif %}
-		            {% endfor %}
-		       </div>
-		    </div>
+				<div class="swiper-container gallery-thumbs" style="padding-left:1rem;padding-right:1rem">
+				    <div class="swiper-wrapper">
+				    	{% for image in site.static_files %}
+				          {% if image.path contains story_images_folder %}
+				                {% unless image.path contains 'atrix' %}
+				                	<div class="swiper-slide"><img class="img-fluid" src="{{ image.path }}" /></div>
+				                {% endunless %}
+				          {% endif %}
+				        {% endfor %}
+				    </div>
+				</div>
+			</div>
 
 		    <!-- QUOTATION -->
             <div class="container-fullwidth story-object story-quotation">
