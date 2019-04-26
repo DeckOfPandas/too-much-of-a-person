@@ -55,7 +55,7 @@ with open('input-all.csv', mode='r') as csv_file:
 		# Audio URL
 		audio_raw = row["Souncloud link"]
 		audio_url_prepend = "https://w.soundcloud.com/player/?url="
-		audio_url_append = "&color=%23fe0000&inverse=false&auto_play=true&show_user=true"
+		audio_url_append = "&color=%23fe0000&inverse=false&auto_play=false&show_user=true"
 		audio_url = "%s%s%s" % (audio_url_prepend, audio_raw, audio_url_append)
 
 		# Video URL
