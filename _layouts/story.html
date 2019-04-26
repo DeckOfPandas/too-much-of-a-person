@@ -62,7 +62,7 @@ layout: page_no_header-fullwidth
         
         {% if page.audio_url.size > 0 %}
         <section class="" style="background: #fff!important">
-            <div class="container-fullwidth story-object" style="margin:2rem auto; ">
+            <div class="container story-object" style="margin:2rem auto; ">
             	<h2>In their own words...</h2>
             	<h3>Click to hear their story</h3>
                 <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.audio_url }}"></iframe>
@@ -93,7 +93,7 @@ layout: page_no_header-fullwidth
         <!-- RELATED STORIES -->
         <section class="">
             <div class="container-fullwidth story-object" style="margin-top:2em; margin-bottom:-2em;">
-            	<h1 style="font-family:COUTUREBold,sans-serif!important;letter-spacing:0.25rem">other stories</h1> <!-- HAXXXX as for heading above--><!-- NB: this could be abstracted as a section -->
+            	<h1>more stories</h1>
             </div>  
             <div class="container-fullwidth story-related">
                 {% include related_stories.html %}
