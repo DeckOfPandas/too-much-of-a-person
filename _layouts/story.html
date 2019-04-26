@@ -19,8 +19,8 @@ layout: page_no_header-fullwidth
         <section class="story">
         	
         	<!-- Swiper gallery -->
-        	<div class="container-fullwidth story-object">
-				<div class="swiper-container gallery-top col-sm-8 sm-offset-2 col-lg-6 lag-offset-3" style="margin-bottom: 1rem">
+        	<div class="container-fullwidth story-object" style="padding-top:0">
+				<div class="swiper-container gallery-top col-sm-8 sm-offset-2 col-lg-6 lg-offset-3" style="margin-bottom: 1rem">
 				    <div class="swiper-wrapper">
 				        {% for image in site.static_files %}
 				          {% if image.path contains story_images_folder %}
@@ -35,24 +35,40 @@ layout: page_no_header-fullwidth
 				        {% endfor %}
 				    </div>
 				    <!-- Add Arrows -->
-				    <div class="swiper-button-next swiper-button-white"></div>
-				    <div class="swiper-button-prev swiper-button-white"></div>
+				    <!--<div class="swiper-button-next swiper-button-black"></div>
+				    <div class="swiper-button-prev swiper-button-black"></div>-->
+				    <!-- Add Pagination -->
+				    <!--<div class="swiper-pagination"></div>-->
 				</div>
-				<div class="swiper-container gallery-thumbs" style="padding-left:1rem;padding-right:1rem">
-				    <div class="swiper-wrapper">
-				    	{% for image in site.static_files %}
-				          {% if image.path contains story_images_folder %}
-				                {% unless image.path contains 'atrix' %}
-				                	<div class="swiper-slide"><img class="img-fluid" src="{{ image.path }}" /></div>
-				                {% endunless %}
-				          {% endif %}
-				        {% endfor %}
-				    </div>
+				<div class="row" style="margin-top:-3.25rem;margin-bottom:2.75rem">
+					<div class="col-sm-1 col-lg-2">
+						&nbsp;
+					</div>
+					<div class="col-sm-10 col-lg-8">
+						<div class="swiper-button-prev swiper-button-black"></div>
+						<div class="swiper-button-next swiper-button-black"></div>
+					</div>
+					<div class="col-sm-1 col-lg-2">
+						&nbsp;
+					</div>
+				</div>
+				<div class="row">
+					<div class="swiper-container gallery-thumbs" style="padding-left:1rem;padding-right:1rem">
+					    <div class="swiper-wrapper">
+					    	{% for image in site.static_files %}
+					          {% if image.path contains story_images_folder %}
+					                {% unless image.path contains 'atrix' %}
+					                	<div class="swiper-slide"><img class="img-fluid" src="{{ image.path }}" /></div>
+					                {% endunless %}
+					          {% endif %}
+					        {% endfor %}
+					    </div>
+					</div>
 				</div>
 			</div>
 
 		    <!-- QUOTATION -->
-            <div class="container-fullwidth story-object story-quotation">
+            <div class="container-fullwidth story-object story-quotation" style="padding-top:0">
                 <div class="container">
                     <span class="">
                         {% if page.quotation %}
