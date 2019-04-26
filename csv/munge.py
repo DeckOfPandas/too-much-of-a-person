@@ -7,8 +7,8 @@ with open('input-all.csv', mode='r') as csv_file:
 
 		# Set names of columns
 		# First name
-		firstname_raw = row["interviewee"].lower().strip()
-		firstname = firstname_raw
+		firstname_raw = row["interviewee"].lower()
+		firstname = firstname_raw.strip()
 		firstname_nospaces = firstname_raw.split(' ')
 		firstname_nohyphens = firstname_raw.split('-')
 
@@ -20,7 +20,7 @@ with open('input-all.csv', mode='r') as csv_file:
 			print "HYPHEN IN FIRST NAME"
   			firstname = "%s%s" % (firstname_nohyphens[0], firstname_nohyphens[1])
 			
-		print "firstname '%s'" % firstname.strip()
+		print "firstname '%s'" % firstname_raw
 
 		# Surname
 		if row["Surname"] != "":
@@ -90,7 +90,7 @@ with open('input-all.csv', mode='r') as csv_file:
 			print "\n\n\n\nEXCEPTION\nJohn Dior firstname '%s'" % firstname
 
 		try:
-			f.write('firstname: %s\n' % firstname)
+			f.write('firstname: %s\n' % firstname_raw)
 		except:
 			f.write('firstname: FIRSTNAME\n')
 
