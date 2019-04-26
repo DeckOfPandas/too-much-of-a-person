@@ -17,9 +17,6 @@ permalink: /stories/
 		<div class="small">
 			{% include story_list.html %}
 		</div>
-		<div class="section_endtext" style="text-align: center; margin-top: 2.5em;">
-			<span>More coming soon</span>
-		</div>
 	{% else %}
 	<div class="container-fullwidth" style="margin-top: 2em;padding:20px 40px;background-color:rgba(255,255,255,0.6);">	
 		<p>Coming soon in 2019...</p>
