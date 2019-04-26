@@ -67,17 +67,18 @@ layout: page_no_header-fullwidth
             </div>
         </section>
         
-        {% if page.audio_url.size > 0 %}
+        <!-- AUDIO -->
         <section class="" style="background: #fff!important">
             <div class="container story-object" style="margin:2rem auto; ">
             	<h2>In their own words...</h2>
             	<h3>Click to hear their story</h3>
-                <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.audio_url }}"></iframe>
+            	{% if page.audio_url.size > 0 %}
+                	<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.audio_url }}"></iframe>
+                {% else %}
+		        	<span>Interview coming soon</span>
+		        {% endif %}
             </div>
         </section>	
-        {% else %}
-        	<p>Interview coming soon</p>
-        {% endif %}
 
 
          <!-- TAGS -->
@@ -96,6 +97,21 @@ layout: page_no_header-fullwidth
              </div>
         </section><!-- END TAGS and .story -->
         {% endif %}
+
+
+        <!-- VIDEO -->
+        <section class="" style="background: #fff!important">
+            <div class="container story-object" style="margin:2rem auto; ">
+            	<h2>See them speak...</h2>
+            	<h3>Click to see their story</h3>
+            	{% if page.video_url.size > 0 %}
+                	{% include video.html url=page.video_url width="560" height="315" %}
+                {% else %}
+		        	<span>Video coming soon</span>
+		        {% endif %}
+            </div>
+        </section>
+
 
         <!-- RELATED STORIES -->
         <section class="">
