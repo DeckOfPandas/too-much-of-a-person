@@ -81,6 +81,10 @@ with open('input-all.csv', mode='r') as csv_file:
 		f.write('layout: story\n')
 
 		# First name
+		if firstname == "john": # Special handling for this person's name, see Issue 462
+			firstname = "John Dior"
+			print "\n\n\n\nMADDDD\nJohn Dior firstname '%s'" % firstname
+
 		try:
 			f.write('firstname: %s\n' % firstname)
 		except:
