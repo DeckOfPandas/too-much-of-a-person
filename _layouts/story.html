@@ -73,7 +73,7 @@ layout: page_no_header-fullwidth
             	<h2>In their own words...</h2>
             	<h3>Click to hear their story</h3>
             	{% if page.audio_url.size > 0 %}
-                	<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.audio_url }}"></iframe>
+                	<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="" src="{{ page.audio_url }}"></iframe> <!-- allow="autoplay" to turn back on -->
                 {% else %}
 		        	<span>Interview coming soon</span>
 		        {% endif %}
