@@ -1,9 +1,9 @@
 ---
 published: true
 layout: story
-firstname: john dior
+firstname: John Dior
 surname: d
-slug: john-dior
+slug: john-d
 year: 2018
 quotation: "Be wary of the amount of work you are doing. Be wary of the people around you and when they are complicit and if they are doing the same amount of work as you are doing. Sometimes you are doing more than your fair share and you need to rest and recuperate.
 "
