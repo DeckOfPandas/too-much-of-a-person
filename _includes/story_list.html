@@ -1,8 +1,6 @@
-{% assign sorted = site.stories %}
-
 <section id="story_grid">
     <ul class="cards">
-        {% for story in sorted %}
+        {% for story in site.stories %}
             {% if site.show_stories %}
                 <li class="cards__item">
                     <div class="card">
