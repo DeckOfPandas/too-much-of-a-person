@@ -32,17 +32,8 @@
                             <p class="card__tag-list tag_list">
                                 {% if story.tags.size > 0 %}
                                     {% for tag in story.tags %}   
-                                        <a href="" class="tag">#{{ tag }}</a>
+                                        <a class="tag">#{{ tag }}</a>
                                     {% endfor %}
-                                {% else %}
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
-                                    <a href="" class="tag">#tag </a>
                                 {% endif %}
                             </p>
                         </div>
