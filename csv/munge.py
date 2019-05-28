@@ -7,8 +7,8 @@ with open('input-all.csv', mode='r') as csv_file:
 
 		# Set names of columns
 		# First name
-		firstname_raw = row["interviewee"].lower().strip()
-		firstname = firstname_raw
+		firstname_raw = row["interviewee"].lower()
+		firstname = firstname_raw.strip()
 		firstname_nospaces = firstname_raw.split(' ')
 		firstname_nohyphens = firstname_raw.split('-')
 
@@ -20,7 +20,7 @@ with open('input-all.csv', mode='r') as csv_file:
 			print "HYPHEN IN FIRST NAME"
   			firstname = "%s%s" % (firstname_nohyphens[0], firstname_nohyphens[1])
 			
-		print "firstname '%s'" % firstname.strip()
+		print "firstname '%s'" % firstname_raw
 
 		# Surname
 		if row["Surname"] != "":
@@ -32,7 +32,11 @@ with open('input-all.csv', mode='r') as csv_file:
 			surname = ""
 		
 		# Slug
-		slug = "%s-%s" % (firstname, surname) # NB: Re-used below in output to file contents
+		if "ecca" in firstname:
+			slug = "rebecca-n"
+			print "\n\n\n\nEXCEPTION\nRebecca N slug '%s' \n\n\n\n" % slug
+		else:
+			slug = "%s-%s" % (firstname, surname) # NB: Re-used below in output to file contents
 		
 
 		# Year
@@ -51,11 +55,11 @@ with open('input-all.csv', mode='r') as csv_file:
 		# Audio URL
 		audio_raw = row["Souncloud link"]
 		audio_url_prepend = "https://w.soundcloud.com/player/?url="
-		audio_url_append = "&color=%23fe0000&inverse=false&auto_play=true&show_user=true"
+		audio_url_append = "&color=%23fe0000&inverse=false&auto_play=false&show_user=true"
 		audio_url = "%s%s%s" % (audio_url_prepend, audio_raw, audio_url_append)
 
 		# Video URL
-		video_url = row["video_youtube"]
+		video_url = row["Embed Link"]
 
 		# Tags
 		tags_string = row["tags"].replace('#','\n  - ')
@@ -81,8 +85,12 @@ with open('input-all.csv', mode='r') as csv_file:
 		f.write('layout: story\n')
 
 		# First name
+		if firstname == "john": # Special handling for this person's name, see Issue 462
+			firstname = "John Dior"
+			print "\n\n\n\nEXCEPTION\nJohn Dior firstname '%s'" % firstname
+
 		try:
-			f.write('firstname: %s\n' % firstname)
+			f.write('firstname: %s\n' % firstname_raw)
 		except:
 			f.write('firstname: FIRSTNAME\n')
 
