@@ -16,7 +16,7 @@ permalink: /stories/
 	<div class="container-fullwidth" style="margin-top: 2em;">	
 		<div class="small">
 			<div class="list_to_hide_or_not_hide" data-limit='999' style="visibility:hidden">
-				{% include story_list.html %}
+				{% include list_stories.html %}
 			</div>
 		</div>
 	{% else %}
@@ -32,5 +32,5 @@ permalink: /stories/
 </section>    
 
 <section class="container_section social">
-	{% include social_blobs.html %}
+	{% include snippet_social-blobs.html %}
 </section>

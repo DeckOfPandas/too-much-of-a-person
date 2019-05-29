@@ -121,7 +121,7 @@ layout: page_no_header-fullwidth
             	<h2>See them speak...</h2>
             	<h3>Click to see their story</h3>
             	{% if page.video_url.size > 0 %}
-                	{% include video.html url=page.video_url width="560" height="315" %}
+                	{% include media_video.html url=page.video_url width="560" height="315" %}
                 {% else %}
 		        	<span>Video coming soon</span>
 		        {% endif %}
@@ -131,11 +131,14 @@ layout: page_no_header-fullwidth
 
         <!-- RELATED STORIES -->
         <section class="">
-            <div class="container-fullwidth story-object" style="margin-top:2em; margin-bottom:-2em;">
+            <div class="container-fullwidth story-object" style="margin-top:2em;">
             	<h1>more stories</h1>
             </div>  
             <div class="container-fullwidth story-related">
-                {% include related_stories.html %}
+            	<div class="section_subtitle" style="text-align: right"><span>See all <a href="{{ site.url }}/stories">>></a></span></div>
+            	<div class="list_to_hide_or_not_hide" style="display:none" data-limit='4'>
+					{% include list_stories.html %}
+				</div>
             </div>
         </section>
     </div>
@@ -145,8 +148,8 @@ layout: page_no_header-fullwidth
     {% include cta_mailinglist.html %}
 </section>    
 
-<section class="container_section" id="social">
-	{% include social_blobs.html %}
+<section class="container_section social">
+    {% include snippet_social-blobs.html %}
 </section>
 
 
