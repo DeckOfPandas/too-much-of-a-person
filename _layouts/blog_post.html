@@ -1,5 +1,5 @@
 ---
-layout: page_no_header
+layout: base
 ---
 <dl class="metadata">
     <dt>Published:</dt>
@@ -12,17 +12,21 @@ layout: page_no_header
 
 <section class="blog_page">
 
-	<div class="container-fullwidth blog_header_img">
+	<div class="container blog_header_img" style="padding:0">
 		<img class="img-fluid" width="100%" src="{{site.baseurl}}assets/images/blog/{{ page.header_image }}" />
 	</div>
-	<div class="flex-container_blog_title blog_title">
-		<h1>{{ page.title }}</h1>
-		<div class="container-fullwidth" style="padding-bottom:2em;">
-			<div class="post_author">:{{ page.author }}:</div>
-			<div><time datetime="{{ page.date | date_to_xmlschema }}">:{{ page.date | date_to_long_string }}:</time></div>
+
+	<div class="container" style="padding:0">
+		<div class="flex-container_blog_title blog_title">
+			<h1>{{ page.title }}</h1>
+			<div class="container-fullwidth" style="padding-bottom:2em;">
+				<div class="post_author">:{{ page.author }}:</div>
+				<div><time datetime="{{ page.date | date_to_xmlschema }}">:{{ page.date | date_to_long_string }}:</time></div>
+			</div>
 		</div>
 	</div>
-	<div class="container-fullwidth blog_body">
+
+	<div class="container blog_body">
 		<div class="container">
 			{{ content }}
 		</div>
@@ -32,7 +36,9 @@ layout: page_no_header
 			</div>
 		{% endif %}
 	</div>
-	<div class="container-fullwidth blog_footer center">
+	
+	<div class="container blog_footer center" style="padding-left:0;padding-right:0">
 		{% include blog_footer.html %}
 	</div>
+
 </section>
