@@ -1,6 +1,4 @@
 ---
-layout: event
-
 title: "Workshop: Find Your Voice"
 thumbnail: "2019-04-24-workshop-fyv-thumbnail.jpg"
 

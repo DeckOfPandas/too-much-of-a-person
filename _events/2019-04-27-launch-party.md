@@ -1,6 +1,4 @@
 ---
-layout: event
-
 title: "Launch party"
 thumbnail: "2019-04-27-launch-party-thumbnail.jpg"
 
