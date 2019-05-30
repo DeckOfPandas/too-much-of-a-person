@@ -2,6 +2,22 @@
 <div class="section_subtitle">
 	<span>Stop. You've found your people.</span>
 </div>
-<div class="container">
-	{% include team.html %}
-</div>
+
+<section id="team" style="margin-top:2rem">
+	<div class="member-card-container">
+	{% for member in site.data.team %}
+	    <div class="member-card">
+	        <div class="profile_photo">
+	            <img class="img-fluid" src="/assets/images/team/{{ member.photo }}" alt="{{ member.name }}" />
+	        </div>
+	        <div class="name">{{ member.name }}</div>
+	        <div class="role">{{ member.role }}</div>
+	        <div class="social">
+	            {% if member.email %}
+	            	<a class="fas fa-envelope" href="mailto:{{ member.email }}" target="new"></a>
+	        	{% endif %}	
+	        </div>	    
+	    </div>
+	{% endfor %}
+	</div>
+</section>

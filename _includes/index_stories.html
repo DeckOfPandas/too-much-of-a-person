@@ -4,8 +4,8 @@
 </div>
 {% if site.show_stories %}
 	<div class="section_subtitle" style="margin-top: 2em; text-align: right"><span>See all <a href="{{ site.url }}/stories">>></a></span></div>
-		<div class="small">
-			{% include related_stories.html %}
+		<div class="list_to_hide_or_not_hide" style="display:none" data-limit='4'>
+			{% include list_stories.html %}
 		</div>
 	</div>
 {% else %}
