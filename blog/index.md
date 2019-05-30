@@ -14,7 +14,7 @@ permalink: /blog/
 	</div>
 	<div>
 		{% include blog_list.html %}
-		{% include dotdotdot.html %}
+		{% include snippet_dotdotdot.html %}
 	</div>
 </section>
 
