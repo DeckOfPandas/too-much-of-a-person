@@ -1,6 +1,4 @@
 ---
-layout: event
-
 title: "Workshop: Your Too Much is Your Power"
 thumbnail: "2019-04-24-workshop-ytmiyp-thumbnail.jpg"
 

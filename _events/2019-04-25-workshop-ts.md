@@ -1,6 +1,4 @@
 ---
-layout: event
-
 title: "Workshop: Toxic Shame"
 thumbnail: "2019-04-25-workshop-ts-thumbnail.jpg"
 
