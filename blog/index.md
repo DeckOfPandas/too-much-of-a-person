@@ -1,5 +1,5 @@
 ---
-layout: page_no_header-fullwidth
+layout: base
 title: "Scribbles"
 subtitle: "Updated every Thursday"
 permalink: /blog/

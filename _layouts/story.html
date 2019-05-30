@@ -1,5 +1,5 @@
 ---
-layout: page_no_header-fullwidth
+layout: base
 ---
 {% assign site_images_folder =  site.path_stories_images | absolute_url | append: "/" %}
 {% assign story_images_folder = site_images_folder | append: page.slug | append: "/"  %}
@@ -143,14 +143,3 @@ layout: page_no_header-fullwidth
         </section>
     </div>
 </section>
-
-<section class="container_section cta_mailinglist">
-    {% include cta_mailinglist.html %}
-</section>    
-
-<section class="container_section social">
-    {% include snippet_social-blobs.html %}
-</section>
-
-
-
