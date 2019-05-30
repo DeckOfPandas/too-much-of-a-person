@@ -2,15 +2,35 @@
 layout: compress
 ---
 <!doctype html>
+
 <html>
+
 {% include head.html %}
+
     <body>
         <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         {% include header.html %}
-        {{ content }}
+
+        <div class="container-fullwidth">
+
+			{{ content }}
+
+			<section class="container_section cta_mailinglist">
+			    {% include cta_mailinglist.html %}
+			</section>    
+
+			<section class="container_section" id="social">
+				{% include snippet_social-blobs.html %}
+			</section>
+
+		</div>
+
         {% include footer.html %}
+
     </body>
+
 	{% include scripts.html %}
+
 </html>

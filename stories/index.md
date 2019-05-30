@@ -1,5 +1,5 @@
 ---
-layout: page_no_header-fullwidth
+layout: base
 title: "Stories"
 subtitle: "Never too many people, opinions, stories..."
 permalink: /stories/
@@ -25,12 +25,4 @@ permalink: /stories/
 		<p>We are currently editing the interviews and portraits of 100 womxn and non-binary people. They’re raw and articulate and beautiful and well worth the wait. Watch this space.</p>
 	{% endif %}
 	</div>		
-</section>
-
-<section class="container_section cta_mailinglist">
-    {% include cta_mailinglist.html %}
-</section>    
-
-<section class="container_section" id="social">
-	{% include snippet_social-blobs.html %}
 </section>
