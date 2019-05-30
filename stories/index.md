@@ -31,6 +31,6 @@ permalink: /stories/
     {% include cta_mailinglist.html %}
 </section>    
 
-<section class="container_section social">
+<section class="container_section" id="social">
 	{% include snippet_social-blobs.html %}
 </section>
